@@ -3,7 +3,6 @@
 
 import os
 import re
-import ipdb
 import itertools
 from nltk.tree import *
 from nltk.featstruct import FeatStruct,Feature
@@ -19,17 +18,7 @@ class LtagExtractor:
     
     def _annotate(self, tree_file, alignment_file):
         '''
-        _annotate annotate the tree node to show the tree whether:
-        1. is got form substitution
-        2. is got from adjunction
-        3. is got from conjunction 'x and y' or 'x, y and z'
-        The result returned is a tree with annotation,
-        The annotation convention is that:
-        NP[type='subs', conj='y']:
-        A NP which is got from substitution and it's a conjunction phrase;
-
-        VP[type='adj', conj='n']:
-        A VP which is got from adjunction and it's not a conjunction phrase;
+        _annotate annotate the tree node with group information
         '''
         
         with open(tree_file) as ftree, open(alignment_file) as alfile:
@@ -43,10 +32,10 @@ class LtagExtractor:
             self._grouping(pt, alignment)
             #pt.draw()
             #print pt
-            print self._get_head_group(pt)
+            #print self._get_head_group(pt)
             #the last punctuation is trivial
             pt[0].pop()
-            pt.draw()
+            #pt.draw()
             return pt
 
 
@@ -103,11 +92,16 @@ class LtagExtractor:
         '''
         read in alightment configration, store it as a list of list.
         '''
+        alignment_string = re.sub(r"'s", r" 's", alignment_string)
 
         group = [l.split() for l in re.split(r"\]\s*\[", re.search(r'\[(.*)\]', alignment_string).group(1))]
         return group
 
-    def extract(self, annotated_tree):
+    def extract(self, fpath, apath):
+        annotated_tree = self._annotate(fpath, apath)
+        return self._extract(annotated_tree)
+
+    def _extract(self, annotated_tree):
         '''
         read in annotated tree, extract etree.
         input: annotated tree
@@ -121,6 +115,8 @@ class LtagExtractor:
 
         #loop until agenda is empty
         while agenda:
+            #import ipdb
+            #ipdb.set_trace()
             currenttree = agenda.popleft()
             if self._is_wellformed(currenttree):
                 # we've found a nice tree which can be added to the grammar! cool!
@@ -134,8 +130,7 @@ class LtagExtractor:
                 self._detect_subs(currenttree, agenda, extracted_tree)
             #TEST
 
-        for t in extracted_tree:
-            t.draw()
+        return extracted_tree
             
     def _detect_adjunct(self, annotated_tree, root, agenda, extracted_tree):
         '''
@@ -163,6 +158,7 @@ class LtagExtractor:
         # and every time we find a new tree, one normal tree and one adjuction tree will be constructed
         # to be fed into the agenda
         isadjunct = False
+        print annotated_tree
         leftmost = annotated_tree[0]
         rightmost = annotated_tree[-1]
         leftgo = not isinstance(leftmost, str) and leftmost.height() > 1
@@ -187,7 +183,8 @@ class LtagExtractor:
                         adjuncttree.node['adj'] = True
                         # when the adjuction is not at the root, subsitute the whole in
                         if not annotated_tree is root:
-                            annotated_tree.parent()[annotated_tree.parent_index()] = newadjunctwhole
+                            print "find different"
+                            annotated_tree.parent()[annotated_tree.parent_index()] = holetree
                             # put root tree in the agenda
                             self._grouping_help(root)
                             agenda.append(root)
@@ -328,9 +325,10 @@ class LtagExtractor:
 
         
     def _is_conj_tree(self, annotated_tree):
-        for i in range(len(annotated_tree)):
-            if annotated_tree[i].node[Feature('type')] == 'CC':
-                return True
+        if annotated_tree.node[Feature('type')] == 'NP': # we can only deal with conjuction which happens in NP
+            for i in range(len(annotated_tree)):
+                if annotated_tree[i].node[Feature('type')] == 'CC':
+                    return True
         return False
     
     def _get_head_group(self, annotated_tree):
@@ -392,15 +390,21 @@ def main():
     dpath = os.path.expanduser('~/workspace/es.qiu.ltagextract/')
     #fpath = dpath + 'fixed/ex21a.20.pst-heads-fixed'
     #alpath = dpath + 'alignments/ex21a.20.ali'
-    for root, dirs, files in os.walk(dpath + 'fixed-test'):
+    for root, dirs, files in os.walk(dpath + 'fixed'):
         for f in files:
             print f
             m = re.match(r'(.*?)\.pst-heads-fixed', f)
             if m:
-                fpath = dpath + 'fixed/' + m.group()
-                alpath = dpath + 'alignments/' + m.group(1) + '.ali'
-                at = ltge._annotate(fpath, alpath)
-                ltge.extract(at)
+                fpath = dpath + r'fixed/' + m.group()
+                alpath = dpath + r'alignments/' + m.group(1) + r'.ali'
+                grammar_dir = dpath + r'grammar/' 
+                if not os.path.exists(grammar_dir):
+                    os.makedirs(grammar_dir)
+                with open( grammar_dir + m.group(1) + r'.grm', 'w') as grammarfile:
+                    for g in ltge.extract(fpath, alpath):
+                        #g.draw()
+                        grammarfile.write(g.pprint() + '\n')
+                        grammarfile.write('\n')
 
 
 if __name__ == '__main__':
