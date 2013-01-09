@@ -11,7 +11,7 @@ term_regex = r'''(?mx)
         (?P<brackr>\))|
         (?P<num>\d+\.\d+|\d+)\b|
         (?P<sq>"[^"]*")|
-        (?P<s>\S+)\b
+        (?P<s>\S+?)(?=[\s\)])
        )'''
 
 def parse_sexp(sexp):
@@ -33,6 +33,7 @@ def parse_sexp(sexp):
         elif term == 'sq':
             out.append(value[1:-1])
         elif term == 's':
+            print value
             out.append(value)
         else:
             raise NotImplementedError("Error: %r" % (term, value))
@@ -52,7 +53,7 @@ def print_sexp(exp):
 
 if __name__ == '__main__':
     sexp = ''' ( ( data "quoted data" 123 4.5)
-         (data (123 (4.5) "(more" "data)")))'''
+         (|data|| (123 (4.5) "(more" "data)")))'''
 
     print('Input S-expression: %r' % (sexp, ))
     parsed = parse_sexp(sexp)

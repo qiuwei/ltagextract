@@ -105,17 +105,78 @@ class LtagExtractor:
         with open(apath) as afile:
             align_syn = afile.readline()
             align_sem = afile.read()
-            print sexprparse.parse_sexp(align_sem)
-            print align_sem
+            (relation, instance) = self._read_semalign(align_sem)
+            print relation
+            print instance
             annotated_tree = self._annotate(fpath, align_syn)
-            #self._extract(annotated_tree)
-            return self._extract(annotated_tree)
+            extracted_tree = self._extract(annotated_tree)
+            self._sem_align(extracted_tree, relation, instance)
+            return [i for j in extracted_tree.values() for i in j]
+
+    def _sem_align(self, extracted_tree, relation, instance):
+        '''
+        align the semantics to the extracted grammar
+        '''
+        def transverse(tree):
+            #find all the wholes in the tree, works a generator
+            if tree is not None and type(tree) != str:
+                #remove the group information, it's not useful anymore
+                yield tree
+                for child in tree:
+                    for x in find_hole(child):
+                        yield x
+
+        def find_hole(tree):
+            for t in transverse(tree):
+                #if t.node.has_key('group'):
+                #    tree.node.pop('group')
+                if t.node.has_key('cand'):
+                    yield t
+
+        instancedict = {i[0]: i[3] for i in instance}
+        # first deal with the instances
+        for i in instance:
+            index = i[3]
+            itree = extracted_tree[index] #keep in mind itree is a list
+            print i[2]
+            for it in itree:
+                print it
+        # deal with the realtions
+        for r in relation:
+            index = r[3]
+            itree = extracted_tree[index]
+            #import ipdb; ipdb.set_trace()
+            assert len(itree) == 1, "There are more than one tree corresponding to one relation"
+            arg0 = r[0]
+            arg1 = r[2]
+            print arg0, instancedict[r[0]]
+            print arg1, instancedict[r[2]]
+            for t in find_hole(itree[0]):
+                #check all of the hole
+                if instancedict[arg0] in t.node['cand']:
+                    t.node['sem'] = 0
+                elif instancedict[arg1] in t.node['cand']:
+                    t.node['sem'] = 1
+                t.node.pop('group')
+                t.node.pop('cand')
+        for trees in extracted_tree.values():
+            for t in trees:
+                t.draw()
+
+
+
+
+    def _get_group(self, grammar_tree):
+        group =  grammar_tree.node['group']
+        assert len(group) == 1, "Tree is related to more than 1 index"
+        return list(group)[0]
 
     def _read_semalign(self, align_str):
         '''
         read in semantic alignment information
         '''
-        pass
+        align =  sexprparse.parse_sexp(align_str)
+        return (align[2], align[4])
 
     def _extract(self, annotated_tree):
         '''
@@ -127,7 +188,7 @@ class LtagExtractor:
         agenda =  deque()
         agenda.append(annotated_tree)
 
-        extracted_tree = []
+        extracted_tree = defaultdict(list)
 
         #loop until agenda is empty
         while agenda:
@@ -138,7 +199,7 @@ class LtagExtractor:
                 # we've found a nice tree which can be added to the grammar! cool!
                 print "found good tree"
                 #currenttree.draw()
-                extracted_tree.append(currenttree)
+                extracted_tree[self._get_group(currenttree)].append(currenttree)
             else:
                 self._detect_conj(currenttree, agenda, extracted_tree)
                 if self._detect_adjunct(currenttree, currenttree, agenda, extracted_tree):
@@ -285,7 +346,7 @@ class LtagExtractor:
         self._grouping_help(annotated_tree)
         #print "adding subtree to extracted_tree"
         #annotated_tree.draw()
-        extracted_tree.append(annotated_tree)
+        extracted_tree[self._get_group(annotated_tree)].append(annotated_tree)
 
     def _detect_subs_help(self, annotated_tree, root, expected_group, agenda):
         #if current node doesn't contain expected_group,
@@ -350,7 +411,7 @@ class LtagExtractor:
                         conjtree[i] = subs_tree
                 #update the grouping information of conjtree
                 self._grouping_help(conjtree)
-                extracted_tree.append(conjtree)
+                extracted_tree[self._get_group(conjtree)].append(conjtree)
             else:
                 for i in range(len(annotated_tree)):
                     self._detect_conj_help(annotated_tree[i], root, agenda, extracted_tree)
