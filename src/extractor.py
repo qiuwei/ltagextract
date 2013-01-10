@@ -20,15 +20,19 @@ class LtagExtractor:
         '''default init function'''
         pass
 
-    def output_gram(self):
+    def output_gram(self, f):
         '''
         output the grammar to stdout
         '''
         for sem in self.gram:
-            print sem
+            f.write(sem)
+            f.write(os.linesep)
             for g in self.gram[sem]:
-                print g
-            print
+                if type(g) is str:
+                    print g
+                else:
+                    f.write(g.pprint() + os.linesep)
+            f.write(os.linesep)
 
     def _annotate(self, tree_file, align_syn):
         '''
@@ -111,7 +115,11 @@ class LtagExtractor:
         return group
 
     def extract(self, fpath, apath):
-        print fpath
+        def copy_gram(global_gram, local_gram):
+            for k in local_gram:
+                global_gram[k].update(local_gram[k])
+
+        #print fpath
         with open(apath) as afile:
             align_syn = self._read_alignment(afile.readline())
             align_sem = afile.read()
@@ -119,11 +127,25 @@ class LtagExtractor:
             #print relation
             #print instance
             annotated_tree = self._annotate(fpath, align_syn)
-            extracted_tree = self._extract(annotated_tree)
             instance = [i for i in instance if len(i) > 3]
             relation = [r for r in relation if len(r) > 3]
-            self._sem_align(extracted_tree, align_syn, relation, instance)
-            return [i for j in extracted_tree.values() for i in j]
+            extracted_tree = None
+            try:
+                extracted_tree = self._extract(annotated_tree)
+                lgram = self._sem_align(extracted_tree, align_syn, relation, instance)
+            except AssertionError, e:
+                print "there is parsing error in {0}".format(fpath)
+            except ValueError, e1:
+                print "there is parsing error in {0}".format(fpath)
+            except KeyError, e2:
+                print "there is parsing error in {0}".format(fpath)
+            else:
+                print "Succeed to process in {0}".format(fpath)
+                #copy the extracted tree to global grammar
+                copy_gram(self.gram, lgram)
+
+            if extracted_tree is not None:
+                return [i for j in extracted_tree.values() for i in j]
 
     def _sem_align(self, extracted_tree, align_syn, relation, instance):
         '''
@@ -161,6 +183,8 @@ class LtagExtractor:
             for t in transverse(newtree):
                 t.node = deepcopy(t.node)
             return newtree
+
+        gram = defaultdict(set)
 
         instancedict = defaultdict(set)
         for i in instance:
@@ -200,12 +224,11 @@ class LtagExtractor:
                     fit = freeze(it)
                     assert hash(fit)
                     #put it into grammar
-                    self.gram[i[2]].add(fit)
+                    gram[i[2]].add(fit)
         # deal with the realtions
         for r in relation:
             index = r[3]
             etree = extracted_tree[index]
-            etree.draw()
             assert len(etree) == 1, "There are more than one tree corresponding to one relation"
             itree = treedeepcopy(etree[0])
             #import ipdb; ipdb.set_trace()
@@ -228,7 +251,10 @@ class LtagExtractor:
             #put it into grammar
             fit = freeze(itree)
             assert hash(fit)
-            self.gram[r[1]].add(fit)
+            gram[r[1]].add(fit)
+
+        # return gram extracted from currentfile
+        return gram
 
         #for trees in extracted_tree.values():
         #    for t in trees:
@@ -580,13 +606,15 @@ def main():
                 if not os.path.exists(grammar_dir):
                     os.makedirs(grammar_dir)
                 with open(os.path.join(grammar_dir, m.group(1) + r'.grm'), 'w') as grammarfile:
-                    for g in ltge.extract(fpath, alpath):
-                        #g.draw()
-                        grammarfile.write(g.pprint() + '\n')
-                        grammarfile.write('\n')
+                    gram = ltge.extract(fpath, alpath)
+                    if gram is not None:
+                        for g in gram:
+                            #g.draw()
+                            grammarfile.write(g.pprint() + '\n')
+                            grammarfile.write('\n')
 
     #ouput the grammar extracted
-    ltge.output_gram()
+    ltge.output_gram(args.outfile)
 
 
 if __name__ == '__main__':

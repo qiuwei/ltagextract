@@ -22,11 +22,14 @@ class GrammarViewer:
         p = Pool()
         for line in grammarfile.readlines():
             if line != '\n':
-                line = re.sub(r"set\(\[(\d*)\]\)", r"\g<1>", line)
-                line = re.sub(r", ", r",", line)
-                line = re.sub(r"group=,", r"", line)
-                #line = re.sub(r"set\(\[(.*?)\]\)", r"\g<1>", line)
-                s += line
+                if line[0] == '|':
+                    print line
+                else:
+                    line = re.sub(r"set\(\[(\d*)\]\)", r"\g<1>", line)
+                    line = re.sub(r", ", r",", line)
+                    line = re.sub(r"group=,", r"", line)
+                    #line = re.sub(r"set\(\[(.*?)\]\)", r"\g<1>", line)
+                    s += line
             else:
                 print s
                 tree = ParentedTree.parse(s, parse_node=FeatStruct)
