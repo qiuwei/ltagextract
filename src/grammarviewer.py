@@ -17,33 +17,43 @@ class GrammarViewer:
         '''default init function'''
         pass
 
-    def view(self, grammarfile):
-        s = ''
-        p = Pool()
-        for line in grammarfile.readlines():
-            if line != '\n':
-                if line[0] == '|':
-                    print line
-                else:
-                    line = re.sub(r"set\(\[(\d*)\]\)", r"\g<1>", line)
-                    line = re.sub(r", ", r",", line)
-                    line = re.sub(r"group=,", r"", line)
-                    #line = re.sub(r"set\(\[(.*?)\]\)", r"\g<1>", line)
-                    s += line
+    def view(self, s):
+        s = re.sub(r"set\(\[([\d, ]*)\]\)", r"{\g<1>}", s)
+        print s
+        #tree = ParentedTree.parse(s, node_pattern=r"\w*?\[.*?\]", parse_node=buildfeatstruct)
+        tree = ParentedTree.parse(s, node_pattern=r"\w*?\[.*?\]", parse_node=FeatStruct)
+        tree.draw()
+
+    def read_gram_line(self, grammarfile):
+        # parse the file
+
+        s = []
+        gram_str_list = []
+        for line in grammarfile:
+            if re.match(r"^\[.*\]$", line):
+                print line
             else:
-                print s
-                tree = ParentedTree.parse(s, parse_node=FeatStruct)
-                tree.draw()
-                s = ''
+                for c in line:
+                    if c == '(':
+                        s.append(0)
+                        gram_str_list.append(c)
+                    elif c == ')':
+                        s.pop()
+                        gram_str_list.append(c)
+                        if not s:
+                            self.view(''.join(gram_str_list))
+                            gram_str_list = []
+                    elif s:
+                        gram_str_list.append(c)
 
 def main():
+    import sys
     parser = argparse.ArgumentParser(description='Draw the tree according to grammar file')
-    parser.add_argument("filename", help="the name of grammar file")
+    parser.add_argument("filename", nargs='?', default=sys.stdin, type=argparse.FileType('r'), help="The name of grammar file, stdin will be used if left open")
     args = parser.parse_args()
     print args.filename
     viewer = GrammarViewer()
-    with open(args.filename) as grammarfile:
-        viewer.view(grammarfile)
+    viewer.read_gram_line(args.filename)
 
 if __name__ == '__main__':
     main()
