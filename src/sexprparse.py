@@ -33,7 +33,6 @@ def parse_sexp(sexp):
         elif term == 'sq':
             out.append(value[1:-1])
         elif term == 's':
-            print value
             out.append(value)
         else:
             raise NotImplementedError("Error: %r" % (term, value))

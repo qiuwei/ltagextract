@@ -25,6 +25,7 @@ class GrammarViewer:
                 line = re.sub(r"set\(\[(\d*)\]\)", r"\g<1>", line)
                 line = re.sub(r", ", r",", line)
                 line = re.sub(r"group=,", r"", line)
+                #line = re.sub(r"set\(\[(.*?)\]\)", r"\g<1>", line)
                 s += line
             else:
                 print s

@@ -20,8 +20,17 @@ class LtagExtractor:
         '''default init function'''
         pass
 
+    def output_gram(self):
+        '''
+        output the grammar to stdout
+        '''
+        for sem in self.gram:
+            print sem
+            for g in self.gram[sem]:
+                print g
+            print
 
-    def _annotate(self, tree_file, align_line):
+    def _annotate(self, tree_file, align_syn):
         '''
         _annotate annotate the tree node with group information
         '''
@@ -30,10 +39,10 @@ class LtagExtractor:
             line = ftree.read().replace('=H','[+head]').replace('$', 'S')# to avoid the conflicts from featurestructre
             line = re.sub(r'[,.]( [,.])', 'Pu\g<1>', line)# NLTK featstruct cannot deal with punctuation
             #read in aligment information
-            alignment = self._read_alignment(align_line)
+            #alignment = self._read_alignment(align_line)
             #pt = ParentedTree.parse(line)
             pt = ParentedTree.parse(line, parse_node=FeatStruct)
-            self._grouping(pt, alignment)
+            self._grouping(pt, align_syn)
             #pt.draw()
             #print pt
             #print self._get_head_group(pt)
@@ -102,18 +111,21 @@ class LtagExtractor:
         return group
 
     def extract(self, fpath, apath):
+        print fpath
         with open(apath) as afile:
-            align_syn = afile.readline()
+            align_syn = self._read_alignment(afile.readline())
             align_sem = afile.read()
             (relation, instance) = self._read_semalign(align_sem)
-            print relation
-            print instance
+            #print relation
+            #print instance
             annotated_tree = self._annotate(fpath, align_syn)
             extracted_tree = self._extract(annotated_tree)
-            self._sem_align(extracted_tree, relation, instance)
+            instance = [i for i in instance if len(i) > 3]
+            relation = [r for r in relation if len(r) > 3]
+            self._sem_align(extracted_tree, align_syn, relation, instance)
             return [i for j in extracted_tree.values() for i in j]
 
-    def _sem_align(self, extracted_tree, relation, instance):
+    def _sem_align(self, extracted_tree, align_syn, relation, instance):
         '''
         align the semantics to the extracted grammar
         '''
@@ -123,7 +135,7 @@ class LtagExtractor:
                 #remove the group information, it's not useful anymore
                 yield tree
                 for child in tree:
-                    for x in find_hole(child):
+                    for x in transverse(child):
                         yield x
 
         def find_hole(tree):
@@ -133,37 +145,94 @@ class LtagExtractor:
                 if t.node.has_key('cand'):
                     yield t
 
-        instancedict = {i[0]: i[3] for i in instance}
+        def freeze(tree):
+            #freeze featsruct
+            if type(tree) is str:
+                return tree
+            else:
+                for t in transverse(tree):
+                    t.node.freeze()
+                return tree.freeze()
+
+        def treedeepcopy(tree):
+            #there is a bug in nltk ParentedTree.copy(deep=True)
+            #the node is not copied
+            newtree = tree.copy(deep=True)
+            for t in transverse(newtree):
+                t.node = deepcopy(t.node)
+            return newtree
+
+        instancedict = defaultdict(set)
+        for i in instance:
+            instancedict[i[0]].add(i[3])
+        instance_index_set = set([i[3] for i in instance])
+        relation_index_set = set([r[3] for r in relation])
+        extree_index_set = set(extracted_tree.keys())
+        unannotated = extree_index_set.difference(instance_index_set).difference(relation_index_set)
+        # some tree is not even mentioned in the semantics alignment
+        # one workaround is to compare the group with other groups
+        # to amend the annotation
+        alignhash = defaultdict()
+        for l in align_syn:
+            k,v ='_'.join(l[1:]), int(l[0])
+            if v not in unannotated:
+                alignhash[k] = v
+            else:
+                sim = alignhash[k]
+                for key in instancedict:
+                    if sim in instancedict[key]:
+                        instancedict[key].add(v)
+
         # first deal with the instances
         for i in instance:
             index = i[3]
-            itree = extracted_tree[index] #keep in mind itree is a list
-            print i[2]
-            for it in itree:
-                print it
+            # some instances reference to the same group with some relation,
+            # delay it to procedure of relations
+            if index in instance_index_set.difference(relation_index_set):
+                etree = extracted_tree[index] #keep in mind itree is a list
+                assert len(etree) == 1, "itree lengh larger than 1"
+                itree = treedeepcopy(etree[0])
+                #print i[2]
+                for it in itree:
+                    for t in transverse(it):
+                        t.node.pop('group')
+                    #make it hashable
+                    fit = freeze(it)
+                    assert hash(fit)
+                    #put it into grammar
+                    self.gram[i[2]].add(fit)
         # deal with the realtions
         for r in relation:
             index = r[3]
-            itree = extracted_tree[index]
+            etree = extracted_tree[index]
+            etree.draw()
+            assert len(etree) == 1, "There are more than one tree corresponding to one relation"
+            itree = treedeepcopy(etree[0])
             #import ipdb; ipdb.set_trace()
-            assert len(itree) == 1, "There are more than one tree corresponding to one relation"
             arg0 = r[0]
             arg1 = r[2]
-            print arg0, instancedict[r[0]]
-            print arg1, instancedict[r[2]]
-            for t in find_hole(itree[0]):
+            #print arg0, instancedict[r[0]]
+            #print arg1, instancedict[r[2]]
+            for t in find_hole(itree):
                 #check all of the hole
-                if instancedict[arg0] in t.node['cand']:
+                if not instancedict[arg0].isdisjoint(t.node['cand']):
                     t.node['sem'] = 0
-                elif instancedict[arg1] in t.node['cand']:
+                elif not instancedict[arg1].isdisjoint(t.node['cand']):
                     t.node['sem'] = 1
-                t.node.pop('group')
+                #assert t.node.has_key('sem'), "failed to find the semantic anchor for current node"
                 t.node.pop('cand')
-        for trees in extracted_tree.values():
-            for t in trees:
-                t.draw()
+            if itree.node.has_key('group'):
+                for t in transverse(itree):
+                    t.node.pop('group')
+                    t.node.freeze()
+            #put it into grammar
+            fit = freeze(itree)
+            assert hash(fit)
+            self.gram[r[1]].add(fit)
 
-
+        #for trees in extracted_tree.values():
+        #    for t in trees:
+        #        t.draw()
 
 
     def _get_group(self, grammar_tree):
@@ -197,7 +266,7 @@ class LtagExtractor:
             currenttree = agenda.popleft()
             if self._is_wellformed(currenttree):
                 # we've found a nice tree which can be added to the grammar! cool!
-                print "found good tree"
+                #print "found good tree"
                 #currenttree.draw()
                 extracted_tree[self._get_group(currenttree)].append(currenttree)
             else:
@@ -235,7 +304,7 @@ class LtagExtractor:
         # and every time we find a new tree, one normal tree and one adjuction tree will be constructed
         # to be fed into the agenda
         isadjunct = False
-        print annotated_tree
+        #print annotated_tree
         leftmost = annotated_tree[0]
         rightmost = annotated_tree[-1]
         leftgo = not isinstance(leftmost, str) and leftmost.height() > 1
@@ -253,8 +322,8 @@ class LtagExtractor:
                         holetree = leftmost.copy(deep=True)
                         newadjunctwhole = ParentedTree(deepcopy(holetree.node), [])
                         newadjunctwhole.node['adj'] = True
-                        print "changing the hole group information"
-                        print newadjunctwhole.node['group']
+                        #print "changing the hole group information"
+                        #print newadjunctwhole.node['group']
                         newadjunctwhole.node['cand'] = newadjunctwhole.node['group']
                         newadjunctwhole.node['group'] = set()
                         leftmost.parent()[leftmost.parent_index()] = newadjunctwhole
@@ -263,18 +332,18 @@ class LtagExtractor:
                         adjuncttree.node['adj'] = True
                         # when the adjuction is not at the root, subsitute the whole in
                         if not annotated_tree is root:
-                            print "find different"
+                            #print "find different"
                             annotated_tree.parent()[annotated_tree.parent_index()] = holetree
                             # put root tree in the agenda
                             self._grouping_help(root)
                             agenda.append(root)
                         # put new adjucttree in the agenda
                         self._grouping_help(adjuncttree)
-                        print "adding adjucttree"
+                        #print "adding adjucttree"
                         #adjuncttree.draw()
                         agenda.append(adjuncttree)
                         self._grouping_help(holetree)
-                        print "adding holetree"
+                        #print "adding holetree"
                         #holetree.draw()
                         agenda.append(holetree)
                         break
@@ -287,8 +356,8 @@ class LtagExtractor:
                         holetree = rightmost.copy(deep=True)
                         newadjunctwhole = ParentedTree(deepcopy(holetree.node), [])
                         newadjunctwhole.node['adj'] = True
-                        print "changing the hole group information"
-                        print newadjunctwhole.node['group']
+                        #print "changing the hole group information"
+                        #print newadjunctwhole.node['group']
                         newadjunctwhole.node['cand'] = newadjunctwhole.node['group']
                         newadjunctwhole.node['group'] = set()
                         rightmost.parent()[rightmost.parent_index()] = newadjunctwhole
@@ -367,8 +436,8 @@ class LtagExtractor:
                 agenda.append(annotated_tree.copy(deep=True))
                 subs_tree = ParentedTree(deepcopy(annotated_tree.node), [])
                 subs_tree.node['subs'] = True
-                print "changing the hole group information"
-                print subs_tree.node['group']
+                #print "changing the hole group information"
+                #print subs_tree.node['group']
                 subs_tree.node['cand'] = subs_tree.node['group']
                 subs_tree.node['group'] = set()
                 #update current node
@@ -390,8 +459,8 @@ class LtagExtractor:
                 conjtree = annotated_tree.copy(deep=True)
                 subs_conjtree = ParentedTree(deepcopy(annotated_tree.node), [])
                 subs_conjtree.node['subs'] = True
-                print "changing the hole group information"
-                print subs_conjtree.node['group']
+                #print "changing the hole group information"
+                #print subs_conjtree.node['group']
                 subs_conjtree.node['cand'] = subs_conjtree.node['group']
                 subs_conjtree.node['group'] = set()
                 root[annotated_tree.treeposition()] = subs_conjtree
@@ -403,8 +472,8 @@ class LtagExtractor:
                         agenda.append(conjtree[i].copy(deep=True))
                         subs_tree = ParentedTree(deepcopy(conjtree[i].node), [])
                         subs_tree.node['subs'] = True
-                        print "changing the hole group information"
-                        print newadjunctwhole.node['group']
+                        #print "changing the hole group information"
+                        #print newadjunctwhole.node['group']
                         subs_conjtree.node['cand'] = subs_conjtree.node['group']
                         subs_conjtree.node['group'] = set()
                         subs_tree.node['group'] = set()
@@ -498,13 +567,10 @@ def main():
     if args.verbose:
         grammar_dir = args.verbose
     ltge = LtagExtractor()
-    #dpath = os.path.expanduser('~/workspace/es.qiu.ltagextract/')
-    #fpath = dpath + 'fixed/ex21a.20.pst-heads-fixed'
-    #alpath = dpath + 'alignments/ex21a.20.ali'
     grammar_dir = "grammar"
     for root, dirs, files in os.walk(args.corpus):
         for f in files:
-            print f
+            #print f
             #TODO the directory is not pure, otherwise it doesn't require this step
             m = re.match(r'(.*?)\.pst-heads-fixed', f)
             if m:
@@ -513,11 +579,14 @@ def main():
                 #grammar_dir = dpath + r'grammar/'
                 if not os.path.exists(grammar_dir):
                     os.makedirs(grammar_dir)
-                with open( grammar_dir + m.group(1) + r'.grm', 'w') as grammarfile:
+                with open(os.path.join(grammar_dir, m.group(1) + r'.grm'), 'w') as grammarfile:
                     for g in ltge.extract(fpath, alpath):
                         #g.draw()
                         grammarfile.write(g.pprint() + '\n')
                         grammarfile.write('\n')
+
+    #ouput the grammar extracted
+    ltge.output_gram()
 
 
 if __name__ == '__main__':
