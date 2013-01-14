@@ -16,6 +16,7 @@ This project intends to extract Tree Adjoin Grammar with semantics aligned from 
 
 ### Howto
 To reproduce our current result, a pipeline needs to be followed:
+
 1. parse sentences using Stanford parser. We use the unlexicalized parser with head information output.
 2. Deal with the conjunction occurred in the syntactic tree.
 3. Normalize the syntactic tree gotten from step 2.
@@ -74,4 +75,3 @@ optional arguments:
   -h, --help  show this help message and exit
 ```
 As a side product, our package provides a s-expression parser for python. You may want to use it to reconstruct ParentedTree(NLTK) from the plain text representation of TAG.
-```
