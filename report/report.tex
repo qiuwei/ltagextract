@@ -7,8 +7,8 @@
 %\usepackage{biblatex}
 \usepackage{hyperref}
 \usepackage{longtable}
-\usepackage[style=authoryear,natbib=true]{biblatex}
-\bibliography{D:/Research/bib/Parsing}
+%\usepackage[style=authoryear,natbib=true]{biblatex}
+%\bibliography{D:/Research/bib/Parsing}
 \usepackage{graphicx}
 %\usepackage{gb4e}
 \usepackage{lingmacros}
@@ -21,6 +21,7 @@
 \end{abstract}
 \section{Introduction}
 \section{Semantic Annotation}
+\label{sec:sem-annot}
 \subsection{Annotation guidelines}
 \subsection{Problems}
 
@@ -57,8 +58,116 @@ almost as just as bad as that of the lexicalized one).
 
 \subsection{Conjunction resolving}
 
-\subsection{Normalizing}
+When we started working on the manual alignment with our self-enforced
+constraint to produce only contiguous groups (see section
+\ref{sec:sem-annot}), one of the difficulties we faced was
+coordination. Consider the following example:
 
+\begin{verbatim}
+Electrogenic pumps, which consist of a hydrophobic amino acid,
+a polar amino acid and a monomer, create  membrane potential.
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Electrogenic-Pump21300| |has-part| |Monomer21323|)
+            (|Electrogenic-Pump21300| |has-part| |Polar-Amino-Acid21291|)
+            (|Electrogenic-Pump21300| |has-part| |Hydrophobic-Amino-Acid21290|)
+            (|Create21297| |agent| |Electrogenic-Pump21300|)
+            (|Create21297| |result| |Membrane-Potential21299|))
+    :INSTANCE-TYPES (
+            (|Monomer21323| |instance-of| |Monomer|)
+            (|Polar-Amino-Acid21291| |instance-of| |Polar-Amino-Acid|)
+            (|Hydrophobic-Amino-Acid21290| |instance-of| |Hydrophobic-Amino-Acid|)
+            (|Electrogenic-Pump21300| |instance-of| |Electrogenic-Pump|)
+            (|Create21297| |instance-of| |Create|)
+            (|Membrane-Potential21299| |instance-of| |Membrane-Potential|)))
+\end{verbatim}
+
+How should the group that contains the word \emph{consists} look like?
+It takes an indirect object starting with \emph{of}, so we make
+\emph{of} part of the same group. Since this verb is the head of a
+relative clause that modifies an NP, we would like to have the first
+comma and the word \emph{which} in the same group as well. So far so
+good, we have a contiguous group, ``\emph{, which consists of}''. The
+set of triples that corresponds to this group is the set of the three
+triples with the \textbf{has-part} relation.
+
+So far so good (omitting the final comma, that is). But now we have
+trouble when we look at the object of \emph{consists}. To what group
+should the comma and the conjunction \emph{and} belong, i.e. what
+semantics correspond to them and only to them?
+
+To resolve this issue, we have developed a tool to reify the
+coordination structures within the triples themselves.
+
+In our first approach, our program would look for every instance where
+one entity was in the same relation with multiple entities, such as
+above, and converted the triples to the following:
+
+\begin{verbatim}
+:TRIPLES (
+        (|Coordination2085| |coordinates| |Monomer21323|)
+        (|Coordination2085| |coordinates| |Polar-Amino-Acid21291|)
+        (|Coordination2086| |coordinates| |Coordination2085|)
+        (|Coordination2086| |coordinates| |Hydrophobic-Amino-Acid21290|)
+        (|Electrogenic-Pump21300| |has-part| |Coordination2086|)
+        (|Create21297| |agent| |Electrogenic-Pump21300|)
+        (|Create21297| |result| |Membrane-Potential21299|))
+\end{verbatim}
+
+In this approach, we build a very specific kind of binary tree which
+covers the coordinated entities (the generated tree is specific in
+that it always leans to the right, so it looks more like a linked
+list). Here, one \textbf{Coordination} entity,
+\textbf{Coordination2085}, subsumes the \textbf{Monomer21323} and the
+\textbf{Polar-Amino-Acid21291}. This coordination corresponds to the
+conjunction \emph{and}. The second coordination connects another
+entity, the \textbf{Hydrophobic-Amino-Acid21290}, to the previously
+formed \textbf{Coordination2085}. The resulting
+\textbf{Coordination2086} can then serve as the singular object to the
+verb \emph{consists}. Now, all of the NP coordinating constructs
+(commas and \emph{and}) are easily accounted for. They form singleton
+groups that are aligned to a pair of \textbf{coordinates} relations.
+
+Once we made the switch from contiguous groups, we revised our
+approach to coordination. Instead of making this hierarchy of
+coordination constructs, we just create a single \textbf{Coordination}
+entity which encapsulates all of the coordinated entities directly.
+Obviously, this would not have been possible for coordinations of more
+than 2 constituents using only contiguous groups, since we would not
+to place two non-adjacent conjunction markers into one group.
+
+The upsides of this new approach are that it reduces the complexity of
+the newly added triples and that it does not overgenerate like the
+last approach, which would end up extracting two elementary trees for
+conjunction (one for comma and one for \emph{and}), but would not be
+able to distinguish between them and use them properly. The only
+downside of the new approach is that it needs to learn different
+elementary trees for each different arity of conjunction present in
+the corpus. However, since the number of coordinated constituents is
+always between 2 and 4 in our corpus, this is a non-issue.
+
+Here is the above example, now rendered using the new coordination
+aggregation rules:
+
+\begin{verbatim}
+    :TRIPLES (
+            (|Electrogenic-Pump21300| |has-part| |Coordination2015|)
+            (|Coordination2015| |coordinates| |Monomer21323|)
+            (|Coordination2015| |coordinates| |Polar-Amino-Acid21291|)
+            (|Coordination2015| |coordinates| |Hydrophobic-Amino-Acid21290|)
+            (|Create21297| |agent| |Electrogenic-Pump21300|)
+            (|Create21297| |result| |Membrane-Potential21299|))
+\end{verbatim}
+
+The code for performing the former aggregation method is still present
+in the aggregation program, but is no longer used (see function
+\texttt{coordinate-objects-list}). Switching to the new method was
+just a matter of writing a new function,
+\texttt{coordinate-objects-flat}, and calling that one instead of the
+former.
+
+\subsection{Normalizing}
 
 \section{TAG extraction}
 \section{Semantic roles alignment}
