@@ -83,22 +83,13 @@ a polar amino acid and a monomer, create  membrane potential.
             (|Membrane-Potential21299| |instance-of| |Membrane-Potential|)))
 \end{verbatim}
 
-How should the group that contains the word \emph{consists} look like?
-It takes an indirect object starting with \emph{of}, so we make
-\emph{of} part of the same group. Since this verb is the head of a
-relative clause that modifies an NP, we would like to have the first
-comma and the word \emph{which} in the same group as well. So far so
-good, we have a contiguous group, ``\emph{, which consists of}''. The
-set of triples that corresponds to this group is the set of the three
-triples with the \textbf{has-part} relation.
-
-So far so good (omitting the final comma, that is). But now we have
-trouble when we look at the object of \emph{consists}. To what group
-should the comma and the conjunction \emph{and} belong, i.e. what
-semantics correspond to them and only to them?
-
-To resolve this issue, we have developed a tool to reify the
-coordination structures within the triples themselves.
+To what group should the comma and the conjunction \emph{and} belong,
+i.e. what semantics correspond to them and only to them? The
+\textbf{has-part} relations belong to the verb \emph{consists}, the
+instance declarations belong to the NPs. Yet we need to assign the
+coordination constructions to some semantics, otherwise we will not be
+able to generate them. To resolve this issue, we have developed a tool
+to reify the coordination structures within the triples themselves.
 
 In our first approach, our program would look for every instance where
 one entity was in the same relation with multiple entities, such as
@@ -115,7 +106,7 @@ above, and converted the triples to the following:
         (|Create21297| |result| |Membrane-Potential21299|))
 \end{verbatim}
 
-In this approach, we build a very specific kind of binary tree which
+What we did is that we built a very specific kind of binary tree which
 covers the coordinated entities (the generated tree is specific in
 that it always leans to the right, so it looks more like a linked
 list). Here, one \textbf{Coordination} entity,
@@ -168,6 +159,8 @@ just a matter of writing a new function,
 former.
 
 \subsection{Normalizing}
+
+
 
 \section{TAG extraction}
 \section{Semantic roles alignment}
