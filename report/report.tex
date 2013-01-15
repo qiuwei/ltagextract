@@ -273,38 +273,111 @@ as example, the semantic group annotation is:
 
 \enumsentence{[1 The rate of] [2 detoxification] [3 in] [4 the liver cell] [5 is directly proportional to] [6 the quantity of] [7 smooth endoplasmic reticulum] [8 in] [9 the liver cell] .}
 After parsing and preprocessing, we get the tree:
-\Tree [.ROOT  [.S=H  [.NP   [.NP=H [.DT The] [.NN=H rate]]   [.PP    [.IN=H of]    [.NP     [.NP=H [.NN=H detoxification]]     [.PP [.IN=H in] [.NP [.DT the] [.NN=H [.NN liver] [.NN=H cell]]]]]]]  [.VP=H   [.VBZ=H is]   [.ADJP    [.ADJP [.RB directly] [.JJ=H proportional]]    [.PP     [.TO=H to]     [.NP      [.NP=H [.DT the] [.NN=H quantity]]      [.PP       [.IN=H of]       [.NP        [.NP=H [.JJ smooth] [.NN=H [.JJ endoplasmic] [.NN=H reticulum]]]        [.PP         [.IN=H in]         [.NP [.DT the] [.NN=H [.NN liver] [.NN=H cell]]]]]]]]]]  ]]
-\begin{verbatim}
-(ROOT
- (S=H
-  (NP
-   (NP=H (DT The) (NN=H rate))
-   (PP
-    (IN=H of)
-    (NP
-     (NP=H (NN=H detoxification))
-     (PP (IN=H in) (NP (DT the) (NN=H (NN liver) (NN=H cell)))))))
-  (VP=H
-   (VBZ=H is)
-   (ADJP
-    (ADJP (RB directly) (JJ=H proportional))
-    (PP
-     (TO=H to)
-     (NP
-      (NP=H (DT the) (NN=H quantity))
-      (PP
-       (IN=H of)
-       (NP
-        (NP=H (JJ smooth) (NN=H (JJ endoplasmic) (NN=H reticulum)))
-        (PP
-         (IN=H in)
-         (NP (DT the) (NN=H (NN liver) (NN=H cell))))))))))
-  (. .)))
 
-\end{verbatim}
+\begin{center}
+\begin{tikzpicture}[scale=0.5]
+\Tree [.ROOT [.S=H [.NP [.NP=H [.DT The ] [.NN=H rate ] ] [.PP [.IN=H of ] [.NP [.NP=H [.NN=H detoxification ] ] [.PP [.IN=H in ] [.NP [.DT the ] [.NN=H [.NN liver ] [.NN=H cell ] ] ] ] ] ] ] [.VP=H [.VBZ=H is ] [.ADJP [.ADJP [.RB directly ] [.JJ=H proportional ] ] [.PP [.TO=H to ] [.NP [.NP=H [.DT the ] [.NN=H quantity ] ] [.PP [.IN=H of ] [.NP [.NP=H [.JJ smooth ] [.NN=H [.JJ endoplasmic ] [.NN=H reticulum ] ] ] [.PP [.IN=H in ] [.NP [.DT the ] [.NN=H [.NN liver ] [.NN=H cell ] ] ] ] ] ] ] ] ] ] ] ]
+\end{tikzpicture}
+\end{center}
 
+$S=H$ label means the syntax category is S and S is the head of its parent tree. We can see that stanford parser doesn't always provide head information. For example:
+\begin{center}
+\begin{tikzpicture}[scale=0.5]
+\Tree [.ADJP [.ADJP [.RB directly ] [.JJ=H proportional ] ] [.PP [.TO=H to ] [.NP [.NP=H [.DT the ] [.NN=H quantity ] ] [.PP [.IN=H of ] [.NP [.NP=H [.JJ smooth ] [.NN=H [.JJ endoplasmic ] [.NN=H reticulum ] ] ] [.PP [.IN=H in ] [.NP [.DT the ] [.NN=H [.NN liver ] [.NN=H cell ] ] ] ] ] ] ] ] ]
+\end{tikzpicture}
+\end{center}
+All of the children of root ADJP don't have any head information. This is a problem for our extraction algorithm simply because our algorithm relies on the head information to find the real group for the root. And quite often the head itself would be extracted out leaving a hole in the original tree. We need also to assign a head to the remaining siblings of it. Our work around is to assign the first child which has non-empty group informaiton as the head. This may seem to be problematic, but actually it works pretty well simply because the tree is almost binarized And stanford parser generate head information for the most cases. Of course, a heuristic rule may work better. We here leave it to future work. Check $extractor.\_get\_head\_group$ for the details.
+
+First the whole tree will be added to agenda. After it has been poped out for further examination, firstly it will be checked whether it contains any conjunctions. The answer is no in this case. Then we can check whether it contains any adjuctions.
+
+A simple strategy is to only check the root and its leftmost and rightmost children. But a close look into the corpus show us this strategy is too simple and sometimes will not work. It will extrat some grammars without good linguistic interpretation if we postpone the adjuction checking of other subtrees. So in our algorithm, we exaustively check the adjunction for all of the subtrees. An example that the simple strategy doesn't work is shown below:
+
+\begin{center}
+\begin{tikzpicture}[scale=0.5]
+\Tree [.ROOT [.S=H [.NP [.NP=H [.DT The ] [.NN=H function ] ] [.PP [.IN=H of ] [.NP [.JJ membrane ] [.NN=H potential ] ] ] ] [.VP=H [.VBZ=H is ] [.S [.VP=H [.TO=H to ] [.VP [.VB=H provide ] [.NP [.NP=H [.NN=H energy ] ] [.PP [.IN=H for ] [.NP [.DT a ] [.NN=H [.NN concentration ] [.NN=H gradient ] ] ] ] ] [.S [.VP=H [.TO=H to ] [.VP [.VP [.VB=H diffuse ] [.NP [.NNS=H particles ] ] ] [.PP [.TO=H to ] [.NP [.DT the ] [.NN=H [.JJ extra ] [.NN=H [.JJ cellular ] [.NN=H matrix ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+\end{tikzpicture}
+\end{center}
+When 
+\begin{center}
+\begin{tikzpicture}[scale=0.5]
+\Tree [.S [.VP=H [.TO=H to ] [.VP [.VP [.VB=H diffuse ] [.NP [.NNS=H particles ] ] ] [.PP [.TO=H to ] [.NP [.DT the ] [.NN=H [.JJ extra ] [.NN=H [.JJ cellular ] [.NN=H matrix ] ] ] ] ] ] ] ]
+\end{tikzpicture}
+\end{center}
+is popped out, if we don't identify the adjuction structure wrapped inside, the substitution procedure would break it and it would be impossible to find a proper adjuction tree.
+
+Now come back to our example, the chuck ``The rate of detoxification in the liver cell'' looks like a adjuction structure for its first left child, but actually it's not simply because the adjunction node's group is not disjoint from other parts(``of'' is also in group 1). It's illustrated in Figure \ref{fig:no-adjunct}.
+
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[scale=0.4]{noadj.ps}
+    \end{center}
+    \caption{``The rate'' is not adjuction}
+    \label{fig:no-adjunct}
+\end{figure}
+
+Using the same algorithm, we can identify ``the rate of '' is a proper adjuction tree.
+
+The third step is to extract the emlemtary tree. Actually after all of conjuctions and adjuctions are kicked out the leftover's root must be a root of elementary tree. Based on this observation, the algorithm for substitution tree extraction is relatively simple. First we identify the group of the root, then kick out all the parts which don't belong to this group and add them to the agenda. The left spine would be a ``pure'' elementary tree which can be directly add to the resulted grammar.
+
+For this example, 9 grammar snippets will be extracted:
+
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[scale=0.5]{1.eps}
+    \end{center}
+    \caption{1}
+\end{figure}
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[scale=0.5]{2.eps}
+    \end{center}
+    \caption{2}
+\end{figure}
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[scale=0.5]{3.eps}
+    \end{center}
+    \caption{3}
+\end{figure}
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[scale=0.5]{4.eps}
+    \end{center}
+    \caption{4}
+\end{figure}
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[scale=0.5]{5.eps}
+    \end{center}
+    \caption{5}
+\end{figure}
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[scale=0.5]{6.eps}
+    \end{center}
+    \caption{6}
+\end{figure}
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[scale=0.5]{7.eps}
+    \end{center}
+    \caption{7}
+\end{figure}
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[scale=0.5]{8.eps}
+    \end{center}
+    \caption{8}
+\end{figure}
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[scale=0.5]{9.eps}
+    \end{center}
+    \caption{9}
+\end{figure}
 \section{Semantic roles alignment}
-The extraction step will extract grammar snippets for each sentence. This step intends to align the semantics to the grammar snippets and the syntax holes in the grammar snippets.
+The extraction step extract grammar snippets for each sentence. This step intends to align the semantics to the grammar snippets and the syntax holes in the grammar snippets.
+
 
 \section{Implementation and result}
 data format
