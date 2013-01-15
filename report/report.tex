@@ -23,10 +23,43 @@
 \section{Semantic Annotation}
 \subsection{Annotation guidelines}
 \subsection{Problems}
+
+
 \section{Preprocessing}
+
 \subsection{Parsing with head information}
+
+Our plan is to extract the elementary trees for a TAG from a treebank.
+Since our corpus lacks phrase structure information, we ran an
+off-the-shelf parser on it. The parser that we used for this task is
+the Stanford parser.
+
+At the outset, we had plans to use both the phrase structure and
+dependency parses that the Stanford parser could produce. Previous
+research has shown that having a dependency parse facilitates the task
+of determining headedness, which is usually a subtask of elementary
+tree extraction.
+
+Finally, we have found a simpler way of getting the head information
+directly in the phrase structure parse trees through a command line
+switch in the Stanford parser.
+
+
+Furthermore, the Stanford parser offers two pre-trained models for
+parsing English, an unlexicalized one and a lexicalized one. We have
+done the parsing using both of them and try to review their
+performance. Their outputs were significantly different and both
+performed their own idiosyncratic errors. We judged which of these
+errors would likely be more harmful to the following grammar
+extraction process and decided to stick with the output of the
+unlexicalized parser (though the result of the unlexicalized parsing
+almost as just as bad as that of the lexicalized one).
+
 \subsection{Conjunction resolving}
+
 \subsection{Normalizing}
+
+
 \section{TAG extraction}
 \section{Semantic roles alignment}
 \section{Implementation and result}
