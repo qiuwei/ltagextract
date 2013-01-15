@@ -1,7 +1,3 @@
-%        File: task-oriented_parser_evaluation.tex
-%     Created: 周五 三月 02 04:00 下午 2012 W EST
-% Last Change: 周五 三月 02 04:00 下午 2012 W EST
-%
 \documentclass[a4paper]{article}
 \usepackage{hyperref}
 \usepackage{graphicx}
@@ -174,6 +170,7 @@ former.
 \subsection{Normalizing}
 
 \section{TAG extraction}
+\label{sec:tag-ext}
 After we get the normalized tree with head information, we can extract the TAG from it with the help of the alignment of surface sentence to underlying KBGEN triples.
 The key idea is extract adjunction trees greedily, then extract the substitution trees. Of course conjunction trees as a specific form of substitution trees require
 some special treatment before adjunction trees can be extracted.
@@ -309,15 +306,15 @@ Now come back to our example, the chuck ``The rate of detoxification in the live
 
 \begin{figure}[h]
     \begin{center}
-        \includegraphics[scale=0.4]{noadj.ps}
+        \includegraphics[scale=0.4]{noadj.png}
     \end{center}
     \caption{``The rate'' is not adjuction}
     \label{fig:no-adjunct}
 \end{figure}
 
-Using the same algorithm, we can identify ``the rate of '' is a proper adjuction tree.
+Using the same algorithm, we can identify ``the rate of '' is a proper adjunction tree.
 
-The third step is to extract the emlemtary tree. Actually after all of conjuctions and adjuctions are kicked out the leftover's root must be a root of elementary tree. Based on this observation, the algorithm for substitution tree extraction is relatively simple. First we identify the group of the root, then kick out all the parts which don't belong to this group and add them to the agenda. The left spine would be a ``pure'' elementary tree which can be directly add to the resulted grammar.
+The third step is to extract the elementary tree. Actually after all of conjunctions and adjunctions are kicked out the leftover's root must be a root of elementary tree. Based on this observation, the algorithm for substitution tree extraction is relatively simple. First we identify the group of the root, then kick out all the parts which don't belong to this group and add them to the agenda. The left spine would be a ``pure'' elementary tree which can be directly add to the resulted grammar.
 
 For this example, 9 grammar snippets will be extracted:
 
@@ -325,62 +322,133 @@ For this example, 9 grammar snippets will be extracted:
     \begin{center}
         \includegraphics[scale=0.5]{1.eps}
     \end{center}
-    \caption{1}
+    \caption{Grammar fragment 1}
 \end{figure}
 \begin{figure}[h]
     \begin{center}
         \includegraphics[scale=0.5]{2.eps}
     \end{center}
-    \caption{2}
+    \caption{Grammar fragment 2}
 \end{figure}
 \begin{figure}[h]
     \begin{center}
         \includegraphics[scale=0.5]{3.eps}
     \end{center}
-    \caption{3}
+    \caption{Grammar fragment 3}
 \end{figure}
 \begin{figure}[h]
     \begin{center}
         \includegraphics[scale=0.5]{4.eps}
     \end{center}
-    \caption{4}
+    \caption{Grammar fragment 4}
 \end{figure}
 \begin{figure}[h]
     \begin{center}
-        \includegraphics[scale=0.5]{5.eps}
+        \includegraphics[scale=0.5]{5.png}
     \end{center}
-    \caption{5}
+    \caption{Grammar fragment 5}
 \end{figure}
 \begin{figure}[h]
     \begin{center}
         \includegraphics[scale=0.5]{6.eps}
     \end{center}
-    \caption{6}
+    \caption{Grammar fragment 6}
 \end{figure}
 \begin{figure}[h]
     \begin{center}
         \includegraphics[scale=0.5]{7.eps}
     \end{center}
-    \caption{7}
+    \caption{Grammar fragment 7}
 \end{figure}
 \begin{figure}[h]
     \begin{center}
         \includegraphics[scale=0.5]{8.eps}
     \end{center}
-    \caption{8}
+    \caption{Grammar fragment 8}
 \end{figure}
 \begin{figure}[h]
     \begin{center}
         \includegraphics[scale=0.5]{9.eps}
     \end{center}
-    \caption{9}
+    \caption{Grammar fragment 9}
 \end{figure}
 \section{Semantic roles alignment}
-The extraction step extract grammar snippets for each sentence. This step intends to align the semantics to the grammar snippets and the syntax holes in the grammar snippets.
+The extraction step extract grammar snippets for each sentence. This step intends to align the semantics to the grammar snippets and the syntax holes in the grammar snippets. The algorithm is showed in Algorithm \ref{alg:align}.
 
+\begin{algorithm}
+    \caption{Align semantic variables to syntax}
+    \label{alg:align}
+    \begin{algorithmic}[1]
+        \FORALL{ $instance$ in alignment }
+        \IF{it also occurs in triples}
+            \STATE continue
+        \ELSE
+            \STATE align the tree which has the same group to it
+        \ENDIF
+        \ENDFOR
+        \FORALL{$triple$ in alignment}
+        \STATE align the tree which has the same group to it
+            \FORALL{ hole in tree }
+                \STATE assign the instance which is in the hole candidate set to it
+            \ENDFOR
+        \ENDFOR
+    \end{algorithmic}
+\end{algorithm}
+
+The algorithm seems to be simple, but due to the Stanford parser's output is not reliable and the inconsistency in the semantic alignment annotation, this algorithm could not alway succeed in aligning correspond semantics to syntax. In previous step, grammar fragments can always be extracted out successfully.
+
+The other problem we encountered in the alignment is that quite  often several triples are aligned to the same syntax. A example is that for sentences with structure ``the function of \ldots is for \ldots to \ldots''. This type of sentence would have 3 syntax holes in the elementary tree. And there are 3 triples related to it. We decided to extract 3 elementary trees for each there are two holes aligned to semantic variables. Since we haven't try out the generator, we don't know whether this treatment which we can consider it as a type of underspecification is appropriate or not here.
+
+To filter out the same grammar fragments extracted from different sentences, we maintain a global hashtable.
+
+For the example provided in section \ref{sec:tag-ext}, we got the final grammar below:
+
+\begin{verbatim}
+|directly-proportional|
+(ROOT[]
+  (S[+head]
+    (NP[sem=0, +subs] )
+    (VP[+head]
+      (VBZ[+head] is)
+      (ADJP[]
+        (ADJP[] (RB[] directly) (JJ[+head] proportional))
+        (PP[] (TO[+head] to) (NP[sem=1, +subs] ))))))
+
+|Liver-Cell|
+(DT[] the)
+(NN[+head] (NN[] liver) (NN[+head] cell))
+
+|quantity|
+(NP[]
+  (NP[+head] (DT[] the) (NN[+head] quantity))
+  (PP[] (IN[+head] of) (NP[sem=0, +subs] )))
+
+|has-part|
+(NP[+adj]
+  (NP[+adj, -head, sem=1] )
+  (PP[+head] (IN[+head] in) (NP[sem=0, +subs] )))
+
+|Smooth-Endoplasmic-Reticulum|
+(NN[+head] (JJ[] endoplasmic) (NN[+head] reticulum))
+(JJ[] smooth)
+
+|Detoxification|
+(NN[+head] detoxification)
+
+|base|
+(NP[+adj]
+  (NP[+adj, -head, sem=0] )
+  (PP[+head] (IN[+head] in) (NP[sem=1, +subs] )))
+
+|rate|
+(NP[]
+  (NP[+head] (DT[] The) (NN[+head] rate))
+  (PP[] (IN[+head] of) (NP[sem=0, +subs] )))
+\end{verbatim}
+Where sem represents the index of semantic variable.
 
 \section{Implementation and result}
-data format
+
 \section{Conclusion \& Future work}
 \subsection{Future work}
 \begin{itemize}
