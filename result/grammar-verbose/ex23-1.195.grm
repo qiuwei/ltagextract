@@ -1,0 +1,70 @@
+(NP[group=set([1])]
+  (DT[group=set([1])] The)
+  (NN[group=set([1]), +head]
+    (NN[group=set([1])] plasma)
+    (NN[group=set([1]), +head] membrane)))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VP[group=set([2]), +head]
+        (VP[group=set([2]), +head]
+          (VP[group=set([2]), +head]
+            (VBZ[group=set([2]), +head] moves)
+            (ADVP[cand=set([3, 4]), group=set([]), +subs] ))
+          (PP[cand=set([8, 5, 6, 7]), group=set([]), +subs] ))
+        (Pu[cand=set([9]), group=set([]), +subs] ))
+      (S[cand=set([9, 10]), group=set([]), +subs] ))))
+
+(ADVP[group=set([3])]
+  (RB[group=set([3]), +head] away)
+  (PP[group=set([3])]
+    (IN[group=set([3]), +head] from)
+    (NP[cand=set([4]), group=set([]), +subs] )))
+
+(NP[group=set([4])]
+  (DT[group=set([4])] the)
+  (NN[group=set([4]), +head]
+    (NN[group=set([4])] cell)
+    (NN[group=set([4]), +head] wall)))
+
+(PP[group=set([5])]
+  (IN[group=set([5]), +head] during)
+  (NP[cand=set([8, 6, 7]), group=set([]), +subs] ))
+
+(NP[group=set([6]), +head] (NNS[group=set([6]), +head] plasmolysis))
+
+(NP[+adj, group=set([7])]
+  (NP[+adj, cand=set([6]), group=set([]), -head] )
+  (PP[group=set([7]), +head]
+    (IN[group=set([7]), +head] in)
+    (NP[cand=set([8]), group=set([]), +subs] )))
+
+(NP[group=set([8])]
+  (NP[group=set([8]), +head]
+    (DT[group=set([8])] a)
+    (NN[group=set([8]), +head]
+      (JJ[group=set([8])] walled)
+      (NN[group=set([8]), +head] cell)))
+  (PP[group=set([8])]
+    (IN[group=set([8]), +head] inside)
+    (NP[group=set([8])]
+      (JJ[group=set([8])] hypertonic)
+      (NN[group=set([8]), +head] solution))))
+
+(Pu[group=set([9])] ,)
+
+(S[group=set([9])]
+  (VP[group=set([9]), +head]
+    (VBG[group=set([9]), +head] resulting)
+    (PP[group=set([9])]
+      (IN[group=set([9]), +head] in)
+      (NP[cand=set([10]), group=set([]), +subs] ))))
+
+(NP[group=set([10])]
+  (DT[group=set([10])] a)
+  (NN[group=set([10]), +head]
+    (VBN[group=set([10])] damaged)
+    (NN[group=set([10]), +head] cell)))
+

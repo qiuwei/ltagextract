@@ -1,0 +1,33 @@
+(NP[group=set([1])]
+  (JJ[group=set([1])] Hydrophilic)
+  (NNS[group=set([1]), +head] compounds))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VBP[group=set([2]), +head] are)
+      (VP[group=set([2])]
+        (VBN[group=set([2]), +head] detached)
+        (PP[cand=set([3, 4, 5, 6]), group=set([]), +subs] )))))
+
+(PP[group=set([3])]
+  (IN[group=set([3]), +head] from)
+  (NP[cand=set([4, 5, 6]), group=set([]), +subs] ))
+
+(NP[group=set([4]), +head]
+  (DT[group=set([4])] the)
+  (NN[group=set([4]), +head]
+    (NN[group=set([4])] function)
+    (NN[group=set([4]), +head] region)))
+
+(NP[+adj, group=set([5])]
+  (NP[+adj, cand=set([4]), group=set([]), -head] )
+  (PP[group=set([5]), +head]
+    (IN[group=set([5]), +head] of)
+    (NP[cand=set([6]), group=set([]), +subs] )))
+
+(NP[group=set([6])]
+  (NN[group=set([6])] carrier)
+  (NNS[group=set([6]), +head] proteins))
+

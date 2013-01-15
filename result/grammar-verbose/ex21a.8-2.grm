@@ -1,0 +1,53 @@
+(NP[group=set([1])]
+  (JJ[group=set([1])] Membrane)
+  (NNS[group=set([1]), +head] proteins))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VBP[group=set([2]), +head] are)
+      (VP[group=set([2])]
+        (VBN[group=set([2]), +head] carried)
+        (PP[cand=set([8, 3, 4]), group=set([]), +subs] )))))
+
+(NP[group=set([3]), +head]
+  (DT[group=set([3])] the)
+  (NN[group=set([3]), +head]
+    (JJ[group=set([3])] lysosomal)
+    (NN[group=set([3]), +head] membrane)))
+
+(NP[+adj, group=set([4])]
+  (NP[group=set([4])]
+    (NP[+adj, cand=set([3]), group=set([]), +head] )
+    (Pu[group=set([4])] ,))
+  (SBAR[group=set([4])]
+    (WHNP[group=set([4]), +head] (WDT[group=set([4]), +head] which))
+    (S[group=set([4])]
+      (VP[group=set([4]), +head]
+        (VBZ[group=set([4]), +head] consists)
+        (PP[group=set([4])]
+          (IN[group=set([4]), +head] of)
+          (NP[cand=set([]), group=set([]), +subs] ))))))
+
+(NP[group=set([5]), +head]
+  (DT[group=set([5])] an)
+  (NN[group=set([5]), +head]
+    (JJ[group=set([5])] inner)
+    (NN[group=set([5]), +head] membrane)))
+
+(NP[group=set([6])]
+  (NP[group=set([]), +head, +subs] )
+  (CC[group=set([6])] and)
+  (NP[group=set([]), +subs] ))
+
+(NP[group=set([7])]
+  (DT[group=set([7])] an)
+  (NN[group=set([7]), +head]
+    (JJ[group=set([7])] outer)
+    (NN[group=set([7]), +head] membrane)))
+
+(PP[group=set([8])]
+  (TO[group=set([8]), +head] to)
+  (NP[cand=set([3, 4]), group=set([]), +subs] ))
+

@@ -1,0 +1,49 @@
+(ROOT[group=set([1])]
+  (S[group=set([1]), +head]
+    (NP[group=set([1])]
+      (NP[group=set([1]), +head]
+        (DT[group=set([1])] The)
+        (NN[group=set([1]), +head] function))
+      (PP[group=set([1])]
+        (IN[group=set([1]), +head] of)
+        (NP[cand=set([2]), group=set([]), +subs] )))
+    (VP[group=set([1]), +head]
+      (VBZ[group=set([1]), +head] is)
+      (S[cand=set([3, 4, 5, 6, 7, 8]), group=set([]), +subs] ))))
+
+(NP[group=set([2])]
+  (DT[group=set([2])] an)
+  (NN[group=set([2]), +head]
+    (NN[group=set([2])] electron)
+    (NN[group=set([2]), +head]
+      (NN[group=set([2])] shuttle)
+      (NN[group=set([2]), +head] system))))
+
+(S[group=set([3])]
+  (VP[group=set([3]), +head]
+    (TO[group=set([3]), +head] to)
+    (VP[group=set([3])]
+      (VB[group=set([3]), +head] transfer)
+      (NP[cand=set([4]), group=set([]), +subs] )
+      (PP[cand=set([5, 6]), group=set([]), +subs] )
+      (S[cand=set([8, 7]), group=set([]), +subs] ))))
+
+(NP[group=set([4])]
+  (DT[group=set([4])] an)
+  (NN[group=set([4]), +head] electron))
+
+(PP[group=set([5])]
+  (TO[group=set([5]), +head] to)
+  (NP[cand=set([6]), group=set([]), +subs] ))
+
+(NP[group=set([6])] (NNP[group=set([6]), +head] NAD-Plus))
+
+(S[group=set([7])]
+  (VP[group=set([7]), +head]
+    (TO[group=set([7]), +head] to)
+    (VP[group=set([7])]
+      (VB[group=set([7]), +head] produce)
+      (NP[cand=set([8]), group=set([]), +subs] ))))
+
+(NP[group=set([8])] (NNS[group=set([8]), +head] NADH))
+

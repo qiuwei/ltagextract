@@ -1,0 +1,50 @@
+(ROOT[group=set([1])]
+  (S[group=set([1]), +head]
+    (NP[group=set([1])] (EX[group=set([1]), +head] There))
+    (VP[group=set([1]), +head]
+      (VBP[group=set([1]), +head] are)
+      (NP[group=set([1])]
+        (NP[cand=set([2]), group=set([]), +head, +subs] )
+        (VP[group=set([1])]
+          (VP[cand=set([2, 3]), group=set([]), +subs] )
+          (PP[group=set([1])]
+            (IN[group=set([1]), +head] at)
+            (NP[cand=set([4, 5, 6, 7, 8, 9]), group=set([]), +subs] )))))))
+
+(NP[group=set([2]), +head] (NN[group=set([2]), +head] tube))
+
+(VP[group=set([2])]
+  (VBN[group=set([2]), +head] shaped)
+  (NP[cand=set([3]), group=set([]), +subs] ))
+
+(NP[group=set([3])]
+  (JJ[group=set([3])] organic)
+  (NNS[group=set([3]), +head] structures))
+
+(NP[group=set([4]), +head]
+  (DT[group=set([4])] the)
+  (NN[group=set([4]), +head] tip))
+
+(NP[+adj, group=set([5])]
+  (NP[+adj, cand=set([4]), group=set([]), -head] )
+  (PP[group=set([5]), +head]
+    (IN[group=set([5]), +head] of)
+    (NP[cand=set([8, 9, 6, 7]), group=set([]), +subs] )))
+
+(NP[group=set([6]), +head] (NNS[group=set([6]), +head] hairs))
+
+(NP[+adj, group=set([7])]
+  (NP[+adj, cand=set([6]), group=set([]), -head] )
+  (PP[group=set([7]), +head]
+    (IN[group=set([7]), +head] on)
+    (NP[cand=set([8, 9]), group=set([]), +subs] )))
+
+(NP[group=set([8])]
+  (DT[group=set([8])] a)
+  (NN[group=set([8])] gecko)
+  (POS[group=set([8]), +head] 's))
+
+(NP[group=set([9])]
+  (NP[cand=set([8]), group=set([]), +subs] )
+  (NN[group=set([9]), +head] toe))
+

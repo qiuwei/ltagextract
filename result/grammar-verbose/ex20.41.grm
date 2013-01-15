@@ -1,0 +1,51 @@
+(NP[group=set([1])]
+  (NNP[group=set([1])] Carbon)
+  (NN[group=set([1]), +head] dioxide))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VP[group=set([2]), +head]
+        (VBZ[group=set([2]), +head] moves)
+        (PRT[group=set([2])] (RP[group=set([2]), +head] out)))
+      (PP[group=set([2])]
+        (IN[group=set([2]), +head] of)
+        (NP[cand=set([3, 4, 5, 6, 7, 8, 9]), group=set([]), +subs] )))))
+
+(NP[group=set([3]), +head]
+  (DT[group=set([3])] an)
+  (NN[group=set([3]), +head]
+    (JJ[group=set([3])] aqueous)
+    (NN[group=set([3]), +head] solution)))
+
+(NP[+adj, group=set([4])]
+  (NP[+adj, cand=set([3]), group=set([]), -head] )
+  (PP[group=set([4]), +head]
+    (IN[group=set([4]), +head] in)
+    (NP[cand=set([8, 9, 5, 6, 7]), group=set([]), +subs] )))
+
+(NP[group=set([5]), +head]
+  (DT[group=set([5])] the)
+  (NN[group=set([5]), +head] cytosol))
+
+(NP[+adj, group=set([6])]
+  (NP[+adj, cand=set([5]), group=set([]), -head] )
+  (PP[group=set([6]), +head]
+    (IN[group=set([6]), +head] in)
+    (NP[cand=set([8, 9, 7]), group=set([]), +subs] )))
+
+(NP[group=set([7]), +head]
+  (DT[group=set([7])] the)
+  (NN[group=set([7]), +head] cytoplasm))
+
+(NP[+adj, group=set([8])]
+  (NP[+adj, cand=set([7]), group=set([]), -head] )
+  (PP[group=set([8]), +head]
+    (IN[group=set([8]), +head] of)
+    (NP[cand=set([9]), group=set([]), +subs] )))
+
+(NP[group=set([9])]
+  (JJ[group=set([9])] eukaryotic)
+  (NNS[group=set([9]), +head] cells))
+

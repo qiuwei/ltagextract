@@ -1,0 +1,63 @@
+(ROOT[group=set([1])]
+  (S[group=set([1]), +head]
+    (NP[group=set([1])]
+      (NP[group=set([1]), +head]
+        (DT[group=set([1])] The)
+        (NN[group=set([1]), +head] function))
+      (PP[group=set([1])]
+        (IN[group=set([1]), +head] of)
+        (NP[cand=set([2]), group=set([]), +subs] )))
+    (VP[group=set([1]), +head]
+      (VBZ[group=set([1]), +head] is)
+      (S[group=set([1])]
+        (VP[group=set([1]), +head]
+          (TO[group=set([1]), +head] to)
+          (VP[group=set([1])]
+            (VP[group=set([1])]
+              (VP[group=set([1])]
+                (VP[group=set([1])]
+                  (VB[group=set([1]), +head] provide)
+                  (NP[group=set([1])]
+                    (NN[group=set([1]), +head] energy)))
+                (PP[group=set([1])]
+                  (IN[group=set([1]), +head] for)
+                  (NP[cand=set([3, 4]), group=set([]), +subs] )))
+              (Pu[cand=set([8]), group=set([]), +subs] ))
+            (S[cand=set([8, 9]), group=set([]), +subs] )))))))
+
+(NP[group=set([2])]
+  (JJ[group=set([2])] membrane)
+  (NN[group=set([2]), +head] potential))
+
+(NP[group=set([3]), +head]
+  (DT[group=set([3])] the)
+  (NN[group=set([3]), +head] release))
+
+(NP[+adj, group=set([4])]
+  (NP[+adj, cand=set([3]), group=set([]), +head] )
+  (PP[group=set([4])]
+    (IN[group=set([4]), +head] of)
+    (NP[cand=set([]), group=set([]), +subs] )))
+
+(NNS[group=set([5]), +head]
+  (NN[group=set([5])] calcium)
+  (NNS[group=set([5]), +head] ions))
+
+(NP[group=set([6])]
+  (NNS[group=set([]), +head, +subs] )
+  (CC[group=set([6])] and)
+  (NNS[group=set([]), +subs] ))
+
+(NNS[group=set([7])] particles)
+
+(Pu[group=set([8])] ,)
+
+(S[group=set([8])]
+  (VP[group=set([8]), +head]
+    (VBG[group=set([8]), +head] producing)
+    (NP[cand=set([9]), group=set([]), +subs] )))
+
+(NP[group=set([9])]
+  (JJ[group=set([9])] free)
+  (NN[group=set([9]), +head] energy))
+

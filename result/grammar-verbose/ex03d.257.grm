@@ -1,0 +1,53 @@
+(NP[group=set([1]), +head] (NNP[group=set([1]), +head] Detachment))
+
+(NP[+adj, group=set([2])]
+  (NP[+adj, cand=set([1]), group=set([]), -head] )
+  (PP[group=set([2]), +head]
+    (IN[group=set([2]), +head] of)
+    (NP[cand=set([3, 4, 5, 6, 7]), group=set([]), +subs] )))
+
+(NP[group=set([3]), +head]
+  (DT[group=set([3])] a)
+  (NN[group=set([3]), +head]
+    (JJ[group=set([3])] hydrophilic)
+    (NN[group=set([3]), +head] compound)))
+
+(NP[+adj, group=set([4])]
+  (NP[+adj, cand=set([3]), group=set([]), -head] )
+  (PP[group=set([4]), +head]
+    (IN[group=set([4]), +head] from)
+    (NP[cand=set([5, 6, 7]), group=set([]), +subs] )))
+
+(NP[group=set([5]), +head]
+  (DT[group=set([5])] the)
+  (NN[group=set([5]), +head]
+    (ADJP[group=set([5])] (JJ[group=set([5]), +head] functional))
+    (NN[group=set([5]), +head] region)))
+
+(NP[+adj, group=set([6])]
+  (NP[+adj, cand=set([5]), group=set([]), -head] )
+  (PP[group=set([6]), +head]
+    (IN[group=set([6]), +head] of)
+    (NP[cand=set([7]), group=set([]), +subs] )))
+
+(NP[group=set([7])]
+  (DT[group=set([7])] a)
+  (NN[group=set([7]), +head]
+    (NN[group=set([7])] carrier)
+    (NN[group=set([7]), +head] protein)))
+
+(ROOT[group=set([8])]
+  (S[group=set([8]), +head]
+    (NP[cand=set([1, 2, 3, 4, 5, 6, 7]), group=set([]), +subs] )
+    (VP[group=set([8]), +head]
+      (VBZ[group=set([8]), +head] causes)
+      (S[cand=set([9]), group=set([]), +subs] ))))
+
+(S[group=set([9])]
+  (NP[group=set([9])] (PRP[group=set([9]), +head] it))
+  (VP[group=set([9]), +head]
+    (TO[group=set([9]), +head] to)
+    (VP[group=set([9])]
+      (VB[group=set([9]), +head] change)
+      (NP[group=set([9])] (NN[group=set([9]), +head] shape)))))
+

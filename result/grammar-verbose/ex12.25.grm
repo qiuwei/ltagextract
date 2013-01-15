@@ -1,0 +1,39 @@
+(NP[group=set([1])] (NNS[group=set([1]), +head] Antibiotics))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VBP[group=set([2]), +head] are)
+      (NP[cand=set([3, 4, 5, 6, 7, 8]), group=set([]), +subs] ))))
+
+(NP[group=set([3]), +head]
+  (NNS[group=set([3]), +head] enzyme-inhibitors))
+
+(NP[+adj, group=set([4])]
+  (NP[group=set([4]), +head]
+    (NP[+adj, cand=set([3]), group=set([]), -head] )
+    (Pu[group=set([4]), +head] ,))
+  (SBAR[group=set([4]), +head]
+    (WHNP[group=set([4]), +head] (WDT[group=set([4]), +head] which))
+    (S[cand=set([8, 5, 6, 7]), group=set([]), +subs] )))
+
+(NP[group=set([5]), +head]
+  (DT[group=set([5])] the)
+  (NNS[group=set([5]), +head]
+    (NN[group=set([5])] protein)
+    (NNS[group=set([5]), +head] enzymes)))
+
+(NP[+adj, group=set([6])]
+  (NP[+adj, cand=set([5]), group=set([]), -head] )
+  (PP[group=set([6]), +head]
+    (IN[group=set([6]), +head] of)
+    (NP[cand=set([7]), group=set([]), +subs] )))
+
+(NP[group=set([7])] (NNS[group=set([7]), +head] bacteria))
+
+(S[group=set([8])]
+  (VP[group=set([8]), +head]
+    (VBP[group=set([8]), +head] inhibit)
+    (NP[cand=set([5, 6, 7]), group=set([]), +subs] )))
+

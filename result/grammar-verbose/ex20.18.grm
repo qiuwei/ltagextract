@@ -1,0 +1,57 @@
+(NP[group=set([1])]
+  (DT[group=set([1])] A)
+  (NN[group=set([1]), +head]
+    (JJ[group=set([1])] carbohydrate)
+    (NN[group=set([1]), +head]
+      (NN[group=set([1])] side)
+      (NN[group=set([1]), +head] chain))))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VP[group=set([2]), +head]
+        (VBZ[group=set([2]), +head] attaches)
+        (PP[cand=set([3, 4, 5, 6]), group=set([]), +subs] ))
+      (PP[cand=set([8, 9, 10, 7]), group=set([]), +subs] ))))
+
+(PP[group=set([3])]
+  (TO[group=set([3]), +head] to)
+  (NP[cand=set([4, 5, 6]), group=set([]), +subs] ))
+
+(NP[group=set([4]), +head]
+  (DT[group=set([4])] the)
+  (NN[group=set([4]), +head]
+    (NN[group=set([4])] carbon)
+    (NN[group=set([4]), +head] skeleton)))
+
+(NP[+adj, group=set([5])]
+  (NP[+adj, cand=set([4]), group=set([]), -head] )
+  (PP[group=set([5]), +head]
+    (IN[group=set([5]), +head] of)
+    (NP[cand=set([6]), group=set([]), +subs] )))
+
+(NP[group=set([6])]
+  (NN[group=set([6])] transport)
+  (NNS[group=set([6]), +head] proteins))
+
+(PP[group=set([7])]
+  (IN[group=set([7]), +head] in)
+  (NP[cand=set([8, 9, 10]), group=set([]), +subs] ))
+
+(NP[group=set([8]), +head]
+  (DT[group=set([8])] the)
+  (NN[group=set([8]), +head]
+    (NN[group=set([8])] plasma)
+    (NN[group=set([8]), +head] membrane)))
+
+(NP[+adj, group=set([9])]
+  (NP[+adj, cand=set([8]), group=set([]), -head] )
+  (PP[group=set([9]), +head]
+    (IN[group=set([9]), +head] of)
+    (NP[cand=set([10]), group=set([]), +subs] )))
+
+(NP[group=set([10])]
+  (NN[group=set([10])] animal)
+  (NNS[group=set([10]), +head] cells))
+

@@ -1,0 +1,55 @@
+(ROOT[group=set([1])]
+  (S[group=set([1]), +head]
+    (NP[group=set([1])]
+      (NP[group=set([1]), +head]
+        (DT[group=set([1])] The)
+        (NN[group=set([1]), +head] function))
+      (PP[group=set([1])]
+        (IN[group=set([1]), +head] of)
+        (NP[cand=set([2]), group=set([]), +subs] )))
+    (VP[group=set([1]), +head]
+      (VBZ[group=set([1]), +head] is)
+      (S[group=set([1])]
+        (VP[group=set([1]), +head]
+          (TO[group=set([1]), +head] to)
+          (VP[group=set([1])]
+            (VB[group=set([1]), +head] allow)
+            (NP[cand=set([]), group=set([]), +subs] )
+            (S[cand=set([8, 9]), group=set([]), +subs] )))))))
+
+(NP[group=set([2])]
+  (DT[group=set([2])] a)
+  (NN[group=set([2]), +head]
+    (NN[group=set([2])] plasma)
+    (NN[group=set([2]), +head] membrane)))
+
+(NP[group=set([4]), +head]
+  (NN[group=set([4])] water)
+  (NNS[group=set([4]), +head] molecules))
+
+(NP[group=set([5])]
+  (NP[group=set([]), +head, +subs] )
+  (Pu[group=set([5])] ,)
+  (NP[group=set([]), +subs] )
+  (CC[group=set([5])] and)
+  (NP[group=set([]), +subs] ))
+
+(NP[group=set([6])]
+  (NN[group=set([6])] oxygen)
+  (NNS[group=set([6]), +head] molecules))
+
+(NP[group=set([7])]
+  (JJ[group=set([7])] hydrophilic)
+  (NNS[group=set([7]), +head] compounds))
+
+(S[group=set([8])]
+  (VP[group=set([8]), +head]
+    (TO[group=set([8]), +head] to)
+    (VP[group=set([8])]
+      (VB[group=set([8]), +head] move)
+      (PP[group=set([8])]
+        (IN[group=set([8]), +head] through)
+        (NP[cand=set([9]), group=set([]), +subs] )))))
+
+(NP[group=set([9])] (PRP[group=set([9]), +head] it))
+

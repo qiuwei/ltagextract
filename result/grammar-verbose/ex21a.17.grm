@@ -1,0 +1,58 @@
+(NP[group=set([1]), +head]
+  (JJ[group=set([1])] Electrogenic)
+  (NNS[group=set([1]), +head] pumps))
+
+(NP[+adj, group=set([2])]
+  (NP[group=set([2])]
+    (NP[group=set([2])]
+      (NP[+adj, cand=set([1]), group=set([]), +head] )
+      (Pu[group=set([2])] ,))
+    (SBAR[group=set([2])]
+      (WHNP[group=set([2]), +head]
+        (WDT[group=set([2]), +head] which))
+      (S[group=set([2])]
+        (VP[group=set([2]), +head]
+          (VBP[group=set([2]), +head] consist)
+          (PP[group=set([2])]
+            (IN[group=set([2]), +head] of)
+            (NP[cand=set([]), group=set([]), +subs] ))))))
+  (Pu[group=set([2])] ,))
+
+(NP[group=set([3]), +head]
+  (DT[group=set([3])] a)
+  (NN[group=set([3]), +head]
+    (JJ[group=set([3])] hydrophobic)
+    (NN[group=set([3]), +head]
+      (JJ[group=set([3])] amino)
+      (NN[group=set([3]), +head] acid))))
+
+(NP[group=set([4])]
+  (NP[group=set([]), +head, +subs] )
+  (Pu[group=set([4])] ,)
+  (NP[group=set([]), +subs] )
+  (CC[group=set([4])] and)
+  (NP[group=set([]), +subs] ))
+
+(NP[group=set([5])]
+  (DT[group=set([5])] a)
+  (NN[group=set([5]), +head]
+    (JJ[group=set([5])] polar)
+    (NN[group=set([5]), +head]
+      (JJ[group=set([5])] amino)
+      (NN[group=set([5]), +head] acid))))
+
+(NP[group=set([6])]
+  (DT[group=set([6])] a)
+  (NN[group=set([6]), +head] monomer))
+
+(ROOT[group=set([7])]
+  (S[group=set([7]), +head]
+    (NP[cand=set([1, 2]), group=set([]), +subs] )
+    (VP[group=set([7]), +head]
+      (VBP[group=set([7]), +head] create)
+      (NP[cand=set([8]), group=set([]), +subs] ))))
+
+(NP[group=set([8])]
+  (JJ[group=set([8])] membrane)
+  (NN[group=set([8]), +head] potential))
+

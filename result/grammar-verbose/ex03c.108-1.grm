@@ -1,0 +1,33 @@
+(NP[group=set([1])]
+  (JJ[group=set([1])] Hydrophobic)
+  (NNS[group=set([1]), +head] compounds))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VBP[group=set([2]), +head] are)
+      (VP[group=set([2])]
+        (VBN[group=set([2]), +head] blocked)
+        (PP[group=set([2])]
+          (IN[group=set([2]), +head] by)
+          (NP[cand=set([3, 4, 5]), group=set([]), +subs] ))))))
+
+(NP[group=set([3]), +head]
+  (DT[group=set([3])] the)
+  (NN[group=set([3]), +head]
+    (JJ[group=set([3])] hydrophilic)
+    (NN[group=set([3]), +head] face)))
+
+(NP[+adj, group=set([4])]
+  (NP[+adj, cand=set([3]), group=set([]), -head] )
+  (PP[group=set([4]), +head]
+    (IN[group=set([4]), +head] of)
+    (NP[cand=set([5]), group=set([]), +subs] )))
+
+(NP[group=set([5])]
+  (DT[group=set([5])] a)
+  (NN[group=set([5]), +head]
+    (JJ[group=set([5])] thylakoid)
+    (NN[group=set([5]), +head] membrane)))
+

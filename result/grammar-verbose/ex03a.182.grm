@@ -1,0 +1,63 @@
+(ROOT[group=set([1])]
+  (S[group=set([1]), +head]
+    (NP[group=set([1])]
+      (NP[group=set([1]), +head]
+        (DT[group=set([1])] The)
+        (NN[group=set([1]), +head] function))
+      (PP[group=set([1])]
+        (IN[group=set([1]), +head] of)
+        (NP[cand=set([2]), group=set([]), +subs] )))
+    (VP[group=set([1]), +head]
+      (VBZ[group=set([1]), +head] is)
+      (S[group=set([1])]
+        (VP[group=set([1]), +head]
+          (TO[group=set([1]), +head] to)
+          (VP[group=set([1])]
+            (VP[group=set([1])]
+              (VP[group=set([1])]
+                (VB[group=set([1]), +head] provide)
+                (NP[group=set([1])]
+                  (NP[group=set([1]), +head]
+                    (NN[group=set([1]), +head] energy))
+                  (PP[group=set([1])]
+                    (IN[group=set([1]), +head] for)
+                    (NP[cand=set([8, 4, 5]), group=set([]), +subs] ))))
+              (PP[cand=set([9, 6]), group=set([]), +subs] ))
+            (PP[cand=set([10, 7]), group=set([]), +subs] )))))))
+
+(NP[group=set([2])]
+  (JJ[group=set([2])] membrane)
+  (NN[group=set([2]), +head] potential))
+
+(NP[group=set([4]), +head]
+  (DT[group=set([4])] the)
+  (NN[group=set([4]), +head] diffusion))
+
+(NP[group=set([5])] (NNS[group=set([5]), +head] anions))
+
+(NP[group=set([6])]
+  (DT[group=set([6])] the)
+  (NN[group=set([6]), +head] cytoplasm))
+
+(NP[group=set([7])]
+  (DT[group=set([7])] the)
+  (NN[group=set([7]), +head]
+    (JJ[group=set([7])] extra)
+    (NN[group=set([7]), +head]
+      (JJ[group=set([7])] cellular)
+      (NN[group=set([7]), +head] matrix))))
+
+(NP[+adj, group=set([8])]
+  (NP[+adj, cand=set([4]), group=set([]), -head] )
+  (PP[group=set([8]), +head]
+    (IN[group=set([8]), +head] of)
+    (NP[cand=set([5]), group=set([]), +subs] )))
+
+(PP[group=set([9])]
+  (IN[group=set([9]), +head] from)
+  (NP[cand=set([6]), group=set([]), +subs] ))
+
+(PP[group=set([10])]
+  (TO[group=set([10]), +head] to)
+  (NP[cand=set([7]), group=set([]), +subs] ))
+

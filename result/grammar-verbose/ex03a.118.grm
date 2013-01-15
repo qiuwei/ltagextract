@@ -1,0 +1,57 @@
+(ROOT[group=set([1])]
+  (S[group=set([1]), +head]
+    (NP[group=set([1])]
+      (NP[group=set([1]), +head]
+        (DT[group=set([1])] The)
+        (NN[group=set([1]), +head] function))
+      (PP[group=set([1])]
+        (IN[group=set([1]), +head] of)
+        (NP[cand=set([2]), group=set([]), +subs] )))
+    (VP[group=set([1]), +head]
+      (VBZ[group=set([1]), +head] is)
+      (S[group=set([1])]
+        (VP[group=set([1]), +head]
+          (TO[group=set([1]), +head] to)
+          (VP[group=set([1])]
+            (VB[group=set([1]), +head] provide)
+            (NP[group=set([1])]
+              (NP[group=set([1]), +head]
+                (NN[group=set([1]), +head] energy))
+              (PP[group=set([1])]
+                (IN[group=set([1]), +head] for)
+                (NP[cand=set([4]), group=set([]), +subs] )))
+            (S[group=set([1])]
+              (VP[group=set([1]), +head]
+                (TO[group=set([1]), +head] to)
+                (VP[cand=set([8, 5, 6, 7]), group=set([]), +subs] )))))))))
+
+(NP[group=set([2])]
+  (JJ[group=set([2])] membrane)
+  (NN[group=set([2]), +head] potential))
+
+(NP[group=set([4])]
+  (DT[group=set([4])] a)
+  (NN[group=set([4]), +head]
+    (NN[group=set([4])] concentration)
+    (NN[group=set([4]), +head] gradient)))
+
+(VP[group=set([5]), +head]
+  (VB[group=set([5]), +head] diffuse)
+  (NP[cand=set([6]), group=set([]), +subs] ))
+
+(NP[group=set([6])] (NNS[group=set([6]), +head] particles))
+
+(VP[group=set([7])]
+  (VP[cand=set([5, 6]), group=set([]), +head, +subs] )
+  (PP[group=set([7]), +head]
+    (TO[group=set([7]), +head] to)
+    (NP[cand=set([8]), group=set([]), +subs] )))
+
+(NP[group=set([8])]
+  (DT[group=set([8])] the)
+  (NN[group=set([8]), +head]
+    (JJ[group=set([8])] extra)
+    (NN[group=set([8]), +head]
+      (JJ[group=set([8])] cellular)
+      (NN[group=set([8]), +head] matrix))))
+

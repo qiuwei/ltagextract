@@ -1,0 +1,84 @@
+(NP[group=set([1]), +head] (NNP[group=set([1]), +head] Generation))
+
+(NP[group=set([2]), +head]
+  (DT[group=set([2])] a)
+  (NN[group=set([2]), +head]
+    (NN[group=set([2])] hydrogen)
+    (NN[group=set([2]), +head]
+      (NN[group=set([2])] ion)
+      (NN[group=set([2]), +head] gradient))))
+
+(NP[+adj, group=set([3])]
+  (NP[+adj, cand=set([2]), group=set([]), -head] )
+  (PP[group=set([3]), +head]
+    (IN[group=set([3]), +head] with)
+    (NP[cand=set([4]), group=set([]), +subs] )))
+
+(NP[group=set([4])]
+  (DT[group=set([4])] a)
+  (NN[group=set([4]), +head]
+    (NN[group=set([4])] proton)
+    (NN[group=set([4]), +head] pump)))
+
+(NP[+adj, group=set([5])]
+  (NP[group=set([5]), +head]
+    (NP[group=set([5]), +head]
+      (NP[cand=set([12, 2, 3, 4]), group=set([]), +head, +subs] )
+      (Pu[group=set([5]), +head] ,))
+    (SBAR[group=set([5]), +head]
+      (WHNP[group=set([5]), +head]
+        (WDT[group=set([5]), +head] which))
+      (S[group=set([5])]
+        (VP[group=set([5]), +head]
+          (VBZ[group=set([5]), +head] consists)
+          (PP[group=set([5])]
+            (IN[group=set([5]), +head] of)
+            (NP[cand=set([]), group=set([]), +subs] ))))))
+  (Pu[group=set([5]), +head] ,))
+
+(NP[group=set([6]), +head]
+  (DT[group=set([6])] a)
+  (NN[group=set([6]), +head] polypeptide))
+
+(NP[group=set([7])]
+  (NP[group=set([]), +head, +subs] )
+  (Pu[group=set([7])] ,)
+  (NP[group=set([]), +subs] )
+  (CC[group=set([7])] and)
+  (NP[group=set([]), +subs] ))
+
+(NP[group=set([8])]
+  (JJ[group=set([8])] polar)
+  (NN[group=set([8]), +head]
+    (JJ[group=set([8])] amino)
+    (NN[group=set([8]), +head] acid)))
+
+(NP[group=set([9])]
+  (DT[group=set([9])] a)
+  (NN[group=set([9]), +head]
+    (JJ[group=set([9])] hydrophobic)
+    (NN[group=set([9]), +head]
+      (JJ[group=set([9])] amino)
+      (NN[group=set([9]), +head] acid))))
+
+(ROOT[group=set([10])]
+  (S[group=set([10]), +head]
+    (NP[cand=set([1, 2, 3, 4, 5, 12]), group=set([]), +subs] )
+    (VP[group=set([10]), +head]
+      (VBZ[group=set([10]), +head] results)
+      (PP[group=set([10])]
+        (IN[group=set([10]), +head] in)
+        (NP[cand=set([11]), group=set([]), +subs] )))))
+
+(NP[group=set([11])]
+  (JJ[group=set([11])] proton)
+  (NN[group=set([11]), +head]
+    (NN[group=set([11])] motive)
+    (NN[group=set([11]), +head] force)))
+
+(NP[group=set([12]), +head]
+  (NP[+adj, cand=set([1]), group=set([]), -head] )
+  (PP[group=set([12]), +head]
+    (IN[group=set([12]), +head] of)
+    (NP[cand=set([2, 3, 4]), group=set([]), +subs] )))
+

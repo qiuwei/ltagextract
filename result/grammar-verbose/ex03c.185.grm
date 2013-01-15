@@ -1,0 +1,73 @@
+(NP[group=set([1]), +head] (NNP[group=set([1]), +head] Generation))
+
+(IN[group=set([2]), +head] of)
+
+(ROOT[group=set([3])]
+  (S[group=set([3]), +head]
+    (NP[group=set([3])]
+      (NP[cand=set([1]), group=set([]), +head, +subs] )
+      (PP[group=set([3])]
+        (IN[cand=set([2]), group=set([]), +head, +subs] )
+        (NP[group=set([3])]
+          (DT[group=set([3])] a)
+          (NN[group=set([3]), +head]
+            (NN[group=set([3])] hydrogen)
+            (NN[group=set([3]), +head] ion)))))
+    (VP[group=set([3]), +head]
+      (VP[group=set([3]), +head]
+        (VP[group=set([3]), +head]
+          (VBD[group=set([3]), +head] gradient)
+          (PP[cand=set([8, 4, 5, 6, 7]), group=set([]), +subs] ))
+        (PP[cand=set([8, 9]), group=set([]), +subs] ))
+      (CC[cand=set([10]), group=set([]), +subs] )
+      (VP[cand=set([10, 11]), group=set([]), +subs] ))))
+
+(PP[group=set([4])]
+  (IN[group=set([4]), +head] at)
+  (NP[cand=set([8, 5, 6, 7]), group=set([]), +subs] ))
+
+(NP[group=set([5]), +head]
+  (DT[group=set([5])] the)
+  (NN[group=set([5]), +head]
+    (NN[group=set([5])] plasma)
+    (NN[group=set([5]), +head] membrane)))
+
+(NP[+adj, group=set([6])]
+  (NP[+adj, cand=set([5]), group=set([]), -head] )
+  (PP[group=set([6]), +head]
+    (IN[group=set([6]), +head] of)
+    (NP[cand=set([8, 7]), group=set([]), +subs] )))
+
+(DT[group=set([7])] a)
+
+(JJ[group=set([7])] prokaryote)
+
+(PP[group=set([8])]
+  (IN[group=set([8]), +head] in)
+  (NP[cand=set([9]), group=set([]), +subs] ))
+
+(NP[group=set([8])]
+  (DT[cand=set([7]), group=set([]), +subs] )
+  (NNS[group=set([8]), +head]
+    (JJ[cand=set([7]), group=set([]), +subs] )
+    (NNS[group=set([8]), +head] results)))
+
+(NP[group=set([9])]
+  (DT[group=set([9])] a)
+  (NN[group=set([9]), +head]
+    (NN[group=set([9])] proton)
+    (NN[group=set([9]), +head]
+      (NN[group=set([9])] motive)
+      (NN[group=set([9]), +head] force))))
+
+(CC[group=set([10])] and)
+
+(VP[group=set([10])]
+  (VBZ[group=set([10]), +head] uses)
+  (PRT[group=set([10])] (RP[group=set([10]), +head] up))
+  (NP[cand=set([11]), group=set([]), +subs] ))
+
+(NP[group=set([11])]
+  (JJ[group=set([11])] free)
+  (NN[group=set([11]), +head] energy))
+

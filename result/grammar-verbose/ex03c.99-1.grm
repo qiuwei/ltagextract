@@ -1,0 +1,29 @@
+(NP[group=set([1])] (NNS[group=set([1]), +head] Mucus))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VBZ[group=set([2]), +head] is)
+      (VP[group=set([2])]
+        (VBN[group=set([2]), +head] secreted)
+        (PP[cand=set([3, 4, 5, 6]), group=set([]), +subs] )))))
+
+(PP[group=set([3])]
+  (IN[group=set([3]), +head] in)
+  (NP[cand=set([4, 5, 6]), group=set([]), +subs] ))
+
+(NP[group=set([4]), +head]
+  (DT[group=set([4])] the)
+  (NN[group=set([4]), +head]
+    (JJ[group=set([4])] alimentary)
+    (NN[group=set([4]), +head] canal)))
+
+(NP[+adj, group=set([5])]
+  (NP[+adj, cand=set([4]), group=set([]), -head] )
+  (PP[group=set([5]), +head]
+    (IN[group=set([5]), +head] of)
+    (NP[cand=set([6]), group=set([]), +subs] )))
+
+(NP[group=set([6])] (NNS[group=set([6]), +head] earthworms))
+

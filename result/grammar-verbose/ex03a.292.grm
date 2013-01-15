@@ -1,0 +1,45 @@
+(ROOT[group=set([1])]
+  (S[group=set([1]), +head]
+    (NP[group=set([1])]
+      (NP[group=set([1]), +head]
+        (DT[group=set([1])] The)
+        (NN[group=set([1]), +head] function))
+      (PP[group=set([1])]
+        (IN[group=set([1]), +head] of)
+        (NP[cand=set([2]), group=set([]), +subs] )))
+    (VP[group=set([1]), +head]
+      (VBZ[group=set([1]), +head] is)
+      (S[cand=set([3]), group=set([]), +subs] ))))
+
+(NP[group=set([2])]
+  (DT[group=set([2])] a)
+  (NN[group=set([2]), +head]
+    (JJ[group=set([2])] thylakoid)
+    (NN[group=set([2]), +head] membrane)))
+
+(S[group=set([3])]
+  (VP[group=set([3]), +head]
+    (TO[group=set([3]), +head] to)
+    (VP[group=set([3])]
+      (VB[group=set([3]), +head] block)
+      (NP[cand=set([]), group=set([]), +subs] ))))
+
+(NP[group=set([4]), +head]
+  (JJ[group=set([4])] hydrophobic)
+  (NNS[group=set([4]), +head] compounds))
+
+(NP[group=set([5])]
+  (NP[group=set([]), +head, +subs] )
+  (Pu[group=set([5])] ,)
+  (NP[group=set([]), +subs] )
+  (CC[group=set([5])] and)
+  (NP[group=set([]), +subs] ))
+
+(NP[group=set([6])]
+  (NN[group=set([6])] hydrogen)
+  (NNS[group=set([6]), +head] ions))
+
+(NP[group=set([7])]
+  (JJ[group=set([7])] hydrophilic)
+  (NNS[group=set([7]), +head] compounds))
+

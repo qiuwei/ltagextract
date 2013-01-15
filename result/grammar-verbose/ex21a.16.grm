@@ -1,0 +1,55 @@
+(NP[group=set([1])] (NNP[group=set([1]), +head] Water))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VBZ[group=set([2]), +head] is)
+      (VP[group=set([2])]
+        (VBN[group=set([2]), +head] pulled)
+        (PP[cand=set([3, 4, 5]), group=set([]), +subs] )))))
+
+(PP[group=set([3])]
+  (IN[group=set([3]), +head] towards)
+  (NP[cand=set([4, 5]), group=set([]), +subs] ))
+
+(NP[group=set([4]), +head]
+  (DT[group=set([4])] a)
+  (NN[group=set([4]), +head]
+    (JJ[group=set([4])] mesophyll)
+    (NN[group=set([4]), +head] cell)))
+
+(NP[+adj, group=set([5])]
+  (NP[group=set([5])]
+    (NP[+adj, cand=set([4]), group=set([]), +head] )
+    (Pu[group=set([5])] ,))
+  (SBAR[group=set([5])]
+    (WHNP[group=set([5]), +head] (WDT[group=set([5]), +head] which))
+    (S[group=set([5])]
+      (VP[group=set([5]), +head]
+        (VBZ[group=set([5]), +head] has)
+        (NP[cand=set([]), group=set([]), +subs] )))))
+
+(NP[group=set([6]), +head]
+  (DT[group=set([6])] a)
+  (NN[group=set([6]), +head]
+    (JJ[group=set([6])] central)
+    (NN[group=set([6]), +head] vacuole)))
+
+(NP[group=set([7])]
+  (NP[group=set([]), +head, +subs] )
+  (Pu[group=set([7])] ,)
+  (NP[group=set([]), +subs] )
+  (CC[group=set([7])] and)
+  (NP[group=set([]), +subs] ))
+
+(NP[group=set([8])]
+  (DT[group=set([8])] a)
+  (NN[group=set([8]), +head] centrosome))
+
+(NP[group=set([9])]
+  (DT[group=set([9])] an)
+  (NN[group=set([9]), +head]
+    (NN[group=set([9])] ion)
+    (NN[group=set([9]), +head] channel)))
+

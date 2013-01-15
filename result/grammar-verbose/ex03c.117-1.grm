@@ -1,0 +1,29 @@
+(NP[group=set([1])]
+  (DT[group=set([1])] The)
+  (NN[group=set([1]), +head]
+    (NN[group=set([1])] golgi)
+    (NN[group=set([1]), +head] apparatus)))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VP[group=set([2]), +head]
+        (VBZ[group=set([2]), +head] receives)
+        (NP[cand=set([3]), group=set([]), +subs] ))
+      (PP[cand=set([4, 5, 6]), group=set([]), +subs] ))))
+
+(NP[group=set([3])] (NNS[group=set([3]), +head] vesicles))
+
+(PP[group=set([4])]
+  (IN[group=set([4]), +head] at)
+  (NP[cand=set([5, 6]), group=set([]), +subs] ))
+
+(PRPS[group=set([5])] its)
+
+(NP[group=set([6])]
+  (PRPS[cand=set([5]), group=set([]), +subs] )
+  (NN[group=set([6]), +head]
+    (NN[group=set([6])] cis)
+    (NN[group=set([6]), +head] face)))
+

@@ -1,0 +1,47 @@
+(ROOT[group=set([1])]
+  (S[group=set([1]), +head]
+    (NP[group=set([1])]
+      (NP[group=set([1]), +head]
+        (DT[group=set([1])] The)
+        (NN[group=set([1]), +head] function))
+      (PP[group=set([1])]
+        (IN[group=set([1]), +head] of)
+        (NP[cand=set([2]), group=set([]), +subs] )))
+    (VP[group=set([1]), +head]
+      (VBZ[group=set([1]), +head] is)
+      (PP[cand=set([3, 4, 5, 6, 7, 8]), group=set([]), +subs] ))))
+
+(NP[group=set([2])]
+  (DT[group=set([2])] a)
+  (NN[group=set([2]), +head] cotransporter))
+
+(PP[group=set([3])]
+  (TO[group=set([3]), +head] to)
+  (NP[group=set([3])]
+    (NP[group=set([3]), +head]
+      (JJ[group=set([3])] co-transport)
+      (NNS[cand=set([4]), group=set([]), +head, +subs] ))
+    (PP[cand=set([8, 5, 6, 7]), group=set([]), +subs] )))
+
+(NNS[group=set([4]), +head] particles)
+
+(NP[group=set([5]), +head]
+  (DT[group=set([5])] a)
+  (NN[group=set([5]), +head] cell))
+
+(NP[group=set([6])]
+  (DT[group=set([6])] a)
+  (NN[group=set([6]), +head]
+    (NN[group=set([6])] proton)
+    (NN[group=set([6]), +head] pump)))
+
+(PP[group=set([7])]
+  (IN[group=set([7]), +head] in)
+  (NP[cand=set([8, 5, 6]), group=set([]), +subs] ))
+
+(NP[+adj, group=set([8])]
+  (NP[+adj, cand=set([5]), group=set([]), -head] )
+  (VP[group=set([8]), +head]
+    (VBG[group=set([8]), +head] using)
+    (NP[cand=set([6]), group=set([]), +subs] )))
+

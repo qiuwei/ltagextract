@@ -1,0 +1,51 @@
+(NP[group=set([1])] (NNS[group=set([1]), +head] Leaves))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VBP[group=set([2]), +head] have)
+      (NP[cand=set([3, 4, 5, 6, 7, 8, 9, 10]), group=set([]), +subs]))))
+
+(NP[group=set([3]), +head]
+  (DT[group=set([3])] an)
+  (NNS[group=set([3]), +head] epidermis))
+
+(NP[+adj, group=set([4])]
+  (NP[+adj, cand=set([3]), group=set([]), -head] )
+  (PP[group=set([4]), +head]
+    (IN[group=set([4]), +head] above)
+    (NP[cand=set([5, 6, 7, 8, 9, 10]), group=set([]), +subs] )))
+
+(PRPS[group=set([5])] their)
+
+(NP[group=set([6]), +head]
+  (PRPS[cand=set([5]), group=set([]), +subs] )
+  (NN[group=set([6]), +head] palisade-mesophyl))
+
+(NP[+adj, group=set([7])]
+  (NP[group=set([7]), +head]
+    (NP[+adj, cand=set([5, 6]), group=set([]), -head] )
+    (Pu[group=set([7]), +head] ,))
+  (SBAR[group=set([7]), +head]
+    (WHNP[group=set([7]), +head] (WDT[group=set([7]), +head] which))
+    (S[group=set([7])]
+      (VP[group=set([7]), +head]
+        (VBZ[group=set([7]), +head] contains)
+        (NP[cand=set([8, 9, 10]), group=set([]), +subs] )))))
+
+(JJ[group=set([8])] large)
+
+(Pu[group=set([9])] ,)
+
+(JJ[group=set([9])] bean-shaped)
+
+(NP[group=set([10])]
+  (JJ[cand=set([8]), group=set([]), +subs] )
+  (Pu[cand=set([9]), group=set([]), +subs] )
+  (NNS[group=set([10]), +head]
+    (JJ[cand=set([9]), group=set([]), +subs] )
+    (NNS[group=set([10]), +head]
+      (NN[group=set([10])] guard)
+      (NNS[group=set([10]), +head] cells))))
+

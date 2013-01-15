@@ -1,0 +1,64 @@
+(NP[group=set([1])]
+  (DT[group=set([1])] A)
+  (NN[group=set([1]), +head]
+    (NN[group=set([1])] proton)
+    (NN[group=set([1]), +head]
+      (NN[group=set([1])] motive)
+      (NN[group=set([1]), +head] force))))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VBZ[group=set([2]), +head] results)
+      (SBAR[group=set([2])]
+        (WHADVP[group=set([2]), +head]
+          (WRB[group=set([2]), +head] when))
+        (S[cand=set([3, 4, 5, 6, 7, 8, 9, 10]), group=set([]), +subs])))))
+
+(NP[group=set([3])]
+  (DT[group=set([3])] a)
+  (NN[group=set([3]), +head]
+    (NN[group=set([3])] hydrogen)
+    (NN[group=set([3]), +head]
+      (NN[group=set([3])] ion)
+      (NN[group=set([3]), +head] gradient))))
+
+(S[group=set([4])]
+  (NP[cand=set([3]), group=set([]), +subs] )
+  (VP[group=set([4]), +head]
+    (VBZ[group=set([4]), +head] is)
+    (VP[group=set([4])]
+      (VP[group=set([4])]
+        (VBN[group=set([4]), +head] generated)
+        (PP[cand=set([5, 6]), group=set([]), +subs] ))
+      (PP[cand=set([8, 9, 10, 7]), group=set([]), +subs] ))))
+
+(PP[group=set([5])]
+  (IN[group=set([5]), +head] by)
+  (NP[cand=set([6]), group=set([]), +subs] ))
+
+(NP[group=set([6])]
+  (NN[group=set([6])] proton)
+  (NNS[group=set([6]), +head] pumps))
+
+(PP[group=set([7])]
+  (IN[group=set([7]), +head] at)
+  (NP[cand=set([8, 9, 10]), group=set([]), +subs] ))
+
+(NP[group=set([8]), +head]
+  (DT[group=set([8])] the)
+  (NN[group=set([8]), +head]
+    (NN[group=set([8])] plasma)
+    (NN[group=set([8]), +head] membrane)))
+
+(NP[+adj, group=set([9])]
+  (NP[+adj, cand=set([8]), group=set([]), -head] )
+  (PP[group=set([9]), +head]
+    (IN[group=set([9]), +head] of)
+    (NP[cand=set([10]), group=set([]), +subs] )))
+
+(NP[group=set([10])]
+  (DT[group=set([10])] a)
+  (NN[group=set([10]), +head] prokaryote))
+

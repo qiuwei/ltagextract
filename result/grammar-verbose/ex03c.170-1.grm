@@ -1,0 +1,33 @@
+(NP[group=set([1])] (NNS[group=set([1]), +head] Phospholipids))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VBP[group=set([2]), +head] are)
+      (VP[group=set([2])]
+        (VBN[group=set([2]), +head] synthesised)
+        (PP[cand=set([3, 4, 5, 6]), group=set([]), +subs] )))))
+
+(PP[group=set([3])]
+  (IN[group=set([3]), +head] at)
+  (NP[cand=set([4, 5, 6]), group=set([]), +subs] ))
+
+(NP[group=set([4]), +head]
+  (DT[group=set([4])] the)
+  (NN[group=set([4]), +head]
+    (JJ[group=set([4])] smooth)
+    (NN[group=set([4]), +head]
+      (JJ[group=set([4])] endoplasmic)
+      (NN[group=set([4]), +head] reticulum))))
+
+(NP[+adj, group=set([5])]
+  (NP[+adj, cand=set([4]), group=set([]), -head] )
+  (PP[group=set([5]), +head]
+    (IN[group=set([5]), +head] of)
+    (NP[cand=set([6]), group=set([]), +subs] )))
+
+(NP[group=set([6])]
+  (JJ[group=set([6])] algal)
+  (NNS[group=set([6]), +head] cells))
+

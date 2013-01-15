@@ -1,0 +1,33 @@
+(NP[group=set([1]), +head] (NNP[group=set([1]), +head] Catalase))
+
+(NP[+adj, group=set([2])]
+  (NP[+adj, cand=set([1]), group=set([]), -head] )
+  (PP[group=set([2]), +head]
+    (IN[group=set([2]), +head] in)
+    (NP[cand=set([3, 4, 5]), group=set([]), +subs] )))
+
+(NP[group=set([3]), +head]
+  (DT[group=set([3])] the)
+  (NN[group=set([3]), +head] glyoxysome))
+
+(NP[+adj, group=set([4])]
+  (NP[+adj, cand=set([3]), group=set([]), -head] )
+  (PP[group=set([4]), +head]
+    (IN[group=set([4]), +head] of)
+    (NP[cand=set([5]), group=set([]), +subs] )))
+
+(NP[group=set([5])]
+  (NN[group=set([5])] plant)
+  (NNS[group=set([5]), +head] cells))
+
+(ROOT[group=set([6])]
+  (S[group=set([6]), +head]
+    (NP[cand=set([1, 2, 3, 4, 5]), group=set([]), +subs] )
+    (VP[group=set([6]), +head]
+      (VBZ[group=set([6]), +head] changes)
+      (NP[cand=set([7]), group=set([]), +subs] ))))
+
+(NP[group=set([7])]
+  (JJ[group=set([7])] fatty)
+  (NN[group=set([7]), +head] acid))
+

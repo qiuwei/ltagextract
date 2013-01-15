@@ -1,0 +1,14 @@
+(NP[group=set([1])]
+  (DT[group=set([1])] A)
+  (NN[group=set([1]), +head]
+    (JJ[group=set([1])] motile)
+    (NN[group=set([1]), +head] cilium)))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (S[group=set([2]), +head]
+      (NP[cand=set([1]), group=set([]), +subs] )
+      (VP[group=set([2]), +head]
+        (VBZ[group=set([2]), +head] is)
+        (ADJP[group=set([2])] (JJ[group=set([2]), +head] short))))))
+

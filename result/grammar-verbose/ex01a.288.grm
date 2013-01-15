@@ -1,0 +1,39 @@
+(NP[group=set([1])]
+  (NP[group=set([1]), +head]
+    (DT[group=set([1])] The)
+    (NN[group=set([1]), +head] rate))
+  (PP[group=set([1])]
+    (IN[group=set([1]), +head] of)
+    (NP[cand=set([2, 3, 6]), group=set([]), +subs] )))
+
+(NP[group=set([2]), +head] (NN[group=set([2]), +head] absorption))
+
+(NP[group=set([3])]
+  (DT[group=set([3])] a)
+  (NN[group=set([3]), +head]
+    (JJ[group=set([3])] central)
+    (NN[group=set([3]), +head] vacuole)))
+
+(ROOT[group=set([4])]
+  (S[group=set([4]), +head]
+    (NP[cand=set([1, 2, 3, 6]), group=set([]), +subs] )
+    (VP[group=set([4]), +head]
+      (VBZ[group=set([4]), +head] is)
+      (ADJP[group=set([4])]
+        (ADJP[group=set([4])]
+          (RB[group=set([4])] directly)
+          (JJ[group=set([4]), +head] proportional))
+        (PP[group=set([4])]
+          (TO[group=set([4]), +head] to)
+          (NP[cand=set([5]), group=set([]), +subs] ))))))
+
+(NP[group=set([5])]
+  (PRPS[group=set([5])] its)
+  (NN[group=set([5]), +head] size))
+
+(NP[+adj, group=set([6])]
+  (NP[+adj, cand=set([2]), group=set([]), -head] )
+  (PP[group=set([6]), +head]
+    (IN[group=set([6]), +head] of)
+    (NP[cand=set([3]), group=set([]), +subs] )))
+

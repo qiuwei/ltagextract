@@ -1,0 +1,62 @@
+(NP[group=set([1])]
+  (NP[group=set([1]), +head]
+    (DT[group=set([1])] The)
+    (NN[group=set([1]), +head] rate))
+  (PP[group=set([1])]
+    (IN[group=set([1]), +head] of)
+    (NP[cand=set([2, 3, 4]), group=set([]), +subs] )))
+
+(NP[group=set([2]), +head]
+  (NN[group=set([2]), +head] detoxification))
+
+(NP[+adj, group=set([3])]
+  (NP[+adj, cand=set([2]), group=set([]), -head] )
+  (PP[group=set([3]), +head]
+    (IN[group=set([3]), +head] in)
+    (NP[cand=set([4]), group=set([]), +subs] )))
+
+(NP[group=set([4])]
+  (DT[group=set([4])] the)
+  (NN[group=set([4]), +head]
+    (NN[group=set([4])] liver)
+    (NN[group=set([4]), +head] cell)))
+
+(ROOT[group=set([5])]
+  (S[group=set([5]), +head]
+    (NP[cand=set([1, 2, 3, 4]), group=set([]), +subs] )
+    (VP[group=set([5]), +head]
+      (VBZ[group=set([5]), +head] is)
+      (ADJP[group=set([5])]
+        (ADJP[group=set([5])]
+          (RB[group=set([5])] directly)
+          (JJ[group=set([5]), +head] proportional))
+        (PP[group=set([5])]
+          (TO[group=set([5]), +head] to)
+          (NP[cand=set([8, 9, 6, 7]), group=set([]), +subs] ))))))
+
+(NP[group=set([6])]
+  (NP[group=set([6]), +head]
+    (DT[group=set([6])] the)
+    (NN[group=set([6]), +head] quantity))
+  (PP[group=set([6])]
+    (IN[group=set([6]), +head] of)
+    (NP[cand=set([8, 9, 7]), group=set([]), +subs] )))
+
+(NP[group=set([7]), +head]
+  (JJ[group=set([7])] smooth)
+  (NN[group=set([7]), +head]
+    (JJ[group=set([7])] endoplasmic)
+    (NN[group=set([7]), +head] reticulum)))
+
+(NP[+adj, group=set([8])]
+  (NP[+adj, cand=set([7]), group=set([]), -head] )
+  (PP[group=set([8]), +head]
+    (IN[group=set([8]), +head] in)
+    (NP[cand=set([9]), group=set([]), +subs] )))
+
+(NP[group=set([9])]
+  (DT[group=set([9])] the)
+  (NN[group=set([9]), +head]
+    (NN[group=set([9])] liver)
+    (NN[group=set([9]), +head] cell)))
+

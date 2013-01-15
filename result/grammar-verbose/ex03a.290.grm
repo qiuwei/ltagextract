@@ -1,0 +1,40 @@
+(ROOT[group=set([1])]
+  (S[group=set([1]), +head]
+    (NP[group=set([1])]
+      (NP[group=set([1]), +head]
+        (DT[group=set([1])] The)
+        (NN[group=set([1]), +head] function))
+      (PP[group=set([1])]
+        (IN[group=set([1]), +head] of)
+        (NP[cand=set([2]), group=set([]), +subs] )))
+    (VP[group=set([1]), +head]
+      (VBZ[group=set([1]), +head] is)
+      (S[cand=set([3]), group=set([]), +subs] ))))
+
+(NP[group=set([2])]
+  (DT[group=set([2])] a)
+  (NN[group=set([2]), +head]
+    (JJ[group=set([2])] double)
+    (NN[group=set([2]), +head] bond)))
+
+(S[group=set([3])]
+  (VP[group=set([3]), +head]
+    (TO[group=set([3]), +head] to)
+    (VP[group=set([3])]
+      (VB[group=set([3]), +head] hold)
+      (PRT[group=set([3])] (RP[group=set([3]), +head] together))
+      (NP[cand=set([]), group=set([]), +subs] ))))
+
+(NP[group=set([4]), +head]
+  (CD[group=set([4])] two)
+  (NNS[group=set([4]), +head] oxygens))
+
+(NP[group=set([5])]
+  (NP[group=set([]), +head, +subs] )
+  (CC[group=set([5])] and)
+  (NP[group=set([]), +subs] ))
+
+(NP[group=set([6])]
+  (DT[group=set([6])] a)
+  (NN[group=set([6]), +head] carbon))
+

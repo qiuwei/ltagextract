@@ -1,0 +1,55 @@
+(NP[group=set([1])] (NNS[group=set([1]), +head] Mammals))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VBP[group=set([2]), +head] have)
+      (NP[cand=set([3, 4, 5, 6, 7, 8, 9, 10]), group=set([]), +subs]))))
+
+(NP[group=set([3]), +head]
+  (DT[group=set([3])] a)
+  (NN[group=set([3]), +head]
+    (JJ[cand=set([4]), group=set([]), +subs] )
+    (NN[group=set([3]), +head] stomach)))
+
+(JJ[group=set([4])] hollow)
+
+(NP[+adj, group=set([5])]
+  (NP[+adj, cand=set([3, 4]), group=set([]), -head] )
+  (VP[group=set([5]), +head]
+    (VBG[group=set([5]), +head] containing)
+    (NP[cand=set([8, 9, 10, 6, 7]), group=set([]), +subs] )))
+
+(NP[group=set([6]), +head]
+  (DT[group=set([6])] a)
+  (NN[group=set([6]), +head]
+    (JJ[group=set([6])] gastric)
+    (NN[group=set([6]), +head] gland)))
+
+(NP[+adj, group=set([7])]
+  (NP[+adj, cand=set([6]), group=set([]), -head] )
+  (SBAR[group=set([7]), +head]
+    (WHNP[group=set([7]), +head] (WDT[group=set([7]), +head] which))
+    (S[group=set([7])]
+      (VP[group=set([7]), +head]
+        (VBZ[group=set([7]), +head] is)
+        (NP[cand=set([8, 9, 10]), group=set([]), +subs] )))))
+
+(NP[group=set([8]), +head]
+  (DT[group=set([8])] a)
+  (NN[group=set([8]), +head] secretor))
+
+(NP[+adj, group=set([9])]
+  (NP[+adj, cand=set([8]), group=set([]), -head] )
+  (SBAR[group=set([9]), +head]
+    (WHNP[group=set([9]), +head] (WDT[group=set([9]), +head] that))
+    (S[group=set([9])]
+      (VP[group=set([9]), +head]
+        (VBZ[group=set([9]), +head] secretes)
+        (NP[cand=set([10]), group=set([]), +subs] )))))
+
+(NP[group=set([10])]
+  (JJ[group=set([10])] gastric)
+  (NN[group=set([10]), +head] juice))
+

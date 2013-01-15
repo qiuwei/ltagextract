@@ -1,0 +1,45 @@
+(NP[group=set([1])]
+  (NP[group=set([1]), +head]
+    (DT[group=set([1])] The)
+    (NN[group=set([1]), +head] function))
+  (PP[group=set([1])]
+    (IN[group=set([1]), +head] of)
+    (NP[cand=set([2]), group=set([]), +subs] )))
+
+(NP[group=set([2])]
+  (NN[group=set([2])] ester)
+  (NN[group=set([2]), +head] linkage))
+
+(ROOT[group=set([3])]
+  (S[group=set([3]), +head]
+    (NP[cand=set([1, 2]), group=set([]), +subs] )
+    (VP[group=set([3]), +head]
+      (VBZ[group=set([3]), +head] is)
+      (S[cand=set([4, 5, 6, 7]), group=set([]), +subs] ))))
+
+(NP[group=set([4])]
+  (CD[group=set([4])] two)
+  (NNS[group=set([4]), +head]
+    (NN[group=set([4])] oxygen)
+    (NNS[group=set([4]), +head] molecules)))
+
+(NP[group=set([5])]
+  (DT[group=set([5])] a)
+  (NN[group=set([5]), +head]
+    (JJ[group=set([5])] double)
+    (NN[group=set([5]), +head] bond)))
+
+(S[group=set([6])]
+  (VP[group=set([6]), +head]
+    (TO[group=set([6]), +head] to)
+    (VP[group=set([6])]
+      (VP[group=set([6])]
+        (VB[group=set([6]), +head] hold)
+        (PRT[group=set([6])] (RP[group=set([6]), +head] together))
+        (NP[cand=set([4]), group=set([]), +subs] ))
+      (PP[cand=set([5, 7]), group=set([]), +subs] ))))
+
+(PP[group=set([7])]
+  (IN[group=set([7]), +head] with)
+  (NP[cand=set([5]), group=set([]), +subs] ))
+

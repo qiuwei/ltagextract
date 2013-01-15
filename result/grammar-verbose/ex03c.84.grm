@@ -1,0 +1,47 @@
+(NP[group=set([1])]
+  (DT[group=set([1])] A)
+  (NN[group=set([1]), +head] chemical))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VBZ[group=set([2]), +head] is)
+      (VP[group=set([2])]
+        (VP[group=set([2])]
+          (VBN[group=set([2]), +head] attached)
+          (PP[cand=set([3, 4, 5, 6]), group=set([]), +subs] ))
+        (PP[cand=set([8, 7]), group=set([]), +subs] )))))
+
+(PP[group=set([3])]
+  (TO[group=set([3]), +head] to)
+  (NP[cand=set([4, 5, 6]), group=set([]), +subs] ))
+
+(NP[group=set([4]), +head]
+  (DT[group=set([4])] the)
+  (NN[group=set([4]), +head]
+    (JJ[group=set([4])] active)
+    (NN[group=set([4]), +head] site)))
+
+(NP[+adj, group=set([5])]
+  (NP[+adj, cand=set([4]), group=set([]), -head] )
+  (PP[group=set([5]), +head]
+    (IN[group=set([5]), +head] of)
+    (NP[cand=set([6]), group=set([]), +subs] )))
+
+(NP[group=set([6])]
+  (DT[group=set([6])] a)
+  (NN[group=set([6]), +head]
+    (NN[group=set([6])] protein)
+    (NN[group=set([6]), +head] enzyme)))
+
+(PP[group=set([7])]
+  (IN[group=set([7]), +head] with)
+  (NP[cand=set([8]), group=set([]), +subs] ))
+
+(NP[group=set([8])]
+  (DT[group=set([8])] an)
+  (NN[group=set([8]), +head]
+    (JJ[group=set([8])] ionic)
+    (NN[group=set([8]), +head] bond)))
+

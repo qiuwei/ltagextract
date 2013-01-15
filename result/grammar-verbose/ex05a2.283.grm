@@ -1,0 +1,51 @@
+(ROOT[group=set([1])]
+  (S[group=set([1]), +head]
+    (NP[group=set([1])] (EX[group=set([1]), +head] There))
+    (VP[group=set([1]), +head]
+      (VBP[group=set([1]), +head] are)
+      (NP[group=set([1])]
+        (NP[cand=set([2, 3]), group=set([]), +head, +subs] )
+        (PP[group=set([1])]
+          (IN[group=set([1]), +head] inside)
+          (NP[cand=set([8, 4, 5, 6, 7]), group=set([]), +subs] ))))))
+
+(ADJP[group=set([2])]
+  (JJ[group=set([2])] helical)
+  (JJ[group=set([2]), +head] shaped))
+
+(NP[group=set([3]), +head]
+  (ADJP[cand=set([2]), group=set([]), +subs] )
+  (NNS[group=set([3]), +head]
+    (JJ[group=set([3])] hydrophobic)
+    (NNS[group=set([3]), +head]
+      (JJ[group=set([3])] amino)
+      (NNS[group=set([3]), +head] acids))))
+
+(NP[group=set([4]), +head]
+  (DT[group=set([4])] the)
+  (NN[group=set([4]), +head]
+    (JJ[group=set([4])] hydrophobic)
+    (NN[group=set([4]), +head] region)))
+
+(NP[+adj, group=set([5])]
+  (NP[+adj, cand=set([4]), group=set([]), -head] )
+  (PP[group=set([5]), +head]
+    (IN[group=set([5]), +head] of)
+    (NP[cand=set([8, 6, 7]), group=set([]), +subs] )))
+
+(NP[group=set([6]), +head]
+  (DT[group=set([6])] an)
+  (NN[group=set([6]), +head] aquaporin))
+
+(NP[+adj, group=set([7])]
+  (NP[+adj, cand=set([6]), group=set([]), -head] )
+  (PP[group=set([7]), +head]
+    (IN[group=set([7]), +head] in)
+    (NP[cand=set([8]), group=set([]), +subs] )))
+
+(NP[group=set([8])]
+  (DT[group=set([8])] a)
+  (NN[group=set([8]), +head]
+    (NN[group=set([8])] plasma)
+    (NN[group=set([8]), +head] membrane)))
+

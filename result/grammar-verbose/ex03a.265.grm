@@ -1,0 +1,56 @@
+(ROOT[group=set([1])]
+  (S[group=set([1]), +head]
+    (NP[group=set([1])]
+      (NP[group=set([1]), +head]
+        (DT[group=set([1])] The)
+        (NN[group=set([1]), +head] function))
+      (PP[group=set([1])]
+        (IN[group=set([1]), +head] of)
+        (NP[cand=set([2]), group=set([]), +subs] )))
+    (VP[group=set([1]), +head]
+      (VBZ[group=set([1]), +head] is)
+      (S[group=set([1])]
+        (VP[group=set([1]), +head]
+          (TO[group=set([1]), +head] to)
+          (VP[group=set([1])]
+            (VB[group=set([1]), +head] allow)
+            (S[cand=set([3, 4, 5, 6, 7, 8]), group=set([]), +subs] )))))))
+
+(NP[group=set([2])]
+  (DT[group=set([2])] a)
+  (NN[group=set([2]), +head] biomembrane))
+
+(S[group=set([3])]
+  (NP[group=set([3])]
+    (DT[group=set([3])] a)
+    (NN[group=set([3]), +head]
+      (NN[group=set([3])] sodium)
+      (NN[group=set([3]), +head] potassium)))
+  (VP[group=set([3]), +head]
+    (VB[group=set([3]), +head] pump)
+    (S[cand=set([8, 4, 5, 6, 7]), group=set([]), +subs] )))
+
+(S[group=set([4])]
+  (VP[group=set([4]), +head]
+    (TO[group=set([4]), +head] to)
+    (VP[group=set([4])]
+      (VP[group=set([4])]
+        (VB[group=set([4]), +head] move)
+        (NP[cand=set([5, 6, 7]), group=set([]), +subs] ))
+      (PP[group=set([4])]
+        (IN[group=set([4]), +head] through)
+        (NP[cand=set([8]), group=set([]), +subs] )))))
+
+(JJ[group=set([5]), +head] ions)
+
+(CC[group=set([6])] and)
+
+(NP[group=set([7])]
+  (ADJP[group=set([7])]
+    (JJ[cand=set([5]), group=set([]), +head, +subs] )
+    (CC[cand=set([6]), group=set([]), +subs] )
+    (JJ[group=set([7])] hydrophilic))
+  (NNS[group=set([7]), +head] compounds))
+
+(NP[group=set([8])] (PRP[group=set([8]), +head] it))
+

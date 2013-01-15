@@ -1,0 +1,64 @@
+(NP[group=set([1])]
+  (DT[group=set([1])] An)
+  (NN[group=set([1]), +head]
+    (JJ[group=set([1])] enzyme)
+    (NN[group=set([1]), +head]
+      (NN[group=set([1])] substrate)
+      (NN[group=set([1]), +head] complex))))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VBZ[group=set([2]), +head] is)
+      (VP[group=set([2])]
+        (VBN[group=set([2]), +head] formed)
+        (SBAR[group=set([2])]
+          (WHADVP[group=set([2]), +head]
+            (WRB[group=set([2]), +head] when))
+          (S[cand=set([3, 4, 5, 6, 7, 8, 9, 10]), group=set([]), +subs]))))))
+
+(NP[group=set([3])]
+  (DT[group=set([3])] a)
+  (NN[group=set([3]), +head] chemical))
+
+(S[group=set([4])]
+  (NP[cand=set([3]), group=set([]), +subs] )
+  (VP[group=set([4]), +head]
+    (VP[group=set([4]), +head]
+      (VBZ[group=set([4]), +head] attaches)
+      (PP[cand=set([8, 5, 6, 7]), group=set([]), +subs] ))
+    (PP[cand=set([9, 10]), group=set([]), +subs] )))
+
+(PP[group=set([5])]
+  (TO[group=set([5]), +head] to)
+  (NP[cand=set([8, 6, 7]), group=set([]), +subs] ))
+
+(NP[group=set([6]), +head]
+  (DT[group=set([6])] the)
+  (NN[group=set([6]), +head]
+    (JJ[group=set([6])] active)
+    (NN[group=set([6]), +head] site)))
+
+(NP[+adj, group=set([7])]
+  (NP[+adj, cand=set([6]), group=set([]), -head] )
+  (PP[group=set([7]), +head]
+    (IN[group=set([7]), +head] of)
+    (NP[cand=set([8]), group=set([]), +subs] )))
+
+(NP[group=set([8])]
+  (DT[group=set([8])] a)
+  (NN[group=set([8]), +head]
+    (NN[group=set([8])] protein)
+    (NN[group=set([8]), +head] enzyme)))
+
+(PP[group=set([9])]
+  (IN[group=set([9]), +head] with)
+  (NP[cand=set([10]), group=set([]), +subs] ))
+
+(NP[group=set([10])]
+  (DT[group=set([10])] a)
+  (NN[group=set([10]), +head]
+    (NN[group=set([10])] hydrogen)
+    (NN[group=set([10]), +head] bond)))
+

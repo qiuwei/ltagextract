@@ -1,0 +1,50 @@
+(ROOT[group=set([1])]
+  (S[group=set([1]), +head]
+    (NP[group=set([1])]
+      (NP[group=set([1]), +head]
+        (DT[group=set([1])] The)
+        (NN[group=set([1]), +head] function))
+      (PP[group=set([1])]
+        (IN[group=set([1]), +head] of)
+        (NP[cand=set([2]), group=set([]), +subs] )))
+    (VP[group=set([1]), +head]
+      (VBZ[group=set([1]), +head] is)
+      (S[cand=set([3, 4, 5]), group=set([]), +subs] ))))
+
+(NP[group=set([2])] (NN[group=set([2]), +head] cellulase))
+
+(S[group=set([3])]
+  (VP[group=set([3]), +head]
+    (TO[group=set([3]), +head] to)
+    (VP[group=set([3])]
+      (VP[group=set([3])]
+        (VP[group=set([3])]
+          (VB[group=set([3]), +head] digest)
+          (NP[cand=set([4]), group=set([]), +subs] ))
+        (Pu[cand=set([5]), group=set([]), +subs] ))
+      (S[cand=set([5]), group=set([]), +subs] ))))
+
+(NP[group=set([4])] (NN[group=set([4]), +head] cellulose))
+
+(Pu[group=set([5])] ,)
+
+(S[group=set([5])]
+  (VP[group=set([5]), +head]
+    (VBG[group=set([5]), +head] using)
+    (PRT[group=set([5])] (RP[group=set([5]), +head] up))
+    (NP[cand=set([]), group=set([]), +subs] )))
+
+(NN[group=set([6])] activation)
+
+(NN[group=set([6])] energy)
+
+(NP[group=set([7])]
+  (NN[group=set([]), +subs] )
+  (NN[group=set([]), +subs] )
+  (CC[group=set([7])] and)
+  (NNS[group=set([]), +head, +subs] ))
+
+(NNS[group=set([8]), +head]
+  (NN[group=set([8])] water)
+  (NNS[group=set([8]), +head] molecules))
+

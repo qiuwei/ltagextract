@@ -1,0 +1,65 @@
+(ROOT[group=set([1])]
+  (S[group=set([1]), +head]
+    (NP[group=set([1])]
+      (NP[group=set([1]), +head]
+        (DT[group=set([1])] The)
+        (NN[group=set([1]), +head] function))
+      (PP[group=set([1])]
+        (IN[group=set([1]), +head] of)
+        (NP[cand=set([2]), group=set([]), +subs] )))
+    (VP[group=set([1]), +head]
+      (VBZ[group=set([1]), +head] is)
+      (S[group=set([1])]
+        (VP[group=set([1]), +head]
+          (TO[group=set([1]), +head] to)
+          (VP[group=set([1])]
+            (VB[group=set([1]), +head] provide)
+            (NP[group=set([1])]
+              (NP[group=set([1]), +head]
+                (NN[group=set([1]), +head] energy))
+              (PP[group=set([1])]
+                (IN[group=set([1]), +head] for)
+                (NP[cand=set([4]), group=set([]), +subs] )))
+            (S[cand=set([8, 9, 5, 6, 7]), group=set([]), +subs] )))))))
+
+(NP[group=set([2])]
+  (JJ[group=set([2])] membrane)
+  (NN[group=set([2]), +head] potential))
+
+(NP[group=set([4])]
+  (NN[group=set([4])] calcium)
+  (NNS[group=set([4]), +head] ions))
+
+(S[group=set([5])]
+  (VP[group=set([5]), +head]
+    (TO[group=set([5]), +head] to)
+    (VP[group=set([5])]
+      (VB[group=set([5]), +head] be)
+      (VP[group=set([5])]
+        (VP[group=set([5])]
+          (VP[group=set([5])]
+            (VBN[group=set([5]), +head] released)
+            (PP[cand=set([6, 7]), group=set([]), +subs] ))
+          (Pu[cand=set([8]), group=set([]), +subs] ))
+        (S[cand=set([8, 9]), group=set([]), +subs] )))))
+
+(PP[group=set([6])]
+  (IN[group=set([6]), +head] from)
+  (NP[cand=set([7]), group=set([]), +subs] ))
+
+(NP[group=set([7])]
+  (DT[group=set([7])] a)
+  (NN[group=set([7]), +head] cell))
+
+(Pu[group=set([8])] ,)
+
+(S[group=set([8])]
+  (VP[group=set([8]), +head]
+    (VBG[group=set([8]), +head] using)
+    (PRT[group=set([8])] (RP[group=set([8]), +head] up))
+    (NP[cand=set([9]), group=set([]), +subs] )))
+
+(NP[group=set([9])]
+  (NN[group=set([9])] chemical)
+  (NN[group=set([9]), +head] energy))
+

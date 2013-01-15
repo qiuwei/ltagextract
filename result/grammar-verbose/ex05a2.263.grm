@@ -1,0 +1,53 @@
+(NP[group=set([1]), +head]
+  (DT[group=set([1])] The)
+  (NN[group=set([1]), +head]
+    (NN[group=set([1])] transport)
+    (NN[group=set([1]), +head] protein)))
+
+(NP[+adj, group=set([2])]
+  (NP[+adj, cand=set([1]), group=set([]), -head] )
+  (PP[group=set([2]), +head]
+    (IN[group=set([2]), +head] at)
+    (NP[cand=set([3, 4, 5, 6, 7]), group=set([]), +subs] )))
+
+(NP[group=set([3]), +head]
+  (DT[group=set([3])] the)
+  (NN[group=set([3]), +head]
+    (JJ[group=set([3])] phospholipic)
+    (NN[group=set([3]), +head] bilayer)))
+
+(NP[+adj, group=set([4])]
+  (NP[+adj, cand=set([3]), group=set([]), -head] )
+  (PP[group=set([4]), +head]
+    (IN[group=set([4]), +head] in)
+    (NP[cand=set([5, 6, 7]), group=set([]), +subs] )))
+
+(NP[group=set([5]), +head]
+  (DT[group=set([5])] the)
+  (NN[group=set([5]), +head]
+    (NN[group=set([5])] plasma)
+    (NN[group=set([5]), +head] membrane)))
+
+(NP[+adj, group=set([6])]
+  (NP[+adj, cand=set([5]), group=set([]), -head] )
+  (PP[group=set([6]), +head]
+    (IN[group=set([6]), +head] of)
+    (NP[cand=set([7]), group=set([]), +subs] )))
+
+(NP[group=set([7])]
+  (DT[group=set([7])] an)
+  (NN[group=set([7]), +head] animal))
+
+(ROOT[group=set([8])]
+  (S[group=set([8]), +head]
+    (NP[cand=set([1, 2, 3, 4, 5, 6, 7]), group=set([]), +subs] )
+    (VP[group=set([8]), +head]
+      (VBZ[group=set([8]), +head] is)
+      (NP[group=set([8])]
+        (DT[group=set([8])] a)
+        (NN[group=set([8]), +head]
+          (JJ[cand=set([9]), group=set([]), +subs] )
+          (NN[group=set([8]), +head] polypeptide))))))
+
+(JJ[group=set([9])] complex)
+

@@ -1,0 +1,44 @@
+(NP[group=set([1])] (NNP[group=set([1]), +head] Malate))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VBZ[group=set([2]), +head] is)
+      (VP[group=set([2])]
+        (VP[group=set([2])]
+          (VBN[group=set([2]), +head] transferred)
+          (PP[cand=set([8, 3]), group=set([]), +subs] ))
+        (PP[cand=set([4, 5, 6, 7]), group=set([]), +subs] )))))
+
+(NP[group=set([3])]
+  (DT[group=set([3])] a)
+  (NN[group=set([3]), +head]
+    (NN[group=set([3])] bundle)
+    (NN[group=set([3]), +head]
+      (NN[group=set([3])] sheath)
+      (NN[group=set([3]), +head] cell))))
+
+(PP[group=set([4])]
+  (IN[group=set([4]), +head] during)
+  (NP[cand=set([5, 6, 7]), group=set([]), +subs] ))
+
+(NP[group=set([5]), +head]
+  (JJ[group=set([5]), +head] c4-photosynthesis))
+
+(NP[+adj, group=set([6])]
+  (NP[+adj, cand=set([5]), group=set([]), -head] )
+  (PP[group=set([6]), +head]
+    (IN[group=set([6]), +head] in)
+    (NP[cand=set([7]), group=set([]), +subs] )))
+
+(NP[group=set([7])]
+  (DT[group=set([7])] a)
+  (NN[group=set([7]), +head]
+    (NN[group=set([7])] plant)
+    (NN[group=set([7]), +head] cell)))
+
+(PP[group=set([8])]
+  (TO[group=set([8]), +head] to)
+  (NP[cand=set([3]), group=set([]), +subs] ))
+

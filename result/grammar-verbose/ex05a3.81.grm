@@ -1,0 +1,40 @@
+(NP[group=set([1]), +head]
+  (DT[group=set([1])] The)
+  (NN[group=set([1]), +head] P700))
+
+(NP[+adj, group=set([2])]
+  (NP[+adj, cand=set([1]), group=set([]), -head] )
+  (PP[group=set([2]), +head]
+    (IN[group=set([2]), +head] in)
+    (NP[cand=set([3, 4, 5]), group=set([]), +subs] )))
+
+(NP[group=set([3]), +head]
+  (DT[group=set([3])] the)
+  (NN[group=set([3]), +head]
+    (NN[group=set([3])] reaction)
+    (NN[group=set([3]), +head]
+      (NN[group=set([3])] center)
+      (NN[group=set([3]), +head] complex))))
+
+(NP[+adj, group=set([4])]
+  (NP[+adj, cand=set([3]), group=set([]), -head] )
+  (PP[group=set([4]), +head]
+    (IN[group=set([4]), +head] of)
+    (NP[cand=set([5]), group=set([]), +subs] )))
+
+(NP[group=set([5])]
+  (DT[group=set([5])] a)
+  (NN[group=set([5]), +head] photosystem))
+
+(ROOT[group=set([6])]
+  (S[group=set([6]), +head]
+    (NP[cand=set([1, 2, 3, 4, 5]), group=set([]), +subs] )
+    (VP[group=set([6]), +head]
+      (VP[group=set([6]), +head]
+        (VBZ[group=set([6]), +head] is)
+        (ADJP[group=set([6])] (JJ[group=set([6]), +head] green)))
+      (CC[group=set([6])] and)
+      (VP[group=set([6])]
+        (VBP[group=set([6]), +head] ring)
+        (ADJP[group=set([6])] (JJ[group=set([6]), +head] shaped))))))
+

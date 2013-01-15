@@ -1,0 +1,49 @@
+(ROOT[group=set([1])]
+  (S[group=set([1]), +head]
+    (NP[group=set([1])]
+      (NP[group=set([1]), +head]
+        (DT[group=set([1])] The)
+        (NN[group=set([1]), +head] function))
+      (PP[group=set([1])]
+        (IN[group=set([1]), +head] of)
+        (NP[cand=set([2]), group=set([]), +subs] )))
+    (VP[group=set([1]), +head]
+      (VBZ[group=set([1]), +head] is)
+      (S[cand=set([8, 3, 7]), group=set([]), +subs] ))))
+
+(NP[group=set([2])]
+  (DT[group=set([2])] a)
+  (NN[group=set([2]), +head]
+    (JJ[group=set([2])] gated)
+    (NN[group=set([2]), +head] channel)))
+
+(S[group=set([3])]
+  (VP[group=set([3]), +head]
+    (TO[group=set([3]), +head] to)
+    (VP[group=set([3])]
+      (VP[group=set([3])]
+        (VB[group=set([3]), +head] release)
+        (NP[cand=set([]), group=set([]), +subs] ))
+      (PP[cand=set([8, 7]), group=set([]), +subs] ))))
+
+(NNS[group=set([4])] particles)
+
+(NP[group=set([5])]
+  (NNS[group=set([]), +subs] )
+  (CC[group=set([5])] and)
+  (NNS[group=set([]), +head, +subs] ))
+
+(NNS[group=set([6]), +head]
+  (NN[group=set([6])] calcium)
+  (NNS[group=set([6]), +head] ions))
+
+(PP[group=set([7])]
+  (IN[group=set([7]), +head] from)
+  (NP[cand=set([8]), group=set([]), +subs] ))
+
+(NP[group=set([8])]
+  (DT[group=set([8])] the)
+  (NN[group=set([8]), +head]
+    (JJ[group=set([8])] endoplasmic)
+    (NN[group=set([8]), +head] reticulum)))
+

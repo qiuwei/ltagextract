@@ -1,0 +1,15 @@
+(NP[group=set([1])] (NNP[group=set([1]), +head] Pyruvate))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VBZ[group=set([2]), +head] is)
+      (NP[group=set([2])]
+        (DT[group=set([2])] a)
+        (NN[group=set([2]), +head]
+          (JJ[cand=set([3]), group=set([]), +subs] )
+          (NN[group=set([2]), +head] molecule))))))
+
+(JJ[group=set([3])] simple)
+

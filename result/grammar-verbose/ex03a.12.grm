@@ -1,0 +1,42 @@
+(ROOT[group=set([1])]
+  (S[group=set([1]), +head]
+    (NP[group=set([1])]
+      (NP[group=set([1]), +head]
+        (DT[group=set([1])] The)
+        (NN[group=set([1]), +head] function))
+      (PP[group=set([1])]
+        (IN[group=set([1]), +head] of)
+        (NP[cand=set([2]), group=set([]), +subs] )))
+    (VP[group=set([1]), +head]
+      (VBZ[group=set([1]), +head] is)
+      (S[cand=set([4, 5, 6, 7]), group=set([]), +subs] ))))
+
+(NP[group=set([2])]
+  (DT[group=set([2])] a)
+  (NN[group=set([2]), +head]
+    (NN[group=set([2])] proton)
+    (NN[group=set([2]), +head] pump)))
+
+(NP[group=set([4])]
+  (DT[group=set([4])] a)
+  (NN[group=set([4]), +head]
+    (NN[group=set([4])] hydrogen)
+    (NN[group=set([4]), +head]
+      (NN[group=set([4])] ion)
+      (NN[group=set([4]), +head] gradient))))
+
+(NP[group=set([5])] (NNS[group=set([5]), +head] prokaryotes))
+
+(S[group=set([6])]
+  (VP[group=set([6]), +head]
+    (TO[group=set([6]), +head] to)
+    (VP[group=set([6])]
+      (VP[group=set([6])]
+        (VB[group=set([6]), +head] generate)
+        (NP[cand=set([4]), group=set([]), +subs] ))
+      (PP[cand=set([5, 7]), group=set([]), +subs] ))))
+
+(PP[group=set([7])]
+  (IN[group=set([7]), +head] in)
+  (NP[cand=set([5]), group=set([]), +subs] ))
+

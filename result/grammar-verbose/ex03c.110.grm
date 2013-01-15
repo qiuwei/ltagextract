@@ -1,0 +1,42 @@
+(NN[group=set([1])] Alcohol)
+
+(NP[group=set([2])]
+  (NN[group=set([]), +subs] )
+  (Pu[group=set([2])] ,)
+  (NNS[group=set([]), +head, +subs] )
+  (CC[group=set([2])] and)
+  (NNS[group=set([]), +subs] ))
+
+(NNS[group=set([3]), +head] drugs)
+
+(NNS[group=set([4])] barbiturates)
+
+(ROOT[group=set([5])]
+  (S[group=set([5]), +head]
+    (NP[cand=set([]), group=set([]), +subs] )
+    (VP[group=set([5]), +head]
+      (VBP[group=set([5]), +head] are)
+      (VP[group=set([5])]
+        (VBN[group=set([5]), +head] detoxified)
+        (PP[cand=set([8, 9, 6, 7]), group=set([]), +subs] )))))
+
+(PP[group=set([6])]
+  (IN[group=set([6]), +head] at)
+  (NP[cand=set([8, 9, 7]), group=set([]), +subs] ))
+
+(NP[group=set([7]), +head]
+  (DT[group=set([7])] the)
+  (NN[group=set([7]), +head] peroxisome))
+
+(NP[+adj, group=set([8])]
+  (NP[+adj, cand=set([7]), group=set([]), -head] )
+  (PP[group=set([8]), +head]
+    (IN[group=set([8]), +head] of)
+    (NP[cand=set([9]), group=set([]), +subs] )))
+
+(NP[group=set([9])]
+  (DT[group=set([9])] the)
+  (NN[group=set([9]), +head]
+    (NN[group=set([9])] liver)
+    (NN[group=set([9]), +head] cell)))
+

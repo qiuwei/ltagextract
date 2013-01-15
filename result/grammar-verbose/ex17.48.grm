@@ -1,0 +1,12 @@
+(ROOT[group=set([1])]
+  (S[group=set([1]), +head]
+    (PP[group=set([1]), +head]
+      (IN[group=set([1]), +head] During)
+      (NP[cand=set([2]), group=set([]), +subs] ))))
+
+(NP[group=set([2])]
+  (DT[group=set([2])] the)
+  (NN[group=set([2]), +head]
+    (JJ[group=set([2])] Miller-Urey)
+    (NN[group=set([2]), +head] experiment)))
+

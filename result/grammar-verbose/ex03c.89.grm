@@ -1,0 +1,59 @@
+(NP[group=set([1])] (NNP[group=set([1]), +head] Cholesterol))
+
+(ROOT[group=set([2])]
+  (S[group=set([2]), +head]
+    (NP[cand=set([1]), group=set([]), +subs] )
+    (VP[group=set([2]), +head]
+      (VBZ[group=set([2]), +head] is)
+      (VP[group=set([2])]
+        (VP[group=set([2])]
+          (VP[group=set([2])]
+            (VP[group=set([2])]
+              (VP[group=set([2])]
+                (VBN[group=set([2]), +head] taken)
+                (PRT[group=set([2])] (RP[group=set([2]), +head] up)))
+              (PP[cand=set([3, 4]), group=set([]), +subs] ))
+            (PP[cand=set([8, 5, 6, 7]), group=set([]), +subs] ))
+          (Pu[cand=set([9]), group=set([]), +subs] ))
+        (S[cand=set([9, 10]), group=set([]), +subs] )))))
+
+(PP[group=set([3])]
+  (IN[group=set([3]), +head] by)
+  (NP[cand=set([4]), group=set([]), +subs] ))
+
+(NP[group=set([4])]
+  (JJ[group=set([4])] coated)
+  (NNS[group=set([4]), +head] vesicles))
+
+(PP[group=set([5])]
+  (IN[group=set([5]), +head] at)
+  (NP[cand=set([8, 6, 7]), group=set([]), +subs] ))
+
+(NP[group=set([6]), +head]
+  (DT[group=set([6])] the)
+  (NN[group=set([6]), +head]
+    (NN[group=set([6])] plasma)
+    (NN[group=set([6]), +head] membrane)))
+
+(NP[+adj, group=set([7])]
+  (NP[+adj, cand=set([6]), group=set([]), -head] )
+  (PP[group=set([7]), +head]
+    (IN[group=set([7]), +head] of)
+    (NP[cand=set([8]), group=set([]), +subs] )))
+
+(NP[group=set([8])]
+  (DT[group=set([8])] a)
+  (NN[group=set([8]), +head]
+    (JJ[group=set([8])] human)
+    (NN[group=set([8]), +head] cell)))
+
+(Pu[group=set([9])] ,)
+
+(S[group=set([9])]
+  (VP[group=set([9]), +head]
+    (VBG[group=set([9]), +head] using)
+    (PRT[group=set([9])] (RP[group=set([9]), +head] up))
+    (NP[cand=set([10]), group=set([]), +subs] )))
+
+(NP[group=set([10])] (NNP[group=set([10]), +head] ATP))
+
