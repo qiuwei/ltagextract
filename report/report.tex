@@ -3,15 +3,19 @@
 % Last Change: 周五 三月 02 04:00 下午 2012 W EST
 %
 \documentclass[a4paper]{article}
-%\usepackage{natbib}
-%\usepackage{biblatex}
 \usepackage{hyperref}
-\usepackage{longtable}
-%\usepackage[style=authoryear,natbib=true]{biblatex}
-%\bibliography{D:/Research/bib/Parsing}
 \usepackage{graphicx}
 %\usepackage{gb4e}
+%\usepackage{longtable}
+\usepackage[style=authoryear,natbib=true]{biblatex}
+\bibliography{D:/Research/bib/Parsing}
+%\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algorithmic}
 \usepackage{lingmacros}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+%\usepackage{gb4e}
 \title{Lexicalized Tree Adjoining Grammar Extraction For KBGEN}
 \author{Wei Qiu \and Jiri Marsik}
 %\date{}
@@ -170,7 +174,138 @@ former.
 \subsection{Normalizing}
 
 \section{TAG extraction}
+After we get the normalized tree with head information, we can extract the TAG from it with the help of the alignment of surface sentence to underlying KBGEN triples.
+The key idea is extract adjunction trees greedily, then extract the substitution trees. Of course conjunction trees as a specific form of substitution trees require
+some special treatment before adjunction trees can be extracted.
+
+First we will present the pseudo code Algorithm \ref{alg:tag_extract}, \ref{alg:extract_conj}, \ref{alg:extract_adj}, \ref{alg:extract_sub} for the tree extraction algorithms, then a working example will be given to illustrate the idea.
+\begin{algorithm}
+    \caption{LTAG extraction algorithm}
+    \label{alg:tag_extract}
+    \begin{algorithmic}[1]
+        \REQUIRE $Tree$, $alignment$ 
+        \FORALL{$node$ in $Tree$}
+        \STATE add semantic group information according to $alignment$
+        \ENDFOR
+        \STATE $agenda \Leftarrow [Tree]$
+        \STATE $well\_formed\_tree \Leftarrow []$
+        \WHILE {$agenda$ is not empty}
+            \STATE $current\_tree = agenda.pop() $
+            \IF{$current\_tree$ only contains one group}
+            \STATE $well\_formed\_tree.append(.current\_tree)$
+            \ENDIF
+            \STATE extract conjunction subpart
+            \STATE extract adjunction subpart
+            \IF {adjunction found}
+                \STATE continue
+            \ELSE
+                \STATE extract substitution subpart
+            \ENDIF
+        \ENDWHILE
+        \RETURN $well\_formed\_tree$
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+    \caption{extract conjunction subpart}
+    \label{alg:extract_conj}
+    \begin{algorithmic}[1]
+        \FORALL {$subtree$ in $Tree$}
+            \IF{$subtree$ has a conjunction structure}
+                \STATE cut the conjunction tree off the subtree
+                \STATE remove all arguments in the conjunction structure
+                \STATE copy group information as candidate information
+                %\COMMENT{This information is for semantic alignment afterwards}
+                \STATE change the empty node'group to empty set
+                \STATE update the group information of all separated parts 
+                \STATE put subtree, conjunction tree, argument trees into $agenda$
+            \ENDIF
+        \ENDFOR
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+    \caption{extract adjunction subpart}
+    \label{alg:extract_adj}
+    \begin{algorithmic}[1]
+        \FORALL {$subtree$ in $Tree$}
+            \FORALL {leftmost child or rightmost child of $subtree$}
+                \STATE TODO
+                \IF {$child$ has the same pos as $subtree$}
+                    \IF {$child$ is well separated from other parts}
+                        \STATE cut off $subtree$ from its parent
+                        \STATE copy the group information as candidate information
+                        \STATE update the hole's group as empty set
+                        \STATE cut off $child$ from $subtree$
+                        \STATE copy the group information of $child$ hole as candidate information
+                        \STATE update $child$ hole's group as empty set
+                        \STATE update group information of all subparts
+                        \STATE put adjunction mark
+                        \STATE put all subparts into $agenda$
+                    \ENDIF
+                \ENDIF
+            \ENDFOR
+        \ENDFOR
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+    \caption{extract substituition subpart}
+    \label{alg:extract_sub}
+    \begin{algorithmic}[1]
+        \STATE $headgroup \Leftarrow current\_tree's head group$
+        \FORALL {$subtree$ in $current\_tree$}
+        \IF{$subtree$'s group is disjoint from $headgroup$}
+            \STATE cut $subtree$ off $current_tree$
+            \STATE copy the relative group information to candidate
+            \STATE update all group information
+            \STATE put substitution mark
+        \ENDIF
+        \ENDFOR
+    \end{algorithmic}
+\end{algorithm}
+
+We will take sentence
+
+\enumsentence{The rate of detoxification in the liver cell is directly proportional to the quantity of smooth endoplasmic reticulum in the liver cell.}
+
+as example, the semantic group annotation is:
+
+\enumsentence{[1 The rate of] [2 detoxification] [3 in] [4 the liver cell] [5 is directly proportional to] [6 the quantity of] [7 smooth endoplasmic reticulum] [8 in] [9 the liver cell] .}
+After parsing and preprocessing, we get the tree:
+\Tree [.ROOT  [.S=H  [.NP   [.NP=H [.DT The] [.NN=H rate]]   [.PP    [.IN=H of]    [.NP     [.NP=H [.NN=H detoxification]]     [.PP [.IN=H in] [.NP [.DT the] [.NN=H [.NN liver] [.NN=H cell]]]]]]]  [.VP=H   [.VBZ=H is]   [.ADJP    [.ADJP [.RB directly] [.JJ=H proportional]]    [.PP     [.TO=H to]     [.NP      [.NP=H [.DT the] [.NN=H quantity]]      [.PP       [.IN=H of]       [.NP        [.NP=H [.JJ smooth] [.NN=H [.JJ endoplasmic] [.NN=H reticulum]]]        [.PP         [.IN=H in]         [.NP [.DT the] [.NN=H [.NN liver] [.NN=H cell]]]]]]]]]]  ]]
+\begin{verbatim}
+(ROOT
+ (S=H
+  (NP
+   (NP=H (DT The) (NN=H rate))
+   (PP
+    (IN=H of)
+    (NP
+     (NP=H (NN=H detoxification))
+     (PP (IN=H in) (NP (DT the) (NN=H (NN liver) (NN=H cell)))))))
+  (VP=H
+   (VBZ=H is)
+   (ADJP
+    (ADJP (RB directly) (JJ=H proportional))
+    (PP
+     (TO=H to)
+     (NP
+      (NP=H (DT the) (NN=H quantity))
+      (PP
+       (IN=H of)
+       (NP
+        (NP=H (JJ smooth) (NN=H (JJ endoplasmic) (NN=H reticulum)))
+        (PP
+         (IN=H in)
+         (NP (DT the) (NN=H (NN liver) (NN=H cell))))))))))
+  (. .)))
+
+\end{verbatim}
+
 \section{Semantic roles alignment}
+The extraction step will extract grammar snippets for each sentence. This step intends to align the semantics to the grammar snippets and the syntax holes in the grammar snippets.
+
 \section{Implementation and result}
 data format
 \section{Conclusion \& Future work}
