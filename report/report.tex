@@ -173,6 +173,7 @@ Tree Adjoining Grammars}). We considered applying their approach.
 However, their approach is not as simple as it seems on paper.
 Consider the following parse tree we got from 
 
+\begin{tikzpicture}[scale=0.5]
 \Tree
 [.ROOT
   [.S=H
@@ -195,6 +196,7 @@ Consider the following parse tree we got from
           [.PP [.IN=H in ]
             [.NP [.DT a ] [.VBN damaged ] [.NN=H cell ] ] ] ] ] ]
     [.. . ] ] ]
+\end{tikzpicture}
 
 The PP \emph{``during...''} and the S \emph{``resulting...''} with its
 preceding comma both modify their parent, the VP of our sentence. We
@@ -202,6 +204,7 @@ can imagine that in our implementation of the algorithm, these would
 be identified as modifiers and they would be put on different levels
 from the argument ADVP, like so.
 
+\begin{tikzpicture}[scale=0.5]
 \Tree
 [.ROOT
   [.S=H
@@ -226,11 +229,13 @@ from the argument ADVP, like so.
           [.PP [.IN=H in ]
             [.NP [.DT a ] [.VBN damaged ] [.NN=H cell ] ] ] ] ] ]
     [.. . ] ] ]
+\end{tikzpicture}
 
 So far so good, nice and consistent. However, then we look at the NPs
 and we see that the adjectives are sisters to the nouns that they
 modify.
 
+\begin{tikzpicture}[scale=0.5]
 \Tree
 [.ROOT
   [.S=H
@@ -255,6 +260,7 @@ modify.
           [.PP [.IN=H in ]
             [.NP [.DT a ] [.NN=H [.VBN damaged ] [.NN=H cell ] ] ] ] ] ] ]
     [.. . ] ] ]
+\end{tikzpicture}
 
 This asymmetry in the parser output made the approach of implementing
 a procedure like theirs that would handle all of the flattening
