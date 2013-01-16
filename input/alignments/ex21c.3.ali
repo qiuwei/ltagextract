@@ -1,0 +1,27 @@
+[1 Generation] [12 of] [2 a hydrogen ion gradient] [3 with] [4 a proton pump] [5 , which consists of] [6 a polypeptide] [7 ,] [8 polar amino acid] [7 and] [9 a hydrophobic amino acid] [5 ,] [10 results in] [11 proton motive force] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Proton-Pump15490| |has-part| |Coordination2028| 5)
+            (|Coordination2028| |coordinates| |Hydrophobic-Amino-Acid15571| 7)
+            (|Coordination2028| |coordinates| |Polar-Amino-Acid15570| 7)
+            (|Coordination2028| |coordinates| |Polypeptide15577| 7)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane15596| |instrument| |Proton-Pump15490| 3)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane15596| |result| |Proton-Motive-Force15468| 10)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane15596| |object| |Hydrogen-Ion-Gradient15467| 12))
+    :INSTANCE-TYPES (
+            (|Hydrophobic-Amino-Acid15571| |instance-of| |Hydrophobic-Amino-Acid| 9)
+            (|Polar-Amino-Acid15570| |instance-of| |Polar-Amino-Acid| 8)
+            (|Polypeptide15577| |instance-of| |Polypeptide| 6)
+            (|Proton-Pump15490| |instance-of| |Proton-Pump| 4)
+            (|Proton-Motive-Force15468| |instance-of| |Proton-Motive-Force| 11)
+            (|Hydrogen-Ion-Gradient15467| |instance-of| |Hydrogen-Ion-Gradient| 2)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane15596| |instance-of| |Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane| 1))
+    :ROOT-TYPES (
+            (|Proton-Pump15490| |instance-of| |Entity| 4)
+            (|Polypeptide15577| |instance-of| |Entity| 6)
+            (|Polar-Amino-Acid15570| |instance-of| |Entity| 8)
+            (|Hydrophobic-Amino-Acid15571| |instance-of| |Entity| 9)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane15596| |instance-of| |Event| 1)
+            (|Proton-Motive-Force15468| |instance-of| |Entity| 11)
+            (|Hydrogen-Ion-Gradient15467| |instance-of| |Entity| 2)))

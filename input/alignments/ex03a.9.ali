@@ -1,0 +1,19 @@
+[1 The function of] [2 an inner membrane] [1 is to allow] [3 transport proteins] [4 to move] [5 hydrophilic compounds] [4 through] [6 it] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Move-Through42469| |object| |Hydrophilic-Compound42487| 4)
+            (|Move-Through42469| |agent| |Transport-Protein42564| 4)
+            (|Move-Through42469| |base| |Inner-Membrane42470| 6)
+            (|Inner-Membrane42470| |has-function| |Move-Through42469| 1))
+    :INSTANCE-TYPES (
+            (|Hydrophilic-Compound42487| |instance-of| |Hydrophilic-Compound| 5)
+            (|Transport-Protein42564| |instance-of| |Phosphorylated-Protein| 3)
+            (|Inner-Membrane42470| |instance-of| |Inner-Membrane| 2)
+            (|Move-Through42469| |instance-of| |Move-Through| 4))
+    :ROOT-TYPES (
+            (|Move-Through42469| |instance-of| |Event|)
+            (|Hydrophilic-Compound42487| |instance-of| |Entity|)
+            (|Mitochondrial-Membrane42464| |instance-of| |Entity|)
+            (|Transport-Protein42564| |instance-of| |Entity|)
+            (|Inner-Membrane42470| |instance-of| |Entity|)))

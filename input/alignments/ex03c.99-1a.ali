@@ -1,0 +1,21 @@
+[1 Hydrophilic compounds] [2 are detached] [3 from] [4 the function region] [5 of] [6 carrier proteins] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Detach10277| |object| |Hydrophilic-Compound10278| 2)
+            (|Detach10277| |base| |Carrier-Protein10273|)
+            (|Detach10277| |site| |Functional-Region10272| 3)
+            (|Carrier-Protein10273| |has-region| |Functional-Region10272| 5))
+    :INSTANCE-TYPES (
+            (|Hydrophilic-Compound10278| |instance-of| |Hydrophilic-Compound| 1)
+            (|Detach10277| |instance-of| |Detach| 2)
+            (|Carrier-Protein10273| |instance-of| |Carrier-Protein| 6)
+            (|Functional-Region10272| |instance-of| |Binding-Site| 4)
+            (|Hydrophilic-Compound| |subclasses| |Tangible-Entity|)
+            (|Carrier-Protein| |subclasses| |Tangible-Entity|))
+    :ROOT-TYPES (
+            (|Detach10277| |instance-of| |Event| 2)
+            (|Hydrophilic-Compound10278| |instance-of| |Entity| 1)
+            (|Carrier-Protein10273| |instance-of| |Entity| 6)
+            (|Functional-Region10272| |instance-of| |Entity| 4)))
+

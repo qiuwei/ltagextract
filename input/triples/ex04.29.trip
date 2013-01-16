@@ -1,0 +1,27 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Cellular-Respiration11363| |raw-material| |Oxygen-Molecule11381|)
+            (|Cellular-Respiration11363| |result| |Carbon-Dioxide11354|)
+            (|Oxygen-Molecule11381| |possesses| |Chemical-Energy11320|)
+            (|Carbon-Dioxide11354| |possesses| |Chemical-Energy11323|)
+            (|Chemical-Energy11320| |quantity| |Quantity-Value11321|)
+            (|Chemical-Energy11323| |quantity| |Quantity-Value11322|)
+            (|Quantity-Value11321| |greater-than| |Quantity-Value11322|))
+    :INSTANCE-TYPES (
+            (|Cellular-Respiration11363| |instance-of| |Cellular-Respiration|)
+            (|Oxygen-Molecule11381| |instance-of| |Oxygen-Molecule|)
+            (|Carbon-Dioxide11354| |instance-of| |Carbon-Dioxide|)
+            (|Chemical-Energy11320| |instance-of| |Chemical-Energy|)
+            (|Chemical-Energy11323| |instance-of| |Chemical-Energy|)
+            (|Quantity-Value11321| |instance-of| |Quantity-Value|)
+            (|Quantity-Value11322| |instance-of| |Quantity-Value|)
+            (|Oxygen-Molecule| |subclasses| |Chemical-Entity|)
+            (|Carbon-Dioxide| |subclasses| |Chemical-Entity|))
+    :ROOT-TYPES (
+            (|Cellular-Respiration11363| |instance-of| |Event|)
+            (|Oxygen-Molecule11381| |instance-of| |Entity|)
+            (|Carbon-Dioxide11354| |instance-of| |Entity|)
+            (|Chemical-Energy11320| |instance-of| |Entity|)
+            (|Chemical-Energy11323| |instance-of| |Entity|)
+            (|Quantity-Value11321| |instance-of| |Property-Value|)
+            (|Quantity-Value11322| |instance-of| |Property-Value|)))

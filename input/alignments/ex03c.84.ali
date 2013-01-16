@@ -1,0 +1,25 @@
+[1 A chemical] [2 is attached] [3 to] [4 the active site] [5 of] [6 a protein enzyme] [7 with] [8 an ionic bond] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Attach23994| |instrument| |Ionic-Bond24034| 7)
+            (|Attach23994| |object| |Chemical-Entity24036| 2)
+            (|Attach23994| |base| |Protein-Enzyme24003|)
+            (|Attach23994| |site| |Active-Site24027| 3)
+            (|Protein-Enzyme24003| |has-region| |Active-Site24027| 5))
+    :INSTANCE-TYPES (
+            (|Ionic-Bond24034| |instance-of| |Ionic-Bond| 8)
+            (|Chemical-Entity24036| |instance-of| |Chemical-Entity| 1)
+            (|Attach23994| |instance-of| |Attach| 2)
+            (|Protein-Enzyme24003| |instance-of| |Protein-Enzyme| 6)
+            (|Active-Site24027| |instance-of| |Active-Site| 4)
+            (|Chemical-Entity| |subclasses| |Tangible-Entity|)
+            (|Protein-Enzyme| |subclasses| |Tangible-Entity|))
+    :ROOT-TYPES (
+            (|Attach23994| |instance-of| |Event| 2)
+            (|Hydrogen-Bond24033| |instance-of| |Entity|)
+            (|Ionic-Bond24034| |instance-of| |Entity| 8)
+            (|Chemical-Entity24036| |instance-of| |Entity| 1)
+            (|Protein-Enzyme24003| |instance-of| |Entity| 6)
+            (|Active-Site24027| |instance-of| |Entity| 4)))
+

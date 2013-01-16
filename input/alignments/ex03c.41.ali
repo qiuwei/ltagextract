@@ -1,0 +1,25 @@
+[1 Receptor proteins] [2 take up] [3 cholesterol] [4 at] [5 the plasma membrane] [6 of] [7 a human cell] [8 , using up] [9 free energy] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |agent| |Receptor-Protein80255| 2)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |raw-material| |Free-Energy80242| 8)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |object| |Cholesterol80256| 2)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |base| |Human-Cell80257|)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |site| |Animal-Plasma-Membrane80249| 4)
+            (|Human-Cell80257| |has-part| |Animal-Plasma-Membrane80249| 6))
+    :INSTANCE-TYPES (
+            (|Receptor-Protein80255| |instance-of| |Receptor-Protein| 1)
+            (|Free-Energy80242| |instance-of| |Free-Energy| 9)
+            (|Cholesterol80256| |instance-of| |Cholesterol| 3)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |instance-of| |Uptake-Of-Cholesterol-By-Human-Cell| 2)
+            (|Human-Cell80257| |instance-of| |Human-Cell| 7)
+            (|Animal-Plasma-Membrane80249| |instance-of| |Chemical-Entity| 5))
+    :ROOT-TYPES (
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |instance-of| |Event| 2)
+            (|Receptor-Protein80255| |instance-of| |Entity| 1)
+            (|Free-Energy80242| |instance-of| |Entity| 9)
+            (|Cholesterol80256| |instance-of| |Entity| 3)
+            (|Human-Cell80257| |instance-of| |Entity| 7)
+            (|Animal-Plasma-Membrane80249| |instance-of| |Entity| 5)))
+

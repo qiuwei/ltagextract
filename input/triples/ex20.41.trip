@@ -1,0 +1,21 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Move-Out-Of50761| |object| |Carbon-Dioxide50740|)
+            (|Move-Out-Of50761| |origin| |Aqueous-Solution50733|)
+            (|Eukaryotic-Cell50691| |has-part| |Cytoplasm50701|)
+            (|Cytoplasm50701| |has-part| |Cytosol50704|)
+            (|Cytosol50704| |has-part| |Aqueous-Solution50733|))
+    :INSTANCE-TYPES (
+            (|Carbon-Dioxide50740| |instance-of| |Carbon-Dioxide|)
+            (|Move-Out-Of50761| |instance-of| |Move-Out-Of|)
+            (|Eukaryotic-Cell50691| |instance-of| |Eukaryotic-Cell|)
+            (|Cytoplasm50701| |instance-of| |Cytoplasm|)
+            (|Cytosol50704| |instance-of| |Cytosol|)
+            (|Aqueous-Solution50733| |instance-of| |Aqueous-Solution|))
+    :ROOT-TYPES (
+            (|Move-Out-Of50761| |instance-of| |Event|)
+            (|Carbon-Dioxide50740| |instance-of| |Entity|)
+            (|Aqueous-Solution50733| |instance-of| |Entity|)
+            (|Eukaryotic-Cell50691| |instance-of| |Entity|)
+            (|Cytoplasm50701| |instance-of| |Entity|)
+            (|Cytosol50704| |instance-of| |Entity|)))

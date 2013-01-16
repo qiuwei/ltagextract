@@ -1,0 +1,30 @@
+[1 The chemical energy] [2 of] [3 oxygen] [4 used up in] [5 cellular respiration] [6 is greater than] [7 the chemical energy] [8 of] [9 carbon dioxide] [10 produced].
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Cellular-Respiration11363| |raw-material| |Oxygen-Molecule11381| 4)
+            (|Cellular-Respiration11363| |result| |Carbon-Dioxide11354| 10)
+            (|Oxygen-Molecule11381| |possesses| |Chemical-Energy11320| 2)
+            (|Carbon-Dioxide11354| |possesses| |Chemical-Energy11323| 8)
+            (|Chemical-Energy11320| |quantity| |Quantity-Value11321| 1)
+            (|Chemical-Energy11323| |quantity| |Quantity-Value11322| 7)
+            (|Quantity-Value11321| |greater-than| |Quantity-Value11322| 6))
+    :INSTANCE-TYPES (
+            (|Cellular-Respiration11363| |instance-of| |Cellular-Respiration| 5)
+            (|Oxygen-Molecule11381| |instance-of| |Oxygen-Molecule| 3)
+            (|Carbon-Dioxide11354| |instance-of| |Carbon-Dioxide| 9)
+            (|Chemical-Energy11320| |instance-of| |Chemical-Energy| 1)
+            (|Chemical-Energy11323| |instance-of| |Chemical-Energy| 7)
+            (|Quantity-Value11321| |instance-of| |Quantity-Value| 1)
+            (|Quantity-Value11322| |instance-of| |Quantity-Value| 7)
+            (|Oxygen-Molecule| |subclasses| |Chemical-Entity|)
+            (|Carbon-Dioxide| |subclasses| |Chemical-Entity|))
+    :ROOT-TYPES (
+            (|Cellular-Respiration11363| |instance-of| |Event| 5)
+            (|Oxygen-Molecule11381| |instance-of| |Entity| 3)
+            (|Carbon-Dioxide11354| |instance-of| |Entity| 9)
+            (|Chemical-Energy11320| |instance-of| |Entity| 1)
+            (|Chemical-Energy11323| |instance-of| |Entity| 7)
+            (|Quantity-Value11321| |instance-of| |Property-Value| 1)
+            (|Quantity-Value11322| |instance-of| |Property-Value| 7)))
+

@@ -1,0 +1,20 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Cellulose-Digestion12782| |object| |Cellulose12780|)
+            (|Cellulose-Digestion12782| |raw-material| |Activation-Energy12792|)
+            (|Cellulose-Digestion12782| |raw-material| |Water-Molecule12783|)
+            (|Cellulose-Digestion12782| |agent| |Cellulase12781|)
+            (|Cellulase12781| |has-function| |Cellulose-Digestion12782|))
+    :INSTANCE-TYPES (
+            (|Cellulose12780| |instance-of| |Cellulose|)
+            (|Activation-Energy12792| |instance-of| |Activation-Energy|)
+            (|Water-Molecule12783| |instance-of| |Water-Molecule|)
+            (|Cellulase12781| |instance-of| |Cellulase|)
+            (|Cellulose-Digestion12782| |instance-of| |Cellulose-Digestion|)
+            (|Water-Molecule| |subclasses| |Chemical-Entity|))
+    :ROOT-TYPES (
+            (|Cellulose-Digestion12782| |instance-of| |Event|)
+            (|Cellulose12780| |instance-of| |Entity|)
+            (|Activation-Energy12792| |instance-of| |Entity|)
+            (|Water-Molecule12783| |instance-of| |Entity|)
+            (|Cellulase12781| |instance-of| |Entity|)))

@@ -1,0 +1,19 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Block17574| |object| |Hydrophobic-Compound17400|)
+            (|Block17574| |object| |Hydrogen-Ion17608|)
+            (|Block17574| |object| |Hydrophilic-Compound17553|)
+            (|Block17574| |instrument| |Thylakoid-Membrane17637|)
+            (|Thylakoid-Membrane17637| |has-function| |Block17574|))
+    :INSTANCE-TYPES (
+            (|Hydrophobic-Compound17400| |instance-of| |Hydrophobic-Compound|)
+            (|Hydrogen-Ion17608| |instance-of| |Hydrogen-Ion|)
+            (|Hydrophilic-Compound17553| |instance-of| |Hydrophilic-Compound|)
+            (|Thylakoid-Membrane17637| |instance-of| |Thylakoid-Membrane|)
+            (|Block17574| |instance-of| |Block|))
+    :ROOT-TYPES (
+            (|Block17574| |instance-of| |Event|)
+            (|Hydrophobic-Compound17400| |instance-of| |Entity|)
+            (|Hydrogen-Ion17608| |instance-of| |Entity|)
+            (|Hydrophilic-Compound17553| |instance-of| |Entity|)
+            (|Thylakoid-Membrane17637| |instance-of| |Entity|)))

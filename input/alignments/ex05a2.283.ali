@@ -1,0 +1,23 @@
+[1 There are] [2 helical shaped] [3 hydrophobic amino acids] [1 inside] [4 the hydrophobic region] [5 of] [6 an aquaporin] [7 in] [8 a plasma membrane] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Plasma-membrane4366| |has-part| |Aquaporin4383| 7)
+            (|Aquaporin4383| |has-part| |Hydrophobic-Amino-Acid4363|)
+            (|Hydrophobic-Amino-Acid4363| |is-inside| |Hydrophobic-Region4359| 1)
+            (|Aquaporin4383| |has-region| |Hydrophobic-Region4359| 5)
+            (|Hydrophobic-Amino-Acid4363| |shape| |Shape-Value4321| 2)
+            (|Shape-Value4321| |value| "helical" 2))
+    :INSTANCE-TYPES (
+            (|Plasma-membrane4366| |instance-of| |Plasma-membrane| 8)
+            (|Aquaporin4383| |instance-of| |Aquaporin| 6)
+            (|Hydrophobic-Region4359| |instance-of| |Hydrophobic-Region| 4)
+            (|Hydrophobic-Amino-Acid4363| |instance-of| |Hydrophobic-Amino-Acid| 3)
+            (|Shape-Value4321| |instance-of| |Shape-Value| 2))
+    :ROOT-TYPES (
+            (|Plasma-membrane4366| |instance-of| |Entity| 8)
+            (|Aquaporin4383| |instance-of| |Entity| 6)
+            (|Hydrophobic-Amino-Acid4363| |instance-of| |Entity| 3)
+            (|Hydrophobic-Region4359| |instance-of| |Entity| 4)
+            (|Shape-Value4321| |instance-of| |Property-Value| 2)))
+

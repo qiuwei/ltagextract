@@ -1,0 +1,21 @@
+[1 A motile cilium] [2 is short] [3 , its length varies between] [4 2 micrometers] [3 and] [5 20 micrometers] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Motile-Cilium40788| |length| |Length-Value40790| 2)
+            (|Length-Value40790| |greater-than| |Length-Value40793| 3)
+            (|Length-Value40794| |greater-than| |Length-Value40790| 3)
+            (|Length-Value40793| |value| "2 micrometers" 4)
+            (|Length-Value40794| |value| "20 micrometers" 5)
+            (|Length-Value40790| |value| "short" 2))
+    :INSTANCE-TYPES (
+            (|Motile-Cilium40788| |instance-of| |Motile-Cilium| 1)
+            (|Length-Value40793| |instance-of| |Length-Value| 4)
+            (|Length-Value40794| |instance-of| |Length-Value| 5)
+            (|Length-Value40790| |instance-of| |Length-Value| 3))
+    :ROOT-TYPES (
+            (|Motile-Cilium40788| |instance-of| |Entity| 1)
+            (|Length-Value40790| |instance-of| |Property-Value| 3)
+            (|Length-Value40793| |instance-of| |Property-Value| 4)
+            (|Length-Value40794| |instance-of| |Property-Value| 5)))
+

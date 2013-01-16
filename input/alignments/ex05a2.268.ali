@@ -1,0 +1,23 @@
+[1 There are] [2 long] [3 fibronectins] [1 at] [4 the hydrophilic face] [5 of] [6 the plasma membrane] [7 of] [8 an animal cell] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Animal-Cell28118| |has-part| |Animal-Plasma-Membrane28081| 7)
+            (|Animal-Plasma-Membrane28081| |has-part| |Fibronectin28115|)
+            (|Fibronectin28115| |is-at| |Hydrophilic-Face28136| 1)
+            (|Animal-Plasma-Membrane28081| |has-region| |Hydrophilic-Face28136| 5)
+            (|Fibronectin28115| |length| |Length-Value28068| 2)
+            (|Length-Value28068| |value| "long" 2))
+    :INSTANCE-TYPES (
+            (|Animal-Cell28118| |instance-of| |Animal-Cell| 8)
+            (|Animal-Plasma-Membrane28081| |instance-of| |Animal-Plasma-Membrane| 6)
+            (|Hydrophilic-Face28136| |instance-of| |Hydrophilic-Face| 4)
+            (|Fibronectin28115| |instance-of| |Fibronectin| 3)
+            (|Length-Value28068| |instance-of| |Length-Value| 2))
+    :ROOT-TYPES (
+            (|Animal-Cell28118| |instance-of| |Entity| 8)
+            (|Animal-Plasma-Membrane28081| |instance-of| |Entity| 6)
+            (|Fibronectin28115| |instance-of| |Entity| 3)
+            (|Hydrophilic-Face28136| |instance-of| |Entity| 4)
+            (|Length-Value28068| |instance-of| |Property-Value| 2)))
+

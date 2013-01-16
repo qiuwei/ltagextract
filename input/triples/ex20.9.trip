@@ -1,0 +1,21 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Exergonic-Process8252| |object| |Hydrogen-Ion8233|)
+            (|Exergonic-Process8252| |agent| |ATP-Synthase8247|)
+            (|Vascular-Tissue8261| |has-part| |Plant-Cell8215|)
+            (|Plant-Cell8215| |has-part| |Thylakoid-Membrane8217|)
+            (|Thylakoid-Membrane8217| |has-part| |ATP-Synthase8247|))
+    :INSTANCE-TYPES (
+            (|Hydrogen-Ion8233| |instance-of| |Hydrogen-Ion|)
+            (|Exergonic-Process8252| |instance-of| |Facilitated-Diffusion-Of-Ion|)
+            (|Vascular-Tissue8261| |instance-of| |Vascular-Tissue|)
+            (|Plant-Cell8215| |instance-of| |Plant-Cell|)
+            (|Thylakoid-Membrane8217| |instance-of| |Thylakoid-Membrane|)
+            (|ATP-Synthase8247| |instance-of| |ATP-Synthase|))
+    :ROOT-TYPES (
+            (|Exergonic-Process8252| |instance-of| |Event|)
+            (|Hydrogen-Ion8233| |instance-of| |Entity|)
+            (|ATP-Synthase8247| |instance-of| |Entity|)
+            (|Vascular-Tissue8261| |instance-of| |Entity|)
+            (|Plant-Cell8215| |instance-of| |Entity|)
+            (|Thylakoid-Membrane8217| |instance-of| |Entity|)))

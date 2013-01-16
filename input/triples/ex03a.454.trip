@@ -1,0 +1,19 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Release-Of-Calcium-Ion-By-Cell64543| |object| |Calcium-Ion64542|)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |result| |Free-Energy64553|)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |base| |Cell64554|)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |raw-material| |Membrane-Potential64538|)
+            (|Membrane-Potential64538| |has-function| |Release-Of-Calcium-Ion-By-Cell64543|))
+    :INSTANCE-TYPES (
+            (|Calcium-Ion64542| |instance-of| |Calcium-Ion|)
+            (|Free-Energy64553| |instance-of| |Free-Energy|)
+            (|Cell64554| |instance-of| |Cell|)
+            (|Membrane-Potential64538| |instance-of| |Membrane-Potential|)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |instance-of| |Release-Of-Calcium-Ion-By-Cell|))
+    :ROOT-TYPES (
+            (|Release-Of-Calcium-Ion-By-Cell64543| |instance-of| |Event|)
+            (|Calcium-Ion64542| |instance-of| |Entity|)
+            (|Free-Energy64553| |instance-of| |Entity|)
+            (|Cell64554| |instance-of| |Entity|)
+            (|Membrane-Potential64538| |instance-of| |Entity|)))

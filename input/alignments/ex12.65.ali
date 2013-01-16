@@ -1,0 +1,25 @@
+[1 Morphine] [2 is] [3 a ligand] [4 which] [9 binds] [5 to] [6 the endorphin receptor] [7 in] [8 a plasma membrane].
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Morphine43486| |plays| |Ligand43441| 2)
+            (|Ligand43441| |in-event| |Ligand-Binding43443| 4)
+            (|Ligand-Binding43443| |object| |Morphine43486|)
+            (|Ligand-Binding43443| |base| |Endorphin-Receptor43442| 5)
+            (|Animal-Plasma-Membrane43446| |has-part| |Endorphin-Receptor43442| 7))
+    :INSTANCE-TYPES (
+            (|Ligand43441| |instance-of| |Ligand| 3)
+            (|Morphine43486| |instance-of| |Morphine| 1)
+            (|Ligand-Binding43443| |instance-of| |Ligand-Binding| 9)
+            (|Animal-Plasma-Membrane43446| |instance-of| |Animal-Plasma-Membrane| 8)
+            (|Endorphin-Receptor43442| |instance-of| |Endorphin-Receptor| 6)
+            (|Morphine| |subclasses| |Tangible-Entity|)
+            (|Endorphin-Receptor| |subclasses| |Tangible-Entity|))
+    :ROOT-TYPES (
+            (|Morphine43486| |instance-of| |Entity| 1)
+            (|Ligand43441| |instance-of| |Role| 3)
+            (|Ligand-Binding43443| |instance-of| |Event| 9)
+            (|Endorphin-Receptor43442| |instance-of| |Entity| 6)
+            (|Animal-Plasma-Membrane43446| |instance-of| |Entity| 8)))
+
+

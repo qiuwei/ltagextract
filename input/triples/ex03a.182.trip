@@ -1,0 +1,19 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |object| |Anion19306|)
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |donor| |Cytoplasm19308|)
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |recipient| |Extra-Cellular-Matrix19307|)
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |raw-material| |Membrane-Potential19309|)
+            (|Membrane-Potential19309| |has-function| |Diffusion-Of-Anion-Across-Plasma-Membrane19310|))
+    :INSTANCE-TYPES (
+            (|Anion19306| |instance-of| |Anion|)
+            (|Cytoplasm19308| |instance-of| |Cytoplasm|)
+            (|Extra-Cellular-Matrix19307| |instance-of| |Extra-Cellular-Matrix|)
+            (|Membrane-Potential19309| |instance-of| |Concentration-Gradient|)
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |instance-of| |Diffusion-Of-Anion-Across-Plasma-Membrane|))
+    :ROOT-TYPES (
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |instance-of| |Event|)
+            (|Anion19306| |instance-of| |Entity|)
+            (|Cytoplasm19308| |instance-of| |Entity|)
+            (|Extra-Cellular-Matrix19307| |instance-of| |Entity|)
+            (|Membrane-Potential19309| |instance-of| |Entity|)))

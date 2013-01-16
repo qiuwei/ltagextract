@@ -1,0 +1,18 @@
+[1 The rate of] [2 absorption] [6 of] [3 a central vacuole] [4 is directly proportional to] [5 its size].
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Absorb12897| |agent| |Central-Vacuole12899| 6)
+            (|Absorb12897| |rate| |Rate-Value12894| 1)
+            (|Rate-Value12894| |directly-proportional| |Size-Value12893| 4)
+            (|Central-Vacuole12899| |size| |Size-Value12893| 5))
+    :INSTANCE-TYPES (
+            (|Absorb12897| |instance-of| |Absorb| 2)
+            (|Rate-Value12894| |instance-of| |Rate-Value| 1)
+            (|Central-Vacuole12899| |instance-of| |Central-Vacuole| 3)
+            (|Size-Value12893| |instance-of| |Size-Value| 5))
+    :ROOT-TYPES (
+            (|Absorb12897| |instance-of| |Event|)
+            (|Central-Vacuole12899| |instance-of| |Entity|)
+            (|Rate-Value12894| |instance-of| |Property-Value|)
+            (|Size-Value12893| |instance-of| |Property-Value|)))

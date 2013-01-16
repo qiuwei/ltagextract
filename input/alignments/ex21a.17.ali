@@ -1,0 +1,25 @@
+[1 Electrogenic pumps] [2 , which consist of] [3 a hydrophobic amino acid] [4 ,] [5 a polar amino acid] [4 and] [6 a monomer] [2 ,] [7 create] [8 membrane potential] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Electrogenic-Pump21300| |has-part| |Coordination2015| 2)
+            (|Coordination2015| |coordinates| |Monomer21323| 4)
+            (|Coordination2015| |coordinates| |Polar-Amino-Acid21291| 4)
+            (|Coordination2015| |coordinates| |Hydrophobic-Amino-Acid21290| 4)
+            (|Create21297| |agent| |Electrogenic-Pump21300| 7)
+            (|Create21297| |result| |Membrane-Potential21299| 7))
+    :INSTANCE-TYPES (
+            (|Monomer21323| |instance-of| |Monomer| 6)
+            (|Polar-Amino-Acid21291| |instance-of| |Polar-Amino-Acid| 5)
+            (|Hydrophobic-Amino-Acid21290| |instance-of| |Hydrophobic-Amino-Acid| 3)
+            (|Electrogenic-Pump21300| |instance-of| |Electrogenic-Pump| 1)
+            (|Create21297| |instance-of| |Create| 7)
+            (|Membrane-Potential21299| |instance-of| |Membrane-Potential| 8))
+    :ROOT-TYPES (
+            (|Electrogenic-Pump21300| |instance-of| |Entity| 1)
+            (|Monomer21323| |instance-of| |Entity| 6)
+            (|Polar-Amino-Acid21291| |instance-of| |Entity| 5)
+            (|Hydrophobic-Amino-Acid21290| |instance-of| |Entity| 3)
+            (|Create21297| |instance-of| |Event| 7)
+            (|Membrane-Potential21299| |instance-of| |Entity| 8)))
+

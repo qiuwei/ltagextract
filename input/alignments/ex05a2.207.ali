@@ -1,0 +1,20 @@
+[1 The xylem] [2 of] [3 a plant vein] [4 has] [5 thin] [6 tracheids] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Plant-Vein3268| |has-part| |Xylem3269| 2)
+            (|Xylem3269| |has-part| |Tracheid3271| 4)
+            (|Tracheid3271| |thickness| |Length-Value3413| 5)
+            (|Length-Value3413| |value| "thin" 5))
+    :INSTANCE-TYPES (
+            (|Plant-Vein3268| |instance-of| |Plant-Vein| 3)
+            (|Xylem3269| |instance-of| |Xylem| 1)
+            (|Tracheid3271| |instance-of| |Tracheid| 6)
+            (|Length-Value3413| |instance-of| |Length-Value| 5))
+    :ROOT-TYPES (
+            (|Plant-Vein3268| |instance-of| |Entity| 3)
+            (|Xylem3269| |instance-of| |Entity| 1)
+            (|Tracheid3271| |instance-of| |Entity| 6)
+            (|Tracheid3272| |instance-of| |Entity|)
+            (|Length-Value3413| |instance-of| |Property-Value| 5)))
+

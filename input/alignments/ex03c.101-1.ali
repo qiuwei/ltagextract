@@ -1,0 +1,18 @@
+[1 Starch] [2 is stored] [3 in] [4 the lateral root] [5 of] [6 carrots] .
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Starch-Storage-By-Plant10349| |object| |Starch10339| 2)
+            (|Starch-Storage-By-Plant10349| |agent| |Carrot-Plant10372|)
+            (|Starch-Storage-By-Plant10349| |site| |Lateral-Root10350| 3)
+            (|Carrot-Plant10372| |has-part| |Lateral-Root10350| 5))
+    :INSTANCE-TYPES (
+            (|Starch10339| |instance-of| |Starch| 1)
+            (|Starch-Storage-By-Plant10349| |instance-of| |Starch-Storage-By-Plant| 2)
+            (|Carrot-Plant10372| |instance-of| |Carrot-Plant| 6)
+            (|Lateral-Root10350| |instance-of| |Lateral-Root| 4))
+    :ROOT-TYPES (
+            (|Starch-Storage-By-Plant10349| |instance-of| |Event|)
+            (|Starch10339| |instance-of| |Entity|)
+            (|Carrot-Plant10372| |instance-of| |Entity|)
+            (|Lateral-Root10350| |instance-of| |Entity|)))

@@ -1,0 +1,22 @@
+[1 The function of] [2 an ionic bond] [1 is] [3 to hold] [4 an anion] [5 and] [6 a cation] [3 together] [7 to form] [8 an ionic comopund] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Hold-Together36308| |object| |Coordination2018| 3)
+            (|Coordination2018| |coordinates| |Anion36306| 5)
+            (|Coordination2018| |coordinates| |Cation36305| 5)
+            (|Hold-Together36308| |result| |Ionic-Compound36303| 7)
+            (|Hold-Together36308| |agent| |Ionic-Bond36307| 1)
+            (|Ionic-Bond36307| |has-function| |Hold-Together36308| 1))
+    :INSTANCE-TYPES (
+            (|Anion36306| |instance-of| |Anion| 4)
+            (|Cation36305| |instance-of| |Cation| 6)
+            (|Ionic-Compound36303| |instance-of| |Ionic-Compound| 8)
+            (|Ionic-Bond36307| |instance-of| |Ionic-Bond| 2)
+            (|Hold-Together36308| |instance-of| |Hold-Together| 3))
+    :ROOT-TYPES (
+            (|Hold-Together36308| |instance-of| |Event|)
+            (|Anion36306| |instance-of| |Entity|)
+            (|Cation36305| |instance-of| |Entity|)
+            (|Ionic-Compound36303| |instance-of| |Entity|)
+            (|Ionic-Bond36307| |instance-of| |Entity|)))

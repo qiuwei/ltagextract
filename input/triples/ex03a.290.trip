@@ -1,0 +1,19 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Hold-Together162| |object| |Oxygen145|)
+            (|Hold-Together162| |object| |Oxygen149|)
+            (|Hold-Together162| |object| |Carbon152|)
+            (|Hold-Together162| |agent| |Double-Bond161|)
+            (|Double-Bond161| |has-function| |Hold-Together162|))
+    :INSTANCE-TYPES (
+            (|Oxygen145| |instance-of| |Oxygen|)
+            (|Oxygen149| |instance-of| |Oxygen|)
+            (|Carbon152| |instance-of| |Carbon|)
+            (|Double-Bond161| |instance-of| |Double-Bond|)
+            (|Hold-Together162| |instance-of| |Hold-Together|))
+    :ROOT-TYPES (
+            (|Hold-Together162| |instance-of| |Event|)
+            (|Oxygen145| |instance-of| |Entity|)
+            (|Oxygen149| |instance-of| |Entity|)
+            (|Carbon152| |instance-of| |Entity|)
+            (|Double-Bond161| |instance-of| |Entity|)))

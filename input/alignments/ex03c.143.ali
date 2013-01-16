@@ -1,0 +1,25 @@
+[1 ATP] [2 is used up when] [3 a hydrogen ion gradient] [4 is generated] [5 at] [6 the plasma membrane] [7 of] [8 a prokaryote] [9 , resulting in] [10 a proton motive force] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |raw-material| |ATP80498| 2)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |result| |Proton-Motive-Force80517| 9)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |object| |Hydrogen-Ion-Gradient80535| 4)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |base| |Prokaryote80519|)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |site| |Plasma-membrane80558| 5)
+            (|Prokaryote80519| |has-part| |Plasma-membrane80558| 7))
+    :INSTANCE-TYPES (
+            (|ATP80498| |instance-of| |ATP| 1)
+            (|Proton-Motive-Force80517| |instance-of| |Proton-Motive-Force| 10)
+            (|Hydrogen-Ion-Gradient80535| |instance-of| |Hydrogen-Ion-Gradient| 3)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |instance-of| |Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane| 4)
+            (|Prokaryote80519| |instance-of| |Prokaryote| 8)
+            (|Plasma-membrane80558| |instance-of| |Plasma-membrane| 6))
+    :ROOT-TYPES (
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |instance-of| |Event| 4)
+            (|ATP80498| |instance-of| |Entity| 1)
+            (|Proton-Motive-Force80517| |instance-of| |Entity| 10)
+            (|Hydrogen-Ion-Gradient80535| |instance-of| |Entity| 3)
+            (|Prokaryote80519| |instance-of| |Entity| 8)
+            (|Plasma-membrane80558| |instance-of| |Entity| 6)))
+

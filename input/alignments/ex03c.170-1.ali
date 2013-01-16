@@ -1,0 +1,20 @@
+[1 Phospholipids] [2 are synthesised] [3 at] [4 the smooth endoplasmic reticulum] [5 of] [6 algal cells] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Synthesis-Of-Lipid1898| |result| |Phospholipid1902| 2)
+            (|Synthesis-Of-Lipid1898| |base| |Algal-Cell1887|)
+            (|Synthesis-Of-Lipid1898| |site| |Smooth-Endoplasmic-Reticulum1857| 3)
+            (|Algal-Cell1887| |has-part| |Smooth-Endoplasmic-Reticulum1857| 5))
+    :INSTANCE-TYPES (
+            (|Phospholipid1902| |instance-of| |Phospholipid| 1)
+            (|Synthesis-Of-Lipid1898| |instance-of| |Synthesis-Of-Lipid| 2)
+            (|Algal-Cell1887| |instance-of| |Algal-Cell| 6)
+            (|Smooth-Endoplasmic-Reticulum1857| |instance-of| |Smooth-Endoplasmic-Reticulum| 4)
+            (|Phospholipid| |subclasses| |Chemical-Entity|))
+    :ROOT-TYPES (
+            (|Synthesis-Of-Lipid1898| |instance-of| |Event| 2)
+            (|Phospholipid1902| |instance-of| |Entity| 1)
+            (|Algal-Cell1887| |instance-of| |Entity| 6)
+            (|Smooth-Endoplasmic-Reticulum1857| |instance-of| |Entity| 4)))
+

@@ -1,0 +1,24 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Leaf38129| |has-part| |Epidermis38140|)
+            (|Leaf38129| |has-part| |Palisade-Mesophyll38132|)
+            (|Epidermis38140| |is-above| |Palisade-Mesophyll38132|)
+            (|Epidermis38140| |has-part| |Guard-Cell38153|)
+            (|Guard-Cell38153| |size| |Size-Value37847|)
+            (|Guard-Cell38153| |shape| |Shape-Value37857|)
+            (|Size-Value37847| |value| "big")
+            (|Shape-Value37857| |value| "bean"))
+    :INSTANCE-TYPES (
+            (|Leaf38129| |instance-of| |Leaf|)
+            (|Palisade-Mesophyll38132| |instance-of| |Palisade-Mesophyll|)
+            (|Epidermis38140| |instance-of| |Epidermis|)
+            (|Size-Value37847| |instance-of| |Size-Value|)
+            (|Guard-Cell38153| |instance-of| |Guard-Cell|)
+            (|Shape-Value37857| |instance-of| |Shape-Value|))
+    :ROOT-TYPES (
+            (|Leaf38129| |instance-of| |Entity|)
+            (|Epidermis38140| |instance-of| |Entity|)
+            (|Palisade-Mesophyll38132| |instance-of| |Entity|)
+            (|Guard-Cell38153| |instance-of| |Entity|)
+            (|Size-Value37847| |instance-of| |Property-Value|)
+            (|Shape-Value37857| |instance-of| |Property-Value|)))

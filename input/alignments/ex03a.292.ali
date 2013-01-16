@@ -1,0 +1,22 @@
+[1 The function of] [2 a thylakoid membrane] [1 is] [3 to block] [4 hydrophobic compounds] [5 ,] [6 hydrogen ions] [5 and] [7 hydrophilic compounds] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Block17574| |object| |Coordination2025| 3)
+            (|Coordination2025| |coordinates| |Hydrophobic-Compound17400| 5)
+            (|Coordination2025| |coordinates| |Hydrogen-Ion17608| 5)
+            (|Coordination2025| |coordinates| |Hydrophilic-Compound17553| 5)
+            (|Block17574| |instrument| |Thylakoid-Membrane17637| 1)
+            (|Thylakoid-Membrane17637| |has-function| |Block17574| 1))
+    :INSTANCE-TYPES (
+            (|Hydrophobic-Compound17400| |instance-of| |Hydrophobic-Compound| 4)
+            (|Hydrogen-Ion17608| |instance-of| |Hydrogen-Ion| 6)
+            (|Hydrophilic-Compound17553| |instance-of| |Hydrophilic-Compound| 4)
+            (|Thylakoid-Membrane17637| |instance-of| |Thylakoid-Membrane| 2)
+            (|Block17574| |instance-of| |Block| 3))
+    :ROOT-TYPES (
+            (|Block17574| |instance-of| |Event|)
+            (|Hydrophobic-Compound17400| |instance-of| |Entity|)
+            (|Hydrogen-Ion17608| |instance-of| |Entity|)
+            (|Hydrophilic-Compound17553| |instance-of| |Entity|)
+            (|Thylakoid-Membrane17637| |instance-of| |Entity|)))

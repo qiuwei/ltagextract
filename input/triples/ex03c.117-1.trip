@@ -1,0 +1,16 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Receive14146| |object| |Vesicle14147|)
+            (|Receive14146| |recipient| |Golgi-Apparatus14144|)
+            (|Receive14146| |site| |Cis-Face14148|)
+            (|Golgi-Apparatus14144| |has-region| |Cis-Face14148|))
+    :INSTANCE-TYPES (
+            (|Vesicle14147| |instance-of| |Vesicle|)
+            (|Receive14146| |instance-of| |Receive|)
+            (|Golgi-Apparatus14144| |instance-of| |Golgi-Apparatus|)
+            (|Cis-Face14148| |instance-of| |Cis-Face|))
+    :ROOT-TYPES (
+            (|Receive14146| |instance-of| |Event|)
+            (|Vesicle14147| |instance-of| |Entity|)
+            (|Golgi-Apparatus14144| |instance-of| |Entity|)
+            (|Cis-Face14148| |instance-of| |Entity|)))

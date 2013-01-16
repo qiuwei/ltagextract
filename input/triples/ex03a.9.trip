@@ -1,0 +1,17 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Move-Through42469| |object| |Hydrophilic-Compound42487|)
+            (|Move-Through42469| |agent| |Transport-Protein42564|)
+            (|Move-Through42469| |base| |Inner-Membrane42470|)
+            (|Inner-Membrane42470| |has-function| |Move-Through42469|))
+    :INSTANCE-TYPES (
+            (|Hydrophilic-Compound42487| |instance-of| |Hydrophilic-Compound|)
+            (|Transport-Protein42564| |instance-of| |Phosphorylated-Protein|)
+            (|Inner-Membrane42470| |instance-of| |Inner-Membrane|)
+            (|Move-Through42469| |instance-of| |Move-Through|))
+    :ROOT-TYPES (
+            (|Move-Through42469| |instance-of| |Event|)
+            (|Hydrophilic-Compound42487| |instance-of| |Entity|)
+            (|Mitochondrial-Membrane42464| |instance-of| |Entity|)
+            (|Transport-Protein42564| |instance-of| |Entity|)
+            (|Inner-Membrane42470| |instance-of| |Entity|)))

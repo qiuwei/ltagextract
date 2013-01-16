@@ -1,0 +1,22 @@
+[1 A biomembrane] [2 is] [3 a barrier] [4 which] [8 blocks] [5 the hydrogen ion] [6 of] [7 a chemical] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Biomembrane13296| |plays| |Barrier13292| 2)
+            (|Barrier13292| |in-event| |Block13291| 4)
+            (|Block13291| |instrument| |Biomembrane13296|)
+            (|Block13291| |object| |Hydrogen-Ion13298| 8)
+            (|Chemical13260| |has-part| |Hydrogen-Ion13298| 6))
+    :INSTANCE-TYPES (
+            (|Barrier13292| |instance-of| |Barrier| 3)
+            (|Biomembrane13296| |instance-of| |Biomembrane| 1)
+            (|Block13291| |instance-of| |Block| 8)
+            (|Chemical13260| |instance-of| |Chemical| 7)
+            (|Hydrogen-Ion13298| |instance-of| |Hydrogen-Ion| 5))
+    :ROOT-TYPES (
+            (|Biomembrane13296| |instance-of| |Entity| 1)
+            (|Barrier13292| |instance-of| |Role| 3)
+            (|Block13291| |instance-of| |Event| 8)
+            (|Hydrogen-Ion13298| |instance-of| |Entity| 5)
+            (|Chemical13260| |instance-of| |Entity| 7)))
+

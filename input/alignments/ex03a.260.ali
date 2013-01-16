@@ -1,0 +1,22 @@
+[1 The function of] [2 a plasma membrane] [1 is] [3 to block] [4 hydrophobic compounds] [5 and] [6 hydrophilic compounds] [7 at] [8 the hydrophobic core] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Block4400| |object| |Coordination2014| 3)
+            (|Coordination2014| |coordinates| |Hydrophobic-Compound4340| 5)
+            (|Coordination2014| |coordinates| |Hydrophilic-Compound4402| 5)
+            (|Block4400| |base| |Hydrophobic-Core4320| 7)
+            (|Block4400| |instrument| |Plasma-membrane4366| 1)
+            (|Plasma-membrane4366| |has-function| |Block4400| 1))
+    :INSTANCE-TYPES (
+            (|Hydrophobic-Compound4340| |instance-of| |Hydrophobic-Compound| 4)
+            (|Hydrophilic-Compound4402| |instance-of| |Hydrophilic-Compound| 6)
+            (|Hydrophobic-Core4320| |instance-of| |Hydrophobic-Core| 8)
+            (|Plasma-membrane4366| |instance-of| |Plasma-membrane| 2)
+            (|Block4400| |instance-of| |Block| 3))
+    :ROOT-TYPES (
+            (|Block4400| |instance-of| |Event|)
+            (|Hydrophobic-Compound4340| |instance-of| |Entity|)
+            (|Hydrophilic-Compound4402| |instance-of| |Entity|)
+            (|Hydrophobic-Core4320| |instance-of| |Entity|)
+            (|Plasma-membrane4366| |instance-of| |Entity|)))

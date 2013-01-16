@@ -1,0 +1,24 @@
+[1 Glycoproteins] [2 take up] [3 cholesterol] [4 at] [5 the plasma membrane] [6 of] [7 human cells] [8 , using up] [9 ATP] .
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |raw-material| |ATP80260| 8)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |agent| |Glycoprotein80266| 2)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |object| |Cholesterol80256| 2)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |base| |Human-Cell80257|)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |site| |Animal-Plasma-Membrane80249| 4)
+            (|Human-Cell80257| |has-part| |Animal-Plasma-Membrane80249| 6))
+    :INSTANCE-TYPES (
+            (|ATP80260| |instance-of| |ATP| 9)
+            (|Glycoprotein80266| |instance-of| |Transport-Protein| 1)
+            (|Cholesterol80256| |instance-of| |Cholesterol| 3)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |instance-of| |Uptake-Of-Cholesterol-By-Human-Cell| 2)
+            (|Human-Cell80257| |instance-of| |Human-Cell| 7)
+            (|Animal-Plasma-Membrane80249| |instance-of| |Chemical-Entity| 5))
+    :ROOT-TYPES (
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |instance-of| |Event|)
+            (|ATP80260| |instance-of| |Entity|)
+            (|Glycoprotein80266| |instance-of| |Entity|)
+            (|Cholesterol80256| |instance-of| |Entity|)
+            (|Human-Cell80257| |instance-of| |Entity|)
+            (|Animal-Plasma-Membrane80249| |instance-of| |Entity|)))

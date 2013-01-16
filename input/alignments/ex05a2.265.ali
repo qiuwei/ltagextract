@@ -1,0 +1,23 @@
+[1 Carbohydrate side chains] [2 at] [3 the surface] [4 of] [5 the fibronectin] [6 of] [7 a plasma membrane] [8 have a] [9 branched] [8 shape] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Animal-Plasma-Membrane28081| |has-part| |Fibronectin28115| 6)
+            (|Fibronectin28115| |has-part| |Carbohydrate-Side-Chain28117|)
+            (|Carbohydrate-Side-Chain28117| |is-at| |Surface28116| 2)
+            (|Fibronectin28115| |has-region| |Surface28116| 4)
+            (|Carbohydrate-Side-Chain28117| |shape| |Shape-Value28195| 8)
+            (|Shape-Value28195| |value| "branched" 9))
+    :INSTANCE-TYPES (
+            (|Animal-Plasma-Membrane28081| |instance-of| |Animal-Plasma-Membrane| 7)
+            (|Fibronectin28115| |instance-of| |Fibronectin| 5)
+            (|Surface28116| |instance-of| |Surface| 3)
+            (|Carbohydrate-Side-Chain28117| |instance-of| |Carbohydrate-Side-Chain| 1)
+            (|Shape-Value28195| |instance-of| |Shape-Value| 9))
+    :ROOT-TYPES (
+            (|Animal-Plasma-Membrane28081| |instance-of| |Entity| 7)
+            (|Fibronectin28115| |instance-of| |Entity| 5)
+            (|Carbohydrate-Side-Chain28117| |instance-of| |Entity| 1)
+            (|Surface28116| |instance-of| |Entity| 3)
+            (|Shape-Value28195| |instance-of| |Property-Value| 8)))
+

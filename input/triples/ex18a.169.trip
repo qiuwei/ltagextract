@@ -1,0 +1,26 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Mammal26166| |has-part| |Stomach25958|)
+            (|Stomach25958| |shape| |Shape-Value25974|)
+            (|Stomach25958| |has-part| |Gastric-Gland25967|)
+            (|Gastric-Gland25967| |plays| |Secretor25996|)
+            (|Secretor25996| |in-event| |Secretion25994|)
+            (|Secretion25994| |object| |Gastric-Juice25997|)
+            (|Secretion25994| |base| |Gastric-Gland25967|)
+            (|Shape-Value25974| |value| "hollow"))
+    :INSTANCE-TYPES (
+            (|Mammal26166| |instance-of| |Mammal|)
+            (|Shape-Value25974| |instance-of| |Shape-Value|)
+            (|Stomach25958| |instance-of| |Stomach|)
+            (|Secretor25996| |instance-of| |Secretor|)
+            (|Gastric-Juice25997| |instance-of| |Gastric-Juice|)
+            (|Secretion25994| |instance-of| |Secretion|)
+            (|Gastric-Gland25967| |instance-of| |Gastric-Gland|))
+    :ROOT-TYPES (
+            (|Mammal26166| |instance-of| |Entity|)
+            (|Stomach25958| |instance-of| |Entity|)
+            (|Shape-Value25974| |instance-of| |Property-Value|)
+            (|Gastric-Gland25967| |instance-of| |Entity|)
+            (|Secretor25996| |instance-of| |Role|)
+            (|Secretion25994| |instance-of| |Event|)
+            (|Gastric-Juice25997| |instance-of| |Entity|)))

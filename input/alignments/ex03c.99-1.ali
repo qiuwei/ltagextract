@@ -1,0 +1,19 @@
+[1 Mucus] [2 is secreted] [3 in] [4 the alimentary canal] [5 of] [6 earthworms] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Secretion21994| |object| |Mucus21965| 2)
+            (|Secretion21994| |base| |Earthworm21974|)
+            (|Secretion21994| |site| |Alimentary-Canal21978| 3)
+            (|Earthworm21974| |has-region| |Alimentary-Canal21978| 5))
+    :INSTANCE-TYPES (
+            (|Mucus21965| |instance-of| |Mucus| 1)
+            (|Secretion21994| |instance-of| |Secretion| 2)
+            (|Earthworm21974| |instance-of| |Earthworm| 6)
+            (|Alimentary-Canal21978| |instance-of| |Alimentary-Canal| 4))
+    :ROOT-TYPES (
+            (|Secretion21994| |instance-of| |Event| 2)
+            (|Mucus21965| |instance-of| |Entity| 1)
+            (|Earthworm21974| |instance-of| |Entity| 6)
+            (|Alimentary-Canal21978| |instance-of| |Entity| 4)))
+

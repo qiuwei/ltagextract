@@ -1,0 +1,22 @@
+[1 The rate of] [2 detoxification] [3 in] [4 the liver cell] [5 is directly proportional to] [6 the quantity of] [7 smooth endoplasmic reticulum] [8 in] [9 the liver cell] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Detoxification19144| |base| |Liver-Cell19145| 3)
+            (|Detoxification19144| |rate| |Rate-Value19132| 1)
+            (|Rate-Value19132| |directly-proportional| |Quantity-Value19135| 5)
+            (|Liver-Cell19145| |has-part| |Smooth-Endoplasmic-Reticulum19149| 8)
+            (|Smooth-Endoplasmic-Reticulum19149| |quantity| |Quantity-Value19135| 6))
+    :INSTANCE-TYPES (
+            (|Detoxification19144| |instance-of| |Detoxification| 2)
+            (|Rate-Value19132| |instance-of| |Rate-Value| 1)
+            (|Liver-Cell19145| |instance-of| |Liver-Cell| 4)
+            (|Smooth-Endoplasmic-Reticulum19149| |instance-of| |Smooth-Endoplasmic-Reticulum| 7)
+            (|Quantity-Value19135| |instance-of| |Quantity-Value| 6))
+    :ROOT-TYPES (
+            (|Detoxification19144| |instance-of| |Event| 2)
+            (|Liver-Cell19145| |instance-of| |Entity| 4)
+            (|Rate-Value19132| |instance-of| |Property-Value| 1)
+            (|Quantity-Value19135| |instance-of| |Property-Value| 6)
+            (|Smooth-Endoplasmic-Reticulum19149| |instance-of| |Entity|)))
+

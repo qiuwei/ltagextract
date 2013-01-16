@@ -1,0 +1,32 @@
+[1 There are] [2 tube shaped] [3 organic structures] [1 at] [4 the tip] [5 of] [6 hairs] [7 on] [8 a gecko's] [9 toe] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Hair29869| |has-part| |Organic-Structure29880|)
+            (|Foot29858| |has-part| |Toe29870| 8)
+            (|Shape-Value29879| |value| "tube like" 2)
+            (|Organic-Structure29880| |is-at| |Tip29878| 1)
+            (|Hair29869| |has-region| |Tip29878| 5)
+            (|Toe29870| |has-part| |Hair29869| 7)
+            (|Gecko-Lizard29868| |has-part| |Leg29871| 8)
+            (|Organic-Structure29880| |shape| |Shape-Value29879| 2)
+            (|Leg29871| |has-part| |Foot29858| 8))
+    :INSTANCE-TYPES (
+            (|Gecko-Lizard29868| |instance-of| |Gecko-Lizard| 8)
+            (|Leg29871| |instance-of| |Leg| 8)
+            (|Foot29858| |instance-of| |Foot| 8)
+            (|Toe29870| |instance-of| |Toe| 9)
+            (|Hair29869| |instance-of| |Hair| 6)
+            (|Tip29878| |instance-of| |Tip| 4)
+            (|Organic-Structure29880| |instance-of| |Organic-Structure| 3)
+            (|Shape-Value29879| |instance-of| |Shape-Value| 2))
+    :ROOT-TYPES (
+            (|Gecko-Lizard29868| |instance-of| |Entity| 8)
+            (|Leg29871| |instance-of| |Entity| 8)
+            (|Foot29858| |instance-of| |Entity| 8)
+            (|Toe29870| |instance-of| |Entity| 9)
+            (|Hair29869| |instance-of| |Entity| 6)
+            (|Organic-Structure29880| |instance-of| |Entity| 3)
+            (|Tip29878| |instance-of| |Entity| 4)
+            (|Shape-Value29879| |instance-of| |Property-Value| 2)))
+

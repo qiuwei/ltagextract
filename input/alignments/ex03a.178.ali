@@ -1,0 +1,21 @@
+[1 The function of] [2 an electron shuttle system] [1 is] [3 to transfer] [4 an electron] [7 from] [5 NADH] [8 to] [6 NAD-Plus] .
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Transfer22328| |object| |Electron22334| 3)
+            (|Transfer22328| |donor| |NADH22330| 7)
+            (|Transfer22328| |recipient| |NAD-Plus22340| 8)
+            (|Transfer22328| |agent| |Electron-Shuttle-System22339| 1)
+            (|Electron-Shuttle-System22339| |has-function| |Transfer22328| 1))
+    :INSTANCE-TYPES (
+            (|Electron22334| |instance-of| |Electron| 4)
+            (|NADH22330| |instance-of| |NADH| 5)
+            (|NAD-Plus22340| |instance-of| |NAD-Plus| 6)
+            (|Electron-Shuttle-System22339| |instance-of| |Electron-Shuttle-System| 2)
+            (|Transfer22328| |instance-of| |Transfer| 3))
+    :ROOT-TYPES (
+            (|Transfer22328| |instance-of| |Event|)
+            (|Electron22334| |instance-of| |Entity|)
+            (|NADH22330| |instance-of| |Entity|)
+            (|NAD-Plus22340| |instance-of| |Entity|)
+            (|Electron-Shuttle-System22339| |instance-of| |Entity|)))

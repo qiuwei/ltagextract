@@ -1,0 +1,21 @@
+[1 The function of] [2 membrane potential] [1 is to provide energy for] [4 a gated channel] [5 to release] [6 calcium ions] [7 from] [8 a cell] .
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Release-Of-Calcium-Ion-By-Cell64543| |object| |Calcium-Ion64542| 5)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |agent| |Gated-Channel64540| 5)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |base| |Cell64554| 7)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |raw-material| |Membrane-Potential64538| 1)
+            (|Membrane-Potential64538| |has-function| |Release-Of-Calcium-Ion-By-Cell64543| 1))
+    :INSTANCE-TYPES (
+            (|Calcium-Ion64542| |instance-of| |Calcium-Ion| 6)
+            (|Gated-Channel64540| |instance-of| |Gated-Channel| 4)
+            (|Cell64554| |instance-of| |Cell| 8)
+            (|Membrane-Potential64538| |instance-of| |Membrane-Potential| 2)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |instance-of| |Release-Of-Calcium-Ion-By-Cell| 5))
+    :ROOT-TYPES (
+            (|Release-Of-Calcium-Ion-By-Cell64543| |instance-of| |Event|)
+            (|Calcium-Ion64542| |instance-of| |Entity|)
+            (|Gated-Channel64540| |instance-of| |Entity|)
+            (|Cell64554| |instance-of| |Entity|)
+            (|Membrane-Potential64538| |instance-of| |Entity|)))

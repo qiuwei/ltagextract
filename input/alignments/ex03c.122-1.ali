@@ -1,0 +1,19 @@
+[1 Cellular respiration] [2 happens at] [4 the mitochondrion] [5 of] [6 adipose cells] [7 and uses up] [8 organic molecules] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Cellular-Respiration1193| |raw-material| |Organic-Molecule1220| 7)
+            (|Cellular-Respiration1193| |base| |Adipose-Cell1209|)
+            (|Cellular-Respiration1193| |site| |Mitochondrion1185| 2)
+            (|Adipose-Cell1209| |has-part| |Mitochondrion1185| 5))
+    :INSTANCE-TYPES (
+            (|Organic-Molecule1220| |instance-of| |Organic-Molecule| 8)
+            (|Cellular-Respiration1193| |instance-of| |Cellular-Respiration| 1)
+            (|Adipose-Cell1209| |instance-of| |Adipose-Cell| 6)
+            (|Mitochondrion1185| |instance-of| |Mitochondrion| 4)
+            (|Organic-Molecule| |subclasses| |Chemical-Entity| 8))
+    :ROOT-TYPES (
+            (|Cellular-Respiration1193| |instance-of| |Event|)
+            (|Organic-Molecule1220| |instance-of| |Entity|)
+            (|Adipose-Cell1209| |instance-of| |Entity|)
+            (|Mitochondrion1185| |instance-of| |Entity|)))

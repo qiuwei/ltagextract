@@ -1,0 +1,25 @@
+[1 Cholesterol] [2 is taken up] [3 by] [4 coated vesicles] [5 at] [6 the plasma membrane] [7 of] [8 a human cell] [9 , using up] [10 ATP] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |instrument| |Coated-Vesicle80196| 3)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |raw-material| |ATP80260| 9)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |object| |Cholesterol80256| 2)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |base| |Human-Cell80257|)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |site| |Animal-Plasma-Membrane80249| 5)
+            (|Human-Cell80257| |has-part| |Animal-Plasma-Membrane80249| 7))
+    :INSTANCE-TYPES (
+            (|Coated-Vesicle80196| |instance-of| |Coated-Vesicle| 4)
+            (|ATP80260| |instance-of| |ATP| 10)
+            (|Cholesterol80256| |instance-of| |Cholesterol| 1)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |instance-of| |Uptake-Of-Cholesterol-By-Human-Cell| 2)
+            (|Human-Cell80257| |instance-of| |Human-Cell| 8)
+            (|Animal-Plasma-Membrane80249| |instance-of| |Chemical-Entity| 6))
+    :ROOT-TYPES (
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |instance-of| |Event| 2)
+            (|Coated-Vesicle80196| |instance-of| |Entity| 4)
+            (|ATP80260| |instance-of| |Entity| 10)
+            (|Cholesterol80256| |instance-of| |Entity| 1)
+            (|Human-Cell80257| |instance-of| |Entity| 8)
+            (|Animal-Plasma-Membrane80249| |instance-of| |Entity| 6)))
+

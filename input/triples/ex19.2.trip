@@ -1,0 +1,18 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Motile-Cilium40788| |length| |Length-Value40790|)
+            (|Length-Value40790| |greater-than| |Length-Value40793|)
+            (|Length-Value40794| |greater-than| |Length-Value40790|)
+            (|Length-Value40793| |value| "2 micrometers")
+            (|Length-Value40794| |value| "20 micrometers")
+            (|Length-Value40790| |value| "short"))
+    :INSTANCE-TYPES (
+            (|Motile-Cilium40788| |instance-of| |Motile-Cilium|)
+            (|Length-Value40793| |instance-of| |Length-Value|)
+            (|Length-Value40794| |instance-of| |Length-Value|)
+            (|Length-Value40790| |instance-of| |Length-Value|))
+    :ROOT-TYPES (
+            (|Motile-Cilium40788| |instance-of| |Entity|)
+            (|Length-Value40790| |instance-of| |Property-Value|)
+            (|Length-Value40793| |instance-of| |Property-Value|)
+            (|Length-Value40794| |instance-of| |Property-Value|)))

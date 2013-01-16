@@ -1,0 +1,24 @@
+[1 Carbon dioxide] [2 moves out of] [3 an aqueous solution] [4 in] [5 the cytosol] [6 in] [7 the cytoplasm] [8 of] [9 eukaryotic cells] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Move-Out-Of50761| |object| |Carbon-Dioxide50740| 2)
+            (|Move-Out-Of50761| |origin| |Aqueous-Solution50733| 2)
+            (|Eukaryotic-Cell50691| |has-part| |Cytoplasm50701| 8)
+            (|Cytoplasm50701| |has-part| |Cytosol50704| 6)
+            (|Cytosol50704| |has-part| |Aqueous-Solution50733| 4))
+    :INSTANCE-TYPES (
+            (|Carbon-Dioxide50740| |instance-of| |Carbon-Dioxide| 1)
+            (|Move-Out-Of50761| |instance-of| |Move-Out-Of| 2)
+            (|Eukaryotic-Cell50691| |instance-of| |Eukaryotic-Cell| 9)
+            (|Cytoplasm50701| |instance-of| |Cytoplasm| 7)
+            (|Cytosol50704| |instance-of| |Cytosol| 5)
+            (|Aqueous-Solution50733| |instance-of| |Aqueous-Solution| 3))
+    :ROOT-TYPES (
+            (|Move-Out-Of50761| |instance-of| |Event| 2)
+            (|Carbon-Dioxide50740| |instance-of| |Entity| 1)
+            (|Aqueous-Solution50733| |instance-of| |Entity| 3)
+            (|Eukaryotic-Cell50691| |instance-of| |Entity| 9)
+            (|Cytoplasm50701| |instance-of| |Entity| 7)
+            (|Cytosol50704| |instance-of| |Entity| 5)))
+

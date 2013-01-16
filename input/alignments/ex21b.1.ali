@@ -1,0 +1,25 @@
+[1 Plasma membranes] [2 , which have] [3 a hydrophobic core] [4 and] [5 two hydrophilic faces] [2 ,] [6 block] [7 hydrophobic compounds] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Animal-Plasma-Membrane3569| |has-region| |Coordination2031| 2)
+            (|Coordination2031| |coordinates| |Hydrophobic-Core3562| 4)
+            (|Coordination2031| |coordinates| |Coordination20310| 4)
+            (|Coordination20310| |coordinates| |Hydrophilic-Face3542| 5)
+            (|Coordination20310| |coordinates| |Hydrophilic-Face3540| 5)
+            (|Block3572| |instrument| |Animal-Plasma-Membrane3569| 6)
+            (|Block3572| |object| |Hydrophobic-Compound3549| 6))
+    :INSTANCE-TYPES (
+            (|Hydrophilic-Face3542| |instance-of| |Hydrophilic-Face| 5)
+            (|Hydrophilic-Face3540| |instance-of| |Hydrophilic-Face| 5)
+            (|Hydrophobic-Core3562| |instance-of| |Hydrophobic-Core| 3)
+            (|Animal-Plasma-Membrane3569| |instance-of| |Animal-Plasma-Membrane| 1)
+            (|Block3572| |instance-of| |Block| 6)
+            (|Hydrophobic-Compound3549| |instance-of| |Hydrophobic-Compound| 7))
+    :ROOT-TYPES (
+            (|Animal-Plasma-Membrane3569| |instance-of| |Entity| 1)
+            (|Hydrophilic-Face3542| |instance-of| |Entity| 5)
+            (|Hydrophilic-Face3540| |instance-of| |Entity| 5)
+            (|Hydrophobic-Core3562| |instance-of| |Entity| 3)
+            (|Block3572| |instance-of| |Event| 6)
+            (|Hydrophobic-Compound3549| |instance-of| |Entity| 7)))

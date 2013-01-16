@@ -1,0 +1,20 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Cellulose-Digestion12782| |object| |Cellulose12780|)
+            (|Cellulose-Digestion12782| |result| |Glucose12777|)
+            (|Cellulose-Digestion12782| |result| |Free-Energy12759|)
+            (|Cellulose-Digestion12782| |agent| |Cellulase12781|)
+            (|Cellulase12781| |has-function| |Cellulose-Digestion12782|))
+    :INSTANCE-TYPES (
+            (|Cellulose12780| |instance-of| |Cellulose|)
+            (|Glucose12777| |instance-of| |Monomer|)
+            (|Free-Energy12759| |instance-of| |Free-Energy|)
+            (|Cellulase12781| |instance-of| |Cellulase|)
+            (|Cellulose-Digestion12782| |instance-of| |Cellulose-Digestion|)
+            (|Glucose| |subclasses| |Chemical-Entity|))
+    :ROOT-TYPES (
+            (|Cellulose-Digestion12782| |instance-of| |Event|)
+            (|Cellulose12780| |instance-of| |Entity|)
+            (|Glucose12777| |instance-of| |Entity|)
+            (|Free-Energy12759| |instance-of| |Entity|)
+            (|Cellulase12781| |instance-of| |Entity|)))

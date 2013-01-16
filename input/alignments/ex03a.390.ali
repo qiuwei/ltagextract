@@ -1,0 +1,21 @@
+[1 The function of] [2 membrane potential] [1 is to provide energy for] [4 the diffusion] [3 of] [5 anions] [6 in a cell] [7 to the extra cellular matrix] .
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |object| |Anion19306| 3)
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |recipient| |Extra-Cellular-Matrix19307| 7)
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |base| |Cell19296| 6)
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |raw-material| |Membrane-Potential19309| 1)
+            (|Membrane-Potential19309| |has-function| |Diffusion-Of-Anion-Across-Plasma-Membrane19310| 1))
+    :INSTANCE-TYPES (
+            (|Anion19306| |instance-of| |Anion| 5)
+            (|Extra-Cellular-Matrix19307| |instance-of| |Extra-Cellular-Matrix| 7)
+            (|Cell19296| |instance-of| |Cell| 6)
+            (|Membrane-Potential19309| |instance-of| |Concentration-Gradient| 2)
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |instance-of| |Diffusion-Of-Anion-Across-Plasma-Membrane| 4))
+    :ROOT-TYPES (
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |instance-of| |Event|)
+            (|Anion19306| |instance-of| |Entity|)
+            (|Extra-Cellular-Matrix19307| |instance-of| |Entity|)
+            (|Cell19296| |instance-of| |Entity|)
+            (|Membrane-Potential19309| |instance-of| |Entity|)))

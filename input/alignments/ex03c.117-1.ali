@@ -1,0 +1,18 @@
+[1 The golgi apparatus] [2 receives] [3 vesicles] [4 at] [5 its] [6 cis face] .
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Receive14146| |object| |Vesicle14147| 2)
+            (|Receive14146| |recipient| |Golgi-Apparatus14144| 2)
+            (|Receive14146| |site| |Cis-Face14148| 4)
+            (|Golgi-Apparatus14144| |has-region| |Cis-Face14148| 5))
+    :INSTANCE-TYPES (
+            (|Vesicle14147| |instance-of| |Vesicle| 3)
+            (|Receive14146| |instance-of| |Receive| 2)
+            (|Golgi-Apparatus14144| |instance-of| |Golgi-Apparatus| 1)
+            (|Cis-Face14148| |instance-of| |Cis-Face| 6))
+    :ROOT-TYPES (
+            (|Receive14146| |instance-of| |Event|)
+            (|Vesicle14147| |instance-of| |Entity|)
+            (|Golgi-Apparatus14144| |instance-of| |Entity|)
+            (|Cis-Face14148| |instance-of| |Entity|)))

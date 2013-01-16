@@ -1,0 +1,23 @@
+[1 Glyceraldehyde-3-Phosphate] [2 is] [3 a renewable resource] [4 which results from] [5 the calvin cycle] [6 of] [7 a protein enzyme] [8 in] [9 the chloroplast] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Glyceraldehyde-3-Phosphate8276| |plays| |Renewable-Resource8239| 2)
+            (|Renewable-Resource8239| |in-event| |Calvin-Cycle8303| 4)
+            (|Calvin-Cycle8303| |result| |Glyceraldehyde-3-Phosphate8276| 4)
+            (|Calvin-Cycle8303| |agent| |Protein-Enzyme8285| 6)
+            (|Chloroplast8313| |has-part| |Protein-Enzyme8285| 8))
+    :INSTANCE-TYPES (
+            (|Renewable-Resource8239| |instance-of| |Renewable-Resource| 3)
+            (|Glyceraldehyde-3-Phosphate8276| |instance-of| |ATP| 1)
+            (|Calvin-Cycle8303| |instance-of| |Calvin-Cycle| 5)
+            (|Chloroplast8313| |instance-of| |Chloroplast| 9)
+            (|Protein-Enzyme8285| |instance-of| |Protein-Enzyme| 7)
+            (|Glyceraldehyde-3-Phosphate| |subclasses| |Chemical-Entity|))
+    :ROOT-TYPES (
+            (|Glyceraldehyde-3-Phosphate8276| |instance-of| |Entity| 1)
+            (|Renewable-Resource8239| |instance-of| |Role| 3)
+            (|Calvin-Cycle8303| |instance-of| |Event| 5)
+            (|Protein-Enzyme8285| |instance-of| |Entity| 7)
+            (|Chloroplast8313| |instance-of| |Entity| 9)))
+

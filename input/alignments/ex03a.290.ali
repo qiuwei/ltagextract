@@ -1,0 +1,23 @@
+[1 The function of] [2 a double bond] [1 is] [3 to hold together] [4 two oxygens] [5 and] [6 a carbon].
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Hold-Together162| |object| |Coordination2010| 3)
+            (|Coordination2010| |coordinates| |Oxygen145| 4)
+            (|Coordination2010| |coordinates| |Oxygen149| 4)
+            (|Coordination20100| |coordinates| |Coordination2010| 5)
+            (|Coordination20100| |coordinates| |Carbon152| 5)
+            (|Hold-Together162| |agent| |Double-Bond161| 1)
+            (|Double-Bond161| |has-function| |Hold-Together162| 1))
+    :INSTANCE-TYPES (
+            (|Oxygen145| |instance-of| |Oxygen| 4)
+            (|Oxygen149| |instance-of| |Oxygen| 4)
+            (|Carbon152| |instance-of| |Carbon| 6)
+            (|Double-Bond161| |instance-of| |Double-Bond| 2)
+            (|Hold-Together162| |instance-of| |Hold-Together| 3))
+    :ROOT-TYPES (
+            (|Hold-Together162| |instance-of| |Event|)
+            (|Oxygen145| |instance-of| |Entity|)
+            (|Oxygen149| |instance-of| |Entity|)
+            (|Carbon152| |instance-of| |Entity|)
+            (|Double-Bond161| |instance-of| |Entity|)))

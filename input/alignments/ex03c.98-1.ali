@@ -1,0 +1,19 @@
+[1 Polymers] [2 are digested] [3 in] [4 the lysosomes] [5 of] [6 eukaryotic cells] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Intracellular-Digestion36204| |object| |Polymer36220| 2)
+            (|Intracellular-Digestion36204| |base| |Eukaryotic-Cell36203|)
+            (|Intracellular-Digestion36204| |site| |Lysosome36202| 3)
+            (|Eukaryotic-Cell36203| |has-part| |Lysosome36202| 5))
+    :INSTANCE-TYPES (
+            (|Polymer36220| |instance-of| |Polymer| 1)
+            (|Intracellular-Digestion36204| |instance-of| |Intracellular-Digestion| 2)
+            (|Eukaryotic-Cell36203| |instance-of| |Eukaryotic-Cell| 6)
+            (|Lysosome36202| |instance-of| |Lysosome| 4))
+    :ROOT-TYPES (
+            (|Intracellular-Digestion36204| |instance-of| |Event| 2)
+            (|Polymer36220| |instance-of| |Entity| 1)
+            (|Eukaryotic-Cell36203| |instance-of| |Entity| 6)
+            (|Lysosome36202| |instance-of| |Entity| 4)))
+

@@ -1,0 +1,25 @@
+[1 Alcohol] [2 ,] [3 drugs] [2 and] [4 barbiturates] [5 are detoxified] [6 at] [7 the peroxisome] [8 of] [9 the liver cell] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Detoxification19144| |object| |Coordination2036| 5)
+            (|Coordination2036| |coordinates| |Alcohol19138| 2)
+            (|Coordination2036| |coordinates| |Barbiturate19137| 2)
+            (|Coordination2036| |coordinates| |Drug19146| 2)
+            (|Detoxification19144| |base| |Liver-Cell19145|)
+            (|Detoxification19144| |site| |Peroxisome19139| 6)
+            (|Liver-Cell19145| |has-part| |Peroxisome19139| 8))
+    :INSTANCE-TYPES (
+            (|Alcohol19138| |instance-of| |Alcohol| 1)
+            (|Barbiturate19137| |instance-of| |Barbiturate| 4)
+            (|Drug19146| |instance-of| |Drug| 3)
+            (|Detoxification19144| |instance-of| |Detoxification| 5)
+            (|Liver-Cell19145| |instance-of| |Liver-Cell| 9)
+            (|Peroxisome19139| |instance-of| |Peroxisome| 7))
+    :ROOT-TYPES (
+            (|Detoxification19144| |instance-of| |Event|)
+            (|Alcohol19138| |instance-of| |Entity|)
+            (|Barbiturate19137| |instance-of| |Entity|)
+            (|Drug19146| |instance-of| |Entity|)
+            (|Liver-Cell19145| |instance-of| |Entity|)
+            (|Peroxisome19139| |instance-of| |Entity|)))

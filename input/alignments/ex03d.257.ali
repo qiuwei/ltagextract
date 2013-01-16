@@ -1,0 +1,25 @@
+[1 Detachment] [2 of] [3 a hydrophilic compound] [4 from] [5 the functional region] [6 of] [7 a carrier protein] [8 causes] [9 it to change shape] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Detach10277| |object| |Hydrophilic-Compound10278| 2)
+            (|Detach10277| |base| |Carrier-Protein10273|)
+            (|Detach10277| |site| |Functional-Region10272| 4)
+            (|Carrier-Protein10273| |has-region| |Functional-Region10272| 6)
+            (|Change-Of-Shape10276| |object| |Carrier-Protein10273|)
+            (|Detach10277| |causes| |Change-Of-Shape10276| 8))
+    :INSTANCE-TYPES (
+            (|Hydrophilic-Compound10278| |instance-of| |Hydrophilic-Compound| 3)
+            (|Functional-Region10272| |instance-of| |Binding-Site| 5)
+            (|Carrier-Protein10273| |instance-of| |Carrier-Protein| 7)
+            (|Detach10277| |instance-of| |Detach| 1)
+            (|Change-Of-Shape10276| |instance-of| |Change-Of-Shape| 9)
+            (|Hydrophilic-Compound| |subclasses| |Tangible-Entity|)
+            (|Carrier-Protein| |subclasses| |Tangible-Entity|))
+    :ROOT-TYPES (
+            (|Detach10277| |instance-of| |Event| 1)
+            (|Hydrophilic-Compound10278| |instance-of| |Entity| 3)
+            (|Carrier-Protein10273| |instance-of| |Entity| 7)
+            (|Functional-Region10272| |instance-of| |Entity| 5)
+            (|Change-Of-Shape10276| |instance-of| |Event| 9)))
+

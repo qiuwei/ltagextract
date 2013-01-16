@@ -1,0 +1,25 @@
+[1 Lysosomal enzymes] [2 digest] [3 polymers] [4 at] [5 the lysosome] [6 of] [7 a eukaryotic cell] [8 , producing] [9 monomers] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Intracellular-Digestion36204| |result| |Monomer36221| 8)
+            (|Intracellular-Digestion36204| |agent| |Lysosomal-Enzyme36196| 2)
+            (|Intracellular-Digestion36204| |object| |Polymer36220| 2)
+            (|Intracellular-Digestion36204| |base| |Eukaryotic-Cell36203|)
+            (|Intracellular-Digestion36204| |site| |Lysosome36202| 4)
+            (|Eukaryotic-Cell36203| |has-part| |Lysosome36202| 6))
+    :INSTANCE-TYPES (
+            (|Monomer36221| |instance-of| |Monomer| 9)
+            (|Lysosomal-Enzyme36196| |instance-of| |Lysosomal-Enzyme| 1)
+            (|Polymer36220| |instance-of| |Polymer| 3)
+            (|Intracellular-Digestion36204| |instance-of| |Intracellular-Digestion| 2)
+            (|Eukaryotic-Cell36203| |instance-of| |Eukaryotic-Cell| 7)
+            (|Lysosome36202| |instance-of| |Lysosome| 5))
+    :ROOT-TYPES (
+            (|Intracellular-Digestion36204| |instance-of| |Event| 2)
+            (|Monomer36221| |instance-of| |Entity| 9)
+            (|Lysosomal-Enzyme36196| |instance-of| |Entity| 1)
+            (|Polymer36220| |instance-of| |Entity| 3)
+            (|Eukaryotic-Cell36203| |instance-of| |Entity| 7)
+            (|Lysosome36202| |instance-of| |Entity| 5)))
+

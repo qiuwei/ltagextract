@@ -1,0 +1,19 @@
+[1 The function of] [2 a lysosome] [1 is] [3 intercellular digestion] [7 of] [4 nucleic acid] [5 in] [6 a eukaryotic cell] .
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Intracellular-Digestion39754| |object| |Nucleic-Acid39751| 7)
+            (|Intracellular-Digestion39754| |base| |Eukaryotic-Cell39770| 5)
+            (|Intracellular-Digestion39754| |agent| |Lysosome39760| 1)
+            (|Lysosome39760| |has-function| |Intracellular-Digestion39754| 1))
+    :INSTANCE-TYPES (
+            (|Nucleic-Acid39751| |instance-of| |Nucleic-Acid| 4)
+            (|Eukaryotic-Cell39770| |instance-of| |Eukaryotic-Cell| 6)
+            (|Lysosome39760| |instance-of| |Lysosome| 2)
+            (|Intracellular-Digestion39754| |instance-of| |Intracellular-Digestion| 3))
+    :ROOT-TYPES (
+            (|Intracellular-Digestion39754| |instance-of| |Event|)
+            (|Nucleic-Acid39751| |instance-of| |Entity|)
+            (|Lysosomal-Enzyme39755| |instance-of| |Entity|)
+            (|Eukaryotic-Cell39770| |instance-of| |Entity|)
+            (|Lysosome39760| |instance-of| |Entity|)))

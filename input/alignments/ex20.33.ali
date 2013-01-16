@@ -1,0 +1,24 @@
+[1 Soil solution] [2 is absorbed] [4 into] [5 the epidermal cells] [6 of] [7 the epidermis] [8 in] [9 the root] [10 of] [11 plants] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Take-In58806| |object| |Soil-Solution58854| 2)
+            (|Take-In58806| |destination| |Epidermal-Cell58851| 4)
+            (|Plant58839| |has-part| |Root58845| 10)
+            (|Root58845| |has-part| |Epidermis58835| 8)
+            (|Epidermis58835| |has-part| |Epidermal-Cell58851| 6))
+    :INSTANCE-TYPES (
+            (|Soil-Solution58854| |instance-of| |Soil-Solution| 1)
+            (|Take-In58806| |instance-of| |Take-In| 2)
+            (|Plant58839| |instance-of| |Plant| 11)
+            (|Root58845| |instance-of| |Root| 9)
+            (|Epidermis58835| |instance-of| |Epidermis| 7)
+            (|Epidermal-Cell58851| |instance-of| |Epidermal-Cell| 5))
+    :ROOT-TYPES (
+            (|Take-In58806| |instance-of| |Event| 2)
+            (|Soil-Solution58854| |instance-of| |Entity| 1)
+            (|Epidermal-Cell58851| |instance-of| |Entity| 5)
+            (|Plant58839| |instance-of| |Entity| 11)
+            (|Root58845| |instance-of| |Entity| 9)
+            (|Epidermis58835| |instance-of| |Entity| 7)))
+

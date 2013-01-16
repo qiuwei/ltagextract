@@ -1,0 +1,19 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Antibiotic4131| |plays| |Enzyme-Inhibitor4118|)
+            (|Enzyme-Inhibitor4118| |in-event| |Inhibition4117|)
+            (|Inhibition4117| |agent| |Antibiotic4131|)
+            (|Inhibition4117| |object| |Protein-Enzyme4119|)
+            (|Bacterium4120| |has-part| |Protein-Enzyme4119|))
+    :INSTANCE-TYPES (
+            (|Enzyme-Inhibitor4118| |instance-of| |Enzyme-Inhibitor|)
+            (|Antibiotic4131| |instance-of| |Antibiotic|)
+            (|Inhibition4117| |instance-of| |Inhibition|)
+            (|Bacterium4120| |instance-of| |Bacterium|)
+            (|Protein-Enzyme4119| |instance-of| |Protein-Enzyme|))
+    :ROOT-TYPES (
+            (|Antibiotic4131| |instance-of| |Entity|)
+            (|Enzyme-Inhibitor4118| |instance-of| |Role|)
+            (|Inhibition4117| |instance-of| |Event|)
+            (|Protein-Enzyme4119| |instance-of| |Entity|)
+            (|Bacterium4120| |instance-of| |Entity|)))

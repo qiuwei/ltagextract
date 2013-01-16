@@ -1,0 +1,24 @@
+[1 The plasma membrane] [2 moves] [3 away from] [4 the cell wall] [5 during] [6 plasmolysis] [7 in] [8 a walled cell inside hypertonic solution] [9 , resulting in] [10 a damaged cell] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Move52634| |object| |Plasma-membrane52639| 2)
+            (|Move52634| |away-from| |Cell-Wall52636| 3)
+            (|Plasmolysis52635| |subevent| |Move52634| 5)
+            (|Plasmolysis52635| |base| |Walled-Cell-Inside-Hypertonic-Solution52637| 7)
+            (|Plasmolysis52635| |result| |Damaged-Cell52647| 9))
+    :INSTANCE-TYPES (
+            (|Plasma-membrane52639| |instance-of| |Plasma-membrane| 1)
+            (|Cell-Wall52636| |instance-of| |Cell-Wall| 4)
+            (|Move52634| |instance-of| |Move| 2)
+            (|Walled-Cell-Inside-Hypertonic-Solution52637| |instance-of| |Walled-Cell-Inside-Hypertonic-Solution| 8)
+            (|Plasmolysis52635| |instance-of| |Plasmolysis| 6)
+            (|Damaged-Cell52647| |instance-of| |Damaged-Cell| 10))
+    :ROOT-TYPES (
+            (|Move52634| |instance-of| |Event| 2)
+            (|Plasma-membrane52639| |instance-of| |Entity| 1)
+            (|Cell-Wall52636| |instance-of| |Entity| 4)
+            (|Plasmolysis52635| |instance-of| |Event| 6)
+            (|Walled-Cell-Inside-Hypertonic-Solution52637| |instance-of| |Entity| 8)
+            (|Damaged-Cell52647| |instance-of| |Entity| 10)))
+

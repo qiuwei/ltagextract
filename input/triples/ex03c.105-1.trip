@@ -1,0 +1,16 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Transfer31806| |object| |Secretory-Protein31808|)
+            (|Transfer31806| |donor| |Golgi-Apparatus31933|)
+            (|Transfer31806| |site| |Trans-face31940|)
+            (|Golgi-Apparatus31933| |has-region| |Trans-face31940|))
+    :INSTANCE-TYPES (
+            (|Secretory-Protein31808| |instance-of| |Secretory-Protein|)
+            (|Transfer31806| |instance-of| |Transfer|)
+            (|Golgi-Apparatus31933| |instance-of| |Golgi-Apparatus|)
+            (|Trans-face31940| |instance-of| |Trans-face|))
+    :ROOT-TYPES (
+            (|Transfer31806| |instance-of| |Event|)
+            (|Secretory-Protein31808| |instance-of| |Entity|)
+            (|Golgi-Apparatus31933| |instance-of| |Entity|)
+            (|Trans-face31940| |instance-of| |Entity|)))

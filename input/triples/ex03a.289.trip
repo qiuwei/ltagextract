@@ -1,0 +1,19 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Move-Through14587| |object| |Water-Molecule14615|)
+            (|Move-Through14587| |object| |Oxygen-Molecule14633|)
+            (|Move-Through14587| |object| |Hydrophilic-Compound14798|)
+            (|Move-Through14587| |base| |Plasma-membrane14735|)
+            (|Plasma-membrane14735| |has-function| |Move-Through14587|))
+    :INSTANCE-TYPES (
+            (|Water-Molecule14615| |instance-of| |Water-Molecule|)
+            (|Oxygen-Molecule14633| |instance-of| |Oxygen-Molecule|)
+            (|Hydrophilic-Compound14798| |instance-of| |Hydrophilic-Compound|)
+            (|Plasma-membrane14735| |instance-of| |Plasma-membrane|)
+            (|Move-Through14587| |instance-of| |Move-Through|))
+    :ROOT-TYPES (
+            (|Move-Through14587| |instance-of| |Event|)
+            (|Water-Molecule14615| |instance-of| |Entity|)
+            (|Oxygen-Molecule14633| |instance-of| |Entity|)
+            (|Hydrophilic-Compound14798| |instance-of| |Entity|)
+            (|Plasma-membrane14735| |instance-of| |Entity|)))

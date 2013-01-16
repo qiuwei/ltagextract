@@ -1,0 +1,23 @@
+[1 The function of] [2 cellulase] [1 is] [3 to digest] [4 cellulose] [5 , producing] [6 glucose] [7 and using up] [8 a water molecule] .
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Cellulose-Digestion12782| |object| |Cellulose12780| 3)
+            (|Cellulose-Digestion12782| |raw-material| |Water-Molecule12783| 7)
+            (|Cellulose-Digestion12782| |result| |Glucose12777| 5)
+            (|Cellulose-Digestion12782| |agent| |Cellulase12781| 1)
+            (|Cellulase12781| |has-function| |Cellulose-Digestion12782| 1))
+    :INSTANCE-TYPES (
+            (|Cellulose12780| |instance-of| |Cellulose| 2)
+            (|Water-Molecule12783| |instance-of| |Water-Molecule| 8)
+            (|Glucose12777| |instance-of| |Monomer| 6)
+            (|Cellulase12781| |instance-of| |Cellulase| 2)
+            (|Cellulose-Digestion12782| |instance-of| |Cellulose-Digestion| 3)
+            (|Water-Molecule| |subclasses| |Chemical-Entity| 8)
+            (|Glucose| |subclasses| |Chemical-Entity| 6))
+    :ROOT-TYPES (
+            (|Cellulose-Digestion12782| |instance-of| |Event|)
+            (|Cellulose12780| |instance-of| |Entity|)
+            (|Water-Molecule12783| |instance-of| |Entity|)
+            (|Glucose12777| |instance-of| |Entity|)
+            (|Cellulase12781| |instance-of| |Entity|)))

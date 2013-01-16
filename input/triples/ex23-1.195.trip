@@ -1,0 +1,21 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Move52634| |object| |Plasma-membrane52639|)
+            (|Move52634| |away-from| |Cell-Wall52636|)
+            (|Plasmolysis52635| |subevent| |Move52634|)
+            (|Plasmolysis52635| |base| |Walled-Cell-Inside-Hypertonic-Solution52637|)
+            (|Plasmolysis52635| |result| |Damaged-Cell52647|))
+    :INSTANCE-TYPES (
+            (|Plasma-membrane52639| |instance-of| |Plasma-membrane|)
+            (|Cell-Wall52636| |instance-of| |Cell-Wall|)
+            (|Move52634| |instance-of| |Move|)
+            (|Walled-Cell-Inside-Hypertonic-Solution52637| |instance-of| |Walled-Cell-Inside-Hypertonic-Solution|)
+            (|Plasmolysis52635| |instance-of| |Plasmolysis|)
+            (|Damaged-Cell52647| |instance-of| |Damaged-Cell|))
+    :ROOT-TYPES (
+            (|Move52634| |instance-of| |Event|)
+            (|Plasma-membrane52639| |instance-of| |Entity|)
+            (|Cell-Wall52636| |instance-of| |Entity|)
+            (|Plasmolysis52635| |instance-of| |Event|)
+            (|Walled-Cell-Inside-Hypertonic-Solution52637| |instance-of| |Entity|)
+            (|Damaged-Cell52647| |instance-of| |Entity|)))

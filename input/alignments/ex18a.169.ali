@@ -1,0 +1,29 @@
+[1 Mammals] [2 have] [3 a] [4 hollow] [3 stomach] [5 containing] [6 a gastric gland] [7 which is] [8 a secretor] [9 that secretes] [10 gastric juice] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Mammal26166| |has-part| |Stomach25958| 2)
+            (|Stomach25958| |shape| |Shape-Value25974| 4)
+            (|Stomach25958| |has-part| |Gastric-Gland25967| 5)
+            (|Gastric-Gland25967| |plays| |Secretor25996| 7)
+            (|Secretor25996| |in-event| |Secretion25994| 9)
+            (|Secretion25994| |object| |Gastric-Juice25997| 9)
+            (|Secretion25994| |base| |Gastric-Gland25967|)
+            (|Shape-Value25974| |value| "hollow" 4))
+    :INSTANCE-TYPES (
+            (|Mammal26166| |instance-of| |Mammal| 1)
+            (|Shape-Value25974| |instance-of| |Shape-Value| 4)
+            (|Stomach25958| |instance-of| |Stomach| 3)
+            (|Secretor25996| |instance-of| |Secretor| 8)
+            (|Gastric-Juice25997| |instance-of| |Gastric-Juice| 10)
+            (|Secretion25994| |instance-of| |Secretion| 9)
+            (|Gastric-Gland25967| |instance-of| |Gastric-Gland| 6))
+    :ROOT-TYPES (
+            (|Mammal26166| |instance-of| |Entity| 1)
+            (|Stomach25958| |instance-of| |Entity| 3)
+            (|Shape-Value25974| |instance-of| |Property-Value| 4)
+            (|Gastric-Gland25967| |instance-of| |Entity| 6)
+            (|Secretor25996| |instance-of| |Role| 8)
+            (|Secretion25994| |instance-of| |Event| 9)
+            (|Gastric-Juice25997| |instance-of| |Entity| 10)))
+

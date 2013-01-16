@@ -1,0 +1,25 @@
+[1 Water] [2 is pulled] [3 towards] [4 a mesophyll cell] [5 , which has] [6 a central vacuole] [7 ,] [8 a centrosome] [7 and] [9 an ion channel] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Mesophyll-Cell69972| |has-part| |Coordination2019| 5)
+            (|Coordination2019| |coordinates| |Ion-Channel69969| 7)
+            (|Coordination2019| |coordinates| |Centrosome70019| 7)
+            (|Coordination2019| |coordinates| |Central-Vacuole70025| 7)
+            (|Pull70047| |toward| |Mesophyll-Cell69972| 3)
+            (|Pull70047| |object| |Water69976| 2))
+    :INSTANCE-TYPES (
+            (|Ion-Channel69969| |instance-of| |Ion-Channel| 9)
+            (|Centrosome70019| |instance-of| |Centrosome| 8)
+            (|Central-Vacuole70025| |instance-of| |Central-Vacuole| 6)
+            (|Mesophyll-Cell69972| |instance-of| |Mesophyll-Cell| 4)
+            (|Pull70047| |instance-of| |Pull| 2)
+            (|Water69976| |instance-of| |Water| 1))
+    :ROOT-TYPES (
+            (|Mesophyll-Cell69972| |instance-of| |Entity| 4)
+            (|Ion-Channel69969| |instance-of| |Entity| 9)
+            (|Centrosome70019| |instance-of| |Entity| 8)
+            (|Central-Vacuole70025| |instance-of| |Entity| 6)
+            (|Pull70047| |instance-of| |Event| 2)
+            (|Water69976| |instance-of| |Entity| 1)))
+

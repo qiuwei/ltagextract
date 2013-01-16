@@ -1,0 +1,24 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Proton-Pump15490| |has-part| |Hydrophobic-Amino-Acid15571|)
+            (|Proton-Pump15490| |has-part| |Polar-Amino-Acid15570|)
+            (|Proton-Pump15490| |has-part| |Polypeptide15577|)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane15596| |instrument| |Proton-Pump15490|)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane15596| |result| |Proton-Motive-Force15468|)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane15596| |object| |Hydrogen-Ion-Gradient15467|))
+    :INSTANCE-TYPES (
+            (|Hydrophobic-Amino-Acid15571| |instance-of| |Hydrophobic-Amino-Acid|)
+            (|Polar-Amino-Acid15570| |instance-of| |Polar-Amino-Acid|)
+            (|Polypeptide15577| |instance-of| |Polypeptide|)
+            (|Proton-Pump15490| |instance-of| |Proton-Pump|)
+            (|Proton-Motive-Force15468| |instance-of| |Proton-Motive-Force|)
+            (|Hydrogen-Ion-Gradient15467| |instance-of| |Hydrogen-Ion-Gradient|)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane15596| |instance-of| |Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane|))
+    :ROOT-TYPES (
+            (|Proton-Pump15490| |instance-of| |Entity|)
+            (|Polypeptide15577| |instance-of| |Entity|)
+            (|Polar-Amino-Acid15570| |instance-of| |Entity|)
+            (|Hydrophobic-Amino-Acid15571| |instance-of| |Entity|)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane15596| |instance-of| |Event|)
+            (|Proton-Motive-Force15468| |instance-of| |Entity|)
+            (|Hydrogen-Ion-Gradient15467| |instance-of| |Entity|)))

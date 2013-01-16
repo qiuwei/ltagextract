@@ -1,0 +1,29 @@
+[1 Cellulose] [2 moving through] [3 a cow's] [4 digestive system] [5 enables] [6 the abrasion] [7 of] [8 the lining] [9 inside] [10 the alimentary canal] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Cow16980| |has-region| |Digestive-System17023| 3)
+            (|Move-Through16921| |base| |Digestive-System17023| 2)
+            (|Move-Through16921| |object| |Cellulose16915| 2)
+            (|Move-Through16921| |enables| |Abrade16922| 5)
+            (|Abrade16922| |base| |Lining16914| 7)
+            (|Abrade16922| |object| |Cellulose16915| 6)
+            (|Lining16914| |is-inside| |Alimentary-Canal16916| 9))
+    :INSTANCE-TYPES (
+            (|Digestive-System17023| |instance-of| |Digestive-System| 4)
+            (|Move-Through16921| |instance-of| |Move-Through| 2)
+            (|Cellulose16915| |instance-of| |Cellulose| 1)
+            (|Abrade16922| |instance-of| |Abrade| 6)
+            (|Cow16980| |instance-of| |Cow| 3)
+            (|Lining16914| |instance-of| |Lining| 8)
+            (|Alimentary-Canal16916| |instance-of| |Alimentary-Canal| 10)
+            (|Cellulose| |subclasses| |Tangible-Entity|))
+    :ROOT-TYPES (
+            (|Cow16980| |instance-of| |Entity| 3)
+            (|Digestive-System17023| |instance-of| |Entity| 4)
+            (|Move-Through16921| |instance-of| |Event| 2)
+            (|Cellulose16915| |instance-of| |Entity| 1)
+            (|Abrade16922| |instance-of| |Event| 6)
+            (|Lining16914| |instance-of| |Entity| 8)
+            (|Alimentary-Canal16916| |instance-of| |Entity| 10)))
+

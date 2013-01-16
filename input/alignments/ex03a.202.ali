@@ -1,0 +1,19 @@
+[1 The function of] [2 a food vacuole] [1 is] [3 to carry] [4 solid substances] [5 , with the help of] [6 a pseudopodium] .
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Carry57288| |object| |Solid-Substance57284| 3)
+            (|Carry57288| |instrument| |Pseudopodium57285| 5)
+            (|Carry57288| |agent| |Food-Vacuole57283| 1)
+            (|Food-Vacuole57283| |has-function| |Carry57288| 1))
+    :INSTANCE-TYPES (
+            (|Solid-Substance57284| |instance-of| |Solid-Substance| 4)
+            (|Pseudopodium57285| |instance-of| |Pseudopodium| 6)
+            (|Food-Vacuole57283| |instance-of| |Food-Vacuole| 2)
+            (|Carry57288| |instance-of| |Carry| 3))
+    :ROOT-TYPES (
+            (|Carry57288| |instance-of| |Event|)
+            (|Solid-Substance57284| |instance-of| |Entity|)
+            (|Pseudopodium57285| |instance-of| |Entity|)
+            (|Microtubule57297| |instance-of| |Entity|)
+            (|Food-Vacuole57283| |instance-of| |Entity|)))

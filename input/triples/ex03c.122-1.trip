@@ -1,0 +1,17 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Cellular-Respiration1193| |raw-material| |Organic-Molecule1220|)
+            (|Cellular-Respiration1193| |base| |Adipose-Cell1209|)
+            (|Cellular-Respiration1193| |site| |Mitochondrion1185|)
+            (|Adipose-Cell1209| |has-part| |Mitochondrion1185|))
+    :INSTANCE-TYPES (
+            (|Organic-Molecule1220| |instance-of| |Organic-Molecule|)
+            (|Cellular-Respiration1193| |instance-of| |Cellular-Respiration|)
+            (|Adipose-Cell1209| |instance-of| |Adipose-Cell|)
+            (|Mitochondrion1185| |instance-of| |Mitochondrion|)
+            (|Organic-Molecule| |subclasses| |Chemical-Entity|))
+    :ROOT-TYPES (
+            (|Cellular-Respiration1193| |instance-of| |Event|)
+            (|Organic-Molecule1220| |instance-of| |Entity|)
+            (|Adipose-Cell1209| |instance-of| |Entity|)
+            (|Mitochondrion1185| |instance-of| |Entity|)))

@@ -1,0 +1,24 @@
+[1 The electron shuttle system] [2 in] [3 the inner membrane] [4 of] [5 the mitochondrial membrane] [6 of] [7 the mitochondrion] [8 transfers] [9 electrons] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Transfer21399| |object| |Electron21405| 8)
+            (|Transfer21399| |agent| |Electron-Shuttle-System21410| 8)
+            (|Mitochondrion21409| |has-part| |Mitochondrial-Membrane21396| 6)
+            (|Mitochondrial-Membrane21396| |has-part| |Inner-Membrane21403| 4)
+            (|Inner-Membrane21403| |has-part| |Electron-Shuttle-System21410| 2))
+    :INSTANCE-TYPES (
+            (|Electron21405| |instance-of| |Electron| 9)
+            (|Transfer21399| |instance-of| |Transfer| 8)
+            (|Mitochondrion21409| |instance-of| |Mitochondrion| 7)
+            (|Mitochondrial-Membrane21396| |instance-of| |Mitochondrial-Membrane| 5)
+            (|Inner-Membrane21403| |instance-of| |Inner-Membrane| 3)
+            (|Electron-Shuttle-System21410| |instance-of| |Electron-Shuttle-System| 1))
+    :ROOT-TYPES (
+            (|Transfer21399| |instance-of| |Event| 8)
+            (|Electron21405| |instance-of| |Entity| 9)
+            (|Electron-Shuttle-System21410| |instance-of| |Entity| 1)
+            (|Mitochondrion21409| |instance-of| |Entity| 7)
+            (|Mitochondrial-Membrane21396| |instance-of| |Entity| 5)
+            (|Inner-Membrane21403| |instance-of| |Entity| 3)))
+

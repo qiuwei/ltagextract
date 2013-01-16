@@ -1,0 +1,27 @@
+[1 Leaves] [2 have] [3 an epidermis] [4 above] [5 their] [6 palisade-mesophyl] [7 , which contains] [8 large] [9 , bean-shaped] [10 guard cells] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Leaf38129| |has-part| |Epidermis38140| 2)
+            (|Leaf38129| |has-part| |Palisade-Mesophyll38132| 5)
+            (|Epidermis38140| |is-above| |Palisade-Mesophyll38132| 4)
+            (|Epidermis38140| |has-part| |Guard-Cell38153| 7)
+            (|Guard-Cell38153| |size| |Size-Value37847| 8)
+            (|Guard-Cell38153| |shape| |Shape-Value37857| 9)
+            (|Size-Value37847| |value| "big" 8)
+            (|Shape-Value37857| |value| "bean" 9))
+    :INSTANCE-TYPES (
+            (|Leaf38129| |instance-of| |Leaf| 1)
+            (|Palisade-Mesophyll38132| |instance-of| |Palisade-Mesophyll| 6)
+            (|Epidermis38140| |instance-of| |Epidermis| 3)
+            (|Size-Value37847| |instance-of| |Size-Value| 8)
+            (|Guard-Cell38153| |instance-of| |Guard-Cell| 10)
+            (|Shape-Value37857| |instance-of| |Shape-Value| 9))
+    :ROOT-TYPES (
+            (|Leaf38129| |instance-of| |Entity| 1)
+            (|Epidermis38140| |instance-of| |Entity| 3)
+            (|Palisade-Mesophyll38132| |instance-of| |Entity| 6)
+            (|Guard-Cell38153| |instance-of| |Entity| 10)
+            (|Size-Value37847| |instance-of| |Property-Value| 8)
+            (|Shape-Value37857| |instance-of| |Property-Value| 9)))
+

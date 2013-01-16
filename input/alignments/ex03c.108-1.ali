@@ -1,0 +1,18 @@
+[1 Hydrophobic compounds] [2 are blocked by] [3 the hydrophilic face] [4 of] [5 a thylakoid membrane] .
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Block17574| |object| |Hydrophobic-Compound17400| 2)
+            (|Block17574| |instrument| |Thylakoid-Membrane17637| 2)
+            (|Block17574| |site| |Hydrophilic-Face17573| ??)
+            (|Thylakoid-Membrane17637| |has-region| |Hydrophilic-Face17573| 4))
+    :INSTANCE-TYPES (
+            (|Hydrophobic-Compound17400| |instance-of| |Hydrophobic-Compound| 1)
+            (|Block17574| |instance-of| |Block| 2)
+            (|Thylakoid-Membrane17637| |instance-of| |Thylakoid-Membrane| 5)
+            (|Hydrophilic-Face17573| |instance-of| |Hydrophilic-Face| 3))
+    :ROOT-TYPES (
+            (|Block17574| |instance-of| |Event|)
+            (|Hydrophobic-Compound17400| |instance-of| |Entity|)
+            (|Thylakoid-Membrane17637| |instance-of| |Entity|)
+            (|Hydrophilic-Face17573| |instance-of| |Entity|)))

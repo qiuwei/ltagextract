@@ -1,0 +1,22 @@
+1. Solve extra/*.ali, including the 'base' in for-function/*.ali.
+
+2. Remove straggler variables (instantiated, never used in triples). (ex03a.12.ali)
+
+3. Remove |subclasses| (from instance-types only!, ex05a2.263)
+
+4. Check this out
+[the plasma membrane]
+!!! (|Animal-Plasma-Membranexxxxx| |instance-of| |Chemical-Entity|) !!!
+
+5. ex03a.265, 289 the way we treat it is different
+
+6. its => has-part-of: ex03c.117-1.ali
+
+
+Notes for grammar extraction
+----------------------------
+
+1. An etree can instantiate more than one variable and more than one
+such variable can participate in a semantic relation with a foreign
+variable, all corresponding to a single grammatical relation.
+(ex05a3...)

@@ -1,0 +1,19 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Move-Through69893| |object| |Ion69873|)
+            (|Move-Through69893| |object| |Hydrophilic-Compound69933|)
+            (|Move-Through69893| |agent| |Sodium-Potassium-Pump69894|)
+            (|Move-Through69893| |base| |Biomembrane69877|)
+            (|Biomembrane69877| |has-function| |Move-Through69893|))
+    :INSTANCE-TYPES (
+            (|Ion69873| |instance-of| |Ion|)
+            (|Hydrophilic-Compound69933| |instance-of| |Hydrophilic-Compound|)
+            (|Sodium-Potassium-Pump69894| |instance-of| |Sodium-Potassium-Pump|)
+            (|Biomembrane69877| |instance-of| |Biomembrane|)
+            (|Move-Through69893| |instance-of| |Move-Through|))
+    :ROOT-TYPES (
+            (|Move-Through69893| |instance-of| |Event|)
+            (|Ion69873| |instance-of| |Entity|)
+            (|Hydrophilic-Compound69933| |instance-of| |Entity|)
+            (|Sodium-Potassium-Pump69894| |instance-of| |Entity|)
+            (|Biomembrane69877| |instance-of| |Entity|)))

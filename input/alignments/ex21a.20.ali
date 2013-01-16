@@ -1,0 +1,22 @@
+[1 Erythrocytes] [2 , which have] [3 a lysosome] [4 and] [5 a non-motile cilium] [2 ,] [6 carry] [7 oxygen molecules] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Erythrocyte23354| |has-part| |Coordination2017| 2)
+            (|Coordination2017| |coordinates| |Lysosome23313| 4)
+            (|Coordination2017| |coordinates| |Non-Motile-Cilium23392| 4)
+            (|Carry23374| |agent| |Erythrocyte23354| 6)
+            (|Carry23374| |object| |Oxygen-Molecule23365| 6))
+    :INSTANCE-TYPES (
+            (|Lysosome23313| |instance-of| |Lysosome| 3)
+            (|Non-Motile-Cilium23392| |instance-of| |Non-Motile-Cilium| 5)
+            (|Erythrocyte23354| |instance-of| |Erythrocyte| 1)
+            (|Carry23374| |instance-of| |Carry| 6)
+            (|Oxygen-Molecule23365| |instance-of| |Oxygen-Molecule| 7))
+    :ROOT-TYPES (
+            (|Erythrocyte23354| |instance-of| |Entity| 1)
+            (|Lysosome23313| |instance-of| |Entity| 3)
+            (|Non-Motile-Cilium23392| |instance-of| |Entity| 5)
+            (|Carry23374| |instance-of| |Event| 6)
+            (|Oxygen-Molecule23365| |instance-of| |Entity| 7)))
+

@@ -1,0 +1,21 @@
+[1 The function of] [2 membrane potential] [1 is to provide energy for] [4 calcium ions] [5 to be released] [6 from] [7 a cell] [8 , using up] [9 chemical energy] .
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Release-Of-Calcium-Ion-By-Cell64543| |object| |Calcium-Ion64542| 5)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |base| |Cell64554| 6)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |raw-material| |Chemical-Energy64541| 8)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |raw-material| |Membrane-Potential64538| 1)
+            (|Membrane-Potential64538| |has-function| |Release-Of-Calcium-Ion-By-Cell64543| 1))
+    :INSTANCE-TYPES (
+            (|Calcium-Ion64542| |instance-of| |Calcium-Ion| 4)
+            (|Cell64554| |instance-of| |Cell| 7)
+            (|Chemical-Energy64541| |instance-of| |Chemical-Energy| 9)
+            (|Membrane-Potential64538| |instance-of| |Membrane-Potential| 2)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |instance-of| |Release-Of-Calcium-Ion-By-Cell| 5))
+    :ROOT-TYPES (
+            (|Release-Of-Calcium-Ion-By-Cell64543| |instance-of| |Event|)
+            (|Calcium-Ion64542| |instance-of| |Entity|)
+            (|Cell64554| |instance-of| |Entity|)
+            (|Chemical-Energy64541| |instance-of| |Entity|)
+            (|Membrane-Potential64538| |instance-of| |Entity|)))

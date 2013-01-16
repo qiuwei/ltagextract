@@ -1,0 +1,22 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |instrument| |Coated-Vesicle80196|)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |agent| |Receptor-Protein80255|)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |object| |Cholesterol80256|)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |base| |Human-Cell80257|)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |site| |Animal-Plasma-Membrane80249|)
+            (|Human-Cell80257| |has-part| |Animal-Plasma-Membrane80249|))
+    :INSTANCE-TYPES (
+            (|Coated-Vesicle80196| |instance-of| |Coated-Vesicle|)
+            (|Receptor-Protein80255| |instance-of| |Receptor-Protein|)
+            (|Cholesterol80256| |instance-of| |Cholesterol|)
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |instance-of| |Uptake-Of-Cholesterol-By-Human-Cell|)
+            (|Human-Cell80257| |instance-of| |Human-Cell|)
+            (|Animal-Plasma-Membrane80249| |instance-of| |Chemical-Entity|))
+    :ROOT-TYPES (
+            (|Uptake-Of-Cholesterol-By-Human-Cell80252| |instance-of| |Event|)
+            (|Coated-Vesicle80196| |instance-of| |Entity|)
+            (|Receptor-Protein80255| |instance-of| |Entity|)
+            (|Cholesterol80256| |instance-of| |Entity|)
+            (|Human-Cell80257| |instance-of| |Entity|)
+            (|Animal-Plasma-Membrane80249| |instance-of| |Entity|)))

@@ -1,0 +1,21 @@
+[1 The function of] [2 membrane potential] [1 is to provide energy for] [4 transport proteins] [1 to] [5 diffuse] [6 anions] [8 from] [7 the cytoplasm] .
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |object| |Anion19306| 5)
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |donor| |Cytoplasm19308| 8)
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |agent| |Transport-Protein19295| 1)
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |raw-material| |Membrane-Potential19309| 1)
+            (|Membrane-Potential19309| |has-function| |Diffusion-Of-Anion-Across-Plasma-Membrane19310| 1))
+    :INSTANCE-TYPES (
+            (|Anion19306| |instance-of| |Anion| 6)
+            (|Cytoplasm19308| |instance-of| |Cytoplasm| 7)
+            (|Transport-Protein19295| |instance-of| |Transport-Protein| 4)
+            (|Membrane-Potential19309| |instance-of| |Membrane-Potential| 2)
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |instance-of| |Diffusion-Of-Anion-Across-Plasma-Membrane| 5))
+    :ROOT-TYPES (
+            (|Diffusion-Of-Anion-Across-Plasma-Membrane19310| |instance-of| |Event|)
+            (|Anion19306| |instance-of| |Entity|)
+            (|Cytoplasm19308| |instance-of| |Entity|)
+            (|Transport-Protein19295| |instance-of| |Entity|)
+            (|Membrane-Potential19309| |instance-of| |Entity|)))

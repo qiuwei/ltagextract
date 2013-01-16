@@ -1,0 +1,23 @@
+[1 The P700] [2 in] [3 the reaction center complex] [4 of] [5 a photosystem] [6 is green and ring shaped] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Photosystem-I58580| |has-part| |Reaction-Center-Complex58584| 4)
+            (|Reaction-Center-Complex58584| |has-part| |P70058579| 2)
+            (|P70058579| |shape| |Shape-Value58576| 6)
+            (|P70058579| |color| |Color-Value58585| 6)
+            (|Shape-Value58576| |value| "ring shaped" 6)
+            (|Color-Value58585| |value| "green" 6))
+    :INSTANCE-TYPES (
+            (|Photosystem-I58580| |instance-of| |Photosystem-I| 5)
+            (|Reaction-Center-Complex58584| |instance-of| |Reaction-Center-Complex| 3)
+            (|Shape-Value58576| |instance-of| |Shape-Value| 6)
+            (|P70058579| |instance-of| |P700| 1)
+            (|Color-Value58585| |instance-of| |Color-Value| 6))
+    :ROOT-TYPES (
+            (|Photosystem-I58580| |instance-of| |Entity| 5)
+            (|Reaction-Center-Complex58584| |instance-of| |Entity| 3)
+            (|P70058579| |instance-of| |Entity| 1)
+            (|Shape-Value58576| |instance-of| |Property-Value| 6)
+            (|Color-Value58585| |instance-of| |Property-Value| 6)))
+

@@ -1,0 +1,18 @@
+[1 Secretory proteins] [2 are transferred] [3 from] [4 the trans face] [5 of] [6 a golgi apparatus] .
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Transfer31806| |object| |Secretory-Protein31808| 2)
+            (|Transfer31806| |donor| |Golgi-Apparatus31933|)
+            (|Transfer31806| |site| |Trans-face31940| 3)
+            (|Golgi-Apparatus31933| |has-region| |Trans-face31940| 5))
+    :INSTANCE-TYPES (
+            (|Secretory-Protein31808| |instance-of| |Secretory-Protein| 1)
+            (|Transfer31806| |instance-of| |Transfer| 2)
+            (|Golgi-Apparatus31933| |instance-of| |Golgi-Apparatus| 6)
+            (|Trans-face31940| |instance-of| |Trans-face| 4))
+    :ROOT-TYPES (
+            (|Transfer31806| |instance-of| |Event|)
+            (|Secretory-Protein31808| |instance-of| |Entity|)
+            (|Golgi-Apparatus31933| |instance-of| |Entity|)
+            (|Trans-face31940| |instance-of| |Entity|)))

@@ -1,0 +1,22 @@
+[1 The function of] [2 membrane potential] [1 is to provide energy for] [3 the release] [4 of] [5 calcium ions] [6 and] [7 particles] [8 , producing] [9 free energy] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Release-Of-Calcium-Ion-By-Cell64543| |object| |Coordination2032| 4)
+            (|Coordination2032| |coordinates| |Calcium-Ion64542| 6)
+            (|Coordination2032| |coordinates| |Particle-In-Motion64536| 6)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |result| |Free-Energy64553| 8)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |raw-material| |Membrane-Potential64538| 1)
+            (|Membrane-Potential64538| |has-function| |Release-Of-Calcium-Ion-By-Cell64543| 1))
+    :INSTANCE-TYPES (
+            (|Calcium-Ion64542| |instance-of| |Calcium-Ion| 5)
+            (|Particle-In-Motion64536| |instance-of| |Particle-In-Motion| 7)
+            (|Free-Energy64553| |instance-of| |Free-Energy| 9)
+            (|Membrane-Potential64538| |instance-of| |Membrane-Potential| 2)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |instance-of| |Release-Of-Calcium-Ion-By-Cell| 3))
+    :ROOT-TYPES (
+            (|Release-Of-Calcium-Ion-By-Cell64543| |instance-of| |Event|)
+            (|Calcium-Ion64542| |instance-of| |Entity|)
+            (|Particle-In-Motion64536| |instance-of| |Entity|)
+            (|Free-Energy64553| |instance-of| |Entity|)
+            (|Membrane-Potential64538| |instance-of| |Entity|)))

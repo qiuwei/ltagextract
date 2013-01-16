@@ -1,0 +1,25 @@
+[1 Lysosomal enzymes] [2 digest] [3 nucleic acids] [4 and] [5 proteins] [6 at] [7 the lysosome] [8 of] [9 eukaryotic cells] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Intracellular-Digestion39754| |object| |Coordination2016| 2)
+            (|Coordination2016| |coordinates| |Protein39752| 4)
+            (|Coordination2016| |coordinates| |Nucleic-Acid39751| 4)
+            (|Intracellular-Digestion39754| |agent| |Lysosomal-Enzyme39755| 2)
+            (|Intracellular-Digestion39754| |base| |Eukaryotic-Cell39770|)
+            (|Intracellular-Digestion39754| |site| |Lysosome39760| 6)
+            (|Eukaryotic-Cell39770| |has-part| |Lysosome39760| 8))
+    :INSTANCE-TYPES (
+            (|Protein39752| |instance-of| |Protein| 5)
+            (|Lysosomal-Enzyme39755| |instance-of| |Lysosomal-Enzyme| 1)
+            (|Nucleic-Acid39751| |instance-of| |Nucleic-Acid| 3)
+            (|Intracellular-Digestion39754| |instance-of| |Intracellular-Digestion| 2)
+            (|Eukaryotic-Cell39770| |instance-of| |Eukaryotic-Cell| 9)
+            (|Lysosome39760| |instance-of| |Lysosome| 7))
+    :ROOT-TYPES (
+            (|Intracellular-Digestion39754| |instance-of| |Event|)
+            (|Protein39752| |instance-of| |Entity|)
+            (|Lysosomal-Enzyme39755| |instance-of| |Entity|)
+            (|Nucleic-Acid39751| |instance-of| |Entity|)
+            (|Eukaryotic-Cell39770| |instance-of| |Entity|)
+            (|Lysosome39760| |instance-of| |Entity|)))

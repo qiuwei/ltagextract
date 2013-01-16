@@ -1,0 +1,21 @@
+[1 The function of] [2 a cotransporter] [1 is] [3 to co-transport] [4 particles] [5 with the help of] [6 a proton pump] [8 using up] [7 ATP] .
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Cotransport-Using-Proton-Pump16370| |object| |Particle-In-Motion16362| 3)
+            (|Cotransport-Using-Proton-Pump16370| |raw-material| |ATP16339| 8)
+            (|Cotransport-Using-Proton-Pump16370| |instrument| |Proton-Pump16291| 5)
+            (|Cotransport-Using-Proton-Pump16370| |agent| |Cotransporter16356| 1)
+            (|Cotransporter16356| |has-function| |Cotransport-Using-Proton-Pump16370| 1))
+    :INSTANCE-TYPES (
+            (|Particle-In-Motion16362| |instance-of| |Particle-In-Motion| 4)
+            (|ATP16339| |instance-of| |ATP| 7)
+            (|Proton-Pump16291| |instance-of| |Proton-Pump| 6)
+            (|Cotransporter16356| |instance-of| |Cotransporter| 2)
+            (|Cotransport-Using-Proton-Pump16370| |instance-of| |Cotransport-Using-Proton-Pump| 3))
+    :ROOT-TYPES (
+            (|Cotransport-Using-Proton-Pump16370| |instance-of| |Event|)
+            (|Particle-In-Motion16362| |instance-of| |Entity|)
+            (|ATP16339| |instance-of| |Entity|)
+            (|Proton-Pump16291| |instance-of| |Entity|)
+            (|Cotransporter16356| |instance-of| |Entity|)))

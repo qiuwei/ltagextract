@@ -1,0 +1,22 @@
+[1 The function of] [2 a proton pump] [1 is] [7 to generate] [4 a hydrogen ion gradient] [5 at] [8 the plasma membrane] [6 of] [9 prokaryotes].
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |object| |Hydrogen-Ion-Gradient80535| 7)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |base| |Prokaryote80519|)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |site| |Plasma-membrane80558| 5)
+            (|Prokaryote80519| |has-part| |Plasma-membrane80558| 6)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |agent| |Proton-Pump80560|)
+            (|Proton-Pump80560| |has-function| |Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| 1))
+    :INSTANCE-TYPES (
+            (|Hydrogen-Ion-Gradient80535| |instance-of| |Hydrogen-Ion-Gradient| 4)
+            (|Prokaryote80519| |instance-of| |Prokaryote| 9)
+            (|Plasma-membrane80558| |instance-of| |Plasma-membrane| 8)
+            (|Proton-Pump80560| |instance-of| |Proton-Pump| 2)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |instance-of| |Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane| 7))
+    :ROOT-TYPES (
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |instance-of| |Event|)
+            (|Hydrogen-Ion-Gradient80535| |instance-of| |Entity|)
+            (|Prokaryote80519| |instance-of| |Entity|)
+            (|Plasma-membrane80558| |instance-of| |Entity|)
+            (|Proton-Pump80560| |instance-of| |Entity|)))

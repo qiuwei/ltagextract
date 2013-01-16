@@ -1,0 +1,20 @@
+[1 ATP] [2 is synthesized] [3 at] [4 the active site] [5 of] [6 an ATP-Synthase] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Synthesis-of-ATP61958| |result| |ATP61948| 2)
+            (|Synthesis-of-ATP61958| |agent| |ATP-Synthase61844|)
+            (|Synthesis-of-ATP61958| |site| |Active-Site61921| 3)
+            (|ATP-Synthase61844| |has-region| |Active-Site61921| 5))
+    :INSTANCE-TYPES (
+            (|ATP61948| |instance-of| |ATP| 1)
+            (|Synthesis-of-ATP61958| |instance-of| |Synthesis-of-ATP| 2)
+            (|ATP-Synthase61844| |instance-of| |ATP-Synthase| 6)
+            (|Active-Site61921| |instance-of| |Active-Site| 4)
+            (|ATP| |subclasses| |Chemical-Entity|))
+    :ROOT-TYPES (
+            (|Synthesis-of-ATP61958| |instance-of| |Event| 2)
+            (|ATP61948| |instance-of| |Entity| 1)
+            (|ATP-Synthase61844| |instance-of| |Entity| 6)
+            (|Active-Site61921| |instance-of| |Entity| 4)))
+

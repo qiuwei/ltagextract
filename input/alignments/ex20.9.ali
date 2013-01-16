@@ -1,0 +1,24 @@
+[1 ATP-synthase] [2 in] [3 the thylakoid membrane] [4 of] [5 plant cells] [6 in] [7 vascular tissue] [8 diffuses] [9 hydrogen ions] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Exergonic-Process8252| |object| |Hydrogen-Ion8233| 8)
+            (|Exergonic-Process8252| |agent| |ATP-Synthase8247| 8)
+            (|Vascular-Tissue8261| |has-part| |Plant-Cell8215| 6)
+            (|Plant-Cell8215| |has-part| |Thylakoid-Membrane8217| 4)
+            (|Thylakoid-Membrane8217| |has-part| |ATP-Synthase8247| 2))
+    :INSTANCE-TYPES (
+            (|Hydrogen-Ion8233| |instance-of| |Hydrogen-Ion| 9)
+            (|Exergonic-Process8252| |instance-of| |Facilitated-Diffusion-Of-Ion| 8)
+            (|Vascular-Tissue8261| |instance-of| |Vascular-Tissue| 7)
+            (|Plant-Cell8215| |instance-of| |Plant-Cell| 5)
+            (|Thylakoid-Membrane8217| |instance-of| |Thylakoid-Membrane| 3)
+            (|ATP-Synthase8247| |instance-of| |ATP-Synthase| 1))
+    :ROOT-TYPES (
+            (|Exergonic-Process8252| |instance-of| |Event| 8)
+            (|Hydrogen-Ion8233| |instance-of| |Entity| 9)
+            (|ATP-Synthase8247| |instance-of| |Entity| 1)
+            (|Vascular-Tissue8261| |instance-of| |Entity| 7)
+            (|Plant-Cell8215| |instance-of| |Entity| 5)
+            (|Thylakoid-Membrane8217| |instance-of| |Entity| 3)))
+

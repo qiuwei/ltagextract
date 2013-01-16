@@ -1,0 +1,22 @@
+[1 Membrane proteins] [2 are carried] [8 to] [3 the lysosomal membrane] [4 , which consists of] [5 an inner membrane] [6 and] [7 an outer membrane] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Coordination33| |coordinates| |Outer-membrane38141| 6)
+            (|Coordination33| |coordinates| |Inner-Membrane38142| 6)
+            (|Lysosomal-membrane38120| |has-part| |Coordination33| 4)
+            (|Carry38097| |destination| |Lysosomal-membrane38120| 8)
+            (|Carry38097| |object| |Membrane-Protein38117| 2))
+    :INSTANCE-TYPES (
+            (|Outer-membrane38141| |instance-of| |Outer-membrane| 7)
+            (|Inner-Membrane38142| |instance-of| |Inner-Membrane| 5)
+            (|Lysosomal-membrane38120| |instance-of| |Lysosomal-membrane| 3)
+            (|Carry38097| |instance-of| |Carry| 2)
+            (|Membrane-Protein38117| |instance-of| |Membrane-Protein| 1))
+    :ROOT-TYPES (
+            (|Lysosomal-membrane38120| |instance-of| |Entity| 3)
+            (|Outer-membrane38141| |instance-of| |Entity| 7)
+            (|Inner-Membrane38142| |instance-of| |Entity| 5)
+            (|Carry38097| |instance-of| |Event| 2)
+            (|Membrane-Protein38117| |instance-of| |Entity| 1)))
+

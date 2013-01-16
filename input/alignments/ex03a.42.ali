@@ -1,0 +1,21 @@
+ [1 The function of] [2 cellulase] [1 is] [3 to digest] [4 cellulose] [5 in] [6 a cell] [7 , using] [8 potential energy] .
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Cellulose-Digestion12782| |object| |Cellulose12780| 3)
+            (|Cellulose-Digestion12782| |base| |Cell12789| 5)
+            (|Cellulose-Digestion12782| |raw-material| |Potential-Energy12793| 7)
+            (|Cellulose-Digestion12782| |agent| |Cellulase12781| 1)
+            (|Cellulase12781| |has-function| |Cellulose-Digestion12782| 1))
+    :INSTANCE-TYPES (
+            (|Cellulose12780| |instance-of| |Cellulose| 4)
+            (|Cell12789| |instance-of| |Cell| 6)
+            (|Potential-Energy12793| |instance-of| |Potential-Energy| 8)
+            (|Cellulase12781| |instance-of| |Cellulase| 2)
+            (|Cellulose-Digestion12782| |instance-of| |Cellulose-Digestion| 3))
+    :ROOT-TYPES (
+            (|Cellulose-Digestion12782| |instance-of| |Event|)
+            (|Cellulose12780| |instance-of| |Entity|)
+            (|Cell12789| |instance-of| |Entity|)
+            (|Potential-Energy12793| |instance-of| |Entity|)
+            (|Cellulase12781| |instance-of| |Entity|)))

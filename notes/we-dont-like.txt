@@ -1,0 +1,2 @@
+ex19.2
+        - Hard to normalize parse tree.

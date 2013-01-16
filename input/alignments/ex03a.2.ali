@@ -1,0 +1,19 @@
+[1 The function of] [2 a gated channel] [1 is] [3 to release] [4 particles] [6 from] [5 the endoplasmic reticulum] .
+
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Release-Of-Calcium-Ion-By-Endoplasmic-Reticulum64602| |object| |Particle-In-Motion64582| 3)
+            (|Release-Of-Calcium-Ion-By-Endoplasmic-Reticulum64602| |base| |Endoplasmic-Reticulum64603| 6)
+            (|Release-Of-Calcium-Ion-By-Endoplasmic-Reticulum64602| |agent| |Gated-Channel64605| 1)
+            (|Gated-Channel64605| |has-function| |Release-Of-Calcium-Ion-By-Endoplasmic-Reticulum64602| 1))
+    :INSTANCE-TYPES (
+            (|Particle-In-Motion64582| |instance-of| |Particle-In-Motion| 4)
+            (|Endoplasmic-Reticulum64603| |instance-of| |Endoplasmic-Reticulum| 5)
+            (|Gated-Channel64605| |instance-of| |Gated-Channel| 2)
+            (|Release-Of-Calcium-Ion-By-Endoplasmic-Reticulum64602| |instance-of| |Release-Of-Calcium-Ion-By-Endoplasmic-Reticulum| 3))
+    :ROOT-TYPES (
+            (|Release-Of-Calcium-Ion-By-Endoplasmic-Reticulum64602| |instance-of| |Event|)
+            (|Particle-In-Motion64582| |instance-of| |Entity|)
+            (|Endoplasmic-Reticulum64603| |instance-of| |Entity|)
+            (|Cell64612| |instance-of| |Entity|)
+            (|Gated-Channel64605| |instance-of| |Entity|)))

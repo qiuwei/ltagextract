@@ -1,0 +1,22 @@
+[1 The function of] [2 a biomembrane] [1 is to allow] [3 a sodium potassium pump] [4 to move] [5 ions] [6 and] [7 hydrophilic compounds] [4 through] [8 it] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Move-Through69893| |object| |Coordination2035| 4)
+            (|Coordination2035| |coordinates| |Ion69873| 6)
+            (|Coordination2035| |coordinates| |Hydrophilic-Compound69933| 6)
+            (|Move-Through69893| |agent| |Sodium-Potassium-Pump69894| 4)
+            (|Move-Through69893| |base| |Biomembrane69877| 1)
+            (|Biomembrane69877| |has-function| |Move-Through69893| 1))
+    :INSTANCE-TYPES (
+            (|Ion69873| |instance-of| |Ion| 5)
+            (|Hydrophilic-Compound69933| |instance-of| |Hydrophilic-Compound| 7)
+            (|Sodium-Potassium-Pump69894| |instance-of| |Sodium-Potassium-Pump| 3)
+            (|Biomembrane69877| |instance-of| |Biomembrane| 2)
+            (|Move-Through69893| |instance-of| |Move-Through| 4))
+    :ROOT-TYPES (
+            (|Move-Through69893| |instance-of| |Event|)
+            (|Ion69873| |instance-of| |Entity|)
+            (|Hydrophilic-Compound69933| |instance-of| |Entity|)
+            (|Sodium-Potassium-Pump69894| |instance-of| |Entity|)
+            (|Biomembrane69877| |instance-of| |Entity|)))

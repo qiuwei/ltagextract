@@ -1,0 +1,27 @@
+[1 An enzyme substrate complex] [2 is created when] [3 a chemical] [4 attaches] [5 to] [6 the active site] [7 of] [8 a protein enzyme] [9 with] [10 an ionic bond] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Attach23994| |result| |Enzyme-Substrate-Complex23993| 2)
+            (|Attach23994| |instrument| |Ionic-Bond24034| 9)
+            (|Attach23994| |object| |Chemical-Entity24036| 4)
+            (|Attach23994| |base| |Protein-Enzyme24003|)
+            (|Attach23994| |site| |Active-Site24027| 5)
+            (|Protein-Enzyme24003| |has-region| |Active-Site24027| 7))
+    :INSTANCE-TYPES (
+            (|Enzyme-Substrate-Complex23993| |instance-of| |Enzyme-Substrate-Complex| 1)
+            (|Ionic-Bond24034| |instance-of| |Ionic-Bond| 10)
+            (|Chemical-Entity24036| |instance-of| |Chemical-Entity| 3)
+            (|Attach23994| |instance-of| |Attach| 4)
+            (|Protein-Enzyme24003| |instance-of| |Protein-Enzyme| 8)
+            (|Active-Site24027| |instance-of| |Active-Site| 6)
+            (|Chemical-Entity| |subclasses| |Tangible-Entity|)
+            (|Protein-Enzyme| |subclasses| |Tangible-Entity|))
+    :ROOT-TYPES (
+            (|Attach23994| |instance-of| |Event| 4)
+            (|Enzyme-Substrate-Complex23993| |instance-of| |Entity| 1)
+            (|Ionic-Bond24034| |instance-of| |Entity| 10)
+            (|Chemical-Entity24036| |instance-of| |Entity| 3)
+            (|Protein-Enzyme24003| |instance-of| |Entity| 8)
+            (|Active-Site24027| |instance-of| |Entity| 6)))
+

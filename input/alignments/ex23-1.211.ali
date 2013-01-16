@@ -1,0 +1,21 @@
+[1 Malate] [2 is transferred] [8 to] [3 a bundle sheath cell] [4 during] [5 c4-photosynthesis] [6 in] [7 a plant cell] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Transfer-Of-Malate-To-Bundle-Sheath-Cell8384| |object| |Malate8420| 2)
+            (|Transfer-Of-Malate-To-Bundle-Sheath-Cell8384| |destination| |Bundle-Sheath-Cell8422| 8)
+            (|C4-Photosynthesis8416| |subevent| |Transfer-Of-Malate-To-Bundle-Sheath-Cell8384| 4)
+            (|C4-Photosynthesis8416| |base| |Plant-Cell8386| 6))
+    :INSTANCE-TYPES (
+            (|Malate8420| |instance-of| |Malate| 1)
+            (|Bundle-Sheath-Cell8422| |instance-of| |Bundle-Sheath-Cell| 3)
+            (|Transfer-Of-Malate-To-Bundle-Sheath-Cell8384| |instance-of| |Transfer-Of-Malate-To-Bundle-Sheath-Cell| 2)
+            (|Plant-Cell8386| |instance-of| |Plant-Cell| 7)
+            (|C4-Photosynthesis8416| |instance-of| |C4-Photosynthesis| 5))
+    :ROOT-TYPES (
+            (|Transfer-Of-Malate-To-Bundle-Sheath-Cell8384| |instance-of| |Event| 2)
+            (|Malate8420| |instance-of| |Entity| 1)
+            (|Bundle-Sheath-Cell8422| |instance-of| |Entity| 3)
+            (|C4-Photosynthesis8416| |instance-of| |Event| 5)
+            (|Plant-Cell8386| |instance-of| |Entity| 7)))
+

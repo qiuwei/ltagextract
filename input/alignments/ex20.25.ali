@@ -1,0 +1,24 @@
+[1 The inner membrane] [2 of] [3 the mitochondrial membrane] [4 of] [5 eukaryotic cells] [6 blocks] [7 hydrophobic compounds] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Block24667| |object| |Hydrophobic-Compound24648| 6)
+            (|Block24667| |instrument| |Inner-Membrane24819| 6)
+            (|Eukaryotic-Cell24814| |has-part| |Mitochondrion24799| 4)
+            (|Mitochondrion24799| |has-part| |Mitochondrial-Membrane24813| 4)
+            (|Mitochondrial-Membrane24813| |has-part| |Inner-Membrane24819| 2))
+    :INSTANCE-TYPES (
+            (|Hydrophobic-Compound24648| |instance-of| |Hydrophobic-Compound| 7)
+            (|Block24667| |instance-of| |Block| 6)
+            (|Eukaryotic-Cell24814| |instance-of| |Eukaryotic-Cell| 5)
+            (|Mitochondrion24799| |instance-of| |Mitochondrion| 4)
+            (|Mitochondrial-Membrane24813| |instance-of| |Mitochondrial-Membrane| 3)
+            (|Inner-Membrane24819| |instance-of| |Inner-Membrane| 1))
+    :ROOT-TYPES (
+            (|Block24667| |instance-of| |Event| 6)
+            (|Hydrophobic-Compound24648| |instance-of| |Entity| 7)
+            (|Inner-Membrane24819| |instance-of| |Entity| 1)
+            (|Eukaryotic-Cell24814| |instance-of| |Entity| 5)
+            (|Mitochondrion24799| |instance-of| |Entity| 4)
+            (|Mitochondrial-Membrane24813| |instance-of| |Entity| 3)))
+

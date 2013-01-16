@@ -1,0 +1,15 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Pyruvate23276| |structural-complexity| |Structural-Complexity-Value23264|)
+            (|Structural-Complexity-Value23264| |value| "simple"))
+    :INSTANCE-TYPES (
+            (|Pyruvate23276| |instance-of| |Pyruvate|)
+            (|Pyruvate| |subclasses| |Molecule|)
+            (|Structural-Complexity-Value23107| |instance-of| |Structural-Complexity-Value|)
+            (|Structural-Complexity-Value23254| |instance-of| |Structural-Complexity-Value|)
+            (|Structural-Complexity-Value23264| |instance-of| |Structural-Complexity-Value|))
+    :ROOT-TYPES (
+            (|Pyruvate23276| |instance-of| |Entity|)
+            (|Structural-Complexity-Value23264| |instance-of| |Property-Value|)
+            (|Structural-Complexity-Value23107| |instance-of| |Property-Value|)
+            (|Structural-Complexity-Value23254| |instance-of| |Property-Value|)))

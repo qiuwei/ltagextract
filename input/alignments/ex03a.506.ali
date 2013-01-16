@@ -1,0 +1,23 @@
+[1 The function of] [2 cellulase] [1 is] [3 to digest] [4 cellulose] [5 , producing] [6 glucose] [7 and] [8 free energy] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Cellulose-Digestion12782| |object| |Cellulose12780| 3)
+            (|Cellulose-Digestion12782| |result| |Coordination2038| 5)
+            (|Coordination2038| |coordinates| |Glucose12777| 7)
+            (|Coordination2038| |coordinates| |Free-Energy12759| 7)
+            (|Cellulose-Digestion12782| |agent| |Cellulase12781| 1)
+            (|Cellulase12781| |has-function| |Cellulose-Digestion12782| 1))
+    :INSTANCE-TYPES (
+            (|Cellulose12780| |instance-of| |Cellulose| 4)
+            (|Glucose12777| |instance-of| |Monomer| 6)
+            (|Free-Energy12759| |instance-of| |Free-Energy| 8)
+            (|Cellulase12781| |instance-of| |Cellulase| 2)
+            (|Cellulose-Digestion12782| |instance-of| |Cellulose-Digestion| 3)
+            (|Glucose| |subclasses| |Chemical-Entity| 2))
+    :ROOT-TYPES (
+            (|Cellulose-Digestion12782| |instance-of| |Event|)
+            (|Cellulose12780| |instance-of| |Entity|)
+            (|Glucose12777| |instance-of| |Entity|)
+            (|Free-Energy12759| |instance-of| |Entity|)
+            (|Cellulase12781| |instance-of| |Entity|)))

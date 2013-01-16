@@ -1,0 +1,23 @@
+[1 Catalase] [2 in] [3 the glyoxysome] [4 of] [5 plant cells] [6 changes] [7 fatty acid] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Change30349| |object| |Fatty-Acid30352| 6)
+            (|Change30349| |agent| |Catalase30347| 6)
+            (|Plant-Cell30357| |has-part| |Glyoxysome30354| 4)
+            (|Glyoxysome30354| |has-part| |Catalase30347| 2))
+    :INSTANCE-TYPES (
+            (|Fatty-Acid30352| |instance-of| |Fatty-Acid| 7)
+            (|Change30349| |instance-of| |Change| 6)
+            (|Plant-Cell30357| |instance-of| |Plant-Cell| 5)
+            (|Glyoxysome30354| |instance-of| |Glyoxysome| 3)
+            (|Catalase30347| |instance-of| |Catalase| 1)
+            (|Catalase| |subclasses| |Protein-Enzyme| 1))
+    :ROOT-TYPES (
+            (|Change30349| |instance-of| |Event| 6)
+            (|Fatty-Acid30352| |instance-of| |Entity| 7)
+            (|Catalase30347| |instance-of| |Entity| 1)
+            (|Tissue30356| |instance-of| |Entity|)
+            (|Plant-Cell30357| |instance-of| |Entity| 5)
+            (|Glyoxysome30354| |instance-of| |Entity| 3)))
+

@@ -1,0 +1,22 @@
+[1 Antibiotics] [2 are] [3 enzyme-inhibitors] [4 , which] [8 inhibit] [5 the protein enzymes] [6 of] [7 bacteria] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Antibiotic4131| |plays| |Enzyme-Inhibitor4118| 2)
+            (|Enzyme-Inhibitor4118| |in-event| |Inhibition4117| 4)
+            (|Inhibition4117| |agent| |Antibiotic4131|)
+            (|Inhibition4117| |object| |Protein-Enzyme4119| 8)
+            (|Bacterium4120| |has-part| |Protein-Enzyme4119| 6))
+    :INSTANCE-TYPES (
+            (|Enzyme-Inhibitor4118| |instance-of| |Enzyme-Inhibitor| 3)
+            (|Antibiotic4131| |instance-of| |Antibiotic| 1)
+            (|Inhibition4117| |instance-of| |Inhibition| 8)
+            (|Bacterium4120| |instance-of| |Bacterium| 7)
+            (|Protein-Enzyme4119| |instance-of| |Protein-Enzyme| 5))
+    :ROOT-TYPES (
+            (|Antibiotic4131| |instance-of| |Entity| 1)
+            (|Enzyme-Inhibitor4118| |instance-of| |Role| 3)
+            (|Inhibition4117| |instance-of| |Event| 4)
+            (|Protein-Enzyme4119| |instance-of| |Entity| 5)
+            (|Bacterium4120| |instance-of| |Entity| 7)))
+

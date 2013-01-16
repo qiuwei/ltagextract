@@ -1,0 +1,25 @@
+[1 A carbohydrate side chain] [2 attaches] [3 to] [4 the carbon skeleton] [5 of] [6 transport proteins] [7 in] [8 the plasma membrane] [9 of] [10 animal cells] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Attach3907| |object| |Carbohydrate-Side-Chain3886| 2)
+            (|Attach3907| |base| |Carbon-Skeleton3877| 3)
+            (|Animal-Cell3864| |has-part| |Animal-Plasma-Membrane3845| 9)
+            (|Animal-Plasma-Membrane3845| |has-part| |Transport-Protein3961| 7)
+            (|Transport-Protein3961| |has-region| |Carbon-Skeleton3877| 5))
+    :INSTANCE-TYPES (
+            (|Carbohydrate-Side-Chain3886| |instance-of| |Carbohydrate-Side-Chain| 1)
+            (|Attach3907| |instance-of| |Attach| 2)
+            (|Animal-Cell3864| |instance-of| |Animal-Cell| 10)
+            (|Animal-Plasma-Membrane3845| |instance-of| |Animal-Plasma-Membrane| 8)
+            (|Transport-Protein3961| |instance-of| |Transport-Protein| 6)
+            (|Carbon-Skeleton3877| |instance-of| |Carbon-Skeleton| 4)
+            (|Carbohydrate-Side-Chain| |subclasses| |Tangible-Entity|))
+    :ROOT-TYPES (
+            (|Attach3907| |instance-of| |Event| 2)
+            (|Carbohydrate-Side-Chain3886| |instance-of| |Entity| 1)
+            (|Carbon-Skeleton3877| |instance-of| |Entity| 4)
+            (|Animal-Cell3864| |instance-of| |Entity| 10)
+            (|Animal-Plasma-Membrane3845| |instance-of| |Entity| 8)
+            (|Transport-Protein3961| |instance-of| |Entity| 6)))
+

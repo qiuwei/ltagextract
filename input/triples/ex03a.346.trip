@@ -1,0 +1,19 @@
+(KBGEN-INPUT 
+    :TRIPLES (
+            (|Cotransport-Using-Proton-Pump16370| |object| |Particle-In-Motion16362|)
+            (|Cotransport-Using-Proton-Pump16370| |raw-material| |ATP16339|)
+            (|Cotransport-Using-Proton-Pump16370| |instrument| |Proton-Pump16291|)
+            (|Cotransport-Using-Proton-Pump16370| |agent| |Cotransporter16356|)
+            (|Cotransporter16356| |has-function| |Cotransport-Using-Proton-Pump16370|))
+    :INSTANCE-TYPES (
+            (|Particle-In-Motion16362| |instance-of| |Hydrogen-Ion|)
+            (|ATP16339| |instance-of| |ATP|)
+            (|Proton-Pump16291| |instance-of| |Proton-Pump|)
+            (|Cotransporter16356| |instance-of| |Cotransporter|)
+            (|Cotransport-Using-Proton-Pump16370| |instance-of| |Cotransport-Using-Proton-Pump|))
+    :ROOT-TYPES (
+            (|Cotransport-Using-Proton-Pump16370| |instance-of| |Event|)
+            (|Particle-In-Motion16362| |instance-of| |Entity|)
+            (|ATP16339| |instance-of| |Entity|)
+            (|Proton-Pump16291| |instance-of| |Entity|)
+            (|Cotransporter16356| |instance-of| |Entity|)))

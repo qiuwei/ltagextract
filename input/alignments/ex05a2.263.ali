@@ -1,0 +1,24 @@
+[1 The transport protein] [2 at] [3 the phospholipic bilayer] [4 in] [5 the plasma membrane] [6 of] [7 an animal] [8 is a] [9 complex] [8 polypeptide] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Animal-Cell3923| |has-part| |Animal-Plasma-Membrane3904| 6)
+            (|Animal-Plasma-Membrane3904| |has-part| |Transport-Protein3903|)
+            (|Animal-Plasma-Membrane3904| |has-part| |Phospholipid-Bilayer3914| 4)
+            (|Transport-Protein3903| |is-at| |Phospholipid-Bilayer3914| 2)
+            (|Transport-Protein3903| |structural-complexity| |Structural-Complexity-Value3899| 8)
+            (|Structural-Complexity-Value3899| |value| "complex" 9)
+            (|Transport-Protein| |subclasses| |Polypeptide| 8))
+    :INSTANCE-TYPES (
+            (|Animal-Cell3923| |instance-of| |Animal-Cell| 7)
+            (|Animal-Plasma-Membrane3904| |instance-of| |Animal-Plasma-Membrane| 5)
+            (|Phospholipid-Bilayer3914| |instance-of| |Phospholipid-Bilayer| 3)
+            (|Transport-Protein3903| |instance-of| |Transport-Protein| 1)
+            (|Structural-Complexity-Value3899| |instance-of| |Structural-Complexity-Value| 9))
+    :ROOT-TYPES (
+            (|Animal-Cell3923| |instance-of| |Entity| 7)
+            (|Animal-Plasma-Membrane3904| |instance-of| |Entity| 5)
+            (|Transport-Protein3903| |instance-of| |Entity| 1)
+            (|Phospholipid-Bilayer3914| |instance-of| |Entity| 3)
+            (|Structural-Complexity-Value3899| |instance-of| |Property-Value| 8)))
+

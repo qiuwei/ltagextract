@@ -1,0 +1,22 @@
+[1 The function of] [2 ester linkage] [3 is] [6 to hold together] [4 two oxygen molecules] [7 with] [5 a double bond] .
+
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Hold-Together162| |object| |Coordination2030| 6)
+            (|Coordination2030| |coordinates| |Oxygen145| 4)
+            (|Coordination2030| |coordinates| |Oxygen149| 4)
+            (|Hold-Together162| |instrument| |Double-Bond161| 7)
+            (|Hold-Together162| |agent| |Ester-Linkage151| 1)
+            (|Ester-Linkage151| |has-function| |Hold-Together162| 1))
+    :INSTANCE-TYPES (
+            (|Oxygen145| |instance-of| |Oxygen| 4)
+            (|Oxygen149| |instance-of| |Oxygen| 4)
+            (|Double-Bond161| |instance-of| |Double-Bond| 5)
+            (|Ester-Linkage151| |instance-of| |Ester-Linkage| 2)
+            (|Hold-Together162| |instance-of| |Hold-Together| 6))
+    :ROOT-TYPES (
+            (|Hold-Together162| |instance-of| |Event|)
+            (|Oxygen145| |instance-of| |Entity|)
+            (|Oxygen149| |instance-of| |Entity|)
+            (|Double-Bond161| |instance-of| |Entity|)
+            (|Ester-Linkage151| |instance-of| |Entity|)))
