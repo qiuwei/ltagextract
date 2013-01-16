@@ -1,0 +1,7 @@
+This directory is for the input files.
+
+alignments: corpus with semantics aligned to surface form.
+sentences: pure sentences extracted from the corpus 
+triples: tripes extracted from the corpus
+
+Note: there is already some modification in the corpus provided here. Anaphora is already resolved. Sentences and triples are consistent with alignments.

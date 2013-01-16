@@ -1,0 +1,6 @@
+This directory contains all of the runnable programs and scripts.
+
+run.sh: run all of the programs in a pipeline to reproduce the result we got.
+extract: extract TAG and align the semantics.
+TODO
+
