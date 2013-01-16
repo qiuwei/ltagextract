@@ -27,11 +27,127 @@
 \section{Semantic Annotation}
 \label{sec:sem-annot}
 
+Extracting the elementary trees and aligning them to the triples
+without any prior knowledge about the link between parts of the
+sentences and the triples would have been very difficult. Therefore,
+the first step of developing our system was to manually align sets of
+triples to words from the sentences.
 
+In order to shed light on the kind of alignment we were looking for, I
+will list the properties we would like the alignment to have:
+
+\begin{itemize}
+\item Every word is aligned to some set of triples, i.e. every word is
+  ``semantically motivated''. We would like our system to be able to
+  generate the kind of sentences we had at the start. However, our
+  surface realizer, GenI, never produces superfluous output (every
+  word of the output is part of an elementary tree which was induced
+  by some set of triples in the input).
+\item Every triple is aligned to some set of words in the sentence.
+  This is a reasonable requirement since the training sentences we
+  have should be complete expressions of their semantic models.
+  Furthermore, we would like to be able to generate at least the
+  training data we have and GenI only considers generation successful
+  if every semantic formula is realized via some elementary trees,
+  which means there should not be any orphan triples.
+\item The relation between the sets of words and sets of triples
+  should be an alignment. By this, we mean to say that for every two
+  different pairs of aligned sets of words and triples, the sets of
+  words and the sets of triples should both be disjoint (in short, a
+  word should not be aligned to two different sets of triples and a
+  triple should not be aligned to two different sets of words).
+\item The alignment we want to create should be the finest such
+  alignment, meaning that any alignment which is a refinement of our
+  alignment must lack one of the above properties. This is a natural
+  requirement if we were doing things manually, since any rougher
+  alignment can be easily arrived at by merging aligned groups.
+  Furthermore, finer alignments will let us arrive at smaller
+  elementary trees which generalize better, though they might
+  overgenerate (which is a problem we were not afraid of, since we
+  were afraid whether we will even be able to generate something).
+\end{itemize}
+
+For further discussion, we will label the sets of words that end up
+aligned to some sets of triples \emph{groups}. Before we proceed with
+a more linguistic description of the annotation guidelines, there is
+one more technicality we would like to bring to light.
+
+\subsection{Contiguous groups}
+
+In our first rounds of annotation, we were working with an overly
+strict constraint. Due to some confusion about how the realizer will
+work and which realizer we will actually use, we restricted ourselves
+to contiguous group only (groups whose all words form a contiguous
+substring of the sentence). Under this constraint, we had trouble
+accounting for several phenomena, the first one being conjunction.
+Coordination was particularly tricky and required special treatment
+even without the contiguity constraint (see Section \ref{ssec:coord}
+for more details). However, other phrase structures such as ``... X
+\textbf{, which also requires} Y \textbf{,} ...'' (mind the second
+comma) with the semantics (X, requires, Y) or ``\textbf{the function
+of} X \textbf{is} Y'' with semantics (X, has-function, Y).
+
+After a while, we realized that the groups that we were manually
+forming would correspond exactly to the final elementary trees (it was
+the only alignment between semantics and syntax we had, after all).
+Therefore, the sets of words in a group would not have to be
+contiguous at all (the yield of an elementary tree may have
+substitution or foot nodes surrounded by (co-)anchors).
 
 \subsection{Annotation guidelines}
 
+The realization that the groups of the alignment will correspond to
+elementary trees restricts the space of possible alignments
+significantly. These restrictions came both from the surface
+realization of the sentence, where we imagined an idealized parse tree
+and made sure that the groups would correspond to sensible and
+composable elementary trees in that parse tree. On the semantic side,
+we also needed the semantic links from the set of triples assigned by
+the alignment to line up with the syntactic links in the elementary
+tree (the substitution and adjunction sites).
+
+Here are the guidelines for several common situations:
+
+\begin{itemize}
+\item NPs are aligned to their entity declarations.
+\item For simple intransitive or transitive verbs, the event entity
+  declaration and the triples which specify the agent (and the
+  patient or whatever role the object takes) are aligned to the verb.
+\item In an $n$-nary conjunction, all of the $n-1$ interposed
+  conjunctions (comma, \emph{and}) are aligned to specialized
+  \textbf{coordinates} relations which group all the coordinated
+  entities into a single artificial entity.
+\item For prepositions, we align the preposition (e.g. ``X \textbf{of}
+  Y'') to a single triple which links some two entities (X and Y). In
+  the resulting grammar, the preposition will correspond to an
+  auxiliary tree where one the two semantic links will correspond to a
+  substitution site and the other to the adjunction site.
+\end{itemize}
+
+And here is our guideline for a more involved but quite common
+scenario:
+
+\begin{itemize}
+\item ``\textbf{The function of} X[NP] \textbf{is to provide energy
+  for} Y[NP] \textbf{to} Z[VP].''
+
+  Everything in bold in the sentence above will form a single group.
+  This will be aligned to the following triples: (X, has-function, Z),
+  (Z, raw-material, X) and (Z, agent, Y).
+\end{itemize}
+
+In the last example, you can see that I use the same meta-variables
+for parts of the input syntax and the semantic entities. I assume
+there is a natural assignment of the entities of the semantic
+representation to certain constituents in the phrase structure. This
+assumption is based on the fact that some groups (elementary trees)
+are aligned to entity declarations and the idea that these entities
+could be propagated up the tree according to headedness. It was this
+idea that gave us hope that it should be possible to provide semantic
+indices for the generated elementary trees automatically.
+
 \subsection{Problems}
+
 
 
 \section{Preprocessing}
@@ -69,6 +185,7 @@ unlexicalized parser (though the result of the unlexicalized parsing
 almost as just as bad as that of the lexicalized one).
 
 \subsection{Aggregating coordinations}
+\label{ssec:coord}
 
 When we started working on the manual alignment with our self-enforced
 constraint to produce only contiguous groups (see section
