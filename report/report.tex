@@ -35,7 +35,7 @@ The idea using domain specific grammar extracted from parsed corpus for NLG syst
 
 \section{Preprocessing}
 
-\subsection{Parsing with head information}
+\subsection{Parsing and headedness}
 
 Our plan is to extract the elementary trees for a TAG from a treebank.
 Since our corpus lacks phrase structure information, we ran an
@@ -63,7 +63,7 @@ extraction process and decided to stick with the output of the
 unlexicalized parser (though the result of the unlexicalized parsing
 almost as just as bad as that of the lexicalized one).
 
-\subsection{Conjunction resolving}
+\subsection{Aggregating coordinations}
 
 When we started working on the manual alignment with our self-enforced
 constraint to produce only contiguous groups (see section
@@ -90,22 +90,13 @@ a polar amino acid and a monomer, create  membrane potential.
             (|Membrane-Potential21299| |instance-of| |Membrane-Potential|)))
 \end{verbatim}
 
-How should the group that contains the word \emph{consists} look like?
-It takes an indirect object starting with \emph{of}, so we make
-\emph{of} part of the same group. Since this verb is the head of a
-relative clause that modifies an NP, we would like to have the first
-comma and the word \emph{which} in the same group as well. So far so
-good, we have a contiguous group, ``\emph{, which consists of}''. The
-set of triples that corresponds to this group is the set of the three
-triples with the \textbf{has-part} relation.
-
-So far so good (omitting the final comma, that is). But now we have
-trouble when we look at the object of \emph{consists}. To what group
-should the comma and the conjunction \emph{and} belong, i.e. what
-semantics correspond to them and only to them?
-
-To resolve this issue, we have developed a tool to reify the
-coordination structures within the triples themselves.
+To what group should the comma and the conjunction \emph{and} belong,
+i.e. what semantics correspond to them and only to them? The
+\textbf{has-part} relations belong to the verb \emph{consists}, the
+instance declarations belong to the NPs. Yet we need to assign the
+coordination constructions to some semantics, otherwise we will not be
+able to generate them. To resolve this issue, we have developed a tool
+to reify the coordination structures within the triples themselves.
 
 In our first approach, our program would look for every instance where
 one entity was in the same relation with multiple entities, such as
@@ -122,7 +113,7 @@ above, and converted the triples to the following:
         (|Create21297| |result| |Membrane-Potential21299|))
 \end{verbatim}
 
-In this approach, we build a very specific kind of binary tree which
+What we did is that we built a very specific kind of binary tree which
 covers the coordinated entities (the generated tree is specific in
 that it always leans to the right, so it looks more like a linked
 list). Here, one \textbf{Coordination} entity,
@@ -175,6 +166,154 @@ just a matter of writing a new function,
 former.
 
 \subsection{Normalizing}
+
+Once we had the manually aligned data with the aggregated
+coordinations and parsed sentences, we thought ourselves ready to
+extract the elementary trees. However, the trees produced by the
+Stanford producer do not look very much like derived trees produced by
+a TAG.
+
+Xia and Palmer were facing a similar problem (\emph{From Treebanks to
+Tree Adjoining Grammars}). We considered applying their approach.
+However, their approach is not as simple as it seems on paper.
+Consider the following parse tree we got from 
+
+\Tree
+[.ROOT
+  [.S=H
+    [.NP [.DT The ] [.NN plasma ] [.NN=H membrane ] ]
+    [.VP=H [.VBZ=H moves ]
+      [.ADVP [.RB=H away ]
+        [.PP [.IN=H from ]
+          [.NP [.DT the ] [.NN cell ] [.NN=H wall ] ] ] ]
+      [.PP [.IN=H during ]
+        [.NP
+          [.NP=H [.NNS=H plasmolysis ] ]
+          [.PP [.IN=H in ]
+            [.NP
+              [.NP=H [.DT a ] [.JJ walled ] [.NN=H cell ] ]
+              [.PP [.IN=H inside ]
+                [.NP [.JJ hypertonic ] [.NN=H solution ] ] ] ] ] ] ]
+      [., , ]
+      [.S
+        [.VP=H [.VBG=H resulting ]
+          [.PP [.IN=H in ]
+            [.NP [.DT a ] [.VBN damaged ] [.NN=H cell ] ] ] ] ] ]
+    [.. . ] ] ]
+
+The PP \emph{``during...''} and the S \emph{``resulting...''} with its
+preceding comma both modify their parent, the VP of our sentence. We
+can imagine that in our implementation of the algorithm, these would
+be identified as modifiers and they would be put on different levels
+from the argument ADVP, like so.
+
+\Tree
+[.ROOT
+  [.S=H
+    [.NP [.DT The ] [.NN plasma ] [.NN=H membrane ] ]
+    [.VP=H
+      [.VP=H
+        [.VP=H [.VBZ=H moves ]
+          [.ADVP [.RB=H away ]
+            [.PP [.IN=H from ]
+              [.NP [.DT the ] [.NN cell ] [.NN=H wall ] ] ] ] ]
+        [.PP [.IN=H during ]
+          [.NP
+            [.NP=H [.NNS=H plasmolysis ] ]
+            [.PP [.IN=H in ]
+              [.NP
+                [.NP=H [.DT a ] [.JJ walled ] [.NN=H cell ] ]
+                [.PP [.IN=H inside ]
+                  [.NP [.JJ hypertonic ] [.NN=H solution ] ] ] ] ] ] ] ]
+      [., , ]
+      [.S
+        [.VP=H [.VBG=H resulting ]
+          [.PP [.IN=H in ]
+            [.NP [.DT a ] [.VBN damaged ] [.NN=H cell ] ] ] ] ] ]
+    [.. . ] ] ]
+
+So far so good, nice and consistent. However, then we look at the NPs
+and we see that the adjectives are sisters to the nouns that they
+modify.
+
+\Tree
+[.ROOT
+  [.S=H
+    [.NP [.DT The ] [.NN=H [.NN plasma ] [.NN=H membrane ] ] ]
+    [.VP=H
+      [.VP=H
+        [.VP=H [.VBZ=H moves ]
+          [.ADVP [.RB=H away ]
+            [.PP [.IN=H from ]
+              [.NP [.DT the ] [.NN=H [.NN cell ] [.NN=H wall ] ] ] ] ] ]
+        [.PP [.IN=H during ]
+          [.NP
+            [.NP=H [.NNS=H plasmolysis ] ]
+            [.PP [.IN=H in ]
+              [.NP
+                [.NP=H [.DT a ] [.NN=H [.JJ walled ] [.NN=H cell ] ] ]
+                [.PP [.IN=H inside ]
+                  [.NP [.NN=H [.JJ hypertonic ] [.NN=H solution ] ] ] ] ] ] ] ] ]
+      [., , ]
+      [.S
+        [.VP=H [.VBG=H resulting ]
+          [.PP [.IN=H in ]
+            [.NP [.DT a ] [.NN=H [.VBN damaged ] [.NN=H cell ] ] ] ] ] ] ]
+    [.. . ] ] ]
+
+This asymmetry in the parser output made the approach of implementing
+a procedure like theirs that would handle all of the flattening
+phenomena in one unified manner seem not so viable. Instead, we chose
+to implement a simple rule-based program to solve the flattening we
+have discovered in our data.
+
+We implemented two deflattening rules. One rule handled the general
+case demonstrated on the PP and SBAR modifying the VP. This rule uses
+a simple heuristic to determine whether a child of a node with more
+than two children is a modifier or not. We refined this heuristic by
+querying the output of the program and modifying the rules to account
+for unforeseen circumstances. The final rule for detecting
+modifiers/adjuncts follows.
+
+A is an adjunct if one of the following is true:
+
+\begin{itemize}
+\item A is a PP
+\item A is an S which does not have the form [S [VP=H [TO=H to] ...]]
+\item A is a comma (we treat commas as adjuncts, so that, along with
+  the ``real'' adjunct, they will form a two-level auxiliary tree)
+\item A is an SBAR of the form [SBAR [WHNP=H [WDT=H which]] ...]
+  (appositive relative clauses)
+\end{itemize}
+
+The second rule we have implemented is specialized for NPs. We look at
+every noun in a final position (the last child of an NP or one that is
+followed by a comma or a conjunction, since the Stanford parser
+sometimes even flattens entire conjunctions of nouns, see below). For
+every such noun, we look at its left sister and if it is a permissible
+modifier (NN, NNP, JJ, VBN or ADJP). If so, we can mark the modifier
+as an adjunct and put it together with the noun under a new noun tag.
+
+This tree then...
+
+\Tree
+[.NP [.NN activation ] [.NN energy ]
+     [.CC and ]
+     [.NN water ] [.NNS=H molecules ] ]
+
+...becomes this...
+
+\Tree
+[.NP [.NN [.NN activation ] [.NN energy ] ]
+     [.CC and ]
+     [.NNS=H [.NN water ] [.NNS=H molecules ] ] ]
+
+After applying these two rules, we have examined all the possible
+problem sites. That is, the nodes which had more than two children
+after the deflattening (possible false negatives of our deflatter) and
+all the adjunctions performed by our deflatter (possible false
+positives). Upon their inspection, we have not found much room for
+improvement and declared our algorithm finished.
 
 \section{TAG extraction}
 \label{sec:tag-ext}
@@ -321,7 +460,7 @@ Now come back to our example, the chuck ``The rate of detoxification in the live
 
 Using the same algorithm, we can identify ``the rate of '' is a proper adjunction tree.
 
-The third step is to extract the elementary tree. Actually after all of conjunctions and adjunctions are kicked out the leftover's root must be a root of elementary tree. Based on this observation, the algorithm for substitution tree extraction is relatively simple. First we identify the group of the root, then kick out all the parts which don't belong to this group and add them to the agenda. The left spine would be a ``pure'' elementary tree which can be directly add to the resulted grammar.
+The third step is to extract the elementary tree. Actually after all of conjunctions and adjunctions are kicked out the leftover's root must be a root of elementary tree. Based on this observation, the algorithm for substitution tree extraction is relatively simple. First we identify the group of the root, then kick out all the parts which don't belong to this group and add them to the agenda. The left spine would be a ``pure'' elementary tree which can be directly added to the resulted grammar.
 
 For this example, 9 grammar snippets will be extracted:
 
