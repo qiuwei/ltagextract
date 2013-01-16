@@ -1,17 +1,13 @@
 \documentclass[a4paper]{article}
 \usepackage{hyperref}
 \usepackage{graphicx}
-%\usepackage{gb4e}
-%\usepackage{longtable}
-\usepackage[style=authoryear,natbib=true]{biblatex}
-\bibliography{D:/Research/bib/Parsing}
-%\usepackage{graphicx}
 \usepackage{algorithm}
 \usepackage{algorithmic}
 \usepackage{lingmacros}
 \usepackage{tikz}
 \usepackage{tikz-qtree}
-%\usepackage{gb4e}
+\usepackage[style=authoryear,natbib=true]{biblatex}
+\bibliography{/media/Program_Data/Study/Application_in_NLP/project/literature/bib/kbgen_proj}
 \title{Lexicalized Tree Adjoining Grammar Extraction For KBGEN}
 \author{Wei Qiu \and Jiri Marsik}
 %\date{}
@@ -20,6 +16,17 @@
 \begin{abstract}
 \end{abstract}
 \section{Introduction}
+Natural language generation is the process to generate coherent natural language from knowledge base triples. There are generally two approaches in this area: some researchers use decent grammar formalism such as TAG(Tree adjoining grammar) to model the interaction of linguistic objects. This approach normally requires expert knowledge of grammar formalism, a lot of investigation into corpus and the domain where the system will be used. The main drawback of this approach is that it's not easy to migrate from domain to domain. The other approach is statistics based. It often directly work on the surface form of natural language. At the very beginning of this area, people use canned text to build simple NLG systems. The problem of this approach is that it's hard to model complicated linguistic phenomena and control the quality of the text generated.
+
+
+Our project aims to reduce the effort of construct grammars for the first approach. We want to minimize the expert knowledge involved for building grammar for certain domain. A deep grammar formalism is still used, but the user doesn't need to handcraft the grammar from scratch anymore. 
+
+This report is organized as below: firstly we will generally introduce the background of this task including the related KBGEN task and the corpus; Then the semantic alignment annotation will be described; Then two sections will describe our approach to extract Lexicalized Tree Adjoining Grammar which linguistically make sense.
+
+\section{Background and previous work}
+Our project is based on KBGen shared task\citet{Banik2012}. The goal of KBgen task to produce a coherent description of biological entities, processes and connections between them. The task involves aggregation adn the generation of intra-sentential, syntactically bound pronouns but it does not require the generation of any discourse anaphora of referring expressions. The corpus we used from KBgen task and contains 107 instances.
+
+The idea using domain specific grammar extracted from parsed corpus for NLG system is proposed by \citet{DeVault2008a} and \citet{DeVault2008}. And extracting grammars from treebanks has already attracted a lot of attention from researchers. Several proposals for TAG extraction are made by \citet{Xia2001,Xia1999,Xia2006,Chen} not mentioning other deep grammar formalisms. Our approach is quite similar to \citet{DeVault2008a}'s method, but we payed more attention to semantic alignment annotation to make sure the grammar extracted has good linguistic meaning.
 \section{Semantic Annotation}
 \label{sec:sem-annot}
 \subsection{Annotation guidelines}
@@ -448,12 +455,13 @@ For the example provided in section \ref{sec:tag-ext}, we got the final grammar 
 Where sem represents the index of semantic variable.
 
 \section{Implementation and result}
-
+For implementation we use clojure and python. Clojure showed big advantages when we were trying to investigate the linguistic phenomena in the corpus. REPL really simplify the process. 
+We use ParentedTree and FeatStruct from NLTK to model parse tree and feature structure. We found some small bugs in the deep copy facility provided by ParentedTree. Check our code for details.
+The result is presented in directory ``./result/''.
 \section{Conclusion \& Future work}
-\subsection{Future work}
-\begin{itemize}
-    \item workaround with parsing errors.
-    \item more robust extraction algorithms
-    \item more robust alignment algorithms
-\end{itemize}
+In this project, we designed and implemented a algorithm to extract LTAG from parsed corpus and align the grammar to corresponding semantics. The biggest difference between our approach and \citet{DeVault2008a}'s approach is that our result has better linguistic meaning. At the same time, our approach requires a bit more expert knowledge in the semantic alignment annotation step. 
+
+We still need to integrate our module with a surface realizer to build an end to end NLG system. Evaluation of our grammar needs to be carried.
+For the extraction algorithm self, possible improvements include making the semantic alignment annotation automatic, make the algorithm more robust to work with parsing errors.
+\printbibliography
 \end{document}
