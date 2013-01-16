@@ -28,8 +28,8 @@ class LtagExtractor:
             f.write(sem)
             f.write(os.linesep)
             for g in self.gram[sem]:
-                if type(g) is str:
-                    print g
+                #if type(g) is str:
+                    #print g
                 else:
                     f.write(g.pprint() + os.linesep)
             f.write(os.linesep)

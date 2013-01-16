@@ -9,4 +9,4 @@ pause 'Press [Enter] key to continue...'
 
 #TODO
 
-python extract/extractor.py ../output/fixed/ ../input/alignments/ ../output/final.gram --verbose ../output/grammar-verbose/ 
+python2 extract/extractor.py ../output/fixed/ ../output/alignments/ ../output/final.gram --verbose ../output/grammar-verbose/ 
