@@ -1,0 +1,7 @@
+(ROOT
+  (S=H
+    (NP (NNP=H Pyruvate))
+    (VP=H (VBZ=H is)
+      (NP (DT a) (JJ simple) (NN=H molecule)))
+    (. .)))
+

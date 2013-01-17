@@ -1,0 +1,16 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Secretion21994| |object| |Mucus21965|)
+            (|Secretion21994| |base| |Earthworm21974|)
+            (|Secretion21994| |site| |Alimentary-Canal21978|)
+            (|Earthworm21974| |has-region| |Alimentary-Canal21978|))
+    :INSTANCE-TYPES (
+            (|Mucus21965| |instance-of| |Mucus|)
+            (|Secretion21994| |instance-of| |Secretion|)
+            (|Earthworm21974| |instance-of| |Earthworm|)
+            (|Alimentary-Canal21978| |instance-of| |Alimentary-Canal|))
+    :ROOT-TYPES (
+            (|Secretion21994| |instance-of| |Event|)
+            (|Mucus21965| |instance-of| |Entity|)
+            (|Earthworm21974| |instance-of| |Entity|)
+            (|Alimentary-Canal21978| |instance-of| |Entity|)))

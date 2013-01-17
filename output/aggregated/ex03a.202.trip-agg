@@ -1,0 +1,17 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Carry57288| |object| |Solid-Substance57284|)
+            (|Carry57288| |instrument| |Pseudopodium57285|)
+            (|Carry57288| |agent| |Food-Vacuole57283|)
+            (|Food-Vacuole57283| |has-function| |Carry57288|))
+    :INSTANCE-TYPES (
+            (|Solid-Substance57284| |instance-of| |Solid-Substance|)
+            (|Pseudopodium57285| |instance-of| |Pseudopodium|)
+            (|Food-Vacuole57283| |instance-of| |Food-Vacuole|)
+            (|Carry57288| |instance-of| |Carry|))
+    :ROOT-TYPES (
+            (|Carry57288| |instance-of| |Event|)
+            (|Solid-Substance57284| |instance-of| |Entity|)
+            (|Pseudopodium57285| |instance-of| |Entity|)
+            (|Microtubule57297| |instance-of| |Entity|)
+            (|Food-Vacuole57283| |instance-of| |Entity|)))

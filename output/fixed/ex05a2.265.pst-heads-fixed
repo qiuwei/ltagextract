@@ -1,0 +1,17 @@
+(ROOT
+ (S=H
+  (NP
+   (NP=H (JJ Carbohydrate) (NNS=H (NN side) (NNS=H chains)))
+   (PP
+    (IN=H at)
+    (NP
+     (NP=H (DT the) (NN=H surface))
+     (PP
+      (IN=H of)
+      (NP
+       (NP=H (DT the) (NN=H fibronectin))
+       (PP
+        (IN=H of)
+        (NP (DT a) (NN=H (NN plasma) (NN=H membrane)))))))))
+  (VP=H (VBP=H have) (NP (DT a) (NN=H (JJ branched) (NN=H shape))))
+  (. .)))

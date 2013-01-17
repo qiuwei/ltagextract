@@ -1,0 +1,22 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Mesophyll-Cell69972| |has-part| |Coordination13|)
+            (|Coordination13| |coordinates| |Ion-Channel69969|)
+            (|Coordination13| |coordinates| |Centrosome70019|)
+            (|Coordination13| |coordinates| |Central-Vacuole70025|)
+            (|Pull70047| |toward| |Mesophyll-Cell69972|)
+            (|Pull70047| |object| |Water69976|))
+    :INSTANCE-TYPES (
+            (|Ion-Channel69969| |instance-of| |Ion-Channel|)
+            (|Centrosome70019| |instance-of| |Centrosome|)
+            (|Central-Vacuole70025| |instance-of| |Central-Vacuole|)
+            (|Mesophyll-Cell69972| |instance-of| |Mesophyll-Cell|)
+            (|Pull70047| |instance-of| |Pull|)
+            (|Water69976| |instance-of| |Water|))
+    :ROOT-TYPES (
+            (|Mesophyll-Cell69972| |instance-of| |Entity|)
+            (|Ion-Channel69969| |instance-of| |Entity|)
+            (|Centrosome70019| |instance-of| |Entity|)
+            (|Central-Vacuole70025| |instance-of| |Entity|)
+            (|Pull70047| |instance-of| |Event|)
+            (|Water69976| |instance-of| |Entity|)))

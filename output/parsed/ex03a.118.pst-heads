@@ -1,0 +1,22 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (DT The) (NN=H function))
+      (PP (IN=H of)
+        (NP (JJ membrane) (NN=H potential))))
+    (VP=H (VBZ=H is)
+      (S
+        (VP=H (TO=H to)
+          (VP (VB=H provide)
+            (NP
+              (NP=H (NN=H energy))
+              (PP (IN=H for)
+                (NP (DT a) (NN concentration) (NN=H gradient))))
+            (S
+              (VP=H (TO=H to)
+                (VP (VB=H diffuse)
+                  (NP (NNS=H particles))
+                  (PP (TO=H to)
+                    (NP (DT the) (JJ extra) (JJ cellular) (NN=H matrix))))))))))
+    (. .)))
+

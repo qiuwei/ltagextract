@@ -1,0 +1,7 @@
+(ROOT
+ (S=H
+  (NP (DT The) (NN=H (NN golgi) (NN=H apparatus)))
+  (VP=H
+   (VP=H (VBZ=H receives) (NP (NNS=H vesicles)))
+   (PP (IN=H at) (NP (PRP$ its) (NN=H (NN cis) (NN=H face)))))
+  (. .)))

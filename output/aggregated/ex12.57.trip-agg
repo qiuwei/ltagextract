@@ -1,0 +1,19 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Biomembrane13296| |plays| |Barrier13292|)
+            (|Barrier13292| |in-event| |Block13291|)
+            (|Block13291| |instrument| |Biomembrane13296|)
+            (|Block13291| |object| |Hydrogen-Ion13298|)
+            (|Chemical13260| |has-part| |Hydrogen-Ion13298|))
+    :INSTANCE-TYPES (
+            (|Barrier13292| |instance-of| |Barrier|)
+            (|Biomembrane13296| |instance-of| |Biomembrane|)
+            (|Block13291| |instance-of| |Block|)
+            (|Chemical13260| |instance-of| |Chemical|)
+            (|Hydrogen-Ion13298| |instance-of| |Hydrogen-Ion|))
+    :ROOT-TYPES (
+            (|Biomembrane13296| |instance-of| |Entity|)
+            (|Barrier13292| |instance-of| |Role|)
+            (|Block13291| |instance-of| |Event|)
+            (|Hydrogen-Ion13298| |instance-of| |Entity|)
+            (|Chemical13260| |instance-of| |Entity|)))

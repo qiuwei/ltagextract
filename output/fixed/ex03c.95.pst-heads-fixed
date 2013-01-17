@@ -1,0 +1,21 @@
+(ROOT
+ (S=H
+  (NP (DT A) (NN=H (NN proton) (NN=H (NN motive) (NN=H force))))
+  (VP=H
+   (VBZ=H results)
+   (SBAR
+    (WHADVP=H (WRB=H when))
+    (S
+     (NP (DT a) (NN=H (NN hydrogen) (NN=H (NN ion) (NN=H gradient))))
+     (VP=H
+      (VBZ=H is)
+      (VP
+       (VP
+        (VBN=H generated)
+        (PP (IN=H by) (NP (NN proton) (NNS=H pumps))))
+       (PP
+        (IN=H at)
+        (NP
+         (NP=H (DT the) (NN=H (NN plasma) (NN=H membrane)))
+         (PP (IN=H of) (NP (DT a) (NN=H prokaryote))))))))))
+  (. .)))

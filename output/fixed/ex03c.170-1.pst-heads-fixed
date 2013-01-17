@@ -1,0 +1,15 @@
+(ROOT
+ (S=H
+  (NP (NNS=H Phospholipids))
+  (VP=H
+   (VBP=H are)
+   (VP
+    (VBN=H synthesised)
+    (PP
+     (IN=H at)
+     (NP
+      (NP=H
+       (DT the)
+       (NN=H (JJ smooth) (NN=H (JJ endoplasmic) (NN=H reticulum))))
+      (PP (IN=H of) (NP (JJ algal) (NNS=H cells)))))))
+  (. .)))

@@ -1,0 +1,18 @@
+(ROOT
+  (S=H
+    (NP (EX=H There))
+    (VP=H (VBP=H are)
+      (NP
+        (NP=H
+          (ADJP (JJ helical) (JJ=H shaped))
+          (JJ hydrophobic) (JJ amino) (NNS=H acids))
+        (PP (IN=H inside)
+          (NP
+            (NP=H (DT the) (JJ hydrophobic) (NN=H region))
+            (PP (IN=H of)
+              (NP
+                (NP=H (DT an) (NN=H aquaporin))
+                (PP (IN=H in)
+                  (NP (DT a) (NN plasma) (NN=H membrane)))))))))
+    (. .)))
+

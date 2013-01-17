@@ -1,0 +1,16 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (DT The) (NN=H function))
+      (PP (IN=H of)
+        (NP (DT a) (NN=H lysosome))))
+    (VP=H (VBZ=H is)
+      (S
+        (VP=H (TO=H to)
+          (VP (VB=H digest)
+            (NP
+              (NP=H (NNS=H proteins))
+              (CC and)
+              (NP (JJ nucleic) (NNS=H acids)))))))
+    (. .)))
+

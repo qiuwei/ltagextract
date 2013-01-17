@@ -1,0 +1,22 @@
+(ROOT
+  (S=H
+    (NP (NNS=H Mammals))
+    (VP=H (VBP=H have)
+      (NP
+        (NP=H (DT a) (JJ hollow) (NN=H stomach))
+        (VP (VBG=H containing)
+          (NP
+            (NP=H (DT a) (JJ gastric) (NN=H gland))
+            (SBAR
+              (WHNP=H (WDT=H which))
+              (S
+                (VP=H (VBZ=H is)
+                  (NP
+                    (NP=H (DT a) (NN=H secretor))
+                    (SBAR
+                      (WHNP=H (WDT=H that))
+                      (S
+                        (VP=H (VBZ=H secretes)
+                          (NP (JJ gastric) (NN=H juice)))))))))))))
+    (. .)))
+

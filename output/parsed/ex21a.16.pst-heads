@@ -1,0 +1,21 @@
+(ROOT
+  (S=H
+    (NP (NNP=H Water))
+    (VP=H (VBZ=H is)
+      (VP (VBN=H pulled)
+        (PP (IN=H towards)
+          (NP
+            (NP=H (DT a) (JJ mesophyll) (NN=H cell))
+            (, ,)
+            (SBAR
+              (WHNP=H (WDT=H which))
+              (S
+                (VP=H (VBZ=H has)
+                  (NP
+                    (NP=H (DT a) (JJ central) (NN=H vacuole))
+                    (, ,)
+                    (NP (DT a) (NN=H centrosome))
+                    (CC and)
+                    (NP (DT an) (NN ion) (NN=H channel))))))))))
+    (. .)))
+

@@ -1,0 +1,22 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Attach3907| |object| |Carbohydrate-Side-Chain3886|)
+            (|Attach3907| |base| |Carbon-Skeleton3877|)
+            (|Animal-Cell3864| |has-part| |Animal-Plasma-Membrane3845|)
+            (|Animal-Plasma-Membrane3845| |has-part| |Transport-Protein3961|)
+            (|Transport-Protein3961| |has-region| |Carbon-Skeleton3877|))
+    :INSTANCE-TYPES (
+            (|Carbohydrate-Side-Chain3886| |instance-of| |Carbohydrate-Side-Chain|)
+            (|Attach3907| |instance-of| |Attach|)
+            (|Animal-Cell3864| |instance-of| |Animal-Cell|)
+            (|Animal-Plasma-Membrane3845| |instance-of| |Animal-Plasma-Membrane|)
+            (|Transport-Protein3961| |instance-of| |Transport-Protein|)
+            (|Carbon-Skeleton3877| |instance-of| |Carbon-Skeleton|)
+            (|Carbohydrate-Side-Chain| |subclasses| |Tangible-Entity|))
+    :ROOT-TYPES (
+            (|Attach3907| |instance-of| |Event|)
+            (|Carbohydrate-Side-Chain3886| |instance-of| |Entity|)
+            (|Carbon-Skeleton3877| |instance-of| |Entity|)
+            (|Animal-Cell3864| |instance-of| |Entity|)
+            (|Animal-Plasma-Membrane3845| |instance-of| |Entity|)
+            (|Transport-Protein3961| |instance-of| |Entity|)))

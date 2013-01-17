@@ -1,0 +1,20 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Animal-Cell28118| |has-part| |Animal-Plasma-Membrane28081|)
+            (|Animal-Plasma-Membrane28081| |has-part| |Fibronectin28115|)
+            (|Fibronectin28115| |is-at| |Hydrophilic-Face28136|)
+            (|Animal-Plasma-Membrane28081| |has-region| |Hydrophilic-Face28136|)
+            (|Fibronectin28115| |length| |Length-Value28068|)
+            (|Length-Value28068| |value| "long"))
+    :INSTANCE-TYPES (
+            (|Animal-Cell28118| |instance-of| |Animal-Cell|)
+            (|Animal-Plasma-Membrane28081| |instance-of| |Animal-Plasma-Membrane|)
+            (|Hydrophilic-Face28136| |instance-of| |Hydrophilic-Face|)
+            (|Fibronectin28115| |instance-of| |Fibronectin|)
+            (|Length-Value28068| |instance-of| |Length-Value|))
+    :ROOT-TYPES (
+            (|Animal-Cell28118| |instance-of| |Entity|)
+            (|Animal-Plasma-Membrane28081| |instance-of| |Entity|)
+            (|Fibronectin28115| |instance-of| |Entity|)
+            (|Hydrophilic-Face28136| |instance-of| |Entity|)
+            (|Length-Value28068| |instance-of| |Property-Value|)))

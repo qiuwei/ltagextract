@@ -1,0 +1,20 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Change30349| |object| |Fatty-Acid30352|)
+            (|Change30349| |agent| |Catalase30347|)
+            (|Plant-Cell30357| |has-part| |Glyoxysome30354|)
+            (|Glyoxysome30354| |has-part| |Catalase30347|))
+    :INSTANCE-TYPES (
+            (|Fatty-Acid30352| |instance-of| |Fatty-Acid|)
+            (|Change30349| |instance-of| |Change|)
+            (|Plant-Cell30357| |instance-of| |Plant-Cell|)
+            (|Glyoxysome30354| |instance-of| |Glyoxysome|)
+            (|Catalase30347| |instance-of| |Catalase|)
+            (|Catalase| |subclasses| |Protein-Enzyme|))
+    :ROOT-TYPES (
+            (|Change30349| |instance-of| |Event|)
+            (|Fatty-Acid30352| |instance-of| |Entity|)
+            (|Catalase30347| |instance-of| |Entity|)
+            (|Tissue30356| |instance-of| |Entity|)
+            (|Plant-Cell30357| |instance-of| |Entity|)
+            (|Glyoxysome30354| |instance-of| |Entity|)))

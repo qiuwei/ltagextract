@@ -1,0 +1,20 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Release-Of-Calcium-Ion-By-Cell64543| |object| |Calcium-Ion64542|)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |base| |Cell64554|)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |raw-material| |Coordination15|)
+            (|Coordination15| |coordinates| |Chemical-Energy64541|)
+            (|Coordination15| |coordinates| |Membrane-Potential64538|)
+            (|Membrane-Potential64538| |has-function| |Release-Of-Calcium-Ion-By-Cell64543|))
+    :INSTANCE-TYPES (
+            (|Calcium-Ion64542| |instance-of| |Calcium-Ion|)
+            (|Cell64554| |instance-of| |Cell|)
+            (|Chemical-Energy64541| |instance-of| |Chemical-Energy|)
+            (|Membrane-Potential64538| |instance-of| |Concentration-Gradient|)
+            (|Release-Of-Calcium-Ion-By-Cell64543| |instance-of| |Release-Of-Calcium-Ion-By-Cell|))
+    :ROOT-TYPES (
+            (|Release-Of-Calcium-Ion-By-Cell64543| |instance-of| |Event|)
+            (|Calcium-Ion64542| |instance-of| |Entity|)
+            (|Cell64554| |instance-of| |Entity|)
+            (|Chemical-Energy64541| |instance-of| |Entity|)
+            (|Membrane-Potential64538| |instance-of| |Entity|)))

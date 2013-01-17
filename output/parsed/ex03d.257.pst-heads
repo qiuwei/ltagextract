@@ -1,0 +1,22 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (NNP=H Detachment))
+      (PP (IN=H of)
+        (NP
+          (NP=H (DT a) (JJ hydrophilic) (NN=H compound))
+          (PP (IN=H from)
+            (NP
+              (NP=H (DT the)
+                (ADJP (JJ=H functional))
+                (NN=H region))
+              (PP (IN=H of)
+                (NP (DT a) (NN carrier) (NN=H protein))))))))
+    (VP=H (VBZ=H causes)
+      (S
+        (NP (PRP=H it))
+        (VP=H (TO=H to)
+          (VP (VB=H change)
+            (NP (NN=H shape))))))
+    (. .)))
+

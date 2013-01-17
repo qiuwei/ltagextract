@@ -1,0 +1,21 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Block24667| |object| |Hydrophobic-Compound24648|)
+            (|Block24667| |instrument| |Inner-Membrane24819|)
+            (|Eukaryotic-Cell24814| |has-part| |Mitochondrion24799|)
+            (|Mitochondrion24799| |has-part| |Mitochondrial-Membrane24813|)
+            (|Mitochondrial-Membrane24813| |has-part| |Inner-Membrane24819|))
+    :INSTANCE-TYPES (
+            (|Hydrophobic-Compound24648| |instance-of| |Hydrophobic-Compound|)
+            (|Block24667| |instance-of| |Block|)
+            (|Eukaryotic-Cell24814| |instance-of| |Eukaryotic-Cell|)
+            (|Mitochondrion24799| |instance-of| |Mitochondrion|)
+            (|Mitochondrial-Membrane24813| |instance-of| |Mitochondrial-Membrane|)
+            (|Inner-Membrane24819| |instance-of| |Inner-Membrane|))
+    :ROOT-TYPES (
+            (|Block24667| |instance-of| |Event|)
+            (|Hydrophobic-Compound24648| |instance-of| |Entity|)
+            (|Inner-Membrane24819| |instance-of| |Entity|)
+            (|Eukaryotic-Cell24814| |instance-of| |Entity|)
+            (|Mitochondrion24799| |instance-of| |Entity|)
+            (|Mitochondrial-Membrane24813| |instance-of| |Entity|)))

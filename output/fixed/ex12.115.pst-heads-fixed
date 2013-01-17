@@ -1,0 +1,22 @@
+(ROOT
+ (S=H
+  (NP (NNP=H Glyceraldehyde-3-Phosphate))
+  (VP=H
+   (VBZ=H is)
+   (NP
+    (NP=H (DT a) (NN=H (JJ renewable) (NN=H resource)))
+    (SBAR
+     (WHNP=H (WDT=H which))
+     (S
+      (VP=H
+       (VBZ=H results)
+       (PP
+        (IN=H from)
+        (NP
+         (NP=H (DT the) (NN=H (NN calvin) (NN=H cycle)))
+         (PP
+          (IN=H of)
+          (NP
+           (NP=H (DT a) (NN=H (NN protein) (NN=H enzyme)))
+           (PP (IN=H in) (NP (DT the) (NN=H chloroplast))))))))))))
+  (. .)))

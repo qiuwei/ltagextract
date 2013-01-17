@@ -1,0 +1,13 @@
+(ROOT
+ (S=H
+  (NP (JJ Lysosomal) (NNS=H enzymes))
+  (VP=H
+   (VP=H
+    (VB=H digest)
+    (NP (NNS=H (JJ nucleic) (NNS=H acids)) (CC and) (NNS proteins)))
+   (PP
+    (IN=H at)
+    (NP
+     (NP=H (DT the) (NN=H lysosome))
+     (PP (IN=H of) (NP (JJ eukaryotic) (NNS=H cells))))))
+  (. .)))

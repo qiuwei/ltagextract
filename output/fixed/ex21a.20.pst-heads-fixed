@@ -1,0 +1,17 @@
+(ROOT
+ (S=H
+  (NP
+   (NP
+    (NP (NP=H (NNS=H Erythrocytes)) (, ,))
+    (SBAR
+     (WHNP=H (WDT=H which))
+     (S
+      (VP=H
+       (VBP=H have)
+       (NP
+        (NP=H (DT a) (NN=H lysosome))
+        (CC and)
+        (NP (DT a) (NN=H (JJ non-motile) (NN=H cilium))))))))
+   (, ,))
+  (VP=H (VBP=H carry) (NP (NN oxygen) (NNS=H molecules)))
+  (. .)))

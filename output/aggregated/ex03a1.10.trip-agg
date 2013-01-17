@@ -1,0 +1,20 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |object| |Hydrogen-Ion-Gradient80535|)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |base| |Prokaryote80519|)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |site| |Plasma-membrane80558|)
+            (|Prokaryote80519| |has-part| |Plasma-membrane80558|)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |agent| |Proton-Pump80560|)
+            (|Proton-Pump80560| |has-function| |Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490|))
+    :INSTANCE-TYPES (
+            (|Hydrogen-Ion-Gradient80535| |instance-of| |Hydrogen-Ion-Gradient|)
+            (|Prokaryote80519| |instance-of| |Prokaryote|)
+            (|Plasma-membrane80558| |instance-of| |Plasma-membrane|)
+            (|Proton-Pump80560| |instance-of| |Proton-Pump|)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |instance-of| |Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane|))
+    :ROOT-TYPES (
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane80490| |instance-of| |Event|)
+            (|Hydrogen-Ion-Gradient80535| |instance-of| |Entity|)
+            (|Prokaryote80519| |instance-of| |Entity|)
+            (|Plasma-membrane80558| |instance-of| |Entity|)
+            (|Proton-Pump80560| |instance-of| |Entity|)))

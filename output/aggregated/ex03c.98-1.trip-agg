@@ -1,0 +1,16 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Intracellular-Digestion36204| |object| |Polymer36220|)
+            (|Intracellular-Digestion36204| |base| |Eukaryotic-Cell36203|)
+            (|Intracellular-Digestion36204| |site| |Lysosome36202|)
+            (|Eukaryotic-Cell36203| |has-part| |Lysosome36202|))
+    :INSTANCE-TYPES (
+            (|Polymer36220| |instance-of| |Polymer|)
+            (|Intracellular-Digestion36204| |instance-of| |Intracellular-Digestion|)
+            (|Eukaryotic-Cell36203| |instance-of| |Eukaryotic-Cell|)
+            (|Lysosome36202| |instance-of| |Lysosome|))
+    :ROOT-TYPES (
+            (|Intracellular-Digestion36204| |instance-of| |Event|)
+            (|Polymer36220| |instance-of| |Entity|)
+            (|Eukaryotic-Cell36203| |instance-of| |Entity|)
+            (|Lysosome36202| |instance-of| |Entity|)))

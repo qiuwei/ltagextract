@@ -1,0 +1,16 @@
+(ROOT
+  (S=H
+    (NP (DT A) (JJ carbohydrate) (NN side) (NN=H chain))
+    (VP=H (VBZ=H attaches)
+      (PP (TO=H to)
+        (NP
+          (NP=H (DT the) (NN carbon) (NN=H skeleton))
+          (PP (IN=H of)
+            (NP (NN transport) (NNS=H proteins)))))
+      (PP (IN=H in)
+        (NP
+          (NP=H (DT the) (NN plasma) (NN=H membrane))
+          (PP (IN=H of)
+            (NP (NN animal) (NNS=H cells))))))
+    (. .)))
+

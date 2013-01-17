@@ -1,0 +1,22 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Intracellular-Digestion36204| |result| |Monomer36221|)
+            (|Intracellular-Digestion36204| |agent| |Lysosomal-Enzyme36196|)
+            (|Intracellular-Digestion36204| |object| |Polymer36220|)
+            (|Intracellular-Digestion36204| |base| |Eukaryotic-Cell36203|)
+            (|Intracellular-Digestion36204| |site| |Lysosome36202|)
+            (|Eukaryotic-Cell36203| |has-part| |Lysosome36202|))
+    :INSTANCE-TYPES (
+            (|Monomer36221| |instance-of| |Monomer|)
+            (|Lysosomal-Enzyme36196| |instance-of| |Lysosomal-Enzyme|)
+            (|Polymer36220| |instance-of| |Polymer|)
+            (|Intracellular-Digestion36204| |instance-of| |Intracellular-Digestion|)
+            (|Eukaryotic-Cell36203| |instance-of| |Eukaryotic-Cell|)
+            (|Lysosome36202| |instance-of| |Lysosome|))
+    :ROOT-TYPES (
+            (|Intracellular-Digestion36204| |instance-of| |Event|)
+            (|Monomer36221| |instance-of| |Entity|)
+            (|Lysosomal-Enzyme36196| |instance-of| |Entity|)
+            (|Polymer36220| |instance-of| |Entity|)
+            (|Eukaryotic-Cell36203| |instance-of| |Entity|)
+            (|Lysosome36202| |instance-of| |Entity|)))

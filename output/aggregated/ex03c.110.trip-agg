@@ -1,0 +1,23 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Detoxification19144| |object| |Coordination30|)
+            (|Coordination30| |coordinates| |Alcohol19138|)
+            (|Coordination30| |coordinates| |Barbiturate19137|)
+            (|Coordination30| |coordinates| |Drug19146|)
+            (|Detoxification19144| |base| |Liver-Cell19145|)
+            (|Detoxification19144| |site| |Peroxisome19139|)
+            (|Liver-Cell19145| |has-part| |Peroxisome19139|))
+    :INSTANCE-TYPES (
+            (|Alcohol19138| |instance-of| |Alcohol|)
+            (|Barbiturate19137| |instance-of| |Barbiturate|)
+            (|Drug19146| |instance-of| |Drug|)
+            (|Detoxification19144| |instance-of| |Detoxification|)
+            (|Liver-Cell19145| |instance-of| |Liver-Cell|)
+            (|Peroxisome19139| |instance-of| |Peroxisome|))
+    :ROOT-TYPES (
+            (|Detoxification19144| |instance-of| |Event|)
+            (|Alcohol19138| |instance-of| |Entity|)
+            (|Barbiturate19137| |instance-of| |Entity|)
+            (|Drug19146| |instance-of| |Entity|)
+            (|Liver-Cell19145| |instance-of| |Entity|)
+            (|Peroxisome19139| |instance-of| |Entity|)))

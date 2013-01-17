@@ -1,0 +1,17 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (DT The) (NN=H function))
+      (PP (IN=H of)
+        (NP (DT a) (JJ gated) (NN=H channel))))
+    (VP=H (VBZ=H is)
+      (S
+        (VP=H (TO=H to)
+          (VP (VB=H release)
+            (NP (NNS particles)
+              (CC and)
+              (NN calcium) (NNS=H ions))
+            (PP (IN=H from)
+              (NP (DT the) (JJ endoplasmic) (NN=H reticulum)))))))
+    (. .)))
+

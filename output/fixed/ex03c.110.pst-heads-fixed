@@ -1,0 +1,13 @@
+(ROOT
+ (S=H
+  (NP (NN Alcohol) (, ,) (NNS=H drugs) (CC and) (NNS barbiturates))
+  (VP=H
+   (VBP=H are)
+   (VP
+    (VBN=H detoxified)
+    (PP
+     (IN=H at)
+     (NP
+      (NP=H (DT the) (NN=H peroxisome))
+      (PP (IN=H of) (NP (DT the) (NN=H (NN liver) (NN=H cell))))))))
+  (. .)))

@@ -1,0 +1,20 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Block4400| |object| |Coordination31|)
+            (|Coordination31| |coordinates| |Hydrophobic-Compound4340|)
+            (|Coordination31| |coordinates| |Hydrophilic-Compound4402|)
+            (|Block4400| |base| |Hydrophobic-Core4320|)
+            (|Block4400| |instrument| |Plasma-membrane4366|)
+            (|Plasma-membrane4366| |has-function| |Block4400|))
+    :INSTANCE-TYPES (
+            (|Hydrophobic-Compound4340| |instance-of| |Hydrophobic-Compound|)
+            (|Hydrophobic-Core4320| |instance-of| |Hydrophobic-Core|)
+            (|Hydrophilic-Compound4402| |instance-of| |Hydrophilic-Compound|)
+            (|Plasma-membrane4366| |instance-of| |Plasma-membrane|)
+            (|Block4400| |instance-of| |Block|))
+    :ROOT-TYPES (
+            (|Block4400| |instance-of| |Event|)
+            (|Hydrophobic-Compound4340| |instance-of| |Entity|)
+            (|Hydrophobic-Core4320| |instance-of| |Entity|)
+            (|Hydrophilic-Compound4402| |instance-of| |Entity|)
+            (|Plasma-membrane4366| |instance-of| |Entity|)))

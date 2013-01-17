@@ -1,0 +1,16 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Absorb12897| |agent| |Central-Vacuole12899|)
+            (|Absorb12897| |rate| |Rate-Value12894|)
+            (|Rate-Value12894| |directly-proportional| |Size-Value12893|)
+            (|Central-Vacuole12899| |size| |Size-Value12893|))
+    :INSTANCE-TYPES (
+            (|Absorb12897| |instance-of| |Absorb|)
+            (|Rate-Value12894| |instance-of| |Rate-Value|)
+            (|Central-Vacuole12899| |instance-of| |Central-Vacuole|)
+            (|Size-Value12893| |instance-of| |Size-Value|))
+    :ROOT-TYPES (
+            (|Absorb12897| |instance-of| |Event|)
+            (|Central-Vacuole12899| |instance-of| |Entity|)
+            (|Rate-Value12894| |instance-of| |Property-Value|)
+            (|Size-Value12893| |instance-of| |Property-Value|)))

@@ -1,0 +1,15 @@
+(ROOT
+ (S=H
+  (NP
+   (NP=H (NNP=H ATP-synthase))
+   (PP
+    (IN=H in)
+    (NP
+     (NP=H (DT the) (NN=H (JJ thylakoid) (NN=H membrane)))
+     (PP
+      (IN=H of)
+      (NP
+       (NP=H (NN plant) (NNS=H cells))
+       (PP (IN=H in) (NP (NN vascular) (NN=H tissue))))))))
+  (VP=H (VBZ=H diffuses) (NP (NN hydrogen) (NNS=H ions)))
+  (. .)))

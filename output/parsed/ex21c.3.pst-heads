@@ -1,0 +1,27 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (NNP=H Generation))
+      (PP (IN=H of)
+        (NP
+          (NP=H (DT a) (NN hydrogen) (NN ion) (NN=H gradient))
+          (PP (IN=H with)
+            (NP (DT a) (NN proton) (NN=H pump)))))
+      (, ,)
+      (SBAR
+        (WHNP=H (WDT=H which))
+        (S
+          (VP=H (VBZ=H consists)
+            (PP (IN=H of)
+              (NP
+                (NP=H (DT a) (NN=H polypeptide))
+                (, ,)
+                (NP (JJ polar) (JJ amino) (NN=H acid))
+                (CC and)
+                (NP (DT a) (JJ hydrophobic) (JJ amino) (NN=H acid)))))))
+      (, ,))
+    (VP=H (VBZ=H results)
+      (PP (IN=H in)
+        (NP (JJ proton) (NN motive) (NN=H force))))
+    (. .)))
+

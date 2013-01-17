@@ -1,0 +1,23 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (DT The) (NN=H function))
+      (PP (IN=H of)
+        (NP (JJ membrane) (NN=H potential))))
+    (VP=H (VBZ=H is)
+      (S
+        (VP=H (TO=H to)
+          (VP (VB=H provide)
+            (NP (NN=H energy))
+            (PP (IN=H for)
+              (NP (DT a) (JJ gated) (NN=H channel)))
+            (S
+              (VP=H (TO=H to)
+                (VP (VB=H release)
+                  (NP (NN calcium) (NNS=H ions)))))
+            (, ,)
+            (S
+              (VP=H (VBG=H producing)
+                (NP (JJ free) (NN=H energy))))))))
+    (. .)))
+

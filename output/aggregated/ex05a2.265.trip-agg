@@ -1,0 +1,20 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Animal-Plasma-Membrane28081| |has-part| |Fibronectin28115|)
+            (|Fibronectin28115| |has-part| |Carbohydrate-Side-Chain28117|)
+            (|Carbohydrate-Side-Chain28117| |is-at| |Surface28116|)
+            (|Fibronectin28115| |has-region| |Surface28116|)
+            (|Carbohydrate-Side-Chain28117| |shape| |Shape-Value28195|)
+            (|Shape-Value28195| |value| "branched"))
+    :INSTANCE-TYPES (
+            (|Animal-Plasma-Membrane28081| |instance-of| |Animal-Plasma-Membrane|)
+            (|Fibronectin28115| |instance-of| |Fibronectin|)
+            (|Surface28116| |instance-of| |Surface|)
+            (|Carbohydrate-Side-Chain28117| |instance-of| |Carbohydrate-Side-Chain|)
+            (|Shape-Value28195| |instance-of| |Shape-Value|))
+    :ROOT-TYPES (
+            (|Animal-Plasma-Membrane28081| |instance-of| |Entity|)
+            (|Fibronectin28115| |instance-of| |Entity|)
+            (|Carbohydrate-Side-Chain28117| |instance-of| |Entity|)
+            (|Surface28116| |instance-of| |Entity|)
+            (|Shape-Value28195| |instance-of| |Property-Value|)))

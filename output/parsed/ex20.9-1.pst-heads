@@ -1,0 +1,13 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (NNP=H Catalase))
+      (PP (IN=H in)
+        (NP
+          (NP=H (DT the) (NN=H glyoxysome))
+          (PP (IN=H of)
+            (NP (NN plant) (NNS=H cells))))))
+    (VP=H (VBZ=H changes)
+      (NP (JJ fatty) (NN=H acid)))
+    (. .)))
+

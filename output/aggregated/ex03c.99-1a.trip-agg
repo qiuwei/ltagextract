@@ -1,0 +1,18 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Detach10277| |object| |Hydrophilic-Compound10278|)
+            (|Detach10277| |base| |Carrier-Protein10273|)
+            (|Detach10277| |site| |Functional-Region10272|)
+            (|Carrier-Protein10273| |has-region| |Functional-Region10272|))
+    :INSTANCE-TYPES (
+            (|Hydrophilic-Compound10278| |instance-of| |Hydrophilic-Compound|)
+            (|Detach10277| |instance-of| |Detach|)
+            (|Carrier-Protein10273| |instance-of| |Carrier-Protein|)
+            (|Functional-Region10272| |instance-of| |Binding-Site|)
+            (|Hydrophilic-Compound| |subclasses| |Tangible-Entity|)
+            (|Carrier-Protein| |subclasses| |Tangible-Entity|))
+    :ROOT-TYPES (
+            (|Detach10277| |instance-of| |Event|)
+            (|Hydrophilic-Compound10278| |instance-of| |Entity|)
+            (|Carrier-Protein10273| |instance-of| |Entity|)
+            (|Functional-Region10272| |instance-of| |Entity|)))

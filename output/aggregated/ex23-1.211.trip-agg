@@ -1,0 +1,18 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Transfer-Of-Malate-To-Bundle-Sheath-Cell8384| |object| |Malate8420|)
+            (|Transfer-Of-Malate-To-Bundle-Sheath-Cell8384| |destination| |Bundle-Sheath-Cell8422|)
+            (|C4-Photosynthesis8416| |subevent| |Transfer-Of-Malate-To-Bundle-Sheath-Cell8384|)
+            (|C4-Photosynthesis8416| |base| |Plant-Cell8386|))
+    :INSTANCE-TYPES (
+            (|Malate8420| |instance-of| |Malate|)
+            (|Bundle-Sheath-Cell8422| |instance-of| |Bundle-Sheath-Cell|)
+            (|Transfer-Of-Malate-To-Bundle-Sheath-Cell8384| |instance-of| |Transfer-Of-Malate-To-Bundle-Sheath-Cell|)
+            (|Plant-Cell8386| |instance-of| |Plant-Cell|)
+            (|C4-Photosynthesis8416| |instance-of| |C4-Photosynthesis|))
+    :ROOT-TYPES (
+            (|Transfer-Of-Malate-To-Bundle-Sheath-Cell8384| |instance-of| |Event|)
+            (|Malate8420| |instance-of| |Entity|)
+            (|Bundle-Sheath-Cell8422| |instance-of| |Entity|)
+            (|C4-Photosynthesis8416| |instance-of| |Event|)
+            (|Plant-Cell8386| |instance-of| |Entity|)))

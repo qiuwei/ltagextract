@@ -1,0 +1,13 @@
+(ROOT
+ (S=H
+  (NP (NNP=H Starch))
+  (VP=H
+   (VBZ=H is)
+   (VP
+    (VBN=H stored)
+    (PP
+     (IN=H in)
+     (NP
+      (NP=H (DT the) (NN=H (JJ lateral) (NN=H root)))
+      (PP (IN=H of) (NP (NNS=H carrots)))))))
+  (. .)))

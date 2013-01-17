@@ -1,0 +1,23 @@
+(ROOT
+ (S=H
+  (NP (JJ Membrane) (NNS=H proteins))
+  (VP=H
+   (VBP=H are)
+   (VP
+    (VBN=H carried)
+    (PP
+     (TO=H to)
+     (NP
+      (NP (NP=H (DT the) (NN=H (JJ lysosomal) (NN=H membrane))) (, ,))
+      (SBAR
+       (WHNP=H (WDT=H which))
+       (S
+        (VP=H
+         (VBZ=H consists)
+         (PP
+          (IN=H of)
+          (NP
+           (NP=H (DT an) (NN=H (JJ inner) (NN=H membrane)))
+           (CC and)
+           (NP (DT an) (NN=H (JJ outer) (NN=H membrane))))))))))))
+  (. .)))

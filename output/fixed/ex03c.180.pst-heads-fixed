@@ -1,0 +1,23 @@
+(ROOT
+ (S=H
+  (NP (DT An) (NN=H (JJ enzyme) (NN=H (NN substrate) (NN=H complex))))
+  (VP=H
+   (VBZ=H is)
+   (VP
+    (VBN=H created)
+    (SBAR
+     (WHADVP=H (WRB=H when))
+     (S
+      (NP (DT a) (NN=H chemical))
+      (VP=H
+       (VP=H
+        (VBZ=H attaches)
+        (PP
+         (TO=H to)
+         (NP
+          (NP=H (DT the) (NN=H (JJ active) (NN=H site)))
+          (PP
+           (IN=H of)
+           (NP (DT a) (NN=H (NN protein) (NN=H enzyme)))))))
+       (PP (IN=H with) (NP (DT an) (NN=H (JJ ionic) (NN=H bond)))))))))
+  (. .)))

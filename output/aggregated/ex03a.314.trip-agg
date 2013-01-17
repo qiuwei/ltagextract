@@ -1,0 +1,20 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Hold-Together36308| |object| |Coordination12|)
+            (|Coordination12| |coordinates| |Anion36306|)
+            (|Coordination12| |coordinates| |Cation36305|)
+            (|Hold-Together36308| |result| |Ionic-Compound36303|)
+            (|Hold-Together36308| |agent| |Ionic-Bond36307|)
+            (|Ionic-Bond36307| |has-function| |Hold-Together36308|))
+    :INSTANCE-TYPES (
+            (|Anion36306| |instance-of| |Anion|)
+            (|Cation36305| |instance-of| |Cation|)
+            (|Ionic-Compound36303| |instance-of| |Ionic-Compound|)
+            (|Ionic-Bond36307| |instance-of| |Ionic-Bond|)
+            (|Hold-Together36308| |instance-of| |Hold-Together|))
+    :ROOT-TYPES (
+            (|Hold-Together36308| |instance-of| |Event|)
+            (|Anion36306| |instance-of| |Entity|)
+            (|Cation36305| |instance-of| |Entity|)
+            (|Ionic-Compound36303| |instance-of| |Entity|)
+            (|Ionic-Bond36307| |instance-of| |Entity|)))

@@ -1,0 +1,19 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Transfer22328| |object| |Electron22334|)
+            (|Transfer22328| |donor| |NADH22330|)
+            (|Transfer22328| |recipient| |NAD-Plus22340|)
+            (|Transfer22328| |agent| |Electron-Shuttle-System22339|)
+            (|Electron-Shuttle-System22339| |has-function| |Transfer22328|))
+    :INSTANCE-TYPES (
+            (|Electron22334| |instance-of| |Electron|)
+            (|NADH22330| |instance-of| |NADH|)
+            (|NAD-Plus22340| |instance-of| |NAD-Plus|)
+            (|Electron-Shuttle-System22339| |instance-of| |Electron-Shuttle-System|)
+            (|Transfer22328| |instance-of| |Transfer|))
+    :ROOT-TYPES (
+            (|Transfer22328| |instance-of| |Event|)
+            (|Electron22334| |instance-of| |Entity|)
+            (|NADH22330| |instance-of| |Entity|)
+            (|NAD-Plus22340| |instance-of| |Entity|)
+            (|Electron-Shuttle-System22339| |instance-of| |Entity|)))

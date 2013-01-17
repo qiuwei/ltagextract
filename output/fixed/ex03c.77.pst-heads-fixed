@@ -1,0 +1,14 @@
+(ROOT
+ (S=H
+  (NP (NNP Receptor) (NNS=H proteins))
+  (VP=H
+   (VP=H (VBP=H take) (PRT (RP=H up)) (NP (NN=H cholesterol)))
+   (S
+    (VP=H
+     (VP=H (VBG=H using) (NP (DT a) (NN=H (JJ coated) (NN=H vesicle))))
+     (PP
+      (IN=H at)
+      (NP
+       (NP=H (DT the) (NN=H (NN plasma) (NN=H membrane)))
+       (PP (IN=H of) (NP (DT a) (NN=H (JJ human) (NN=H cell)))))))))
+  (. .)))

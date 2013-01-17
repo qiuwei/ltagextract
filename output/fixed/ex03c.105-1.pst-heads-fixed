@@ -1,0 +1,13 @@
+(ROOT
+ (S=H
+  (NP (JJ Secretory) (NNS=H proteins))
+  (VP=H
+   (VBP=H are)
+   (VP
+    (VBN=H transferred)
+    (PP
+     (IN=H from)
+     (NP
+      (NP=H (DT the) (NN=H (JJ trans) (NN=H face)))
+      (PP (IN=H of) (NP (DT a) (NN=H (JJ golgi) (NN=H apparatus))))))))
+  (. .)))

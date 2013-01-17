@@ -1,0 +1,17 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Synthesis-of-ATP61958| |result| |ATP61948|)
+            (|Synthesis-of-ATP61958| |agent| |ATP-Synthase61844|)
+            (|Synthesis-of-ATP61958| |site| |Active-Site61921|)
+            (|ATP-Synthase61844| |has-region| |Active-Site61921|))
+    :INSTANCE-TYPES (
+            (|ATP61948| |instance-of| |ATP|)
+            (|Synthesis-of-ATP61958| |instance-of| |Synthesis-of-ATP|)
+            (|ATP-Synthase61844| |instance-of| |ATP-Synthase|)
+            (|Active-Site61921| |instance-of| |Active-Site|)
+            (|ATP| |subclasses| |Chemical-Entity|))
+    :ROOT-TYPES (
+            (|Synthesis-of-ATP61958| |instance-of| |Event|)
+            (|ATP61948| |instance-of| |Entity|)
+            (|ATP-Synthase61844| |instance-of| |Entity|)
+            (|Active-Site61921| |instance-of| |Entity|)))

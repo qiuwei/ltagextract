@@ -1,0 +1,21 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Take-In58806| |object| |Soil-Solution58854|)
+            (|Take-In58806| |destination| |Epidermal-Cell58851|)
+            (|Plant58839| |has-part| |Root58845|)
+            (|Root58845| |has-part| |Epidermis58835|)
+            (|Epidermis58835| |has-part| |Epidermal-Cell58851|))
+    :INSTANCE-TYPES (
+            (|Soil-Solution58854| |instance-of| |Soil-Solution|)
+            (|Take-In58806| |instance-of| |Take-In|)
+            (|Plant58839| |instance-of| |Plant|)
+            (|Root58845| |instance-of| |Root|)
+            (|Epidermis58835| |instance-of| |Epidermis|)
+            (|Epidermal-Cell58851| |instance-of| |Epidermal-Cell|))
+    :ROOT-TYPES (
+            (|Take-In58806| |instance-of| |Event|)
+            (|Soil-Solution58854| |instance-of| |Entity|)
+            (|Epidermal-Cell58851| |instance-of| |Entity|)
+            (|Plant58839| |instance-of| |Entity|)
+            (|Root58845| |instance-of| |Entity|)
+            (|Epidermis58835| |instance-of| |Entity|)))

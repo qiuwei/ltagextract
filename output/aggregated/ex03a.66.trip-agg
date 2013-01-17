@@ -1,0 +1,17 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Intracellular-Digestion39754| |object| |Nucleic-Acid39751|)
+            (|Intracellular-Digestion39754| |base| |Eukaryotic-Cell39770|)
+            (|Intracellular-Digestion39754| |agent| |Lysosome39760|)
+            (|Lysosome39760| |has-function| |Intracellular-Digestion39754|))
+    :INSTANCE-TYPES (
+            (|Nucleic-Acid39751| |instance-of| |Nucleic-Acid|)
+            (|Eukaryotic-Cell39770| |instance-of| |Eukaryotic-Cell|)
+            (|Lysosome39760| |instance-of| |Lysosome|)
+            (|Intracellular-Digestion39754| |instance-of| |Intracellular-Digestion|))
+    :ROOT-TYPES (
+            (|Intracellular-Digestion39754| |instance-of| |Event|)
+            (|Nucleic-Acid39751| |instance-of| |Entity|)
+            (|Lysosomal-Enzyme39755| |instance-of| |Entity|)
+            (|Eukaryotic-Cell39770| |instance-of| |Entity|)
+            (|Lysosome39760| |instance-of| |Entity|)))

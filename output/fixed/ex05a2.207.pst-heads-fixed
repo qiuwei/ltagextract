@@ -1,0 +1,7 @@
+(ROOT
+ (S=H
+  (NP
+   (NP=H (DT The) (NN=H xylem))
+   (PP (IN=H of) (NP (DT a) (NN=H (NN plant) (NN=H vein)))))
+  (VP=H (VBZ=H has) (NP (JJ thin) (NNS=H tracheids)))
+  (. .)))

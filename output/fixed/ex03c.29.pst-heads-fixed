@@ -1,0 +1,13 @@
+(ROOT
+ (S=H
+  (NP (NN Proton) (NNS=H pumps))
+  (VP=H
+   (VP=H
+    (VBP=H generate)
+    (NP (DT a) (NN=H (NN hydrogen) (NN=H (NN ion) (NN=H gradient)))))
+   (PP
+    (IN=H at)
+    (NP
+     (NP=H (DT the) (NN=H (NN plasma) (NN=H membrane)))
+     (PP (IN=H of) (NP (DT a) (NN=H prokaryote))))))
+  (. .)))

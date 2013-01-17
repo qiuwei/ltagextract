@@ -1,0 +1,20 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Photosystem-I58580| |has-part| |Reaction-Center-Complex58584|)
+            (|Reaction-Center-Complex58584| |has-part| |P70058579|)
+            (|P70058579| |shape| |Shape-Value58576|)
+            (|P70058579| |color| |Color-Value58585|)
+            (|Shape-Value58576| |value| "ring shaped")
+            (|Color-Value58585| |value| "green"))
+    :INSTANCE-TYPES (
+            (|Photosystem-I58580| |instance-of| |Photosystem-I|)
+            (|Reaction-Center-Complex58584| |instance-of| |Reaction-Center-Complex|)
+            (|Shape-Value58576| |instance-of| |Shape-Value|)
+            (|P70058579| |instance-of| |P700|)
+            (|Color-Value58585| |instance-of| |Color-Value|))
+    :ROOT-TYPES (
+            (|Photosystem-I58580| |instance-of| |Entity|)
+            (|Reaction-Center-Complex58584| |instance-of| |Entity|)
+            (|P70058579| |instance-of| |Entity|)
+            (|Shape-Value58576| |instance-of| |Property-Value|)
+            (|Color-Value58585| |instance-of| |Property-Value|)))

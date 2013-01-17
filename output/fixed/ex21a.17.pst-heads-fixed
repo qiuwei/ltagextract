@@ -1,0 +1,23 @@
+(ROOT
+ (S=H
+  (NP
+   (NP
+    (NP (NP=H (JJ Electrogenic) (NNS=H pumps)) (, ,))
+    (SBAR
+     (WHNP=H (WDT=H which))
+     (S
+      (VP=H
+       (VBP=H consist)
+       (PP
+        (IN=H of)
+        (NP
+         (NP=H
+          (DT a)
+          (NN=H (JJ hydrophobic) (NN=H (JJ amino) (NN=H acid))))
+         (, ,)
+         (NP (DT a) (NN=H (JJ polar) (NN=H (JJ amino) (NN=H acid))))
+         (CC and)
+         (NP (DT a) (NN=H monomer))))))))
+   (, ,))
+  (VP=H (VBP=H create) (NP (JJ membrane) (NN=H potential)))
+  (. .)))

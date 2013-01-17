@@ -1,0 +1,33 @@
+(ROOT
+  (S=H
+    (PP (IN=H During)
+      (NP (DT the) (JJ Miller-Urey) (NN=H experiment)))
+    (, ,)
+    (NP (JJ electric) (JJ current) (NN=H pulse))
+    (VP=H (VBZ=H is)
+      (VP (VBN=H added)
+        (PP (TO=H to)
+          (NP
+            (NP=H (DT a) (JJ homogeneous) (NN=H mixture))
+            (, ,)
+            (SBAR
+              (WHNP=H (WDT=H which))
+              (S
+                (VP=H (VBZ=H enables)
+                  (NP
+                    (NP=H (DT the) (NN=H conversion))
+                    (PP (IN=H of)
+                      (NP
+                        (NP=H (NN water) (NNS=H molecules))
+                        (, ,)
+                        (NP (NN=H ammonia))
+                        (, ,)
+                        (NP (NN hydrogen) (NNS=H molecules))
+                        (CC and)
+                        (NP (NN=H methane)))))
+                  (PP (IN=H into)
+                    (NP (JJ hydrocarbon) (NN molecule) (, ,) (NN formaldehyde) (, ,) (JJ amino-acid)
+                      (CC and)
+                      (NN hydrogen) (NN=H cyanide))))))))))
+    (. .)))
+

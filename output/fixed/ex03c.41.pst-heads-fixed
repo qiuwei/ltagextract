@@ -1,0 +1,19 @@
+(ROOT
+ (S=H
+  (NP (NNP Receptor) (NNS=H proteins))
+  (VP=H
+   (VP=H
+    (VP=H
+     (VBP=H take)
+     (PRT (RP=H up))
+     (NP
+      (NP=H (NN=H cholesterol))
+      (PP
+       (IN=H at)
+       (NP
+        (NP=H (DT the) (NN=H (NN plasma) (NN=H membrane)))
+        (PP (IN=H of) (NP (DT a) (NN=H (JJ human) (NN=H cell))))))))
+    (, ,))
+   (S
+    (VP=H (VBG=H using) (PRT (RP=H up)) (NP (JJ free) (NN=H energy)))))
+  (. .)))

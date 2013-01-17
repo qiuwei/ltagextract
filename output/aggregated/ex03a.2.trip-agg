@@ -1,0 +1,17 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Release-Of-Calcium-Ion-By-Endoplasmic-Reticulum64602| |object| |Particle-In-Motion64582|)
+            (|Release-Of-Calcium-Ion-By-Endoplasmic-Reticulum64602| |base| |Endoplasmic-Reticulum64603|)
+            (|Release-Of-Calcium-Ion-By-Endoplasmic-Reticulum64602| |agent| |Gated-Channel64605|)
+            (|Gated-Channel64605| |has-function| |Release-Of-Calcium-Ion-By-Endoplasmic-Reticulum64602|))
+    :INSTANCE-TYPES (
+            (|Particle-In-Motion64582| |instance-of| |Particle-In-Motion|)
+            (|Endoplasmic-Reticulum64603| |instance-of| |Endoplasmic-Reticulum|)
+            (|Gated-Channel64605| |instance-of| |Gated-Channel|)
+            (|Release-Of-Calcium-Ion-By-Endoplasmic-Reticulum64602| |instance-of| |Release-Of-Calcium-Ion-By-Endoplasmic-Reticulum|))
+    :ROOT-TYPES (
+            (|Release-Of-Calcium-Ion-By-Endoplasmic-Reticulum64602| |instance-of| |Event|)
+            (|Particle-In-Motion64582| |instance-of| |Entity|)
+            (|Endoplasmic-Reticulum64603| |instance-of| |Entity|)
+            (|Cell64612| |instance-of| |Entity|)
+            (|Gated-Channel64605| |instance-of| |Entity|)))

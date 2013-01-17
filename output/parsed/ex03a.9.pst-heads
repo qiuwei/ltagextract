@@ -1,0 +1,19 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (DT The) (NN=H function))
+      (PP (IN=H of)
+        (NP (DT an) (JJ inner) (NN=H membrane))))
+    (VP=H (VBZ=H is)
+      (S
+        (VP=H (TO=H to)
+          (VP (VB=H allow)
+            (NP (NN transport) (NNS=H proteins))
+            (S
+              (VP=H (TO=H to)
+                (VP (VB=H move)
+                  (NP (JJ hydrophilic) (NNS=H compounds))
+                  (PP (IN=H through)
+                    (NP (PRP=H it))))))))))
+    (. .)))
+

@@ -1,0 +1,23 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Electrogenic-Pump21300| |has-part| |Coordination35|)
+            (|Coordination35| |coordinates| |Hydrophobic-Amino-Acid21290|)
+            (|Coordination35| |coordinates| |Polar-Amino-Acid21291|)
+            (|Coordination35| |coordinates| |Polypeptide21288|)
+            (|Maintenance21301| |instrument| |Electrogenic-Pump21300|)
+            (|Maintenance21301| |object| |Membrane-Potential21299|))
+    :INSTANCE-TYPES (
+            (|Hydrophobic-Amino-Acid21290| |instance-of| |Hydrophobic-Amino-Acid|)
+            (|Monomer21323| |instance-of| |Monomer|)
+            (|Polar-Amino-Acid21291| |instance-of| |Polar-Amino-Acid|)
+            (|Polypeptide21288| |instance-of| |Polypeptide|)
+            (|Electrogenic-Pump21300| |instance-of| |Electrogenic-Pump|)
+            (|Maintenance21301| |instance-of| |Maintenance|)
+            (|Membrane-Potential21299| |instance-of| |Membrane-Potential|))
+    :ROOT-TYPES (
+            (|Hydrophobic-Amino-Acid21290| |instance-of| |Entity|)
+            (|Electrogenic-Pump21300| |instance-of| |Entity|)
+            (|Polar-Amino-Acid21291| |instance-of| |Entity|)
+            (|Polypeptide21288| |instance-of| |Entity|)
+            (|Maintenance21301| |instance-of| |Event|)
+            (|Membrane-Potential21299| |instance-of| |Entity|)))

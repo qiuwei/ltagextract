@@ -1,0 +1,17 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (DT The) (NN=H P700))
+      (PP (IN=H in)
+        (NP
+          (NP=H (DT the) (NN reaction) (NN center) (NN=H complex))
+          (PP (IN=H of)
+            (NP (DT a) (NN=H photosystem))))))
+    (VP=H
+      (VP=H (VBZ=H is)
+        (ADJP (JJ=H green)))
+      (CC and)
+      (VP (VBP=H ring)
+        (ADJP (JJ=H shaped))))
+    (. .)))
+

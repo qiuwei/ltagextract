@@ -1,0 +1,19 @@
+(ROOT
+ (S=H
+  (NP (NNP Carbon) (NN=H dioxide))
+  (VP=H
+   (VP=H (VBZ=H moves) (PRT (RP=H out)))
+   (PP
+    (IN=H of)
+    (NP
+     (NP=H (DT an) (NN=H (JJ aqueous) (NN=H solution)))
+     (PP
+      (IN=H in)
+      (NP
+       (NP=H (DT the) (NN=H cytosol))
+       (PP
+        (IN=H in)
+        (NP
+         (NP=H (DT the) (NN=H cytoplasm))
+         (PP (IN=H of) (NP (JJ eukaryotic) (NNS=H cells))))))))))
+  (. .)))

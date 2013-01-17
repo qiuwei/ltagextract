@@ -1,0 +1,12 @@
+(ROOT
+  (S=H
+    (NP (JJ Hydrophilic) (NNS=H compounds))
+    (VP=H (VBP=H are)
+      (VP (VBN=H detached)
+        (PP (IN=H from)
+          (NP
+            (NP=H (DT the) (NN function) (NN=H region))
+            (PP (IN=H of)
+              (NP (NN carrier) (NNS=H proteins)))))))
+    (. .)))
+

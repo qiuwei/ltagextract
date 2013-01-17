@@ -1,0 +1,19 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Lysosomal-membrane38120| |has-part| |Coordination23|)
+            (|Coordination23| |coordinates| |Outer-membrane38141|)
+            (|Coordination23| |coordinates| |Inner-Membrane38142|)
+            (|Carry38097| |destination| |Lysosomal-membrane38120|)
+            (|Carry38097| |object| |Membrane-Protein38117|))
+    :INSTANCE-TYPES (
+            (|Outer-membrane38141| |instance-of| |Outer-membrane|)
+            (|Inner-Membrane38142| |instance-of| |Inner-Membrane|)
+            (|Lysosomal-membrane38120| |instance-of| |Lysosomal-membrane|)
+            (|Carry38097| |instance-of| |Carry|)
+            (|Membrane-Protein38117| |instance-of| |Membrane-Protein|))
+    :ROOT-TYPES (
+            (|Lysosomal-membrane38120| |instance-of| |Entity|)
+            (|Outer-membrane38141| |instance-of| |Entity|)
+            (|Inner-Membrane38142| |instance-of| |Entity|)
+            (|Carry38097| |instance-of| |Event|)
+            (|Membrane-Protein38117| |instance-of| |Entity|)))

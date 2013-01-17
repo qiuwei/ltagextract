@@ -1,0 +1,15 @@
+(ROOT
+ (S=H
+  (NP (JJ Hydrophobic) (NNS=H compounds))
+  (VP=H
+   (VBP=H are)
+   (VP
+    (VBN=H blocked)
+    (PP
+     (IN=H by)
+     (NP
+      (NP=H (DT the) (NN=H (JJ hydrophilic) (NN=H face)))
+      (PP
+       (IN=H of)
+       (NP (DT a) (NN=H (JJ thylakoid) (NN=H membrane))))))))
+  (. .)))

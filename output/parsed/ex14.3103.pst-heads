@@ -1,0 +1,19 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (NNP=H Cellulose))
+      (VP (VBG=H moving)
+        (PP (IN=H through)
+          (NP
+            (NP (DT a) (NN cow) (POS=H 's))
+            (JJ digestive) (NN=H system)))))
+    (VP=H (VBZ=H enables)
+      (NP
+        (NP=H (DT the) (NN=H abrasion))
+        (PP (IN=H of)
+          (NP
+            (NP=H (DT the) (NN=H lining))
+            (PP (IN=H inside)
+              (NP (DT the) (JJ alimentary) (NN=H canal)))))))
+    (. .)))
+

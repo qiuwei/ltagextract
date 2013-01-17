@@ -1,0 +1,16 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (DT The) (NN=H function))
+      (PP (IN=H of)
+        (NP (DT a) (NN=H lysosome))))
+    (VP=H (VBZ=H is)
+      (NP
+        (NP=H (NN intercellular) (NN=H digestion))
+        (PP (IN=H of)
+          (NP
+            (NP=H (JJ nucleic) (NN=H acid))
+            (PP (IN=H in)
+              (NP (DT a) (JJ eukaryotic) (NN=H cell)))))))
+    (. .)))
+

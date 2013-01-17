@@ -1,0 +1,20 @@
+(ROOT
+  (S=H
+    (NP (NNP=H Cholesterol))
+    (VP=H (VBZ=H is)
+      (VP (VBN=H taken)
+        (PRT (RP=H up))
+        (PP (IN=H by)
+          (NP (JJ coated) (NNS=H vesicles)))
+        (PP (IN=H at)
+          (NP
+            (NP=H (DT the) (NN plasma) (NN=H membrane))
+            (PP (IN=H of)
+              (NP (DT a) (JJ human) (NN=H cell)))))
+        (, ,)
+        (S
+          (VP=H (VBG=H using)
+            (PRT (RP=H up))
+            (NP (NNP=H ATP))))))
+    (. .)))
+

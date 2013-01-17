@@ -1,0 +1,17 @@
+(ROOT
+ (S=H
+  (NP
+   (NP=H (DT The) (NN=H function))
+   (PP (IN=H of) (NP (NN ester) (NN=H linkage))))
+  (VP=H
+   (VBZ=H is)
+   (S
+    (VP=H
+     (TO=H to)
+     (VP
+      (VP
+       (VB=H hold)
+       (PRT (RP=H together))
+       (NP (CD two) (NNS=H (NN oxygen) (NNS=H molecules))))
+      (PP (IN=H with) (NP (DT a) (NN=H (JJ double) (NN=H bond))))))))
+  (. .)))

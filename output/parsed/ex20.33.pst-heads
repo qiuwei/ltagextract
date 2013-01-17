@@ -1,0 +1,17 @@
+(ROOT
+  (S=H
+    (NP (JJ Soil) (NN=H solution))
+    (VP=H (VBZ=H is)
+      (VP (VBN=H absorbed)
+        (PP (IN=H into)
+          (NP
+            (NP=H (DT the) (JJ epidermal) (NNS=H cells))
+            (PP (IN=H of)
+              (NP (DT the) (NNS=H epidermis)))))
+        (PP (IN=H in)
+          (NP
+            (NP=H (DT the) (NN=H root))
+            (PP (IN=H of)
+              (NP (NNS=H plants)))))))
+    (. .)))
+

@@ -1,0 +1,21 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Morphine43486| |plays| |Ligand43441|)
+            (|Ligand43441| |in-event| |Ligand-Binding43443|)
+            (|Ligand-Binding43443| |object| |Morphine43486|)
+            (|Ligand-Binding43443| |base| |Endorphin-Receptor43442|)
+            (|Animal-Plasma-Membrane43446| |has-part| |Endorphin-Receptor43442|))
+    :INSTANCE-TYPES (
+            (|Ligand43441| |instance-of| |Ligand|)
+            (|Morphine43486| |instance-of| |Morphine|)
+            (|Ligand-Binding43443| |instance-of| |Ligand-Binding|)
+            (|Animal-Plasma-Membrane43446| |instance-of| |Animal-Plasma-Membrane|)
+            (|Endorphin-Receptor43442| |instance-of| |Endorphin-Receptor|)
+            (|Morphine| |subclasses| |Tangible-Entity|)
+            (|Endorphin-Receptor| |subclasses| |Tangible-Entity|))
+    :ROOT-TYPES (
+            (|Morphine43486| |instance-of| |Entity|)
+            (|Ligand43441| |instance-of| |Role|)
+            (|Ligand-Binding43443| |instance-of| |Event|)
+            (|Endorphin-Receptor43442| |instance-of| |Entity|)
+            (|Animal-Plasma-Membrane43446| |instance-of| |Entity|)))

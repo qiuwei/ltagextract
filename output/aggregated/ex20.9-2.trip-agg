@@ -1,0 +1,21 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Transfer21399| |object| |Electron21405|)
+            (|Transfer21399| |agent| |Electron-Shuttle-System21410|)
+            (|Mitochondrion21409| |has-part| |Mitochondrial-Membrane21396|)
+            (|Mitochondrial-Membrane21396| |has-part| |Inner-Membrane21403|)
+            (|Inner-Membrane21403| |has-part| |Electron-Shuttle-System21410|))
+    :INSTANCE-TYPES (
+            (|Electron21405| |instance-of| |Electron|)
+            (|Transfer21399| |instance-of| |Transfer|)
+            (|Mitochondrion21409| |instance-of| |Mitochondrion|)
+            (|Mitochondrial-Membrane21396| |instance-of| |Mitochondrial-Membrane|)
+            (|Inner-Membrane21403| |instance-of| |Inner-Membrane|)
+            (|Electron-Shuttle-System21410| |instance-of| |Electron-Shuttle-System|))
+    :ROOT-TYPES (
+            (|Transfer21399| |instance-of| |Event|)
+            (|Electron21405| |instance-of| |Entity|)
+            (|Electron-Shuttle-System21410| |instance-of| |Entity|)
+            (|Mitochondrion21409| |instance-of| |Entity|)
+            (|Mitochondrial-Membrane21396| |instance-of| |Entity|)
+            (|Inner-Membrane21403| |instance-of| |Entity|)))

@@ -1,0 +1,17 @@
+(ROOT
+ (S=H
+  (NP (NNP Cellular) (NNP=H respiration))
+  (VP=H
+   (VP=H
+    (VBZ=H happens)
+    (PP
+     (IN=H at)
+     (NP
+      (NP=H (DT the) (NN=H mitochondrion))
+      (PP (IN=H of) (NP (JJ adipose) (NNS=H cells))))))
+   (CC and)
+   (VP
+    (VBZ=H uses)
+    (PRT (RP=H up))
+    (NP (JJ organic) (NNS=H molecules))))
+  (. .)))

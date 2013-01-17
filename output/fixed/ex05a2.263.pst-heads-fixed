@@ -1,0 +1,15 @@
+(ROOT
+ (S=H
+  (NP
+   (NP=H (DT The) (NN=H (NN transport) (NN=H protein)))
+   (PP
+    (IN=H at)
+    (NP
+     (NP=H (DT the) (NN=H (JJ phospholipic) (NN=H bilayer)))
+     (PP
+      (IN=H in)
+      (NP
+       (NP=H (DT the) (NN=H (NN plasma) (NN=H membrane)))
+       (PP (IN=H of) (NP (DT an) (NN=H animal))))))))
+  (VP=H (VBZ=H is) (NP (DT a) (NN=H (JJ complex) (NN=H polypeptide))))
+  (. .)))

@@ -1,0 +1,19 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Erythrocyte23354| |has-part| |Coordination11|)
+            (|Coordination11| |coordinates| |Lysosome23313|)
+            (|Coordination11| |coordinates| |Non-Motile-Cilium23392|)
+            (|Carry23374| |agent| |Erythrocyte23354|)
+            (|Carry23374| |object| |Oxygen-Molecule23365|))
+    :INSTANCE-TYPES (
+            (|Lysosome23313| |instance-of| |Lysosome|)
+            (|Non-Motile-Cilium23392| |instance-of| |Non-Motile-Cilium|)
+            (|Erythrocyte23354| |instance-of| |Erythrocyte|)
+            (|Carry23374| |instance-of| |Carry|)
+            (|Oxygen-Molecule23365| |instance-of| |Oxygen-Molecule|))
+    :ROOT-TYPES (
+            (|Erythrocyte23354| |instance-of| |Entity|)
+            (|Lysosome23313| |instance-of| |Entity|)
+            (|Non-Motile-Cilium23392| |instance-of| |Entity|)
+            (|Carry23374| |instance-of| |Event|)
+            (|Oxygen-Molecule23365| |instance-of| |Entity|)))

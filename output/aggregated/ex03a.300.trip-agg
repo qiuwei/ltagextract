@@ -1,0 +1,18 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane16099| |object| |Hydrogen-Ion-Gradient16227|)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane16099| |raw-material| |Chemical-Energy16072|)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane16099| |instrument| |Proton-Pump16204|)
+            (|Proton-Pump16204| |has-function| |Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane16099|))
+    :INSTANCE-TYPES (
+            (|Chemical16105| |instance-of| |Chemical|)
+            (|Hydrogen-Ion-Gradient16227| |instance-of| |Hydrogen-Ion-Gradient|)
+            (|Chemical-Energy16072| |instance-of| |Chemical-Energy|)
+            (|Proton-Pump16204| |instance-of| |Proton-Pump|)
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane16099| |instance-of| |Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane|))
+    :ROOT-TYPES (
+            (|Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane16099| |instance-of| |Event|)
+            (|Chemical16105| |instance-of| |Entity|)
+            (|Hydrogen-Ion-Gradient16227| |instance-of| |Entity|)
+            (|Chemical-Energy16072| |instance-of| |Entity|)
+            (|Proton-Pump16204| |instance-of| |Entity|)))

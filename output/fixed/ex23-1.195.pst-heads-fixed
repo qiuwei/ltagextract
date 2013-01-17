@@ -1,0 +1,26 @@
+(ROOT
+ (S=H
+  (NP (DT The) (NN=H (NN plasma) (NN=H membrane)))
+  (VP=H
+   (VP=H
+    (VP=H
+     (VP=H
+      (VBZ=H moves)
+      (ADVP
+       (RB=H away)
+       (PP (IN=H from) (NP (DT the) (NN=H (NN cell) (NN=H wall))))))
+     (PP
+      (IN=H during)
+      (NP
+       (NP=H (NNS=H plasmolysis))
+       (PP
+        (IN=H in)
+        (NP
+         (NP=H (DT a) (NN=H (JJ walled) (NN=H cell)))
+         (PP (IN=H inside) (NP (JJ hypertonic) (NN=H solution))))))))
+    (, ,))
+   (S
+    (VP=H
+     (VBG=H resulting)
+     (PP (IN=H in) (NP (DT a) (NN=H (VBN damaged) (NN=H cell)))))))
+  (. .)))

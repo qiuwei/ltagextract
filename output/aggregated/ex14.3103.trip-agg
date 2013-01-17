@@ -1,0 +1,26 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Cow16980| |has-region| |Digestive-System17023|)
+            (|Move-Through16921| |base| |Digestive-System17023|)
+            (|Move-Through16921| |object| |Cellulose16915|)
+            (|Move-Through16921| |enables| |Abrade16922|)
+            (|Abrade16922| |base| |Lining16914|)
+            (|Abrade16922| |object| |Cellulose16915|)
+            (|Lining16914| |is-inside| |Alimentary-Canal16916|))
+    :INSTANCE-TYPES (
+            (|Digestive-System17023| |instance-of| |Digestive-System|)
+            (|Move-Through16921| |instance-of| |Move-Through|)
+            (|Cellulose16915| |instance-of| |Cellulose|)
+            (|Abrade16922| |instance-of| |Abrade|)
+            (|Cow16980| |instance-of| |Cow|)
+            (|Lining16914| |instance-of| |Lining|)
+            (|Alimentary-Canal16916| |instance-of| |Alimentary-Canal|)
+            (|Cellulose| |subclasses| |Tangible-Entity|))
+    :ROOT-TYPES (
+            (|Cow16980| |instance-of| |Entity|)
+            (|Digestive-System17023| |instance-of| |Entity|)
+            (|Move-Through16921| |instance-of| |Event|)
+            (|Cellulose16915| |instance-of| |Entity|)
+            (|Abrade16922| |instance-of| |Event|)
+            (|Lining16914| |instance-of| |Entity|)
+            (|Alimentary-Canal16916| |instance-of| |Entity|)))

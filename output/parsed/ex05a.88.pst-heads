@@ -1,0 +1,20 @@
+(ROOT
+  (S=H
+    (NP (EX=H There))
+    (VP=H (VBP=H are)
+      (NP
+        (NP=H (NN=H tube))
+        (VP (VBN=H shaped)
+          (NP (JJ organic) (NNS=H structures))
+          (PP (IN=H at)
+            (NP
+              (NP=H (DT the) (NN=H tip))
+              (PP (IN=H of)
+                (NP
+                  (NP=H (NNS=H hairs))
+                  (PP (IN=H on)
+                    (NP
+                      (NP (DT a) (NN gecko) (POS=H 's))
+                      (NN=H toe))))))))))
+    (. .)))
+

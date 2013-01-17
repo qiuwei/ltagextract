@@ -1,0 +1,27 @@
+(ROOT
+ (S=H
+  (NP
+   (NP=H (DT The) (NN=H function))
+   (PP (IN=H of) (NP (JJ membrane) (NN=H potential))))
+  (VP=H
+   (VBZ=H is)
+   (S
+    (VP=H
+     (TO=H to)
+     (VP
+      (VP
+       (VB=H provide)
+       (NP
+        (NP=H (NN=H energy))
+        (PP
+         (IN=H for)
+         (NP
+          (NP=H (DT the) (NN=H release))
+          (PP
+           (IN=H of)
+           (NP
+            (NNS=H (NN calcium) (NNS=H ions))
+            (CC and)
+            (NNS particles)))))))
+      (PP (IN=H from) (NP (DT a) (NN=H cell)))))))
+  (. .)))

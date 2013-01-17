@@ -1,0 +1,17 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Plant-Vein3268| |has-part| |Xylem3269|)
+            (|Xylem3269| |has-part| |Tracheid3271|)
+            (|Tracheid3271| |thickness| |Length-Value3413|)
+            (|Length-Value3413| |value| "thin"))
+    :INSTANCE-TYPES (
+            (|Plant-Vein3268| |instance-of| |Plant-Vein|)
+            (|Xylem3269| |instance-of| |Xylem|)
+            (|Tracheid3271| |instance-of| |Tracheid|)
+            (|Length-Value3413| |instance-of| |Length-Value|))
+    :ROOT-TYPES (
+            (|Plant-Vein3268| |instance-of| |Entity|)
+            (|Xylem3269| |instance-of| |Entity|)
+            (|Tracheid3271| |instance-of| |Entity|)
+            (|Tracheid3272| |instance-of| |Entity|)
+            (|Length-Value3413| |instance-of| |Property-Value|)))

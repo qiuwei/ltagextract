@@ -1,0 +1,18 @@
+(ROOT
+ (S=H
+  (NP
+   (NP=H (DT The) (NN=H function))
+   (PP (IN=H of) (NP (DT an) (NN=H (JJ ionic) (NN=H bond)))))
+  (VP=H
+   (VBZ=H is)
+   (S
+    (VP=H
+     (VP=H (TO=H to) (VP (VB=H hold) (NP (DT an) (NN=H anion))))
+     (CC and)
+     (ADVP (NP (DT a) (NN=H cation)) (RB=H together))
+     (VP
+      (TO=H to)
+      (VP
+       (VB=H form)
+       (NP (DT an) (NN=H (JJ ionic) (NN=H comopund))))))))
+  (. .)))

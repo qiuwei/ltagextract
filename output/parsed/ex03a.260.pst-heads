@@ -1,0 +1,18 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (DT The) (NN=H function))
+      (PP (IN=H of)
+        (NP (DT a) (NN plasma) (NN=H membrane))))
+    (VP=H (VBZ=H is)
+      (S
+        (VP=H (TO=H to)
+          (VP (VB=H block)
+            (NP
+              (NP=H (JJ hydrophobic) (NNS=H compounds))
+              (CC and)
+              (NP (JJ hydrophilic) (NNS=H compounds)))
+            (PP (IN=H at)
+              (NP (DT the) (JJ hydrophobic) (NN=H core)))))))
+    (. .)))
+

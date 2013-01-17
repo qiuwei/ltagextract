@@ -1,0 +1,32 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (DT The) (NN=H function))
+      (PP (IN=H of)
+        (NP (JJ membrane) (NN=H potential))))
+    (VP=H (VBZ=H is)
+      (S
+        (VP=H (TO=H to)
+          (VP (VB=H provide)
+            (NP
+              (NP=H (NN=H energy))
+              (PP (IN=H for)
+                (NP
+                  (NP=H (DT the) (NN=H diffusion))
+                  (PP (IN=H of)
+                    (NP (NNS=H anions))))))
+            (PP (TO=H to)
+              (NP
+                (NP=H (DT the) (JJ extra) (JJ cellular) (NN=H matrix))
+                (, ,)
+                (NP
+                  (NP=H (DT a) (NN=H process))
+                  (SBAR
+                    (WHNP=H (WDT=H which))
+                    (S
+                      (ADVP (RB=H also))
+                      (VP=H (VBZ=H uses)
+                        (PRT (RP=H up))
+                        (NP (JJ potential) (NN=H energy))))))))))))
+    (. .)))
+

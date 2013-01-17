@@ -1,0 +1,22 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Animal-Plasma-Membrane3569| |has-region| |Coordination25|)
+            (|Coordination25| |coordinates| |Hydrophobic-Core3562|)
+            (|Coordination25| |coordinates| |Hydrophilic-Face3542|)
+            (|Coordination25| |coordinates| |Hydrophilic-Face3540|)
+            (|Block3572| |instrument| |Animal-Plasma-Membrane3569|)
+            (|Block3572| |object| |Hydrophobic-Compound3549|))
+    :INSTANCE-TYPES (
+            (|Hydrophilic-Face3542| |instance-of| |Hydrophilic-Face|)
+            (|Hydrophilic-Face3540| |instance-of| |Hydrophilic-Face|)
+            (|Hydrophobic-Core3562| |instance-of| |Hydrophobic-Core|)
+            (|Animal-Plasma-Membrane3569| |instance-of| |Animal-Plasma-Membrane|)
+            (|Block3572| |instance-of| |Block|)
+            (|Hydrophobic-Compound3549| |instance-of| |Hydrophobic-Compound|))
+    :ROOT-TYPES (
+            (|Animal-Plasma-Membrane3569| |instance-of| |Entity|)
+            (|Hydrophilic-Face3542| |instance-of| |Entity|)
+            (|Hydrophilic-Face3540| |instance-of| |Entity|)
+            (|Hydrophobic-Core3562| |instance-of| |Entity|)
+            (|Block3572| |instance-of| |Event|)
+            (|Hydrophobic-Compound3549| |instance-of| |Entity|)))

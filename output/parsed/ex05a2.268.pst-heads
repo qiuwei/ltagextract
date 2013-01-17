@@ -1,0 +1,15 @@
+(ROOT
+  (S=H
+    (NP (EX=H There))
+    (VP=H (VBP=H are)
+      (ADJP (RB long) (JJ=H fibronectins)
+        (PP (IN=H at)
+          (NP
+            (NP=H (DT the) (JJ hydrophilic) (NN=H face))
+            (PP (IN=H of)
+              (NP
+                (NP=H (DT the) (NN plasma) (NN=H membrane))
+                (PP (IN=H of)
+                  (NP (DT an) (NN animal) (NN=H cell)))))))))
+    (. .)))
+

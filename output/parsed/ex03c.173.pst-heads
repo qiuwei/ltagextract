@@ -1,0 +1,16 @@
+(ROOT
+  (S=H
+    (NP (JJ Lysosomal) (NNS=H enzymes))
+    (VP=H (VBD=H digest)
+      (NP (NNS=H polymers))
+      (PP (IN=H at)
+        (NP
+          (NP=H (DT the) (NN=H lysosome))
+          (PP (IN=H of)
+            (NP (DT a) (JJ eukaryotic) (NN=H cell)))))
+      (, ,)
+      (S
+        (VP=H (VBG=H producing)
+          (NP (NNS=H monomers)))))
+    (. .)))
+

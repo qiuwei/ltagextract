@@ -1,0 +1,12 @@
+(ROOT
+  (S=H
+    (NP (NNS=H Mucus))
+    (VP=H (VBZ=H is)
+      (VP (VBN=H secreted)
+        (PP (IN=H in)
+          (NP
+            (NP=H (DT the) (JJ alimentary) (NN=H canal))
+            (PP (IN=H of)
+              (NP (NNS=H earthworms)))))))
+    (. .)))
+

@@ -1,0 +1,22 @@
+(ROOT
+ (S=H
+  (NP
+   (NP=H (DT The) (NN=H function))
+   (PP (IN=H of) (NP (NN=H cellulase))))
+  (VP=H
+   (VBZ=H is)
+   (S
+    (VP=H
+     (TO=H to)
+     (VP
+      (VP (VP (VB=H digest) (NP (NN=H cellulose))) (, ,))
+      (S
+       (VP=H
+        (VBG=H using)
+        (PRT (RP=H up))
+        (NP
+         (NN activation)
+         (NN energy)
+         (CC and)
+         (NNS=H (NN water) (NNS=H molecules)))))))))
+  (. .)))

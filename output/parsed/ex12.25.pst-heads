@@ -1,0 +1,17 @@
+(ROOT
+  (S=H
+    (NP (NNS=H Antibiotics))
+    (VP=H (VBP=H are)
+      (NP
+        (NP=H (NNS=H enzyme-inhibitors))
+        (, ,)
+        (SBAR
+          (WHNP=H (WDT=H which))
+          (S
+            (VP=H (VBP=H inhibit)
+              (NP
+                (NP=H (DT the) (NN protein) (NNS=H enzymes))
+                (PP (IN=H of)
+                  (NP (NNS=H bacteria)))))))))
+    (. .)))
+

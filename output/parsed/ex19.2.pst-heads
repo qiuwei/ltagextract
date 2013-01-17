@@ -1,0 +1,16 @@
+(ROOT
+  (S=H
+    (S
+      (NP (DT A) (JJ motile) (NN=H cilium))
+      (VP=H (VBZ=H is)
+        (ADJP (JJ=H short))))
+    (, ,)
+    (NP (PRP$ its) (NN=H length))
+    (VP=H (VBZ=H varies)
+      (PP (IN=H between)
+        (NP
+          (NP=H (CD 2) (NNS=H micrometers))
+          (CC and)
+          (NP (CD 20) (NNS=H micrometers)))))
+    (. .)))
+

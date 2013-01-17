@@ -1,0 +1,24 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Attach23994| |instrument| |Hydrogen-Bond24033|)
+            (|Attach23994| |result| |Enzyme-Substrate-Complex23993|)
+            (|Attach23994| |object| |Chemical-Entity24036|)
+            (|Attach23994| |base| |Protein-Enzyme24003|)
+            (|Attach23994| |site| |Active-Site24027|)
+            (|Protein-Enzyme24003| |has-region| |Active-Site24027|))
+    :INSTANCE-TYPES (
+            (|Hydrogen-Bond24033| |instance-of| |Hydrogen-Bond|)
+            (|Enzyme-Substrate-Complex23993| |instance-of| |Enzyme-Substrate-Complex|)
+            (|Chemical-Entity24036| |instance-of| |Chemical-Entity|)
+            (|Attach23994| |instance-of| |Attach|)
+            (|Protein-Enzyme24003| |instance-of| |Protein-Enzyme|)
+            (|Active-Site24027| |instance-of| |Active-Site|)
+            (|Chemical-Entity| |subclasses| |Tangible-Entity|)
+            (|Protein-Enzyme| |subclasses| |Tangible-Entity|))
+    :ROOT-TYPES (
+            (|Attach23994| |instance-of| |Event|)
+            (|Hydrogen-Bond24033| |instance-of| |Entity|)
+            (|Enzyme-Substrate-Complex23993| |instance-of| |Entity|)
+            (|Chemical-Entity24036| |instance-of| |Entity|)
+            (|Protein-Enzyme24003| |instance-of| |Entity|)
+            (|Active-Site24027| |instance-of| |Entity|)))

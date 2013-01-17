@@ -1,0 +1,20 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Plasma-membrane4366| |has-part| |Aquaporin4383|)
+            (|Aquaporin4383| |has-part| |Hydrophobic-Amino-Acid4363|)
+            (|Hydrophobic-Amino-Acid4363| |is-inside| |Hydrophobic-Region4359|)
+            (|Aquaporin4383| |has-region| |Hydrophobic-Region4359|)
+            (|Hydrophobic-Amino-Acid4363| |shape| |Shape-Value4321|)
+            (|Shape-Value4321| |value| "helical"))
+    :INSTANCE-TYPES (
+            (|Plasma-membrane4366| |instance-of| |Plasma-membrane|)
+            (|Aquaporin4383| |instance-of| |Aquaporin|)
+            (|Hydrophobic-Region4359| |instance-of| |Hydrophobic-Region|)
+            (|Hydrophobic-Amino-Acid4363| |instance-of| |Hydrophobic-Amino-Acid|)
+            (|Shape-Value4321| |instance-of| |Shape-Value|))
+    :ROOT-TYPES (
+            (|Plasma-membrane4366| |instance-of| |Entity|)
+            (|Aquaporin4383| |instance-of| |Entity|)
+            (|Hydrophobic-Amino-Acid4363| |instance-of| |Entity|)
+            (|Hydrophobic-Region4359| |instance-of| |Entity|)
+            (|Shape-Value4321| |instance-of| |Property-Value|)))

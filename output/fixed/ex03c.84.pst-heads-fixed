@@ -1,0 +1,15 @@
+(ROOT
+ (S=H
+  (NP (DT A) (NN=H chemical))
+  (VP=H
+   (VBZ=H is)
+   (VP
+    (VP
+     (VBN=H attached)
+     (PP
+      (TO=H to)
+      (NP
+       (NP=H (DT the) (NN=H (JJ active) (NN=H site)))
+       (PP (IN=H of) (NP (DT a) (NN=H (NN protein) (NN=H enzyme)))))))
+    (PP (IN=H with) (NP (DT an) (NN=H (JJ ionic) (NN=H bond))))))
+  (. .)))

@@ -1,0 +1,23 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Intracellular-Digestion39754| |object| |Coordination10|)
+            (|Coordination10| |coordinates| |Protein39752|)
+            (|Coordination10| |coordinates| |Nucleic-Acid39751|)
+            (|Intracellular-Digestion39754| |agent| |Lysosomal-Enzyme39755|)
+            (|Intracellular-Digestion39754| |base| |Eukaryotic-Cell39770|)
+            (|Intracellular-Digestion39754| |site| |Lysosome39760|)
+            (|Eukaryotic-Cell39770| |has-part| |Lysosome39760|))
+    :INSTANCE-TYPES (
+            (|Protein39752| |instance-of| |Protein|)
+            (|Lysosomal-Enzyme39755| |instance-of| |Lysosomal-Enzyme|)
+            (|Nucleic-Acid39751| |instance-of| |Nucleic-Acid|)
+            (|Intracellular-Digestion39754| |instance-of| |Intracellular-Digestion|)
+            (|Eukaryotic-Cell39770| |instance-of| |Eukaryotic-Cell|)
+            (|Lysosome39760| |instance-of| |Lysosome|))
+    :ROOT-TYPES (
+            (|Intracellular-Digestion39754| |instance-of| |Event|)
+            (|Protein39752| |instance-of| |Entity|)
+            (|Lysosomal-Enzyme39755| |instance-of| |Entity|)
+            (|Nucleic-Acid39751| |instance-of| |Entity|)
+            (|Eukaryotic-Cell39770| |instance-of| |Entity|)
+            (|Lysosome39760| |instance-of| |Entity|)))

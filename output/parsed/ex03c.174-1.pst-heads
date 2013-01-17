@@ -1,0 +1,12 @@
+(ROOT
+  (S=H
+    (NP (NNP=H ATP))
+    (VP=H (VBZ=H is)
+      (VP (VBN=H synthesized)
+        (PP (IN=H at)
+          (NP
+            (NP=H (DT the) (JJ active) (NN=H site))
+            (PP (IN=H of)
+              (NP (DT an) (NN=H ATP-Synthase)))))))
+    (. .)))
+

@@ -1,0 +1,19 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (DT The) (NN=H function))
+      (PP (IN=H of)
+        (NP (DT an) (NN electron) (NN shuttle) (NN=H system))))
+    (VP=H (VBZ=H is)
+      (S
+        (VP=H (TO=H to)
+          (VP (VB=H transfer)
+            (NP (DT an) (NN=H electron))
+            (PP (TO=H to)
+              (NP (NNP=H NAD-Plus)))
+            (S
+              (VP=H (TO=H to)
+                (VP (VB=H produce)
+                  (NP (NNS=H NADH)))))))))
+    (. .)))
+

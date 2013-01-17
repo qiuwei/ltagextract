@@ -1,0 +1,23 @@
+(ROOT
+ (S=H
+  (NP (NNS=H Leaves))
+  (VP=H
+   (VBP=H have)
+   (NP
+    (NP=H (DT an) (NNS=H epidermis))
+    (PP
+     (IN=H above)
+     (NP
+      (NP (NP=H (PRP$ their) (NN=H palisade-mesophyl)) (, ,))
+      (SBAR
+       (WHNP=H (WDT=H which))
+       (S
+        (VP=H
+         (VBZ=H contains)
+         (NP
+          (JJ large)
+          (, ,)
+          (NNS=H
+           (JJ bean-shaped)
+           (NNS=H (NN guard) (NNS=H cells)))))))))))
+  (. .)))

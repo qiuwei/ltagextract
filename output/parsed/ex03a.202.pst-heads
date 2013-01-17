@@ -1,0 +1,19 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (DT The) (NN=H function))
+      (PP (IN=H of)
+        (NP (DT a) (NN food) (NN=H vacuole))))
+    (VP=H (VBZ=H is)
+      (S
+        (VP=H (TO=H to)
+          (VP (VB=H carry)
+            (NP (JJ solid) (NNS=H substances))
+            (, ,)
+            (PP (IN=H with)
+              (NP
+                (NP=H (DT the) (NN=H help))
+                (PP (IN=H of)
+                  (NP (DT a) (NN=H pseudopodium)))))))))
+    (. .)))
+

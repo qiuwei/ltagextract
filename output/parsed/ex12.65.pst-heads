@@ -1,0 +1,17 @@
+(ROOT
+  (S=H
+    (NP (NNP=H Morphine))
+    (VP=H (VBZ=H is)
+      (NP
+        (NP=H (DT a) (NN=H ligand))
+        (SBAR
+          (WHNP=H (WDT=H which))
+          (S
+            (VP=H (VBZ=H binds)
+              (PP (TO=H to)
+                (NP
+                  (NP=H (DT the) (NN endorphin) (NN=H receptor))
+                  (PP (IN=H in)
+                    (NP (DT a) (NN plasma) (NN=H membrane))))))))))
+    (. .)))
+

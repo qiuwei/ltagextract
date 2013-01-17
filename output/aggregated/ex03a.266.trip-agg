@@ -1,0 +1,20 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Hold-Together162| |object| |Coordination24|)
+            (|Coordination24| |coordinates| |Oxygen145|)
+            (|Coordination24| |coordinates| |Oxygen149|)
+            (|Hold-Together162| |instrument| |Double-Bond161|)
+            (|Hold-Together162| |agent| |Ester-Linkage151|)
+            (|Ester-Linkage151| |has-function| |Hold-Together162|))
+    :INSTANCE-TYPES (
+            (|Oxygen145| |instance-of| |Oxygen|)
+            (|Oxygen149| |instance-of| |Oxygen|)
+            (|Double-Bond161| |instance-of| |Double-Bond|)
+            (|Ester-Linkage151| |instance-of| |Ester-Linkage|)
+            (|Hold-Together162| |instance-of| |Hold-Together|))
+    :ROOT-TYPES (
+            (|Hold-Together162| |instance-of| |Event|)
+            (|Oxygen145| |instance-of| |Entity|)
+            (|Oxygen149| |instance-of| |Entity|)
+            (|Double-Bond161| |instance-of| |Entity|)
+            (|Ester-Linkage151| |instance-of| |Entity|)))

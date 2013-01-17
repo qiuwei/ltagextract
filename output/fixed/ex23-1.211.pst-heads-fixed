@@ -1,0 +1,17 @@
+(ROOT
+ (S=H
+  (NP (NNP=H Malate))
+  (VP=H
+   (VBZ=H is)
+   (VP
+    (VP
+     (VBN=H transferred)
+     (PP
+      (TO=H to)
+      (NP (DT a) (NN=H (NN bundle) (NN=H (NN sheath) (NN=H cell))))))
+    (PP
+     (IN=H during)
+     (NP
+      (NP=H (JJ=H c4-photosynthesis))
+      (PP (IN=H in) (NP (DT a) (NN=H (NN plant) (NN=H cell))))))))
+  (. .)))

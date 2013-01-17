@@ -1,0 +1,19 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Detoxification19144| |base| |Liver-Cell19145|)
+            (|Detoxification19144| |rate| |Rate-Value19132|)
+            (|Rate-Value19132| |directly-proportional| |Quantity-Value19135|)
+            (|Liver-Cell19145| |has-part| |Smooth-Endoplasmic-Reticulum19149|)
+            (|Smooth-Endoplasmic-Reticulum19149| |quantity| |Quantity-Value19135|))
+    :INSTANCE-TYPES (
+            (|Detoxification19144| |instance-of| |Detoxification|)
+            (|Rate-Value19132| |instance-of| |Rate-Value|)
+            (|Liver-Cell19145| |instance-of| |Liver-Cell|)
+            (|Smooth-Endoplasmic-Reticulum19149| |instance-of| |Smooth-Endoplasmic-Reticulum|)
+            (|Quantity-Value19135| |instance-of| |Quantity-Value|))
+    :ROOT-TYPES (
+            (|Detoxification19144| |instance-of| |Event|)
+            (|Liver-Cell19145| |instance-of| |Entity|)
+            (|Rate-Value19132| |instance-of| |Property-Value|)
+            (|Quantity-Value19135| |instance-of| |Property-Value|)
+            (|Smooth-Endoplasmic-Reticulum19149| |instance-of| |Entity|)))

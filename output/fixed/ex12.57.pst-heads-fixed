@@ -1,0 +1,16 @@
+(ROOT
+ (S=H
+  (NP (DT A) (NN=H biomembrane))
+  (VP=H
+   (VBZ=H is)
+   (NP
+    (NP=H (DT a) (NN=H barrier))
+    (SBAR
+     (WHNP=H (WDT=H which))
+     (S
+      (VP=H
+       (VBZ=H blocks)
+       (NP
+        (NP=H (DT the) (NN=H (NN hydrogen) (NN=H ion)))
+        (PP (IN=H of) (NP (DT a) (NN=H chemical)))))))))
+  (. .)))

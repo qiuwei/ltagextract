@@ -1,0 +1,22 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (DT The) (JJ chemical) (NN=H energy))
+      (PP (IN=H of)
+        (NP
+          (NP=H (NN=H oxygen))
+          (VP (VBN=H used)
+            (PRT (RP=H up))
+            (PP (IN=H in)
+              (NP (JJ cellular) (NN=H respiration)))))))
+    (VP=H (VBZ=H is)
+      (ADJP (JJR=H greater))
+      (SBAR (IN=H than)
+        (S
+          (NP
+            (NP=H (DT the) (JJ chemical) (NN=H energy))
+            (PP (IN=H of)
+              (NP (NN carbon) (NN=H dioxide))))
+          (VP=H (VBD=H produced)))))
+    (. .)))
+

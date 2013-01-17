@@ -1,0 +1,25 @@
+(ROOT
+ (S=H
+  (NP
+   (NP=H (DT The) (NN=H rate))
+   (PP
+    (IN=H of)
+    (NP
+     (NP=H (NN=H detoxification))
+     (PP (IN=H in) (NP (DT the) (NN=H (NN liver) (NN=H cell)))))))
+  (VP=H
+   (VBZ=H is)
+   (ADJP
+    (ADJP (RB directly) (JJ=H proportional))
+    (PP
+     (TO=H to)
+     (NP
+      (NP=H (DT the) (NN=H quantity))
+      (PP
+       (IN=H of)
+       (NP
+        (NP=H (JJ smooth) (NN=H (JJ endoplasmic) (NN=H reticulum)))
+        (PP
+         (IN=H in)
+         (NP (DT the) (NN=H (NN liver) (NN=H cell))))))))))
+  (. .)))

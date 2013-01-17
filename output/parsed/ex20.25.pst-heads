@@ -1,0 +1,13 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (DT The) (JJ inner) (NN=H membrane))
+      (PP (IN=H of)
+        (NP
+          (NP=H (DT the) (JJ mitochondrial) (NN=H membrane))
+          (PP (IN=H of)
+            (NP (JJ eukaryotic) (NNS=H cells))))))
+    (VP=H (VBZ=H blocks)
+      (NP (JJ hydrophobic) (NNS=H compounds)))
+    (. .)))
+

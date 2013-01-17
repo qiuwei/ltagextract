@@ -1,0 +1,22 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Animal-Cell3923| |has-part| |Animal-Plasma-Membrane3904|)
+            (|Animal-Plasma-Membrane3904| |has-part| |Coordination14|)
+            (|Coordination14| |coordinates| |Transport-Protein3903|)
+            (|Coordination14| |coordinates| |Phospholipid-Bilayer3914|)
+            (|Transport-Protein3903| |is-at| |Phospholipid-Bilayer3914|)
+            (|Transport-Protein3903| |structural-complexity| |Structural-Complexity-Value3899|)
+            (|Structural-Complexity-Value3899| |value| "complex")
+            (|Transport-Protein| |subclasses| |Polypeptide|))
+    :INSTANCE-TYPES (
+            (|Animal-Cell3923| |instance-of| |Animal-Cell|)
+            (|Animal-Plasma-Membrane3904| |instance-of| |Animal-Plasma-Membrane|)
+            (|Phospholipid-Bilayer3914| |instance-of| |Phospholipid-Bilayer|)
+            (|Transport-Protein3903| |instance-of| |Transport-Protein|)
+            (|Structural-Complexity-Value3899| |instance-of| |Structural-Complexity-Value|))
+    :ROOT-TYPES (
+            (|Animal-Cell3923| |instance-of| |Entity|)
+            (|Animal-Plasma-Membrane3904| |instance-of| |Entity|)
+            (|Transport-Protein3903| |instance-of| |Entity|)
+            (|Phospholipid-Bilayer3914| |instance-of| |Entity|)
+            (|Structural-Complexity-Value3899| |instance-of| |Property-Value|)))

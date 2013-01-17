@@ -1,0 +1,12 @@
+(ROOT
+  (S=H
+    (NP (NNS=H Polymers))
+    (VP=H (VBP=H are)
+      (VP (VBN=H digested)
+        (PP (IN=H in)
+          (NP
+            (NP=H (DT the) (NNS=H lysosomes))
+            (PP (IN=H of)
+              (NP (JJ eukaryotic) (NNS=H cells)))))))
+    (. .)))
+

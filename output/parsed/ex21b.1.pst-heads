@@ -1,0 +1,18 @@
+(ROOT
+  (S=H
+    (NP
+      (NP=H (NNP Plasma) (NNS=H membranes))
+      (, ,)
+      (SBAR
+        (WHNP=H (WDT=H which))
+        (S
+          (VP=H (VBP=H have)
+            (NP
+              (NP=H (DT a) (JJ hydrophobic) (NN=H core))
+              (CC and)
+              (NP (CD two) (JJ hydrophilic) (NNS=H faces))))))
+      (, ,))
+    (VP=H (VBP=H block)
+      (NP (JJ hydrophobic) (NNS=H compounds)))
+    (. .)))
+

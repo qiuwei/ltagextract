@@ -1,0 +1,17 @@
+(KBGEN-INPUT
+    :TRIPLES (
+            (|Synthesis-Of-Lipid1898| |result| |Phospholipid1902|)
+            (|Synthesis-Of-Lipid1898| |base| |Algal-Cell1887|)
+            (|Synthesis-Of-Lipid1898| |site| |Smooth-Endoplasmic-Reticulum1857|)
+            (|Algal-Cell1887| |has-part| |Smooth-Endoplasmic-Reticulum1857|))
+    :INSTANCE-TYPES (
+            (|Phospholipid1902| |instance-of| |Phospholipid|)
+            (|Synthesis-Of-Lipid1898| |instance-of| |Synthesis-Of-Lipid|)
+            (|Algal-Cell1887| |instance-of| |Algal-Cell|)
+            (|Smooth-Endoplasmic-Reticulum1857| |instance-of| |Smooth-Endoplasmic-Reticulum|)
+            (|Phospholipid| |subclasses| |Chemical-Entity|))
+    :ROOT-TYPES (
+            (|Synthesis-Of-Lipid1898| |instance-of| |Event|)
+            (|Phospholipid1902| |instance-of| |Entity|)
+            (|Algal-Cell1887| |instance-of| |Entity|)
+            (|Smooth-Endoplasmic-Reticulum1857| |instance-of| |Entity|)))
