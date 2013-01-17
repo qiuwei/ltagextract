@@ -5,44 +5,68 @@ extract lexicalized tree adjoin grammar from treebank
 
 
 ### Introduction
-This project intends to extract Tree Adjoin Grammar with semantics aligned from KBGen corpus.
+
+This project intends to extract Tree Adjoining Grammars with semantics
+aligned from KBGen corpus.
 
 ### Software depends
-* leningen 2.0.0  https://github.com/technomancy/leiningen. Note: we also provide executable jar file. So if you don't want to compile or use the REPL, it's not required.
-* python 2.7 http://www.python.org/download/releases/2.7/
-* Java 7.10 http://www.java.com/en/download/index.jsp
-* NLTK 2.0 is a leading platform for building Python programs to work with human language data. http://nltk.org/
-* Stanford parser 2.0.4: . http://nlp.stanford.edu/software/lex-parser.shtml
+* Leiningen 2.0.0: https://github.com/technomancy/leiningen. Note: We
+  also provide executable jar file. So if you don't want to compile or
+  use the REPL, it's not required.
+      * Included in utilities/ (lein for UNIXes, lein.bat for Windows)
+* Python 2.7: http://www.python.org/download/releases/2.7/
+* Java 7.10: http://www.java.com/en/download/index.jsp
+* NLTK 2.0.4 is a leading platform for building Python programs to
+  work with human language data. http://nltk.org/
+      * Included in utilities/, referenced automatically by run.sh
+      * Earlier versions might not work!
+* Stanford parser 2.0.4
+  http://nlp.stanford.edu/software/lex-parser.shtml
+      * Included in utilities/, used by the parse.sh script.
 
 ### Howto
-To reproduce our current result, you can either simply run './bin/run.sh' or follow the pipeline described below:
 
-1. parse sentences using Stanford parser. We use the unlexicalized parser with head information output.
-2. Deal with the conjunction occurred in the syntactic tree.
+To reproduce our current result, you can either simply run
+```bin/run.sh``` or follow the pipeline described below:
+
+1. Deal with the conjunction occurred in the syntactic tree.
+2. Parse sentences using Stanford parser. We use the unlexicalized
+   parser with head information output.
 3. Normalize the syntactic tree gotten from step 2.
 4. Extract TAG from the output of step 3
 5. Assign semantics to the output of step 4
 
+
 #### Step 1
-To parse the corpus use Stanford parser, run
+To do the coordination aggregation, run
 ```bash
-TODO
+java -jar bin/aggregation-0.1.1-SNAPSHOT-standalone.jar \
+  input/triples/ output/aggregated/
+`
 ```
 
 #### Step 2
-To deal with the conjunctions, run
+To parse the corpus using the Stanford parser, run
 ```bash
-TODO`
+bin/parse.sh input/sentences/ output/parsed/
 ```
 
 #### Step 3
-To Normalize the syntactic tree, run
+To normalize the syntactic tree, run
 ```bash
-TODO
+java -jar bin/grook-0.1.0-SNAPSHOT-standalone.jar \
+  output/parsed/ output/fixed/
 ```
 
-#### Step 4&5:
+#### Steps 4&5:
 To extract the TAG with semantics aligned, run
+```bash
+PYTHONPATH="utilities/nltk-2.0.4/:$PYTHONPATH" python2 bin/extract/extractor.py \
+  output/fixed/ input/alignments/ output/final.gram \
+  --verbose output/grammar-verbose/
+```
+
+For more details, try running
 ```bash
 python2 extractor.py -h
 usage: extractor.py [-h] [--verbose VERBOSE] corpus alignment [outfile]

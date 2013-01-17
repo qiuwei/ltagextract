@@ -9,10 +9,6 @@
 |Polymer|
 (NNS[+head] Polymers)
 
-|Biomembrane|
-(NN[+head] biomembrane)
-(DT[] A)
-
 |Enzyme-Inhibitor|
 (NNS[+head] enzyme-inhibitors)
 
@@ -34,13 +30,26 @@
 (DT[] the)
 (NN[+head] cytoplasm)
 
-|origin|
-(ROOT[]
-  (S[+head]
-    (NP[+subs] )
-    (VP[+head]
-      (VP[+head] (VBZ[+head] moves) (PRT[] (RP[+head] out)))
-      (PP[] (IN[+head] of) (NP[sem=1, +subs] )))))
+|coordinates|
+(NP[+head] (CD[] two) (NNS[+head] oxygens))
+(NP[] (NN[] Proton) (NNS[+head] pumps))
+(NP[]
+  (NP[+head, +subs] )
+  (Pu[] ,)
+  (NP[+subs] )
+  (CC[] and)
+  (NP[+subs] ))
+(CC[] and)
+(NP[] (CD[] two) (NNS[+head] (JJ[] hydrophilic) (NNS[+head] faces)))
+(NP[] (NP[+head, +subs] ) (CC[] and) (NP[+subs] ))
+(NP[]
+  (NN[+subs] )
+  (Pu[] ,)
+  (NNS[+head, +subs] )
+  (CC[] and)
+  (NNS[+subs] ))
+(NP[] (NNS[+subs] ) (CC[] and) (NNS[+head, +subs] ))
+(NP[] (NNS[+head, +subs] ) (CC[] and) (NNS[+subs] ))
 
 |Phospholipid-Bilayer|
 (DT[] the)
@@ -63,15 +72,13 @@
 |Water|
 (NNP[+head] Water)
 
-|Hydrophobic-Core|
+|Mitochondrial-Membrane|
+(NN[+head] (JJ[] mitochondrial) (NN[+head] membrane))
 (DT[] the)
-(NN[+head] (JJ[] hydrophobic) (NN[+head] core))
-(DT[] a)
 
-|Electron|
-(NNS[+head] electrons)
-(NN[+head] electron)
-(DT[] an)
+|Receptor-Protein|
+(NNP[] Receptor)
+(NNS[+head] proteins)
 
 |Malate|
 (NNP[+head] Malate)
@@ -80,29 +87,38 @@
 (DT[] the)
 (NN[+head] (NN[] calvin) (NN[+head] cycle))
 
+|Drug|
+
 |Animal-Plasma-Membrane|
 (NN[+head] (NN[] plasma) (NN[+head] membrane))
-(DT[] the)
-(NNP[] Plasma)
 (NNS[+head] membranes)
+(NNP[] Plasma)
+(DT[] the)
 (DT[] a)
 
 |Algal-Cell|
 (NNS[+head] cells)
 (JJ[] algal)
 
-|Protein-Enzyme|
-(DT[] the)
-(NN[+head] (NN[] protein) (NN[+head] enzyme))
-(NNP[+head] Catalase)
-(NNS[+head] (NN[] protein) (NNS[+head] enzymes))
+|Cation|
+(NN[+head] cation)
 (DT[] a)
 
 |Transport-Protein|
+(DT[] The)
 (NNS[+head] proteins)
 (NN[] transport)
 (NN[+head] (NN[] transport) (NN[+head] protein))
+
+|Electron-Shuttle-System|
+(DT[] an)
+(NN[+head]
+  (NN[] electron)
+  (NN[+head] (NN[] shuttle) (NN[+head] system)))
 (DT[] The)
+(NN[+head]
+  (JJ[] electron)
+  (NN[+head] (NN[] shuttle) (NN[+head] system)))
 
 |Hydrogen-Ion-Gradient|
 (NN[+head]
@@ -110,16 +126,16 @@
   (NN[+head] (NN[] ion) (NN[+head] gradient)))
 (DT[] a)
 
-|Drug|
+|Detoxification|
+(NN[+head] detoxification)
 
 |Hydrophobic-Compound|
 (JJ[] hydrophobic)
 (NNS[+head] compounds)
 
 |value|
-(JJ[] simple)
 (JJ[] branched)
-(JJ[] complex)
+(JJ[] simple)
 (ROOT[]
   (S[+head]
     (NP[+subs] )
@@ -127,6 +143,7 @@
       (VP[+head] (VBZ[+head] is) (ADJP[] (JJ[+head] green)))
       (CC[] and)
       (VP[] (VBP[+head] ring) (ADJP[] (JJ[+head] shaped))))))
+(JJ[] complex)
 
 |Surface|
 (NN[+head] surface)
@@ -156,9 +173,234 @@
 (NNS[+head] enzymes)
 (JJ[] Lysosomal)
 
+|Reaction-Center-Complex|
+(DT[] the)
+(NN[+head]
+  (NN[] reaction)
+  (NN[+head] (NN[] center) (NN[+head] complex)))
+
 |Ionic-Compound|
 (NN[+head] (JJ[] ionic) (NN[+head] comopund))
 (DT[] an)
+
+|Chemical-Entity|
+(NN[+head] (NN[] plasma) (NN[+head] membrane))
+(NN[+head] chemical)
+(DT[] the)
+(DT[] a)
+(DT[] A)
+
+|Water-Molecule|
+(NNS[+head] molecules)
+(NN[] water)
+
+|Diffusion-Of-Anion-Across-Plasma-Membrane|
+(DT[] the)
+(NN[+head] diffusion)
+
+|Renewable-Resource|
+(DT[] a)
+(NN[+head] (JJ[] renewable) (NN[+head] resource))
+
+|Hydrogen-Bond|
+(NN[+head] (NN[] hydrogen) (NN[+head] bond))
+(DT[] a)
+
+|Chemical|
+(NN[+head] chemical)
+(DT[] a)
+
+|Cotransporter|
+(NN[+head] cotransporter)
+(DT[] a)
+
+|Nucleic-Acid|
+(JJ[] nucleic)
+(NNS[+head] acids)
+(NN[+head] acid)
+
+|Biomembrane|
+(NN[+head] biomembrane)
+(DT[] A)
+
+|Extra-Cellular-Matrix|
+(DT[] the)
+(NN[+head]
+  (JJ[] extra)
+  (NN[+head] (JJ[] cellular) (NN[+head] matrix)))
+
+|Detach|
+(NNP[+head] Detachment)
+
+|Fatty-Acid|
+(JJ[] fatty)
+(NN[+head] acid)
+
+|Mitochondrion|
+(DT[] the)
+(NN[+head] mitochondrion)
+
+|Calcium-Ion|
+(NNS[+head] ions)
+(NN[] calcium)
+
+|Epidermis|
+(DT[] the)
+(NNS[+head] epidermis)
+
+|Peroxisome|
+(DT[] the)
+(NN[+head] peroxisome)
+
+|Oxygen-Molecule|
+(NN[] oxygen)
+(NNS[+head] molecules)
+
+|Active-Site|
+(DT[] the)
+(NN[+head] (JJ[] active) (NN[+head] site))
+
+|Cytosol|
+(DT[] the)
+(NN[+head] cytosol)
+
+|Ionic-Bond|
+(NN[+head] (JJ[] ionic) (NN[+head] bond))
+(DT[] an)
+
+|Hydrophobic-Core|
+(DT[] the)
+(NN[+head] (JJ[] hydrophobic) (NN[+head] core))
+(DT[] a)
+
+|Mucus|
+(NNS[+head] Mucus)
+
+|Barrier|
+(NN[+head] barrier)
+(DT[] a)
+
+|NADH|
+(NNP[+head] NADH)
+(NNS[+head] NADH)
+
+|Plasma-membrane|
+(NN[+head] (NN[] plasma) (NN[+head] membrane))
+(DT[] the)
+(DT[] a)
+
+|Lateral-Root|
+(DT[] the)
+(NN[+head] (JJ[] lateral) (NN[+head] root))
+
+|color|
+(ROOT[]
+  (S[+head]
+    (NP[sem=0, +subs] )
+    (VP[+head]
+      (VP[+head] (VBZ[+head] is) (ADJP[] (JJ[+head] green)))
+      (CC[] and)
+      (VP[] (VBP[+head] ring) (ADJP[] (JJ[+head] shaped))))))
+
+|agent|
+(ROOT[]
+  (S[+head]
+    (NP[sem=1, +subs] )
+    (VP[+head]
+      (VP[+head]
+        (VBP[+head] take)
+        (PRT[] (RP[+head] up))
+        (NP[+subs] ))
+      (S[+subs] ))))
+(ROOT[]
+  (S[+head]
+    (NP[sem=1, +subs] )
+    (VP[+head] (VBZ[+head] diffuses) (NP[+subs] ))))
+(ROOT[]
+  (S[+head]
+    (NP[]
+      (NP[+head] (DT[] The) (NN[+head] function))
+      (PP[] (IN[+head] of) (NP[+subs] )))
+    (VP[+head] (VBZ[+head] is) (S[sem=0, +subs] ))))
+(ROOT[]
+  (S[+head]
+    (NP[]
+      (NP[+head] (DT[] The) (NN[+head] function))
+      (PP[] (IN[+head] of) (NP[sem=1, +subs] )))
+    (VP[+head] (VBZ[+head] is) (NP[sem=0, +subs] ))))
+(S[]
+  (VP[+head]
+    (TO[+head] to)
+    (VP[] (VP[] (VB[+head] release) (NP[+subs] )) (PP[+subs] ))))
+(NP[+adj]
+  (NP[+adj, -head, sem=0] )
+  (PP[+head] (IN[+head] of) (NP[sem=1, +subs] )))
+(ROOT[]
+  (S[+head]
+    (NP[sem=1, +subs] )
+    (VP[+head] (VBP[+head] create) (NP[+subs] ))))
+(ROOT[]
+  (S[+head]
+    (NP[sem=1, +subs] )
+    (VP[+head] (VBP[+head] carry) (NP[+subs] ))))
+(ROOT[]
+  (S[+head]
+    (NP[sem=1, +subs] )
+    (VP[+head] (VBZ[+head] transfers) (NP[+subs] ))))
+(ROOT[]
+  (S[+head]
+    (NP[sem=1, +subs] )
+    (VP[+head]
+      (VP[+head] (VB[+head] digest) (NP[+subs] ))
+      (PP[+subs] ))))
+(S[]
+  (VP[+head]
+    (TO[+head] to)
+    (VP[]
+      (VP[] (VB[+head] move) (NP[+subs] ))
+      (PP[] (IN[+head] through) (NP[+subs] )))))
+(ROOT[]
+  (S[+head]
+    (NP[]
+      (NP[+head] (DT[] The) (NN[+head] function))
+      (PP[] (IN[+head] of) (NP[sem=1, +subs] )))
+    (VP[+head]
+      (VP[+head] (VBZ[+head] is) (PP[sem=0, +subs] ))
+      (PP[+subs] ))))
+(ROOT[]
+  (S[+head]
+    (NP[+subs] )
+    (VP[+head]
+      (VP[+head] (VBP[+head] generate) (NP[+subs] ))
+      (PP[+subs] ))))
+(ROOT[]
+  (S[+head]
+    (NP[sem=1, +subs] )
+    (VP[+head] (VBZ[+head] changes) (NP[+subs] ))))
+(S[]
+  (VP[+head] (TO[+head] to) (VP[] (VB[+head] release) (NP[+subs] ))))
+(ROOT[]
+  (S[+head]
+    (NP[]
+      (NP[+head] (DT[] The) (NN[+head] function))
+      (PP[] (IN[+head] of) (NP[+subs] )))
+    (VP[+head]
+      (VBZ[+head] is)
+      (S[]
+        (VP[+head]
+          (TO[+head] to)
+          (VP[]
+            (VB[+head] provide)
+            (NP[]
+              (NP[+head] (NN[+head] energy))
+              (PP[] (IN[+head] for) (NP[sem=1, +subs] )))
+            (S[] (VP[+head] (TO[+head] to) (VP[sem=0, +subs] )))))))))
+(ROOT[]
+  (S[+head]
+    (NP[]
+      (NP[+head] (DT[] The) (NN[+head] function))
+      (PP[] (IN[+head] of) (NP[sem=1, +subs] )))
+    (VP[+head] (VBZ[+head] is) (S[sem=0, +subs] ))))
 
 |result|
 (ROOT[]
@@ -219,137 +461,6 @@
         (VBN[+head] formed)
         (SBAR[] (WHADVP[+head] (WRB[+head] when)) (S[sem=0, +subs] ))))))
 
-|Water-Molecule|
-(NNS[+head] molecules)
-(NN[] water)
-
-|Diffusion-Of-Anion-Across-Plasma-Membrane|
-(DT[] the)
-(NN[+head] diffusion)
-
-|Renewable-Resource|
-(DT[] a)
-(NN[+head] (JJ[] renewable) (NN[+head] resource))
-
-|Hydrogen-Bond|
-(NN[+head] (NN[] hydrogen) (NN[+head] bond))
-(DT[] a)
-
-|Chemical|
-(NN[+head] chemical)
-(DT[] a)
-
-|Cotransporter|
-(NN[+head] cotransporter)
-(DT[] a)
-
-|ATP-Synthase|
-(NNP[+head] ATP-synthase)
-(NN[+head] ATP-Synthase)
-(DT[] an)
-
-|Nucleic-Acid|
-(JJ[] nucleic)
-(NNS[+head] acids)
-(NN[+head] acid)
-
-|Carrot-Plant|
-(NNS[+head] carrots)
-
-|Extra-Cellular-Matrix|
-(DT[] the)
-(NN[+head]
-  (JJ[] extra)
-  (NN[+head] (JJ[] cellular) (NN[+head] matrix)))
-
-|Detach|
-(NNP[+head] Detachment)
-
-|Fatty-Acid|
-(JJ[] fatty)
-(NN[+head] acid)
-
-|Gated-Channel|
-(NN[+head] (JJ[] gated) (NN[+head] channel))
-(DT[] a)
-
-|Epidermis|
-(DT[] the)
-(NNS[+head] epidermis)
-
-|Peroxisome|
-(DT[] the)
-(NN[+head] peroxisome)
-
-|Oxygen-Molecule|
-(NN[] oxygen)
-(NNS[+head] molecules)
-
-|Active-Site|
-(DT[] the)
-(NN[+head] (JJ[] active) (NN[+head] site))
-
-|Cytosol|
-(DT[] the)
-(NN[+head] cytosol)
-
-|Ionic-Bond|
-(NN[+head] (JJ[] ionic) (NN[+head] bond))
-(DT[] an)
-
-|Mitochondrial-Membrane|
-(NN[+head] (JJ[] mitochondrial) (NN[+head] membrane))
-(DT[] the)
-
-|Mucus|
-(NNS[+head] Mucus)
-
-|Barrier|
-(NN[+head] barrier)
-(DT[] a)
-
-|NADH|
-(NNP[+head] NADH)
-(NNS[+head] NADH)
-
-|Plasma-membrane|
-(NN[+head] (NN[] plasma) (NN[+head] membrane))
-(DT[] the)
-(DT[] a)
-
-|Lateral-Root|
-(DT[] the)
-(NN[+head] (JJ[] lateral) (NN[+head] root))
-
-|Electrogenic-Pump|
-(NNS[+head] pumps)
-(NN[+head] (JJ[] electrogenic) (NN[+head] pump))
-(JJ[] Electrogenic)
-(DT[] an)
-
-|color|
-(ROOT[]
-  (S[+head]
-    (NP[sem=0, +subs] )
-    (VP[+head]
-      (VP[+head] (VBZ[+head] is) (ADJP[] (JJ[+head] green)))
-      (CC[] and)
-      (VP[] (VBP[+head] ring) (ADJP[] (JJ[+head] shaped))))))
-
-|Cation|
-(NN[+head] cation)
-(DT[] a)
-
-|Protein|
-(NNS[+head] proteins)
-
-|Chemical-Entity|
-(NN[+head] (NN[] plasma) (NN[+head] membrane))
-(NN[+head] chemical)
-(DT[] the)
-(DT[] A)
-(DT[] a)
-
 |Vascular-Tissue|
 (NN[] vascular)
 (NN[+head] tissue)
@@ -391,6 +502,12 @@
   (PP[] (IN[+head] in) (NP[] (DT[] a) (NN[+head] cell))))
 
 |object|
+(S[]
+  (VP[+head]
+    (TO[+head] to)
+    (VP[]
+      (VP[] (VB[+head] move) (NP[sem=1, +subs] ))
+      (PP[] (IN[+head] through) (NP[+subs] )))))
 (S[]
   (NP[sem=1, +subs] )
   (VP[+head]
@@ -440,12 +557,10 @@
   (S[+head]
     (NP[+subs] )
     (VP[+head] (VBZ[+head] blocks) (NP[sem=1, +subs] ))))
-(ROOT[]
-  (S[+head]
-    (NP[sem=1, +subs] )
-    (VP[+head]
-      (VP[+head] (VBZ[+head] attaches) (PP[+subs] ))
-      (PP[+subs] ))))
+(S[]
+  (VP[+head]
+    (TO[+head] to)
+    (VP[] (VP[] (VB[+head] release) (NP[+subs] )) (PP[+subs] ))))
 (S[]
   (VP[+head]
     (TO[+head] to)
@@ -476,12 +591,10 @@
     (VP[]
       (VP[] (VB[+head] release) (NP[sem=1, +subs] ))
       (PP[+subs] ))))
-(S[]
-  (VP[+head]
-    (TO[+head] to)
-    (VP[]
-      (VP[] (VB[+head] move) (NP[sem=1, +subs] ))
-      (PP[] (IN[+head] through) (NP[+subs] )))))
+(ROOT[]
+  (S[+head]
+    (NP[+subs] )
+    (VP[+head] (VBZ[+head] changes) (NP[sem=1, +subs] ))))
 (S[] (VP[+head] (VBZ[+head] blocks) (NP[sem=1, +subs] )))
 (S[]
   (VP[+head]
@@ -519,10 +632,6 @@
   (VP[+head]
     (TO[+head] to)
     (VP[] (VB[+head] hold) (PRT[] (RP[+head] together)) (NP[+subs] ))))
-(ROOT[]
-  (S[+head]
-    (NP[+subs] )
-    (VP[+head] (VBZ[+head] changes) (NP[sem=1, +subs] ))))
 (ROOT[]
   (S[+head]
     (NP[sem=1, +subs] )
@@ -572,19 +681,21 @@
     (VP[+head]
       (VBZ[+head] is)
       (VP[] (VP[] (VBN[+head] absorbed) (PP[+subs] )) (PP[+subs] )))))
-(S[]
-  (VP[+head]
-    (TO[+head] to)
-    (VP[] (VP[] (VB[+head] release) (NP[+subs] )) (PP[+subs] ))))
+(NP[+adj]
+  (NP[+adj, +head, sem=0] )
+  (PP[] (IN[+head] of) (NP[+subs] )))
 (ROOT[]
   (S[+head]
     (NP[+subs] )
     (VP[+head]
       (VP[+head] (VBP[+head] generate) (NP[sem=1, +subs] ))
       (PP[+subs] ))))
-(NP[+adj]
-  (NP[+adj, +head, sem=0] )
-  (PP[] (IN[+head] of) (NP[+subs] )))
+(ROOT[]
+  (S[+head]
+    (NP[sem=1, +subs] )
+    (VP[+head]
+      (VP[+head] (VBZ[+head] attaches) (PP[+subs] ))
+      (PP[+subs] ))))
 (ROOT[]
   (S[+head]
     (NP[+subs] )
@@ -616,109 +727,13 @@
 (DT[] the)
 (NN[+head] glyoxysome)
 
-|Aqueous-Solution|
-(DT[] an)
-(NN[+head] (JJ[] aqueous) (NN[+head] solution))
-
-|agent|
-(ROOT[]
-  (S[+head]
-    (NP[sem=1, +subs] )
-    (VP[+head]
-      (VP[+head]
-        (VBP[+head] take)
-        (PRT[] (RP[+head] up))
-        (NP[+subs] ))
-      (S[+subs] ))))
-(ROOT[]
-  (S[+head]
-    (NP[sem=1, +subs] )
-    (VP[+head] (VBZ[+head] diffuses) (NP[+subs] ))))
-(ROOT[]
-  (S[+head]
-    (NP[]
-      (NP[+head] (DT[] The) (NN[+head] function))
-      (PP[] (IN[+head] of) (NP[+subs] )))
-    (VP[+head] (VBZ[+head] is) (S[sem=0, +subs] ))))
-(ROOT[]
-  (S[+head]
-    (NP[]
-      (NP[+head] (DT[] The) (NN[+head] function))
-      (PP[] (IN[+head] of) (NP[sem=1, +subs] )))
-    (VP[+head] (VBZ[+head] is) (NP[sem=0, +subs] ))))
-(S[]
-  (VP[+head]
-    (TO[+head] to)
-    (VP[] (VP[] (VB[+head] release) (NP[+subs] )) (PP[+subs] ))))
-(NP[+adj]
-  (NP[+adj, -head, sem=0] )
-  (PP[+head] (IN[+head] of) (NP[sem=1, +subs] )))
-(ROOT[]
-  (S[+head]
-    (NP[sem=1, +subs] )
-    (VP[+head] (VBP[+head] create) (NP[+subs] ))))
-(ROOT[]
-  (S[+head]
-    (NP[sem=1, +subs] )
-    (VP[+head] (VBP[+head] carry) (NP[+subs] ))))
-(ROOT[]
-  (S[+head]
-    (NP[sem=1, +subs] )
-    (VP[+head] (VBZ[+head] transfers) (NP[+subs] ))))
-(ROOT[]
-  (S[+head]
-    (NP[sem=1, +subs] )
-    (VP[+head]
-      (VP[+head] (VB[+head] digest) (NP[+subs] ))
-      (PP[+subs] ))))
-(ROOT[]
-  (S[+head]
-    (NP[]
-      (NP[+head] (DT[] The) (NN[+head] function))
-      (PP[] (IN[+head] of) (NP[sem=1, +subs] )))
-    (VP[+head]
-      (VP[+head] (VBZ[+head] is) (PP[sem=0, +subs] ))
-      (PP[+subs] ))))
-(S[]
-  (VP[+head]
-    (TO[+head] to)
-    (VP[]
-      (VP[] (VB[+head] move) (NP[+subs] ))
-      (PP[] (IN[+head] through) (NP[+subs] )))))
-(ROOT[]
-  (S[+head]
-    (NP[sem=1, +subs] )
-    (VP[+head] (VBZ[+head] changes) (NP[+subs] ))))
-(ROOT[]
-  (S[+head]
-    (NP[+subs] )
-    (VP[+head]
-      (VP[+head] (VBP[+head] generate) (NP[+subs] ))
-      (PP[+subs] ))))
-(S[]
-  (VP[+head] (TO[+head] to) (VP[] (VB[+head] release) (NP[+subs] ))))
-(ROOT[]
-  (S[+head]
-    (NP[]
-      (NP[+head] (DT[] The) (NN[+head] function))
-      (PP[] (IN[+head] of) (NP[+subs] )))
-    (VP[+head]
-      (VBZ[+head] is)
-      (S[]
-        (VP[+head]
-          (TO[+head] to)
-          (VP[]
-            (VB[+head] provide)
-            (NP[]
-              (NP[+head] (NN[+head] energy))
-              (PP[] (IN[+head] for) (NP[sem=1, +subs] )))
-            (S[] (VP[+head] (TO[+head] to) (VP[sem=0, +subs] )))))))))
-(ROOT[]
-  (S[+head]
-    (NP[]
-      (NP[+head] (DT[] The) (NN[+head] function))
-      (PP[] (IN[+head] of) (NP[sem=1, +subs] )))
-    (VP[+head] (VBZ[+head] is) (S[sem=0, +subs] ))))
+|Carbohydrate-Side-Chain|
+(JJ[] Carbohydrate)
+(NNS[+head] (NN[] side) (NNS[+head] chains))
+(NN[+head]
+  (JJ[] carbohydrate)
+  (NN[+head] (NN[] side) (NN[+head] chain)))
+(DT[] A)
 
 |has-region|
 (NP[+adj]
@@ -736,8 +751,8 @@
 (NNS[+head] proteins)
 (NN[] transport)
 
-|Detoxification|
-(NN[+head] detoxification)
+|Protein|
+(NNS[+head] proteins)
 
 |causes|
 (ROOT[]
@@ -864,23 +879,23 @@
 |Proton-Motive-Force|
 (NN[+head] (NN[] proton) (NN[+head] (NN[] motive) (NN[+head] force)))
 (JJ[] proton)
-(NN[+head] (NN[] motive) (NN[+head] force))
 (DT[] A)
+(NN[+head] (NN[] motive) (NN[+head] force))
 
 |Hydrophilic-Compound|
-(JJ[] Hydrophilic)
-(NN[+head] (JJ[] hydrophilic) (NN[+head] compound))
-(NNS[+head] compounds)
 (JJ[] hydrophilic)
+(NN[+head] (JJ[] hydrophilic) (NN[+head] compound))
+(JJ[] Hydrophilic)
+(NNS[+head] compounds)
 (DT[] a)
 
-|Potential-Energy|
-(NN[+head] energy)
-(JJ[] potential)
+|Endoplasmic-Reticulum|
+(DT[] the)
+(NN[+head] (JJ[] endoplasmic) (NN[+head] reticulum))
 
 |Prokaryote|
-(NN[+head] prokaryote)
 (NNS[+head] prokaryotes)
+(NN[+head] prokaryote)
 (DT[] a)
 
 |directly-proportional|
@@ -898,12 +913,16 @@
 (NN[+head] (JJ[] trans) (NN[+head] face))
 
 |Polar-Amino-Acid|
-(NN[+head] (JJ[] amino) (NN[+head] acid))
 (JJ[] polar)
+(NN[+head] (JJ[] amino) (NN[+head] acid))
 (NN[+head] (JJ[] polar) (NN[+head] (JJ[] amino) (NN[+head] acid)))
 (DT[] a)
 
-|Alcohol|
+|Change-Of-Shape|
+(NP[] (PRP[+head] it))
+(VP[+head]
+  (TO[+head] to)
+  (VP[] (VB[+head] change) (NP[] (NN[+head] shape))))
 
 |Alimentary-Canal|
 (DT[] the)
@@ -1007,15 +1026,18 @@
   (NP[+head] (NP[+adj, -head, sem=0] ) (Pu[+head] ,))
   (SBAR[+head] (WHNP[+head] (WDT[+head] which)) (S[sem=1, +subs] )))
 
-|Receptor-Protein|
-(NNP[] Receptor)
-(NNS[+head] proteins)
+|Electron|
+(NNS[+head] electrons)
+(NN[+head] electron)
+(DT[] an)
 
 |Photosystem-I|
 (NN[+head] photosystem)
 (DT[] a)
 
-|Barbiturate|
+|Monomer|
+(NN[+head] monomer)
+(DT[] a)
 
 |Bacterium|
 (NNS[+head] bacteria)
@@ -1028,24 +1050,20 @@
 (DT[] The)
 (NN[+head] P700)
 
-|Fibronectin|
-(DT[] the)
-(NN[+head] fibronectin)
+|Hydrophobic-Amino-Acid|
+(NN[+head]
+  (JJ[] hydrophobic)
+  (NN[+head] (JJ[] amino) (NN[+head] acid)))
+(DT[] a)
 
 |Non-Motile-Cilium|
 (NN[+head] (JJ[] non-motile) (NN[+head] cilium))
 (DT[] a)
 
-|Reaction-Center-Complex|
-(DT[] the)
-(NN[+head]
-  (NN[] reaction)
-  (NN[+head] (NN[] center) (NN[+head] complex)))
+|Carrot-Plant|
+(NNS[+head] carrots)
 
 |has-part|
-(NP[+adj]
-  (NP[+adj, -head, sem=1] )
-  (PP[+head] (IN[+head] of) (NP[sem=0, +subs] )))
 (NP[+adj]
   (NP[]
     (NP[] (NP[+adj, +head, sem=0] ) (Pu[] ,))
@@ -1053,6 +1071,25 @@
       (WHNP[+head] (WDT[+head] which))
       (S[] (VP[+head] (VBP[+head] have) (NP[+subs] )))))
   (Pu[] ,))
+(NP[+adj]
+  (NP[] (NP[+adj, +head, sem=0] ) (Pu[] ,))
+  (SBAR[]
+    (WHNP[+head] (WDT[+head] which))
+    (S[] (VP[+head] (VBZ[+head] has) (NP[+subs] )))))
+(NP[+adj]
+  (NP[+adj, -head, sem=1] )
+  (PP[+head] (IN[+head] of) (NP[+subs] )))
+(NP[+adj]
+  (NP[] (NP[+adj, +head, sem=0] ) (Pu[] ,))
+  (SBAR[]
+    (WHNP[+head] (WDT[+head] which))
+    (S[]
+      (VP[+head]
+        (VBZ[+head] consists)
+        (PP[] (IN[+head] of) (NP[+subs] ))))))
+(NP[+adj]
+  (NP[+adj, -head, sem=1] )
+  (PP[+head] (IN[+head] of) (NP[sem=0, +subs] )))
 (NP[+adj]
   (NP[+adj, -head, sem=1] )
   (PP[+head] (IN[+head] in) (NP[sem=0, +subs] )))
@@ -1068,14 +1105,6 @@
   (Pu[+head] ,))
 (PP[] (IN[+head] in) (NP[sem=0, +subs] ))
 (NP[+adj]
-  (NP[] (NP[+adj, +head, sem=0] ) (Pu[] ,))
-  (SBAR[]
-    (WHNP[+head] (WDT[+head] which))
-    (S[] (VP[+head] (VBZ[+head] has) (NP[+subs] )))))
-(NP[+adj]
-  (NP[+adj, -head, sem=1] )
-  (PP[+head] (IN[+head] of) (NP[+subs] )))
-(NP[+adj]
   (NP[]
     (NP[] (NP[+adj, +head, sem=0] ) (Pu[] ,))
     (SBAR[]
@@ -1086,20 +1115,14 @@
           (PP[] (IN[+head] of) (NP[+subs] ))))))
   (Pu[] ,))
 (NP[+adj]
-  (NP[] (NP[+adj, +head, sem=0] ) (Pu[] ,))
-  (SBAR[]
-    (WHNP[+head] (WDT[+head] which))
-    (S[]
-      (VP[+head]
-        (VBZ[+head] consists)
-        (PP[] (IN[+head] of) (NP[+subs] ))))))
-(NP[+adj]
   (NP[+adj, -head] )
   (PP[+head] (IN[+head] of) (NP[sem=0, +subs] )))
 
-|Mitochondrion|
-(DT[] the)
-(NN[+head] mitochondrion)
+|Electrogenic-Pump|
+(NNS[+head] pumps)
+(NN[+head] (JJ[] electrogenic) (NN[+head] pump))
+(JJ[] Electrogenic)
+(DT[] an)
 
 |subclasses|
 (ROOT[]
@@ -1123,26 +1146,13 @@
 (PP[] (TO[+head] to) (NP[sem=1, +subs] ))
 (PP[] (IN[+head] from) (NP[sem=1, +subs] ))
 
-|coordinates|
-(NP[+head] (CD[] two) (NNS[+head] oxygens))
-(NP[] (NN[] Proton) (NNS[+head] pumps))
-(NP[]
-  (NP[+head, +subs] )
-  (Pu[] ,)
-  (NP[+subs] )
-  (CC[] and)
-  (NP[+subs] ))
-(CC[] and)
-(NP[] (CD[] two) (NNS[+head] (JJ[] hydrophilic) (NNS[+head] faces)))
-(NP[] (NP[+head, +subs] ) (CC[] and) (NP[+subs] ))
-(NP[]
-  (NN[+subs] )
-  (Pu[] ,)
-  (NNS[+head, +subs] )
-  (CC[] and)
-  (NNS[+subs] ))
-(NP[] (NNS[+subs] ) (CC[] and) (NNS[+head, +subs] ))
-(NP[] (NNS[+head, +subs] ) (CC[] and) (NNS[+subs] ))
+|origin|
+(ROOT[]
+  (S[+head]
+    (NP[+subs] )
+    (VP[+head]
+      (VP[+head] (VBZ[+head] moves) (PRT[] (RP[+head] out)))
+      (PP[] (IN[+head] of) (NP[sem=1, +subs] )))))
 
 |Secretory-Protein|
 (NNS[+head] proteins)
@@ -1156,9 +1166,8 @@
 (NN[+head] polypeptide)
 (DT[] a)
 
-|Liver-Cell|
-(DT[] the)
-(NN[+head] (NN[] liver) (NN[+head] cell))
+|Particle-In-Motion|
+(NNS[+head] particles)
 
 |plays|
 (ROOT[]
@@ -1171,10 +1180,10 @@
     (VP[+head] (VBP[+head] are) (NP[sem=1, +subs] ))))
 
 |Plant-Cell|
-(DT[] a)
 (NN[] plant)
 (NNS[+head] cells)
 (NN[+head] (NN[] plant) (NN[+head] cell))
+(DT[] a)
 
 |structural-complexity|
 (ROOT[]
@@ -1216,18 +1225,15 @@
 |Catalase|
 (NNP[+head] Catalase)
 
-|Monomer|
-(NN[+head] monomer)
-(DT[] a)
+|Barbiturate|
 
 |Plant|
 (NNS[+head] plants)
 
-|Change-Of-Shape|
-(NP[] (PRP[+head] it))
-(VP[+head]
-  (TO[+head] to)
-  (VP[] (VB[+head] change) (NP[] (NN[+head] shape))))
+|Starch|
+(NNP[+head] Starch)
+
+|Alcohol|
 
 |Human-Cell|
 (NN[+head] (JJ[] human) (NN[+head] cell))
@@ -1238,10 +1244,10 @@
 (NN[] intercellular)
 
 |Lysosome|
-(NNS[+head] lysosomes)
-(NN[+head] lysosome)
 (DT[] the)
 (DT[] a)
+(NNS[+head] lysosomes)
+(NN[+head] lysosome)
 
 |NAD-Plus|
 (NNP[+head] NAD-Plus)
@@ -1255,11 +1261,9 @@
 |Generation-Of-Hydrogen-Ion-Gradient-Across-Biomembrane|
 (NNP[+head] Generation)
 
-|Hydrophobic-Amino-Acid|
-(NN[+head]
-  (JJ[] hydrophobic)
-  (NN[+head] (JJ[] amino) (NN[+head] acid)))
-(DT[] a)
+|Fibronectin|
+(DT[] the)
+(NN[+head] fibronectin)
 
 |ATP|
 (NNP[+head] Glyceraldehyde-3-Phosphate)
@@ -1278,19 +1282,17 @@
 (DT[] the)
 (NN[+head] (NN[] carbon) (NN[+head] skeleton))
 
-|Electron-Shuttle-System|
-(DT[] The)
-(NN[+head]
-  (JJ[] electron)
-  (NN[+head] (NN[] shuttle) (NN[+head] system)))
-(DT[] an)
-(NN[+head]
-  (NN[] electron)
-  (NN[+head] (NN[] shuttle) (NN[+head] system)))
+|Protein-Enzyme|
+(NN[+head] (NN[] protein) (NN[+head] enzyme))
+(NNS[+head] (NN[] protein) (NNS[+head] enzymes))
+(DT[] the)
+(NNP[+head] Catalase)
+(DT[] a)
 
-|Calcium-Ion|
-(NNS[+head] ions)
-(NN[] calcium)
+|ATP-Synthase|
+(NNP[+head] ATP-synthase)
+(NN[+head] ATP-Synthase)
+(DT[] an)
 
 |subevent|
 (PP[] (IN[+head] during) (NP[sem=0, +subs] ))
@@ -1310,13 +1312,9 @@
 (NN[] carrier)
 (DT[] a)
 
-|Carbohydrate-Side-Chain|
-(JJ[] Carbohydrate)
-(NNS[+head] (NN[] side) (NNS[+head] chains))
-(NN[+head]
-  (JJ[] carbohydrate)
-  (NN[+head] (NN[] side) (NN[+head] chain)))
-(DT[] A)
+|Aqueous-Solution|
+(DT[] an)
+(NN[+head] (JJ[] aqueous) (NN[+head] solution))
 
 |Golgi-Apparatus|
 (NN[+head] (JJ[] golgi) (NN[+head] apparatus))
@@ -1328,9 +1326,9 @@
 (NN[+head] (NN[] hydrogen) (NN[+head] ion))
 (NN[] hydrogen)
 
-|Endoplasmic-Reticulum|
-(DT[] the)
-(NN[+head] (JJ[] endoplasmic) (NN[+head] reticulum))
+|Potential-Energy|
+(NN[+head] energy)
+(JJ[] potential)
 
 |rate|
 (NP[]
@@ -1372,23 +1370,25 @@
 
 |Inner-Membrane|
 (DT[] an)
-(DT[] the)
 (DT[] The)
+(DT[] the)
 (NN[+head] (JJ[] inner) (NN[+head] membrane))
 
 |Centrosome|
 (NN[+head] centrosome)
 (DT[] a)
 
-|Particle-In-Motion|
-(NNS[+head] particles)
+|Liver-Cell|
+(DT[] the)
+(NN[+head] (NN[] liver) (NN[+head] cell))
 
 |Mesophyll-Cell|
 (NN[+head] (JJ[] mesophyll) (NN[+head] cell))
 (DT[] a)
 
-|Starch|
-(NNP[+head] Starch)
+|Gated-Channel|
+(NN[+head] (JJ[] gated) (NN[+head] channel))
+(DT[] a)
 
 |Earthworm|
 (NNS[+head] earthworms)
@@ -1416,7 +1416,7 @@
 (JJ[] Membrane)
 
 |Anion|
+(NN[+head] anion)
 (NNS[+head] anions)
 (DT[] an)
-(NN[+head] anion)
 

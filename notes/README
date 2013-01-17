@@ -3,4 +3,4 @@ It mainly records those complicated phenomena we've met.
 
 notes-for-preprocessing.txt: for preprocessing.
 notes-jirka.txt, notes-wei.txt: for problems we've encountered for semantic alignments.
-We-dont-like: for sentences which are difficult to deal with.
+We-dont-like: for phrase structures which are difficult to deal with.

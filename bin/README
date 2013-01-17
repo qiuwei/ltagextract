@@ -1,6 +1,16 @@
 This directory contains all of the runnable programs and scripts.
 
-run.sh: run all of the programs in a pipeline to reproduce the result we got.
-extract: extract TAG and align the semantics.
-TODO
+run.sh: Run all of the programs in a pipeline to reproduce the result
+we got.
 
+parse.sh: Use the Stanford parser on a given directory applying our
+options.
+
+aggregation-0.1.1-SNAPSHOT-standalone.jar: Aggregates coordination of
+triples in a given folder. See src/aggregation/README.md for further
+info.
+
+grook-0.1.0-SNAPSHOT-standalone.jar: Normalizes parse trees in a given
+folder. See src/grook/README.md for further info.
+
+extract: extract TAG and align the semantics. TODO
